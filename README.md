@@ -2,6 +2,8 @@
 
 一趟從台灣出發，跨越新加坡、澳洲、紐西蘭的蜜月旅行規劃。
 
+**🌏 線上行程頁面：[ytzc.github.io/oceania-honeymoon](https://ytzc.github.io/oceania-honeymoon/)**
+
 ---
 
 ## 關於這趟旅行
@@ -59,18 +61,18 @@
 
 ```
 oceania-honeymoon/
-├── README.md            ← 專案首頁（本文件）
-├── plan.md              ← 主規劃文件：航班、時間軸、住宿、預算、清單
-├── budget.md            ← TODO：詳細預算追蹤
-├── checklist.md         ← TODO：行前準備清單
-└── itinerary/
-    ├── singapore.md     ← TODO：新加坡行程
-    ├── melbourne.md     ← TODO：墨爾本行程
-    ├── christchurch.md  ← TODO：基督城行程
-    └── queenstown.md    ← TODO：皇后鎮行程
+├── README.md                ← 專案首頁（本文件）
+├── docs/
+│   └── index.html           ← GitHub Pages 行程網頁
+├── notes/
+│   ├── plan.md              ← 主規劃文件：航班、時間軸、住宿、預算、清單
+│   ├── gemini-map.md        ← 用 Gemini 生成旅遊地圖教學
+│   └── ...                  ← 未來：景點筆記、照片說明等
+└── .github/workflows/
+    └── deploy.yml           ← 推 tag 自動部署到 GitHub Pages
 ```
 
-主要規劃文件為 [`plan.md`](./plan.md)，包含：
+主要規劃文件為 [`notes/plan.md`](./notes/plan.md)，包含：
 - 航班總覽（含訂票者、行李額、廳別）
 - 逐日行程時間軸
 - 住宿待辦清單
