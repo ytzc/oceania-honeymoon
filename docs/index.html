@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oceania Honeymoon</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fafaf9;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0 0 4px;
+      line-height: 1.2;
+    }
+
+    header p {
+      margin: 0;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f0f0ed;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-family: monospace;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #888;
+      margin: 40px 0 12px;
+      border-bottom: 1px solid #e8e8e5;
+      padding-bottom: 6px;
+    }
+
+    .route {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .route-node {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 500;
+    }
+
+    .route-arrow {
+      color: #bbb;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 8px 12px;
+      background: #f3f3f0;
+      color: #555;
+      font-weight: 600;
+      border-bottom: 2px solid #e0e0db;
+    }
+
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #ebebea;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .total td {
+      font-weight: 700;
+      background: #f8f8f5;
+    }
+
+    .todo {
+      color: #aaa;
+      font-style: italic;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oceania Honeymoon</h1>
+    <p>2026 / 04 / 29 &ndash; 05 / 17 &nbsp;·&nbsp; 台灣 → 新加坡 → 澳洲 → 紐西蘭 → 台灣</p>
+    <span class="badge">__VERSION__</span>
+  </header>
+
+  <h2>路線</h2>
+  <div class="route">
+    <span class="route-node">🇹🇼 台北 TPE</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇸🇬 新加坡 SIN</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇦🇺 墨爾本 MEL</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇳🇿 基督城 CHC</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇳🇿 皇后鎮 ZQN</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇹🇼 台北 TPE</span>
+  </div>
+
+  <h2>航班</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>日期</th>
+        <th>路線</th>
+        <th>航班</th>
+        <th>出發</th>
+        <th>抵達</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4/29</td>
+        <td>TPE → SIN</td>
+        <td>酷航 TR867</td>
+        <td>16:15</td>
+        <td>20:45</td>
+      </tr>
+      <tr>
+        <td>5/01</td>
+        <td>SIN → MEL</td>
+        <td>捷星 JQ008</td>
+        <td>21:00</td>
+        <td>06:15 +1</td>
+      </tr>
+      <tr>
+        <td>5/04</td>
+        <td>MEL → CHC</td>
+        <td>捷星 JQ171</td>
+        <td>11:05</td>
+        <td>16:25</td>
+      </tr>
+      <tr>
+        <td>5/16</td>
+        <td>ZQN → AKL</td>
+        <td>捷星 JQ292</td>
+        <td>10:50</td>
+        <td>12:40</td>
+      </tr>
+      <tr>
+        <td>5/16</td>
+        <td>AKL → TPE</td>
+        <td>中華航空 CI054</td>
+        <td>19:30</td>
+        <td>05:40 +1</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>機票預算</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>航段</th>
+        <th>金額（NTD）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>TPE → SIN（酷航）</td><td>9,328</td></tr>
+      <tr><td>SIN → MEL（捷星）</td><td>21,156</td></tr>
+      <tr><td>MEL → CHC（捷星）</td><td>15,694</td></tr>
+      <tr><td>ZQN → AKL → TPE（捷星 + 中華）</td><td>33,864</td></tr>
+      <tr class="total"><td>機票合計（雙人）</td><td>80,042</td></tr>
+    </tbody>
+  </table>
+
+  <h2>待辦</h2>
+  <ul>
+    <li>預訂住宿（共 14 晚，皇后鎮 9 晚優先）</li>
+    <li>申請紐西蘭 NZeTA</li>
+    <li>申請澳洲 ETA</li>
+    <li>確認基督城 → 皇后鎮 交通方式</li>
+    <li>購買旅遊保險</li>
+    <li>準備當地 SIM 卡 / eSIM</li>
+  </ul>
+
+  <footer>
+    oceania-honeymoon &nbsp;·&nbsp; __VERSION__ &nbsp;·&nbsp; 2026
+  </footer>
+
+</body>
+</html>
