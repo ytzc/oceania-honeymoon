@@ -3,84 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Oceania Honeymoon 2026</title>
+  <title>Jerry & Hsuan — 旅行計劃</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --sin: #e07b39;
-      --mel: #2a7fa5;
-      --chc: #3a9e6f;
-      --qzn: #7c5cbf;
-      --tw:  #c0392b;
-      --bg:  #f7f6f3;
+      --bg: #f7f6f3;
       --surface: #fff;
       --border: #e4e2dc;
       --text: #1a1a1a;
       --muted: #888;
-      --warn-bg: #fff8ed;
-      --warn-border: #f0b429;
+      --okinawa: #0d9488;
+      --oceania: #7c5cbf;
     }
-
-    html { scroll-behavior: smooth; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky;
-      top: 0;
-      background: rgba(247,246,243,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      z-index: 100;
-      padding: 0 20px;
-    }
-    nav ul {
-      max-width: 900px;
-      margin: 0 auto;
-      list-style: none;
+      min-height: 100vh;
       display: flex;
-      gap: 4px;
-      overflow-x: auto;
-      scrollbar-width: none;
+      flex-direction: column;
     }
-    nav ul::-webkit-scrollbar { display: none; }
-    nav a {
-      display: block;
-      padding: 12px 14px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--muted);
-      text-decoration: none;
-      white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    nav a:hover { color: var(--text); border-bottom-color: var(--text); }
 
-    /* ── LAYOUT ── */
-    .page { max-width: 900px; margin: 0 auto; padding: 0 20px 80px; }
-
-    /* ── HEADER ── */
-    header {
-      padding: 48px 20px 36px;
-      max-width: 900px;
+    .page {
+      max-width: 780px;
       margin: 0 auto;
+      padding: 64px 24px 80px;
+      flex: 1;
     }
+
+    header { margin-bottom: 52px; }
+
     .header-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 10px;
       display: flex;
-      align-items: center;
       gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
+      align-items: center;
     }
+
     .badge {
       display: inline-block;
       background: #eeecea;
@@ -91,797 +54,237 @@
       font-family: monospace;
       color: var(--muted);
     }
-    .date-range {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
+
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 700;
-      line-height: 1.15;
       letter-spacing: -0.02em;
-      margin-bottom: 20px;
-    }
-    h1 span { color: var(--muted); font-weight: 400; }
-
-    /* ── ROUTE BAR ── */
-    .route {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 6px;
-      padding: 14px 18px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-top: 4px;
-    }
-    .route-node {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.88rem;
-      font-weight: 600;
-    }
-    .route-node .iata {
-      font-family: monospace;
-      font-size: 0.78rem;
-      padding: 1px 6px;
-      border-radius: 4px;
-      color: #fff;
-    }
-    .iata-tw  { background: var(--tw); }
-    .iata-sin { background: var(--sin); }
-    .iata-mel { background: var(--mel); }
-    .iata-chc { background: var(--chc); }
-    .iata-qzn { background: var(--qzn); }
-    .route-arrow { color: #ccc; font-size: 1rem; }
-    .route-nights {
-      font-size: 0.72rem;
-      color: var(--muted);
-      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 8px;
     }
 
-    /* ── SECTION ── */
-    section { margin-top: 52px; }
-    .section-title {
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-
-    /* ── TABLE ── */
-    .table-wrap { overflow-x: auto; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-    }
-    th {
-      text-align: left;
-      padding: 9px 12px;
-      background: #f2f1ee;
-      color: #555;
-      font-weight: 600;
-      font-size: 0.8rem;
-      border-bottom: 2px solid var(--border);
-      white-space: nowrap;
-    }
-    td {
-      padding: 9px 12px;
-      border-bottom: 1px solid #eeecea;
-      vertical-align: middle;
-    }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #faf9f6; }
-    .total-row td { font-weight: 700; background: #f5f4f0; }
-    .muted-cell { color: var(--muted); font-size: 0.82rem; }
-    .todo-cell { color: #bbb; font-style: italic; }
-
-    /* flight status dot */
-    .dot {
-      display: inline-block;
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      margin-right: 6px;
-      vertical-align: middle;
-    }
-    .dot-sin { background: var(--sin); }
-    .dot-mel { background: var(--mel); }
-    .dot-chc { background: var(--chc); }
-    .dot-qzn { background: var(--qzn); }
-
-    /* payer chip */
-    .payer {
-      display: inline-block;
-      font-size: 0.75rem;
-      padding: 1px 7px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      background: #f7f6f3;
-      color: #555;
-      white-space: nowrap;
-    }
-
-    /* ── TIMELINE ── */
-    .timeline { display: flex; flex-direction: column; gap: 6px; }
-    .tl-group-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--muted);
-      margin: 20px 0 8px;
-    }
-    .tl-group-label:first-child { margin-top: 0; }
-    .tl-row {
-      display: grid;
-      grid-template-columns: 42px 90px 1fr;
-      gap: 0;
-      align-items: stretch;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      font-size: 0.88rem;
-    }
-    .tl-day {
-      background: #f2f1ee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: monospace;
-      font-size: 0.75rem;
-      color: var(--muted);
-      font-weight: 600;
-      border-right: 1px solid var(--border);
-    }
-    .tl-date {
-      padding: 9px 10px;
-      font-size: 0.82rem;
-      color: var(--muted);
-      border-right: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-    }
-    .tl-content {
-      padding: 9px 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .tl-flag { font-size: 1rem; flex-shrink: 0; }
-    .tl-text { flex: 1; }
-    .tl-note { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
-    .tl-todo .tl-text { color: #aaa; font-style: italic; }
-    .tl-flight { background: #fafaf8; }
-    .tl-flight .tl-content { font-weight: 500; }
-    .tl-warn { background: var(--warn-bg); }
-
-    /* left accent by city */
-    .city-sin { border-left: 3px solid var(--sin) !important; }
-    .city-mel { border-left: 3px solid var(--mel) !important; }
-    .city-chc { border-left: 3px solid var(--chc) !important; }
-    .city-qzn { border-left: 3px solid var(--qzn) !important; }
-    .city-tw  { border-left: 3px solid var(--tw)  !important; }
-    .city-fly { border-left: 3px solid #ccc        !important; }
-
-    /* ── ACCOMMODATION GRID ── */
-    .accom-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 12px;
-    }
-    .accom-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px 16px;
-    }
-    .accom-card-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-bottom: 6px;
-    }
-    .accom-city {
-      font-weight: 700;
+    .subtitle {
       font-size: 0.95rem;
-    }
-    .accom-nights {
-      font-size: 0.78rem;
       color: var(--muted);
+      line-height: 1.6;
     }
-    .accom-dates {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .accom-status {
-      font-size: 0.8rem;
-      padding: 3px 9px;
-      border-radius: 4px;
-      display: inline-block;
-    }
-    .status-todo { background: #fef3cd; color: #856404; }
-    .status-done { background: #d1fae5; color: #065f46; }
 
-    /* ── BUDGET ── */
-    .budget-grid {
+    /* ── TRIP CARDS ── */
+    .trips {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    @media (max-width: 560px) { .budget-grid { grid-template-columns: 1fr; } }
-    .budget-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-    }
-    .budget-card h3 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .budget-total {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    .budget-sub {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    /* ── CHECKLIST ── */
-    .checklist-groups {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 16px;
     }
-    .checklist-group {
+
+    @media (max-width: 540px) {
+      .trips { grid-template-columns: 1fr; }
+      h1 { font-size: 1.5rem; }
+    }
+
+    .trip-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: box-shadow 0.15s, transform 0.15s;
+      position: relative;
+      overflow: hidden;
     }
-    .checklist-group h3 {
-      font-size: 0.8rem;
+
+    .trip-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+    }
+
+    .trip-card.okinawa::before { background: var(--okinawa); }
+    .trip-card.oceania::before { background: var(--oceania); }
+
+    .trip-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+
+    .trip-emoji { font-size: 2rem; line-height: 1; }
+
+    .trip-title {
+      font-size: 1.15rem;
       font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .trip-subtitle {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .trip-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+
+    .meta-label {
+      font-size: 0.72rem;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .checklist-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-      margin-bottom: 7px;
-      font-size: 0.87rem;
-    }
-    .checklist-item:last-child { margin-bottom: 0; }
-    .check-box {
+      width: 36px;
       flex-shrink: 0;
-      width: 15px; height: 15px;
-      border: 1.5px solid #ccc;
-      border-radius: 3px;
-      margin-top: 2px;
     }
 
-    /* ── CALLOUT ── */
-    .callout {
-      background: var(--warn-bg);
-      border: 1px solid var(--warn-border);
-      border-left: 4px solid var(--warn-border);
-      border-radius: 8px;
-      padding: 12px 16px;
-      font-size: 0.88rem;
-      margin-bottom: 16px;
-    }
-    .callout strong { display: block; margin-bottom: 4px; }
-    .callout-info {
-      background: #eff6ff;
-      border-color: #93c5fd;
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: #555;
+      background: var(--bg);
     }
 
-    /* ── LUGGAGE TABLE ── */
-    .lug-ok { color: var(--chc); font-weight: 600; }
-    .lug-warn { color: var(--sin); font-weight: 600; }
-    .lug-great { color: var(--qzn); font-weight: 600; }
+    .tag.okinawa-tag { border-color: #99f6e4; background: #f0fdfb; color: var(--okinawa); }
+    .tag.oceania-tag { border-color: #ddd6fe; background: #f5f3ff; color: var(--oceania); }
+
+    .trip-link {
+      margin-top: auto;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .trip-card.okinawa .trip-link { color: var(--okinawa); }
+    .trip-card.oceania .trip-link { color: var(--oceania); }
+
+    .route-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .chip {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: #f2f1ee;
+      color: #555;
+    }
 
     /* ── FOOTER ── */
     footer {
-      max-width: 900px;
-      margin: 60px auto 0;
-      padding: 0 20px 40px;
+      text-align: center;
       font-size: 0.78rem;
-      color: #bbb;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      color: #ccc;
+      padding: 20px;
       border-top: 1px solid var(--border);
-      padding-top: 20px;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      h1 { font-size: 1.6rem; }
-      .tl-row { grid-template-columns: 34px 76px 1fr; font-size: 0.82rem; }
-      .budget-total { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="#flights">✈ 航班</a></li>
-    <li><a href="#timeline">🗓 行程</a></li>
-    <li><a href="#accommodation">🏨 住宿</a></li>
-    <li><a href="#budget">💰 預算</a></li>
-    <li><a href="#checklist">🎒 清單</a></li>
-    <li><a href="#notes">⚠ 備註</a></li>
-  </ul>
-</nav>
-
-<header>
-  <div class="header-meta">
-    <span class="badge">__VERSION__</span>
-    <span class="date-range">2026 / 04 / 29 → 05 / 17 &nbsp;·&nbsp; 19 天</span>
-  </div>
-  <h1>Oceania Honeymoon <span>2026</span></h1>
-
-  <div class="route">
-    <div class="route-node">
-      <span class="iata iata-tw">TPE</span> 台北
-    </div>
-    <span class="route-arrow">→</span>
-    <div class="route-node">
-      <span class="iata iata-sin">SIN</span> 新加坡
-      <span class="route-nights">2晚</span>
-    </div>
-    <span class="route-arrow">→</span>
-    <div class="route-node">
-      <span class="iata iata-mel">MEL</span> 墨爾本
-      <span class="route-nights">2晚</span>
-    </div>
-    <span class="route-arrow">→</span>
-    <div class="route-node">
-      <span class="iata iata-chc">CHC</span> 基督城
-      <span class="route-nights">3晚</span>
-    </div>
-    <span class="route-arrow">→</span>
-    <div class="route-node">
-      <span class="iata iata-qzn">ZQN</span> 皇后鎮
-      <span class="route-nights">9晚</span>
-    </div>
-    <span class="route-arrow">→</span>
-    <div class="route-node">
-      <span class="iata iata-tw">TPE</span> 台北
-    </div>
-  </div>
-</header>
-
 <div class="page">
-
-  <!-- ── FLIGHTS ── -->
-  <section id="flights">
-    <div class="section-title">✈ 航班總覽 Flight Overview</div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>日期</th>
-            <th>路線</th>
-            <th>航班</th>
-            <th>機型</th>
-            <th>出發</th>
-            <th>抵達</th>
-            <th>行李</th>
-            <th>付款</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>4/29</td>
-            <td><span class="dot dot-sin"></span>TPE → SIN</td>
-            <td>酷航 TR867</td>
-            <td class="muted-cell">B787-9</td>
-            <td>16:15 <span class="muted-cell">T1</span></td>
-            <td>20:45 <span class="muted-cell">T1</span></td>
-            <td class="lug-warn">雙人 20kg</td>
-            <td><span class="payer">佩璇 $9,328</span></td>
-          </tr>
-          <tr>
-            <td>5/01</td>
-            <td><span class="dot dot-mel"></span>SIN → MEL</td>
-            <td>捷星 JQ008</td>
-            <td class="muted-cell">B787-8</td>
-            <td>21:00 <span class="muted-cell">T2</span></td>
-            <td>06:15+1 <span class="muted-cell">T2</span></td>
-            <td class="lug-warn">雙人 20kg</td>
-            <td><span class="payer">佩璇 $21,156</span></td>
-          </tr>
-          <tr>
-            <td>5/04</td>
-            <td><span class="dot dot-chc"></span>MEL → CHC</td>
-            <td>捷星 JQ171</td>
-            <td class="muted-cell">A320</td>
-            <td>11:05 <span class="muted-cell">T2</span></td>
-            <td>16:25 <span class="muted-cell">I廳</span></td>
-            <td class="lug-ok">雙人 30kg</td>
-            <td><span class="payer">佩璇 $15,694</span></td>
-          </tr>
-          <tr>
-            <td>5/16</td>
-            <td><span class="dot dot-qzn"></span>ZQN → AKL</td>
-            <td>捷星 JQ292</td>
-            <td class="muted-cell">A320</td>
-            <td>10:50 <span class="muted-cell">D廳</span></td>
-            <td>12:40 <span class="muted-cell">D廳</span></td>
-            <td class="lug-ok">每人 30kg</td>
-            <td rowspan="2" style="vertical-align:middle"><span class="payer">子擎 $33,864</span><br><span class="muted-cell" style="font-size:0.75rem">含下段</span></td>
-          </tr>
-          <tr>
-            <td>5/16</td>
-            <td><span class="dot dot-qzn"></span>AKL → TPE</td>
-            <td>中華航空 CI054</td>
-            <td class="muted-cell">A350 XWB</td>
-            <td>19:30 <span class="muted-cell">I廳</span></td>
-            <td>05:40+1 <span class="muted-cell">桃園</span></td>
-            <td class="lug-great">每人 2×23kg 🎉</td>
-          </tr>
-        </tbody>
-      </table>
+  <header>
+    <div class="header-meta">
+      <span class="badge">__VERSION__</span>
+      <span>2026 旅行計劃</span>
     </div>
-    <div class="callout callout-info" style="margin-top:14px">
-      <strong>奧克蘭轉機 (5/16)</strong>
-      12:40 抵達 D 廳 → 19:30 從 I 廳出發，約 7 小時可在奧克蘭市區或機場附近逛街休息。行李直掛桃園，布里斯本停留約 90 分無需重新辦理。
-    </div>
-  </section>
+    <h1>Jerry & Hsuan</h1>
+    <p class="subtitle">兩趟旅行，兩種心情。</p>
+  </header>
 
-  <!-- ── TIMELINE ── -->
-  <section id="timeline">
-    <div class="section-title">🗓 行程時間軸 Trip Timeline</div>
-    <div class="timeline">
+  <div class="trips">
 
-      <div class="tl-group-label">🇸🇬 新加坡 Singapore</div>
-      <div class="tl-row city-sin tl-flight">
-        <div class="tl-day">D01</div>
-        <div class="tl-date">4/29 三</div>
-        <div class="tl-content">
-          <span class="tl-flag">🛫</span>
-          <div class="tl-text">TR867 16:15 桃園出發 → 20:45 抵達樟宜 T1，入住新加坡</div>
+    <a href="okinawa.html" class="trip-card okinawa">
+      <div class="trip-emoji">🌺</div>
+      <div>
+        <div class="trip-title">沖繩旅遊</div>
+        <div class="trip-subtitle">Okinawa Trip 2026</div>
+      </div>
+      <div class="trip-meta">
+        <div class="meta-row">
+          <span class="meta-label">日期</span>
+          <span>4/23 – 4/27</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">天數</span>
+          <span>5 天 4 夜</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">路線</span>
+          <div class="route-chips">
+            <span class="chip">🇹🇼 台北</span>
+            <span class="chip">→</span>
+            <span class="chip">🇯🇵 那霸</span>
+            <span class="chip">→</span>
+            <span class="chip">古宇利島</span>
+          </div>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">亮點</span>
+          <span class="tag okinawa-tag">美麗海水族館</span>
+          <span class="tag okinawa-tag">青之洞窟</span>
         </div>
       </div>
-      <div class="tl-row city-sin tl-todo">
-        <div class="tl-day">D02</div>
-        <div class="tl-date">4/30 四</div>
-        <div class="tl-content">
-          <span class="tl-flag">🇸🇬</span>
-          <div class="tl-text">新加坡自由行</div>
+      <div class="trip-link">查看行程 →</div>
+    </a>
+
+    <a href="oceania.html" class="trip-card oceania">
+      <div class="trip-emoji">💍</div>
+      <div>
+        <div class="trip-title">大洋洲蜜月</div>
+        <div class="trip-subtitle">Oceania Honeymoon 2026</div>
+      </div>
+      <div class="trip-meta">
+        <div class="meta-row">
+          <span class="meta-label">日期</span>
+          <span>4/29 – 5/17</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">天數</span>
+          <span>19 天</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">路線</span>
+          <div class="route-chips">
+            <span class="chip">🇹🇼 台北</span>
+            <span class="chip">→</span>
+            <span class="chip">🇸🇬 新加坡</span>
+            <span class="chip">→</span>
+            <span class="chip">🇦🇺 墨爾本</span>
+            <span class="chip">→</span>
+            <span class="chip">🇳🇿 紐西蘭</span>
+          </div>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">亮點</span>
+          <span class="tag oceania-tag">皇后鎮 9 晚</span>
+          <span class="tag oceania-tag">米佛峽灣</span>
         </div>
       </div>
-      <div class="tl-row city-sin tl-flight">
-        <div class="tl-day">D03</div>
-        <div class="tl-date">5/01 五</div>
-        <div class="tl-content">
-          <span class="tl-flag">🌙</span>
-          <div class="tl-text">白天遊新加坡 → JQ008 21:00 出發，飛機上過夜</div>
-        </div>
-      </div>
+      <div class="trip-link">查看行程 →</div>
+    </a>
 
-      <div class="tl-group-label">🇦🇺 澳洲 Melbourne</div>
-      <div class="tl-row city-mel tl-flight">
-        <div class="tl-day">D04</div>
-        <div class="tl-date">5/02 六</div>
-        <div class="tl-content">
-          <span class="tl-flag">✈</span>
-          <div class="tl-text">06:15 抵達墨爾本 T2，入住飯店</div>
-        </div>
-      </div>
-      <div class="tl-row city-mel tl-todo">
-        <div class="tl-day">D05</div>
-        <div class="tl-date">5/03 日</div>
-        <div class="tl-content">
-          <span class="tl-flag">🇦🇺</span>
-          <div class="tl-text">墨爾本自由行</div>
-        </div>
-      </div>
-      <div class="tl-row city-mel tl-flight">
-        <div class="tl-day">D06</div>
-        <div class="tl-date">5/04 一</div>
-        <div class="tl-content">
-          <span class="tl-flag">🛫</span>
-          <div class="tl-text">JQ171 11:05 出發 → 16:25 抵達基督城 I 廳，入住</div>
-        </div>
-      </div>
-
-      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 基督城 Christchurch</div>
-      <div class="tl-row city-chc tl-todo">
-        <div class="tl-day">D07</div>
-        <div class="tl-date">5/05 二</div>
-        <div class="tl-content">
-          <span class="tl-flag">🇳🇿</span>
-          <div class="tl-text">基督城自由行</div>
-        </div>
-      </div>
-      <div class="tl-row city-chc tl-todo">
-        <div class="tl-day">D08</div>
-        <div class="tl-date">5/06 三</div>
-        <div class="tl-content">
-          <span class="tl-flag">🇳🇿</span>
-          <div class="tl-text">基督城自由行</div>
-        </div>
-      </div>
-      <div class="tl-row city-chc">
-        <div class="tl-day">D09</div>
-        <div class="tl-date">5/07 四</div>
-        <div class="tl-content">
-          <span class="tl-flag">🚗</span>
-          <div class="tl-text">基督城 → 皇后鎮移動（自駕 / 巴士，待確認）</div>
-        </div>
-      </div>
-
-      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 皇后鎮 Queenstown</div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D10</div>
-        <div class="tl-date">5/08 五</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮自由行</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D11</div>
-        <div class="tl-date">5/09 六</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮自由行</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D12</div>
-        <div class="tl-date">5/10 日</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮周邊（米佛峽灣 / 瓦納卡 待規劃）</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D13</div>
-        <div class="tl-date">5/11 一</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮周邊</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D14</div>
-        <div class="tl-date">5/12 二</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮自由行</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D15</div>
-        <div class="tl-date">5/13 三</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮自由行</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D16</div>
-        <div class="tl-date">5/14 四</div>
-        <div class="tl-content"><span class="tl-flag">🏔</span><div class="tl-text">皇后鎮自由行</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-warn">
-        <div class="tl-day">D17</div>
-        <div class="tl-date">5/15 五</div>
-        <div class="tl-content">
-          <span class="tl-flag">🧳</span>
-          <div class="tl-text">最後一晚，整理行李 — 隔天 10:50 出發，建議 09:00 前到機場</div>
-        </div>
-      </div>
-      <div class="tl-row city-fly tl-flight">
-        <div class="tl-day">D18</div>
-        <div class="tl-date">5/16 六</div>
-        <div class="tl-content">
-          <span class="tl-flag">🛫</span>
-          <div class="tl-text">JQ292 10:50 ZQN → AKL 12:40 &nbsp;｜&nbsp; 奧克蘭下午逛街 &nbsp;｜&nbsp; CI054 19:30 AKL → TPE（飛機上過夜）</div>
-        </div>
-      </div>
-      <div class="tl-row city-tw">
-        <div class="tl-day">D19</div>
-        <div class="tl-date">5/17 日</div>
-        <div class="tl-content">
-          <span class="tl-flag">🏠</span>
-          <div class="tl-text">05:40 抵達桃園，回家</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── ACCOMMODATION ── -->
-  <section id="accommodation">
-    <div class="section-title">🏨 住宿 Accommodation</div>
-    <div class="accom-grid">
-      <div class="accom-card" style="border-top: 3px solid var(--sin)">
-        <div class="accom-card-header">
-          <span class="accom-city">🇸🇬 新加坡</span>
-          <span class="accom-nights">2 晚</span>
-        </div>
-        <div class="accom-dates">4/29 – 5/01</div>
-        <span class="accom-status status-todo">未訂</span>
-      </div>
-      <div class="accom-card" style="border-top: 3px solid var(--mel)">
-        <div class="accom-card-header">
-          <span class="accom-city">🇦🇺 墨爾本</span>
-          <span class="accom-nights">2 晚</span>
-        </div>
-        <div class="accom-dates">5/02 – 5/04</div>
-        <span class="accom-status status-todo">未訂</span>
-      </div>
-      <div class="accom-card" style="border-top: 3px solid var(--chc)">
-        <div class="accom-card-header">
-          <span class="accom-city">🇳🇿 基督城</span>
-          <span class="accom-nights">3 晚</span>
-        </div>
-        <div class="accom-dates">5/04 – 5/07</div>
-        <span class="accom-status status-todo">未訂</span>
-      </div>
-      <div class="accom-card" style="border-top: 3px solid var(--qzn)">
-        <div class="accom-card-header">
-          <span class="accom-city">🇳🇿 皇后鎮</span>
-          <span class="accom-nights">9 晚</span>
-        </div>
-        <div class="accom-dates">5/07 – 5/16</div>
-        <span class="accom-status status-todo">未訂 — 優先處理</span>
-      </div>
-    </div>
-    <p style="font-size:0.82rem; color:var(--muted); margin-top:12px">皇后鎮為旺季，建議盡早預訂。基督城→皇后鎮交通方式確認後，住宿分配可能調整。</p>
-  </section>
-
-  <!-- ── BUDGET ── -->
-  <section id="budget">
-    <div class="section-title">💰 預算 Budget</div>
-    <div class="budget-grid">
-      <div class="budget-card" style="grid-column: 1 / -1">
-        <h3>機票費用（已確認）</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>航段</th><th>付款者</th><th>金額（NTD）</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>TPE → SIN（酷航 TR867）</td><td>佩璇</td><td>9,328</td></tr>
-              <tr><td>SIN → MEL（捷星 JQ008）</td><td>佩璇</td><td>21,156</td></tr>
-              <tr><td>MEL → CHC（捷星 JQ171）</td><td>佩璇</td><td>15,694</td></tr>
-              <tr><td>ZQN → AKL → TPE（捷星 + 中華）</td><td>子擎</td><td>33,864</td></tr>
-              <tr class="total-row"><td colspan="2">雙人機票合計</td><td>80,042</td></tr>
-              <tr><td colspan="2" class="muted-cell">每人平均</td><td class="muted-cell">~40,021</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="budget-card">
-        <h3>住宿（14 晚）</h3>
-        <div class="budget-total todo-cell">待估算</div>
-        <div class="budget-sub">SIN 2 + MEL 2 + CHC 3 + ZQN 9</div>
-      </div>
-      <div class="budget-card">
-        <h3>餐飲</h3>
-        <div class="budget-total todo-cell">待估算</div>
-        <div class="budget-sub">各城市餐廳 / 超市</div>
-      </div>
-      <div class="budget-card">
-        <h3>當地交通</h3>
-        <div class="budget-total todo-cell">待估算</div>
-        <div class="budget-sub">租車 / 大眾運輸</div>
-      </div>
-      <div class="budget-card">
-        <h3>活動 / 票券</h3>
-        <div class="budget-total todo-cell">待估算</div>
-        <div class="budget-sub">米佛峽灣、高空跳傘等</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CHECKLIST ── -->
-  <section id="checklist">
-    <div class="section-title">🎒 行前準備清單 Checklist</div>
-    <div class="checklist-groups">
-
-      <div class="checklist-group">
-        <h3>護照 / 文件</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>護照有效期確認（6 個月以上）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>護照影本備份（雲端 + 紙本）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>緊急聯絡人資訊</span></div>
-      </div>
-
-      <div class="checklist-group">
-        <h3>機票 / 簽證</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>確認所有電子機票已收到</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>澳洲 ETA 申請</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>紐西蘭 NZeTA 申請</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>新加坡免簽確認（台灣護照 30 天）</span></div>
-      </div>
-
-      <div class="checklist-group">
-        <h3>行李</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>確認各段行李限重</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>行李秤準備</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>行李鎖（TSA 認可）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>隨身液體 100ml 規則</span></div>
-      </div>
-
-      <div class="checklist-group">
-        <h3>旅遊保險</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>購買旅遊平安險</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>確認醫療 / 取消 / 行李保障</span></div>
-      </div>
-
-      <div class="checklist-group">
-        <h3>金融 / 通訊</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>新加坡 SIM / eSIM</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>澳洲 SIM / eSIM</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>紐西蘭 SIM / eSIM</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>準備 AUD / NZD / SGD 零錢</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>通知銀行出國 / 確認手續費</span></div>
-      </div>
-
-      <div class="checklist-group">
-        <h3>其他</h3>
-        <div class="checklist-item"><div class="check-box"></div><span>電源轉接頭（G 型 / I 型）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>蜜月特殊體驗 / 餐廳預訂</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>國際駕照（如自駕）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>確認基督城→皇后鎮交通</span></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── NOTES ── -->
-  <section id="notes">
-    <div class="section-title">⚠ 重要備註 Important Notes</div>
-
-    <div class="callout">
-      <strong>行李注意：去程較緊，回程非常寬裕</strong>
-      TPE→SIN、SIN→MEL 各段雙人只有 20kg，酷航 / 捷星超重費用高。
-      回程中華航空 CI054 每人可帶 <strong>2×23kg 共 4 件</strong>，可在紐西蘭放心採購。
-    </div>
-
-    <div class="table-wrap" style="margin-bottom:16px">
-      <table>
-        <thead>
-          <tr><th>航段</th><th>託運額度</th><th>注意</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>TPE → SIN（TR867）</td><td class="lug-warn">雙人共 20kg</td><td class="muted-cell">酷航低成本，超重費貴</td></tr>
-          <tr><td>SIN → MEL（JQ008）</td><td class="lug-warn">雙人共 20kg</td><td class="muted-cell">捷星低成本，注意重量</td></tr>
-          <tr><td>MEL → CHC（JQ171）</td><td class="lug-ok">雙人共 30kg</td><td class="muted-cell">比去程多 10kg</td></tr>
-          <tr><td>ZQN → AKL（JQ292）</td><td class="lug-ok">每人 30kg</td><td class="muted-cell">—</td></tr>
-          <tr><td>AKL → TPE（CI054）</td><td class="lug-great">每人 2×23kg（共 4 件）</td><td class="muted-cell">行李直掛，BNE 無需重辦</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout callout-info">
-      <strong>回程轉機流程（5/16）</strong>
-      ① 10:50 ZQN 出發 → 12:40 抵達 AKL D 廳<br>
-      ② D 廳移至 I 廳（確認是否需要過海關入境或直接 transit）<br>
-      ③ 下午在奧克蘭逛街 / 休息<br>
-      ④ 19:30 CI054 出發 → 途經布里斯本停留 ~90 分 → 05:40+1 抵達桃園<br>
-      ⑤ 行李直掛桃園，布里斯本停留無需重新辦理
-    </div>
-
-    <div class="callout">
-      <strong>5/16 皇后鎮出發提醒</strong>
-      JQ292 10:50 起飛，建議 <strong>09:00 前</strong> 到達機場（皇后鎮機場小、蜜月旺季人多）。前一晚務必打包完畢。
-    </div>
-
-  </section>
-
+  </div>
 </div>
 
 <footer>
-  <span>oceania-honeymoon &nbsp;·&nbsp; __VERSION__</span>
-  <span>2026</span>
+  Jerry &amp; Hsuan &nbsp;·&nbsp; __VERSION__ &nbsp;·&nbsp; 2026
 </footer>
 
 </body>

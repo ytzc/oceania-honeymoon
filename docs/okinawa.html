@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>沖繩旅遊 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #0d9488;
+      --accent-light: #f0fdfb;
+      --accent-border: #99f6e4;
+      --bg: #f7f6f3;
+      --surface: #fff;
+      --border: #e4e2dc;
+      --text: #1a1a1a;
+      --muted: #888;
+      --warn-bg: #fff8ed;
+      --warn-border: #f0b429;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(247,246,243,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      padding: 0 20px;
+    }
+    nav .nav-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-back {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 12px 10px 12px 0;
+      border-right: 1px solid var(--border);
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .nav-back:hover { color: var(--text); }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    nav ul::-webkit-scrollbar { display: none; }
+    nav a {
+      display: block;
+      padding: 12px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+    }
+    nav a:hover { color: var(--text); border-bottom-color: var(--text); }
+
+    /* ── LAYOUT ── */
+    .page { max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }
+
+    /* ── HEADER ── */
+    header { padding: 44px 20px 32px; max-width: 860px; margin: 0 auto; }
+    .header-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+    .badge {
+      display: inline-block;
+      background: #eeecea;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 2px 9px;
+      font-size: 0.75rem;
+      font-family: monospace;
+      color: var(--muted);
+    }
+    .date-range { font-size: 0.85rem; color: var(--muted); }
+    h1 { font-size: 2rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 16px; }
+    h1 span { color: var(--muted); font-weight: 400; }
+
+    /* ── ROUTE ── */
+    .route {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+      padding: 12px 16px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .route-node { font-size: 0.88rem; font-weight: 600; }
+    .route-arrow { color: #ccc; }
+
+    /* ── SECTION ── */
+    section { margin-top: 48px; }
+    .section-title {
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--muted);
+      border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 20px;
+    }
+
+    /* ── TABLE ── */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th {
+      text-align: left; padding: 9px 12px; background: #f2f1ee; color: #555;
+      font-weight: 600; font-size: 0.8rem; border-bottom: 2px solid var(--border); white-space: nowrap;
+    }
+    td { padding: 9px 12px; border-bottom: 1px solid #eeecea; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #faf9f6; }
+    .total-row td { font-weight: 700; background: #f5f4f0; }
+    .muted-cell { color: var(--muted); font-size: 0.82rem; }
+    .todo-cell { color: #bbb; font-style: italic; }
+    .done-cell { color: var(--accent); font-weight: 600; }
+
+    /* ── TIMELINE ── */
+    .day-block { margin-bottom: 28px; }
+    .day-header {
+      display: flex; align-items: baseline; gap: 12px;
+      padding: 10px 16px; background: var(--accent); color: #fff;
+      border-radius: 10px 10px 0 0; font-size: 0.9rem; font-weight: 700;
+    }
+    .day-date { font-family: monospace; font-size: 0.8rem; opacity: 0.8; font-weight: 400; }
+    .day-theme { font-size: 0.8rem; opacity: 0.85; font-weight: 400; margin-left: auto; }
+    .tl-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--surface); border: 1px solid var(--border); border-top: none; border-radius: 0 0 10px 10px; overflow: hidden; }
+    .tl-table td { padding: 9px 14px; border-bottom: 1px solid #eeecea; vertical-align: middle; }
+    .tl-table tr:last-child td { border-bottom: none; }
+    .tl-time { width: 72px; color: var(--muted); font-family: monospace; font-size: 0.82rem; white-space: nowrap; }
+    .tl-icon { width: 28px; font-size: 1rem; text-align: center; }
+
+    /* ── BUDGET GRID ── */
+    .budget-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 540px) { .budget-grid { grid-template-columns: 1fr; } }
+    .budget-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .budget-card h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 8px; }
+    .budget-amount { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; }
+    .budget-sub { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
+    .status-paid { color: var(--accent); font-size: 0.8rem; margin-top: 6px; }
+
+    /* ── CALLOUT ── */
+    .callout {
+      background: var(--warn-bg); border: 1px solid var(--warn-border);
+      border-left: 4px solid var(--warn-border); border-radius: 8px;
+      padding: 12px 16px; font-size: 0.88rem; margin-bottom: 14px;
+    }
+    .callout strong { display: block; margin-bottom: 3px; }
+    .callout-info { background: var(--accent-light); border-color: var(--accent-border); border-left-color: var(--accent); }
+
+    /* ── CHECKLIST ── */
+    .checklist { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .checklist-item { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 8px; font-size: 0.87rem; }
+    .checklist-item:last-child { margin-bottom: 0; }
+    .check-box { flex-shrink: 0; width: 15px; height: 15px; border: 1.5px solid #ccc; border-radius: 3px; margin-top: 2px; }
+
+    /* ── FOOTER ── */
+    footer { max-width: 860px; margin: 60px auto 0; padding: 20px 20px 40px; font-size: 0.78rem; color: #bbb; display: flex; justify-content: space-between; border-top: 1px solid var(--border); }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.6rem; }
+      .day-theme { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back">← 首頁</a>
+    <ul>
+      <li><a href="#flights">✈ 機票</a></li>
+      <li><a href="#timeline">🗓 行程</a></li>
+      <li><a href="#accommodation">🏨 住宿</a></li>
+      <li><a href="#budget">💰 預算</a></li>
+      <li><a href="#todo">📋 待辦</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="header-meta">
+    <span class="badge">__VERSION__</span>
+    <span class="date-range">2026 / 04 / 23 → 04 / 27 &nbsp;·&nbsp; 5 天 4 夜</span>
+  </div>
+  <h1>沖繩旅遊 <span>2026</span></h1>
+  <div class="route">
+    <span class="route-node">🇹🇼 台北</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇯🇵 那霸</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">南部海景</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">古宇利島（北部）</span>
+    <span class="route-arrow">→</span>
+    <span class="route-node">🇹🇼 台北</span>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- ── FLIGHTS ── -->
+  <section id="flights">
+    <div class="section-title">✈ 機票資訊</div>
+    <div class="callout callout-info">
+      <strong>機票費用（雙人合計）</strong>
+      子擎 + 佩璇 共 <strong>$16,463</strong> — 子擎媽媽訂票。
+      ✅ 已於 2026/02/22 轉帳給子擎媽媽。
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>內容</th></tr></thead>
+        <tbody>
+          <tr><td>出發</td><td>台北 → 那霸</td></tr>
+          <tr><td>回程</td><td>那霸 → 台北（4/27 10:10 起飛）</td></tr>
+          <tr><td>費用</td><td><strong>$16,463</strong>（雙人）</td></tr>
+          <tr><td>訂票者</td><td>子擎媽媽</td></tr>
+          <tr><td>付款狀態</td><td class="done-cell">✅ 已轉帳（2/22）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── TIMELINE ── -->
+  <section id="timeline">
+    <div class="section-title">🗓 行程時間軸</div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <span>D01 &nbsp; 抵達那霸</span>
+        <span class="day-date">4/23 週三</span>
+        <span class="day-theme">🏙 那霸市區</span>
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">15:55</td><td class="tl-icon">✈</td><td>抵達那霸機場</td></tr>
+        <tr><td class="tl-time">17:00</td><td class="tl-icon">🏨</td><td>飯店 Check-in — 那霸國際通大和 ROYNET 飯店</td></tr>
+        <tr><td class="tl-time">18:00</td><td class="tl-icon">🚗</td><td>牧志租車取車（MX-5）</td></tr>
+        <tr><td class="tl-time">19:00</td><td class="tl-icon">🛍</td><td>SAN-A PARCO CITY（購物、美食）</td></tr>
+        <tr><td class="tl-time">22:00</td><td class="tl-icon">🌙</td><td>國際通夜間採買</td></tr>
+      </table>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <span>D02 &nbsp; 南部海景</span>
+        <span class="day-date">4/24 週四</span>
+        <span class="day-theme">🌊 南部 → 古宇利島</span>
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">09:00</td><td class="tl-icon">☕</td><td>Gangala 之谷 Cave Café</td></tr>
+        <tr><td class="tl-time">10:30</td><td class="tl-icon">🍵</td><td>浜邊的茶屋</td></tr>
+        <tr><td class="tl-time">12:00</td><td class="tl-icon">🏔</td><td>知念岬公園</td></tr>
+        <tr><td class="tl-time">12:30</td><td class="tl-icon">🌉</td><td>NIRAIKANAI 大橋</td></tr>
+        <tr><td class="tl-time">13:00</td><td class="tl-icon">🛒</td><td>沖繩 Costco</td></tr>
+        <tr><td class="tl-time">17:00</td><td class="tl-icon">🐟</td><td>牧志公設市場</td></tr>
+        <tr><td class="tl-time">18:00</td><td class="tl-icon">🚗</td><td>換車 MX-5 → ROOMY</td></tr>
+        <tr><td class="tl-time">18:30</td><td class="tl-icon">🎡</td><td>美國村</td></tr>
+        <tr><td class="tl-time">20:30</td><td class="tl-icon">🏨</td><td>移動至古宇利島住宿</td></tr>
+      </table>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <span>D03 &nbsp; 北部自然</span>
+        <span class="day-date">4/25 週五</span>
+        <span class="day-theme">🐠 古宇利島 · 美麗海</span>
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">09:45</td><td class="tl-icon">🗼</td><td>古宇利海洋塔</td></tr>
+        <tr><td class="tl-time">11:00</td><td class="tl-icon">🍤</td><td>KOURI SHRIMP</td></tr>
+        <tr><td class="tl-time">12:30</td><td class="tl-icon">🍽</td><td>L LOTA Restaurant</td></tr>
+        <tr><td class="tl-time">14:00</td><td class="tl-icon">🐋</td><td>美麗海水族館</td></tr>
+        <tr><td class="tl-time">17:30</td><td class="tl-icon">🌳</td><td>備瀨福木林道</td></tr>
+      </table>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <span>D04 &nbsp; 浮潛 ＋ 文化</span>
+        <span class="day-date">4/26 週六</span>
+        <span class="day-theme">🤿 青之洞窟 · 首里城</span>
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">上午</td><td class="tl-icon">🤿</td><td>青之洞窟浮潛</td></tr>
+        <tr><td class="tl-time">下午</td><td class="tl-icon">🏯</td><td>首里城、波上宮</td></tr>
+        <tr><td class="tl-time">晚上</td><td class="tl-icon">🛍</td><td>國際通購物</td></tr>
+      </table>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <span>D05 &nbsp; 回程</span>
+        <span class="day-date">4/27 週日</span>
+        <span class="day-theme">✈ 飛回台灣</span>
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">08:00</td><td class="tl-icon">🧳</td><td>機場集合</td></tr>
+        <tr><td class="tl-time">10:10</td><td class="tl-icon">✈</td><td>起飛回台</td></tr>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- ── ACCOMMODATION ── -->
+  <section id="accommodation">
+    <div class="section-title">🏨 住宿</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>日期</th><th>地點</th><th>住宿</th><th>狀態</th></tr></thead>
+        <tbody>
+          <tr><td>4/23</td><td>那霸</td><td>那霸國際通大和 ROYNET 飯店</td><td class="done-cell">✅ 已訂</td></tr>
+          <tr><td>4/24</td><td>古宇利島</td><td>古宇利島住宿</td><td class="todo-cell">待確認</td></tr>
+          <tr><td>4/25</td><td>古宇利島</td><td>古宇利島住宿</td><td class="todo-cell">待確認</td></tr>
+          <tr><td>4/26</td><td>TODO</td><td>—</td><td class="todo-cell">未訂</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── BUDGET ── -->
+  <section id="budget">
+    <div class="section-title">💰 預算</div>
+    <div class="budget-grid">
+      <div class="budget-card" style="border-top: 3px solid var(--accent)">
+        <h3>機票（雙人）</h3>
+        <div class="budget-amount">$16,463</div>
+        <div class="budget-sub">子擎媽媽訂</div>
+        <div class="status-paid">✅ 已轉帳（2/22）</div>
+      </div>
+      <div class="budget-card">
+        <h3>住宿</h3>
+        <div class="budget-amount todo-cell">待確認</div>
+        <div class="budget-sub">4 晚</div>
+      </div>
+      <div class="budget-card">
+        <h3>租車</h3>
+        <div class="budget-amount todo-cell">待確認</div>
+        <div class="budget-sub">牧志租車（MX-5 + ROOMY）</div>
+      </div>
+      <div class="budget-card">
+        <h3>餐飲 ＋ 活動</h3>
+        <div class="budget-amount todo-cell">待確認</div>
+        <div class="budget-sub">浮潛、景點、餐廳</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TODO ── -->
+  <section id="todo">
+    <div class="section-title">📋 待確認事項</div>
+    <div class="checklist">
+      <div class="checklist-item"><div class="check-box"></div><span>4/26 住宿確認（回那霸 or 留北部）</span></div>
+      <div class="checklist-item"><div class="check-box"></div><span>青之洞窟浮潛預約</span></div>
+      <div class="checklist-item"><div class="check-box"></div><span>牧志租車確認（ROOMY 換車流程）</span></div>
+      <div class="checklist-item"><div class="check-box"></div><span>補充回程航班號 / 抵台時間</span></div>
+      <div class="checklist-item"><div class="check-box"></div><span>各景點開放時間確認</span></div>
+      <div class="checklist-item"><div class="check-box"></div><span>日幣兌換</span></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span>沖繩旅遊 2026 &nbsp;·&nbsp; __VERSION__</span>
+  <a href="index.html" style="color:#ccc; text-decoration:none">← 首頁</a>
+</footer>
+
+</body>
+</html>
