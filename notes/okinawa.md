@@ -170,7 +170,8 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 | 項目 | 內容 |
 |------|------|
-| 預訂編號 | D9ZBS0HJ |
+| 訂單編號 | D9ZBS0HJ |
+| 預訂編號 | 6G3J6RST |
 | 行程 | 【Perfect for International Guests!】含多語音導覽 |
 | 日期時間 | 2026/04/24 10:00 |
 | 人數 | 大人 × 2 |
@@ -178,7 +179,16 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 費用 | JP¥7,000（實付台幣 **$1,417**）|
 | 付款 | ✅ 子擎信用卡（卡號末碼 0950，有效期 06/2028），3/4 請款 |
 | 帳單顯示 | NUTMEGLABS JAPAN |
-| 聯絡 | confirmation@gangala.com / +81-98-948-4192 |
+| 聯絡 | +81-98-948-4192 &nbsp;/&nbsp; confirmation@gangala.com |
+| 地圖 | https://maps.app.goo.gl/ztxncYt6GwUu1UNh7 |
+
+**取消政策：**
+
+| 最後期限 | 取消費用 |
+|--------|--------|
+| 前一天 17:30 以前 | 0% |
+| 出發 2 小時前以前 | 50% |
+| 出發 2 小時前以後 | 100% |
 
 ---
 
@@ -188,6 +198,8 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 | 時間 | 內容 |
 |------|------|
+| 11:00 | 抵達桃園機場（第一航廈）|
+| 13:30 | 起飛 FD230（泰國亞洲航空）TPE → OKA |
 | 15:55 | 抵達那霸機場 |
 | 17:00 | 飯店 Check-in（那霸國際通大和 ROYNET）|
 | 18:00 | 牧志租車（MX-5）|
@@ -206,7 +218,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 12:30 | NIRAIKANAI 大橋 |
 | 13:00 | 沖繩 Costco |
 | 17:00 | 牧志公設市場 |
-| 18:00 | 換車（MX-5 → ROOMY）|
+| 18:30 | 換車（MX-5 → ROOMY）|
 | 18:30 | 美國村 |
 | 20:30 | 移動至古宇利島住宿 |
 
@@ -231,6 +243,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 上午 | 青之洞窟浮潛 |
 | 下午 | 首里城、波上宮 |
 | 晚上 | 國際通購物 |
+| 18:30 | 還車 ROOMY（Dream Rental Car 牧志站東口）+ 歸還前加滿油 |
 
 ---
 
@@ -269,18 +282,16 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 2/23 | 子擎 | Dream Rental Car | JP¥23,600（$4,808）| 刷卡 | ROOMY 租車費，計 3 月帳單 | ✅ 已付款 |
 | 3/1 | 佩璇 | 子擎 | $7,101 | LINE Pay | 交通費：機票 $4,000 ＋ 租車 $3,101（佩璇份額）| ✅ 已確認 |
 | 3/31 | 子擎 | 擎媽（富邦帳號）| $4,873 | 銀行轉帳 | 那霸住宿費 4/23 $2,555 ＋ 4/26 $2,318（ROYNET 兩晚）| ✅ 已轉帳 |
+| TBD | 佩璇 | 子擎 | $2,436 | TBD | ROYNET 兩晚住宿分攤（$4,873 / 2）| ⏳ 待付款 |
 | 入住時 | 子擎姊姊 | Coldio Smart Resort | ~$16,000 | 現場支付 | 古宇利島住宿 2晚，子擎姊姊請客（JP¥80,340 全額）| ⏳ 待付款 |
 
 ---
 
 ## 🎒 待確認事項
 
-- [x] 古宇利島住宿（Coldio Smart Resort 已訂，4/24–26）
-- [x] 4/23 那霸 ROYNET 飯店（全新裝潢標準雙人房，$2,555）
-- [x] 4/26 那霸 ROYNET 飯店（標準雙人房，$2,318）
-- [x] Dream Rental Car 租車預訂（MX-5 + ROOMY）
-- [x] Valley of Gangala 已預訂並付款（$1,417，NUTMEGLABS JAPAN）
-- [ ] Coldio 現場帶現金備用（子擎姊姊請客，預計 ~$16,000）
+- [ ] 佩璇補繳 ROYNET 兩晚住宿費 **$2,436** 給子擎
+- [ ] 擎姊給子擎 **$16,000** 古宇利島住宿費用
+- [ ] 子擎確認 Coldio Smart Resort 能否先預付（現場付款改線上）
 - [ ] 青之洞窟浮潛預約
-- [ ] 回程航班資訊補充（航班號 / 抵台時間）
-- [ ] 各景點開放時間確認
+- [ ] 佩璇想去的居酒屋（未確認）
+- [ ] 日幣兌換
