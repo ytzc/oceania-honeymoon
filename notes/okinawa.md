@@ -203,8 +203,10 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 15:55 | 抵達那霸機場 |
 | 17:00 | 飯店 Check-in（那霸國際通大和 ROYNET）|
 | 18:00 | 牧志租車（MX-5）|
-| 19:00 | SAN-A PARCO CITY（購物、美食）|
+| 19:00 | 🍖 晚餐 — 叙叙苑 沖繩浦添 PARCO CITY 店（3F）✅ 已預約 |
 | 22:00 | 國際通夜間採買 |
+
+> 🥩 **叙叙苑套餐參考：** ¥2,900 / **¥3,900**（推薦：牛五花・生鮮牛脊肉・鮮蝦）/ ¥6,500（上選牛五花・精選和牛脊肉・鹽醬牛舌，較肥）
 
 ---
 
@@ -213,14 +215,16 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 時間 | 內容 |
 |------|------|
 | 10:00 | Gangala 之谷（Valley of Gangala）多語音導覽 ✅ 已預訂 |
-| 11:30 | 浜邊的茶屋 |
+| 11:30 | 浜邊の茶屋 |
 | 12:00 | 知念岬公園 |
 | 12:30 | NIRAIKANAI 大橋 |
 | 13:00 | 沖繩 Costco |
-| 17:00 | 牧志公設市場 |
-| 18:30 | 換車（MX-5 → ROOMY）|
-| 18:30 | 美國村 |
-| 20:30 | 移動至古宇利島住宿 |
+| 16:00 | 🏎 Original Street Kart 沖繩街頭 Go-Kart 體驗（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
+| 18:30 | 換車（MX-5 → ROOMY）— Dream Rental Car 牧志站東口 |
+| 19:00 | 🍶 晚餐 — 北上途中找居酒屋（待確認） |
+| 20:30 | 移動至古宇利島住宿（Coldio Smart Resort 預計 19:00 入住） |
+
+> 🍱 **午餐備案：** [Tunaya Shokudo](https://maps.app.goo.gl/GyyUpsHoqSjcLeTk8)
 
 ---
 
@@ -233,6 +237,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 12:30 | L LOTA Restaurant |
 | 14:00 | 美麗海水族館 |
 | 17:30 | 備瀨福木林道 |
+| 晚餐 | 🍱 與子擎家人聚餐 — 擎媽請客（地點待確認）|
 
 ---
 
@@ -240,10 +245,15 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 | 時間 | 內容 |
 |------|------|
-| 上午 | 青之洞窟浮潛 |
-| 下午 | 首里城、波上宮 |
+| 上午 | 🤿 青之洞窟浮潛（待預約）|
+| 11:00 | 🏝 瀨長島 Umikaji Terrace + 三溫暖 |
+| 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
+| 14:00–14:40 | ⛩ 波上宮 |
+| 15:10–16:30 | 🏯 首里城 |
+| 17:00–18:00 | 🐟 牧志公設市場（晚餐）|
+| 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
 | 晚上 | 國際通購物 |
-| 18:30 | 還車 ROOMY（Dream Rental Car 牧志站東口）+ 歸還前加滿油 |
+| 住宿 | 沖繩縣廳前大和 ROYNET 飯店（搭輕軌至縣廳前站）|
 
 ---
 
@@ -292,6 +302,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 - [ ] 佩璇補繳 ROYNET 兩晚住宿費 **$2,436** 給子擎
 - [ ] 擎姊給子擎 **$16,000** 古宇利島住宿費用
 - [ ] 子擎確認 Coldio Smart Resort 能否先預付（現場付款改線上）
-- [ ] 青之洞窟浮潛預約
-- [ ] 佩璇想去的居酒屋（未確認）
+- [ ] 青之洞窟浮潛預約（D04 上午）
+- [ ] D02 晚餐居酒屋確認（從牧志站北上古宇利島途中，待找）
+- [ ] D03 晚餐聚餐地點確認（擎媽請客）
 - [ ] 日幣兌換
