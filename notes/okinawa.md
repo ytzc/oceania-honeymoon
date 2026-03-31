@@ -220,7 +220,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 12:00 | 知念岬公園 |
 | 12:30 | NIRAIKANAI 大橋 |
 | 13:00 | 沖繩 Costco |
-| 16:00 | 🏎 Original Street Kart 沖繩街頭 Go-Kart 體驗（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
+| 16:00 | 🏎 [Original Street Kart 沖繩街頭 Go-Kart 體驗](https://www.klook.com/zh-TW/activity/2739-street-go-karting-okinawa/)（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
 | 18:30 | 換車（MX-5 → ROOMY）— Dream Rental Car 牧志站東口 |
 | 19:00 | 🍔 晚餐 — [A&W Makiminato](https://maps.app.goo.gl/25aQHYnLjQUYobyJA) |
 | 20:30 | 移動至古宇利島住宿（Coldio Smart Resort 預計抵達）|
@@ -251,8 +251,8 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 11:00 | 🏝 瀨長島 Umikaji Terrace + 三溫暖 |
 | 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
 | 14:00–14:40 | ⛩ 波上宮 |
-| 15:10–16:30 | 🏯 首里城 |
-| 17:00–18:00 | 🐟 牧志公設市場（晚餐）|
+| 15:10–16:30 | 🏯 首里城（下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6)）|
+| 17:00–18:00 | 🐟 牧志公設市場 — 晚餐 [肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)（備案：[Oniku no Isshin](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)，縣廳前近住宿）|
 | 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
 | 晚上 | 國際通購物 |
 | 住宿 | 沖繩縣廳前大和 ROYNET 飯店（搭輕軌至縣廳前站）|
