@@ -205,6 +205,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 18:00 | 牧志租車（MX-5）|
 | 19:00 | 🍖 晚餐 — 叙叙苑 沖繩浦添 PARCO CITY 店（3F）✅ 已預約 |
 | 22:00 | 國際通夜間採買 |
+| 住宿 | 🏨 那霸國際通大和 ROYNET 飯店 |
 
 > 🥩 **叙叙苑套餐參考：** ¥2,900 / **¥3,900**（推薦：牛五花・生鮮牛脊肉・鮮蝦）/ ¥6,500（上選牛五花・精選和牛脊肉・鹽醬牛舌，較肥）
 
@@ -221,8 +222,9 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 13:00 | 沖繩 Costco |
 | 16:00 | 🏎 Original Street Kart 沖繩街頭 Go-Kart 體驗（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
 | 18:30 | 換車（MX-5 → ROOMY）— Dream Rental Car 牧志站東口 |
-| 19:00 | 🍶 晚餐 — 北上途中找居酒屋（待確認） |
-| 20:30 | 移動至古宇利島住宿（Coldio Smart Resort 預計 19:00 入住） |
+| 19:00 | 🍔 晚餐 — [A&W Makiminato](https://maps.app.goo.gl/25aQHYnLjQUYobyJA) |
+| 20:30 | 移動至古宇利島住宿（Coldio Smart Resort 預計抵達）|
+| 住宿 | 🏠 Coldio Smart Resort — 古宇利島 |
 
 > 🍱 **午餐備案：** [Tunaya Shokudo](https://maps.app.goo.gl/GyyUpsHoqSjcLeTk8)
 
@@ -238,14 +240,14 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 14:00 | 美麗海水族館 |
 | 17:30 | 備瀨福木林道 |
 | 晚餐 | 🍱 與子擎家人聚餐 — 擎媽請客（地點待確認）|
+| 住宿 | 🏠 Coldio Smart Resort — 古宇利島 |
 
 ---
 
-### D04 · 4/26（六） — 浮潛 ＋ 文化
+### D04 · 4/26（六） — 文化巡禮
 
 | 時間 | 內容 |
 |------|------|
-| 上午 | 🤿 青之洞窟浮潛（待預約）|
 | 11:00 | 🏝 瀨長島 Umikaji Terrace + 三溫暖 |
 | 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
 | 14:00–14:40 | ⛩ 波上宮 |
@@ -300,7 +302,6 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 ## 🎒 待確認事項
 
 - [ ] 子擎確認 Coldio Smart Resort 能否先預付（現場付款改線上）
-- [ ] 青之洞窟浮潛預約（D04 上午）
-- [ ] D02 晚餐居酒屋確認（從牧志站北上古宇利島途中，待找）
+- [ ] D02 晚餐（A&W Makiminato）路線確認
 - [ ] D03 晚餐聚餐地點確認（擎媽請客）
 - [ ] 日幣兌換
