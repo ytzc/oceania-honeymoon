@@ -216,10 +216,9 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 時間 | 內容 |
 |------|------|
 | 10:00 | Gangala 之谷（Valley of Gangala）多語音導覽 ✅ 已預訂 |
-| 11:30 | 浜邊の茶屋 |
 | 12:00 | 知念岬公園 |
 | 12:30 | NIRAIKANAI 大橋 |
-| 13:00 | 沖繩 Costco |
+| 13:00 | 沖繩 Costco（買東西車上吃，慢慢整理，開去卡丁車）|
 | 16:00 | 🏎 [Original Street Kart 沖繩街頭 Go-Kart 體驗](https://www.klook.com/zh-TW/activity/2739-street-go-karting-okinawa/)（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
 | 18:30 | 換車（MX-5 → ROOMY）— Dream Rental Car 牧志站東口 |
 | 19:00 | 🍔 晚餐 — [A&W Makiminato](https://maps.app.goo.gl/25aQHYnLjQUYobyJA) |
@@ -265,6 +264,34 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 |------|------|
 | 08:00 | 機場集合 |
 | 10:10 | 起飛 |
+
+---
+
+## 👨‍👩‍👧‍👦 家人行程（爸媽 ＋ 姊一家四口）
+
+> 與子擎、佩璇同期出發，各自安排行程，部分時段匯合。
+
+### 4/24（四）&nbsp; 09:00–19:00 — 南部文化
+
+| 時間 | 內容 |
+|------|------|
+| 上午 | 玉泉洞 |
+| 下午 | 美麗海（午餐）|
+| 傍晚 | 超市購物（飯店晚餐）|
+
+### 4/25（五） — 古宇利自由活動
+
+| 時間 | 內容 |
+|------|------|
+| 全天 | 古宇利島自由活動（同住 Coldio Smart Resort）|
+
+### 4/26（六）&nbsp; 10:00–20:00 — 中部觀光
+
+| 時間 | 內容 |
+|------|------|
+| 上午 | 鳳梨園 |
+| 下午 | 兒童王國 |
+| 傍晚 | 美國村 |
 
 ---
 
