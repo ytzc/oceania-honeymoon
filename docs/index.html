@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jerry & Hsuan — 旅行計劃</title>
+  <title>tzc & passion — 2026 旅行計劃</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -17,6 +17,8 @@
       --oceania: #7c5cbf;
     }
 
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
       background: var(--bg);
@@ -27,18 +29,19 @@
     }
 
     .page {
-      max-width: 780px;
+      max-width: 820px;
       margin: 0 auto;
-      padding: 64px 24px 80px;
+      padding: 60px 24px 80px;
       flex: 1;
     }
 
-    header { margin-bottom: 52px; }
+    /* ── HEADER ── */
+    header { margin-bottom: 56px; }
 
     .header-meta {
       font-size: 0.78rem;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       display: flex;
       gap: 10px;
       align-items: center;
@@ -56,17 +59,28 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin-bottom: 8px;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 10px;
     }
 
     .subtitle {
       font-size: 0.95rem;
       color: var(--muted);
-      line-height: 1.6;
+    }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
     }
 
     /* ── TRIP CARDS ── */
@@ -74,53 +88,56 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-    }
-
-    @media (max-width: 540px) {
-      .trips { grid-template-columns: 1fr; }
-      h1 { font-size: 1.5rem; }
+      margin-bottom: 64px;
     }
 
     .trip-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 24px;
       text-decoration: none;
       color: inherit;
       display: flex;
       flex-direction: column;
-      gap: 16px;
       transition: box-shadow 0.15s, transform 0.15s;
       position: relative;
       overflow: hidden;
     }
 
-    .trip-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-    }
-
-    .trip-card.okinawa::before { background: var(--okinawa); }
-    .trip-card.oceania::before { background: var(--oceania); }
-
     .trip-card:hover {
-      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+      transform: translateY(-3px);
     }
 
-    .trip-emoji { font-size: 2rem; line-height: 1; }
+    /* map preview image */
+    .trip-cover {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trip-body {
+      padding: 20px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .trip-top { display: flex; align-items: flex-start; gap: 10px; }
+    .trip-emoji { font-size: 1.6rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
 
     .trip-title {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 700;
       margin-bottom: 2px;
     }
 
     .trip-subtitle {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--muted);
     }
 
@@ -132,24 +149,39 @@
 
     .meta-row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 8px;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
     }
 
     .meta-label {
-      font-size: 0.72rem;
-      font-weight: 600;
+      font-size: 0.7rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--muted);
       width: 36px;
       flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .route-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .chip {
+      font-size: 0.73rem;
+      padding: 2px 7px;
+      border-radius: 20px;
+      background: #f2f1ee;
+      color: #555;
     }
 
     .tag {
       display: inline-block;
-      font-size: 0.75rem;
+      font-size: 0.73rem;
       padding: 2px 8px;
       border-radius: 4px;
       border: 1px solid var(--border);
@@ -162,29 +194,100 @@
 
     .trip-link {
       margin-top: auto;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       font-weight: 600;
       display: flex;
       align-items: center;
       gap: 4px;
+      padding-top: 4px;
     }
 
     .trip-card.okinawa .trip-link { color: var(--okinawa); }
     .trip-card.oceania .trip-link { color: var(--oceania); }
 
-    .route-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
+    /* top accent bar */
+    .trip-card.okinawa { border-top: 3px solid var(--okinawa); }
+    .trip-card.oceania { border-top: 3px solid var(--oceania); }
+
+    /* ── MAP GALLERY ── */
+    .maps-section { margin-bottom: 64px; }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
     }
 
-    .chip {
-      font-size: 0.75rem;
-      padding: 2px 8px;
-      border-radius: 20px;
-      background: #f2f1ee;
-      color: #555;
+    .map-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
     }
+
+    .map-item a {
+      display: block;
+      overflow: hidden;
+    }
+
+    .map-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .map-item a:hover img {
+      transform: scale(1.03);
+    }
+
+    .map-caption {
+      padding: 12px 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .map-caption-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .map-caption-sub {
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox:target { display: flex; }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 24px;
+      color: #fff;
+      font-size: 1.8rem;
+      text-decoration: none;
+      line-height: 1;
+      opacity: 0.7;
+    }
+
+    .lightbox-close:hover { opacity: 1; }
 
     /* ── FOOTER ── */
     footer {
@@ -194,97 +297,160 @@
       padding: 20px;
       border-top: 1px solid var(--border);
     }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 560px) {
+      .trips, .map-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>
 
 <div class="page">
+
   <header>
     <div class="header-meta">
       <span class="badge">__VERSION__</span>
       <span>2026 旅行計劃</span>
     </div>
-    <h1>Jerry & Hsuan</h1>
+    <h1>tzc &amp; passion</h1>
     <p class="subtitle">兩趟旅行，兩種心情。</p>
   </header>
 
+  <!-- ── TRIP CARDS ── -->
+  <div class="section-title">旅程</div>
   <div class="trips">
 
     <a href="okinawa.html" class="trip-card okinawa">
-      <div class="trip-emoji">🌺</div>
-      <div>
-        <div class="trip-title">沖繩旅遊</div>
-        <div class="trip-subtitle">Okinawa Trip 2026</div>
-      </div>
-      <div class="trip-meta">
-        <div class="meta-row">
-          <span class="meta-label">日期</span>
-          <span>4/23 – 4/27</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">天數</span>
-          <span>5 天 4 夜</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">路線</span>
-          <div class="route-chips">
-            <span class="chip">🇹🇼 台北</span>
-            <span class="chip">→</span>
-            <span class="chip">🇯🇵 那霸</span>
-            <span class="chip">→</span>
-            <span class="chip">古宇利島</span>
+      <img class="trip-cover" src="assets/okinawa-map.png" alt="沖繩行程地圖" />
+      <div class="trip-body">
+        <div class="trip-top">
+          <span class="trip-emoji">🌺</span>
+          <div>
+            <div class="trip-title">沖繩旅遊</div>
+            <div class="trip-subtitle">Okinawa Trip 2026</div>
           </div>
         </div>
-        <div class="meta-row">
-          <span class="meta-label">亮點</span>
-          <span class="tag okinawa-tag">美麗海水族館</span>
-          <span class="tag okinawa-tag">青之洞窟</span>
+        <div class="trip-meta">
+          <div class="meta-row">
+            <span class="meta-label">日期</span>
+            <span>4/23 – 4/27</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">天數</span>
+            <span>5 天 4 夜</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">路線</span>
+            <div class="route-chips">
+              <span class="chip">🇹🇼 台北</span>
+              <span class="chip">→</span>
+              <span class="chip">🇯🇵 那霸</span>
+              <span class="chip">→</span>
+              <span class="chip">古宇利島</span>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">亮點</span>
+            <div style="display:flex;gap:4px;flex-wrap:wrap">
+              <span class="tag okinawa-tag">美麗海水族館</span>
+              <span class="tag okinawa-tag">青之洞窟</span>
+            </div>
+          </div>
         </div>
+        <div class="trip-link">查看行程 →</div>
       </div>
-      <div class="trip-link">查看行程 →</div>
     </a>
 
     <a href="oceania.html" class="trip-card oceania">
-      <div class="trip-emoji">💍</div>
-      <div>
-        <div class="trip-title">大洋洲蜜月</div>
-        <div class="trip-subtitle">Oceania Honeymoon 2026</div>
-      </div>
-      <div class="trip-meta">
-        <div class="meta-row">
-          <span class="meta-label">日期</span>
-          <span>4/29 – 5/17</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">天數</span>
-          <span>19 天</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">路線</span>
-          <div class="route-chips">
-            <span class="chip">🇹🇼 台北</span>
-            <span class="chip">→</span>
-            <span class="chip">🇸🇬 新加坡</span>
-            <span class="chip">→</span>
-            <span class="chip">🇦🇺 墨爾本</span>
-            <span class="chip">→</span>
-            <span class="chip">🇳🇿 紐西蘭</span>
+      <img class="trip-cover" src="assets/nz-honeymoon-map.jpg" alt="紐西蘭蜜月行程地圖" />
+      <div class="trip-body">
+        <div class="trip-top">
+          <span class="trip-emoji">💍</span>
+          <div>
+            <div class="trip-title">大洋洲蜜月</div>
+            <div class="trip-subtitle">Oceania Honeymoon 2026</div>
           </div>
         </div>
-        <div class="meta-row">
-          <span class="meta-label">亮點</span>
-          <span class="tag oceania-tag">皇后鎮 9 晚</span>
-          <span class="tag oceania-tag">米佛峽灣</span>
+        <div class="trip-meta">
+          <div class="meta-row">
+            <span class="meta-label">日期</span>
+            <span>4/29 – 5/17</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">天數</span>
+            <span>19 天</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">路線</span>
+            <div class="route-chips">
+              <span class="chip">🇹🇼 台北</span>
+              <span class="chip">→</span>
+              <span class="chip">🇸🇬 新加坡</span>
+              <span class="chip">→</span>
+              <span class="chip">🇦🇺 墨爾本</span>
+              <span class="chip">→</span>
+              <span class="chip">🇳🇿 紐西蘭</span>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">亮點</span>
+            <div style="display:flex;gap:4px;flex-wrap:wrap">
+              <span class="tag oceania-tag">皇后鎮 9 晚</span>
+              <span class="tag oceania-tag">米佛峽灣</span>
+            </div>
+          </div>
         </div>
+        <div class="trip-link">查看行程 →</div>
       </div>
-      <div class="trip-link">查看行程 →</div>
     </a>
 
   </div>
+
+  <!-- ── MAP GALLERY ── -->
+  <div class="maps-section">
+    <div class="section-title">Gemini 行程地圖</div>
+    <div class="map-grid">
+
+      <div class="map-item">
+        <a href="#lightbox-okinawa">
+          <img src="assets/okinawa-map.png" alt="沖繩行程地圖" />
+        </a>
+        <div class="map-caption">
+          <div class="map-caption-title">🌺 沖繩行程地圖</div>
+          <div class="map-caption-sub">Gemini 生成・南部海景 → 古宇利島北部</div>
+        </div>
+      </div>
+
+      <div class="map-item">
+        <a href="#lightbox-nz">
+          <img src="assets/nz-honeymoon-map.jpg" alt="紐西蘭蜜月行程地圖" />
+        </a>
+        <div class="map-caption">
+          <div class="map-caption-title">💍 紐西蘭蜜月地圖</div>
+          <div class="map-caption-sub">Gemini 生成・基督城 → 皇后鎮</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ── LIGHTBOXES ── -->
+<div id="lightbox-okinawa" class="lightbox">
+  <a href="#" class="lightbox-close">✕</a>
+  <img src="assets/okinawa-map.png" alt="沖繩行程地圖" />
+</div>
+
+<div id="lightbox-nz" class="lightbox">
+  <a href="#" class="lightbox-close">✕</a>
+  <img src="assets/nz-honeymoon-map.jpg" alt="紐西蘭蜜月行程地圖" />
 </div>
 
 <footer>
-  Jerry &amp; Hsuan &nbsp;·&nbsp; __VERSION__ &nbsp;·&nbsp; 2026
+  tzc &amp; passion &nbsp;·&nbsp; __VERSION__ &nbsp;·&nbsp; 2026
 </footer>
 
 </body>
