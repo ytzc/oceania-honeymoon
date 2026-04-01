@@ -283,7 +283,8 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
 | 14:00–14:40 | ⛩ 波上宮 |
 | 15:10–16:30 | 🏯 首里城（下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6)）|
-| 17:00–18:00 | 🐟 牧志公設市場 — 晚餐 [肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)<br>備案：[Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)，縣廳前近住宿，壽喜燒／日式火鍋擇一，成人一人一份<br>精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800 |
+| 17:00–18:00 | 🐟 牧志公設市場（逛市場）|
+| 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
 | 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
 | 晚上 | 國際通購物 |
 | 住宿 | 沖繩縣廳前大和 ROYNET 飯店（搭輕軌至縣廳前站）|
