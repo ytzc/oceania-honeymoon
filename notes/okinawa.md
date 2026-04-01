@@ -72,8 +72,8 @@
 | 設施名稱 | Private Condo Kourijima by Coldio Smart Resort |
 | 預約確認號碼 | 202602190000148 |
 | 房型 | 海景公寓套房（1間，8人：6大人＋2兒童）|
-| 到達日期 | 2026/04/24（五）19:00 起 |
-| 退房日期 | 2026/04/26（日）12:00 前 |
+| 到達日期 | 2026/04/24（五）**15:00** 起 |
+| 退房日期 | 2026/04/26（日）**11:00** 前（延遲退房 JP¥5,000 / 60 分鐘）|
 | 方案 | 官方網站有限價・寬敞公寓・共用游泳池・可欣賞古宇利橋景觀 |
 | 預訂方式 | 子擎 官方網站線上預訂 |
 | 網站 / TEL | https://coldioresort.com / 098-923-1420 |
@@ -95,18 +95,21 @@
 
 ### 🔑 入住方式（全自助，非常重要！）
 
-> ⚠️ **這間是無人櫃台＋全自助入住，入住前務必取得 Check-in Code！**
+> ⚠️ **這間是無人櫃台＋全自助入住**
 
 **流程：**
 
 1. **線上填寫入住資料**（出發前完成）  
    👉 [https://connect.minpakuin.jp/register/AAABQyDzN7NLMGT20BE2NlYMgbWO0uK7Rfk](https://connect.minpakuin.jp/register/AAABQyDzN7NLMGT20BE2NlYMgbWO0uK7Rfk)
-2. **取得 Check-in Code**（填完資料後由系統發送）
-3. **到現場用平板輸入 Code** → 拿房間鑰匙
+2. **到現場平板輸入 Check-in Code** → 拿房間鑰匙
 
-> ⏳ **目前狀態：子擎資料已填完，Check-in Code 尚未取得**
+> ✅ **Check-in Code：343709**（4/1 系統已發送）
 
-> 💡 **家人先到可先入住**：只要把 Check-in Code 給他們，他們自行操作平板即可入住。
+![入住代碼](../docs/assets/koruijima_343709.png)
+
+> ⚠️ **護照登記：所有客人（含預訂代表）辦理入住時均需登記護照，請提前準備好。**
+
+> 💡 **家人先到可先入住**：把 Code **343709** 給他們，自行操作平板即可入住。
 
 ---
 
@@ -279,6 +282,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 | 時間 | 內容 |
 |------|------|
+| 11:00前 | 🧳 Coldio Smart Resort Check-out（退房 11:00 前，延遲 JP¥5,000/60min）|
 | 11:00 | 🏝 瀨長島 Umikaji Terrace + 三溫暖 |
 | 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
 | 14:00–14:40 | ⛩ 波上宮 |
@@ -379,7 +383,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 ## 🎒 待確認事項
 
-- [ ] 取得 Coldio Smart Resort **Check-in Code**（子擎資料已填，等系統發送）
+- [x] 取得 Coldio Smart Resort **Check-in Code** — ✅ **343709**（4/1 系統已發送）
 - [ ] D02 晚餐（A&W Makiminato）路線確認
 - [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
 - [ ] D03 晚餐聚餐地點確認（擎媽請客）
