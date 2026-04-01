@@ -106,6 +106,20 @@
 
 > ⏳ **目前狀態：子擎資料已填完，Check-in Code 尚未取得**
 
+> 💡 **家人先到可先入住**：只要把 Check-in Code 給他們，他們自行操作平板即可入住。
+
+---
+
+### 🍳 早餐
+
+- 可現場加購
+- 💰 JP¥3,500 / 成人
+- 👶 每位成人可帶 2 位小孩免費
+
+### 🅿️ 停車
+
+- 每棟最多 2 台車
+
 ---
 
 **取消政策：**
@@ -366,5 +380,6 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 - [ ] 取得 Coldio Smart Resort **Check-in Code**（子擎資料已填，等系統發送）
 - [ ] D02 晚餐（A&W Makiminato）路線確認
+- [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
 - [ ] D03 晚餐聚餐地點確認（擎媽請客）
 - [ ] 日幣兌換
