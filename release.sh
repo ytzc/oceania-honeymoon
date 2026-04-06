@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# release.sh — 版本號 stamp + tag + push
+# 用法：./release.sh v0.18.2
+#
+# 流程：
+#   1. 將 HTML 裡的 __VERSION__ 替換為指定 tag
+#   2. git commit + git tag
+#   3. push main + push tag
+#   4. 還原 __VERSION__ placeholder 並 commit（保持 source 乾淨）
+
+set -e
+
+TAG="$1"
+if [ -z "$TAG" ]; then
+  echo "用法：./release.sh <tag>  例如：./release.sh v0.18.2"
+  exit 1
+fi
+
+TARGETS=(docs/okinawa.html docs/oceania.html docs/index.html)
+
+echo "→ 標記版本 $TAG..."
+for f in "${TARGETS[@]}"; do
+  [ -f "$f" ] && sed -i "s/__VERSION__/$TAG/g" "$f"
+done
+
+echo "→ git add + commit..."
+git add "${TARGETS[@]}" 2>/dev/null || true
+git commit -m "release: $TAG"
+
+echo "→ git tag $TAG..."
+git tag "$TAG"
+
+echo "→ push main + tag..."
+git push origin main
+git push origin "$TAG"
+
+echo "→ 還原 __VERSION__ placeholder..."
+for f in "${TARGETS[@]}"; do
+  [ -f "$f" ] && sed -i "s/$TAG/__VERSION__/g" "$f"
+done
+
+git add "${TARGETS[@]}" 2>/dev/null || true
+git commit -m "chore: restore __VERSION__ placeholder after $TAG"
+git push origin main
+
+echo "✅ 完成：$TAG 已發布，source 已還原 placeholder"
