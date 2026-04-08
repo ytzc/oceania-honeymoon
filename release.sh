@@ -8,7 +8,18 @@
 #   3. push main + push tag
 #   4. 還原 __VERSION__ placeholder 並 commit（保持 source 乾淨）
 
-set -e
+set -eE
+
+# 若 push 失敗仍還原 placeholder
+restore_placeholder() {
+  local tag="$1"
+  echo "→ 還原 __VERSION__ placeholder..."
+  for f in "${TARGETS[@]}"; do
+    [ -f "$f" ] && sed -i "s/$tag/__VERSION__/g" "$f"
+  done
+  git add "${TARGETS[@]}" 2>/dev/null || true
+  git diff --cached --quiet || git commit -m "chore: restore __VERSION__ placeholder after $tag"
+}
 
 TAG="$1"
 if [ -z "$TAG" ]; then
@@ -31,16 +42,12 @@ echo "→ git tag $TAG..."
 git tag "$TAG"
 
 echo "→ push main + tag..."
+trap 'restore_placeholder "$TAG"' ERR
 git push origin main
 git push origin "$TAG"
+trap - ERR
 
-echo "→ 還原 __VERSION__ placeholder..."
-for f in "${TARGETS[@]}"; do
-  [ -f "$f" ] && sed -i "s/$TAG/__VERSION__/g" "$f"
-done
-
-git add "${TARGETS[@]}" 2>/dev/null || true
-git commit -m "chore: restore __VERSION__ placeholder after $TAG"
+restore_placeholder "$TAG"
 git push origin main
 
 echo "✅ 完成：$TAG 已發布，source 已還原 placeholder"
