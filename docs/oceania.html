@@ -14,6 +14,9 @@
       --tkp: #0f8c7a;
       --wana: #c97a2a;
       --qzn: #7c5cbf;
+      --grm: #4a7c59;
+      --frj: #2e6b8a;
+      --dun: #8a5a2e;
       --tw:  #c0392b;
       --bg:  #f7f6f3;
       --surface: #fff;
@@ -272,6 +275,9 @@
     .city-tkp  { border-left: 3px solid var(--tkp)  !important; }
     .city-wana { border-left: 3px solid var(--wana) !important; }
     .city-qzn  { border-left: 3px solid var(--qzn)  !important; }
+    .city-grm  { border-left: 3px solid var(--grm)  !important; }
+    .city-frj  { border-left: 3px solid var(--frj)  !important; }
+    .city-dun  { border-left: 3px solid var(--dun)  !important; }
     .city-tw  { border-left: 3px solid var(--tw)  !important; }
     .city-fly { border-left: 3px solid #ccc        !important; }
 
@@ -431,6 +437,7 @@
   <ul>
     <li><a href="index.html" style="border-right:1px solid #e4e2dc; margin-right:4px; padding-right:14px">← 首頁</a></li>
     <li><a href="#flights">✈ 航班</a></li>
+    <li><a href="#rental">🚗 租車</a></li>
     <li><a href="#timeline">🗓 行程</a></li>
     <li><a href="#accommodation">🏨 住宿</a></li>
     <li><a href="#budget">💰 預算</a></li>
@@ -555,6 +562,42 @@
     </div>
   </section>
 
+  <!-- ── RENTAL CAR ── -->
+  <section id="rental">
+    <div class="section-title">🚗 租車資訊 Rental Car</div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:16px">
+      <div style="background:var(--chc);color:#fff;padding:10px 16px;font-size:0.88rem;font-weight:700;display:flex;justify-content:space-between;align-items:center">
+        <span>🚗 A Rentals &nbsp;·&nbsp; Toyota RAV4 2019 or Similar</span>
+        <span style="opacity:0.9;font-size:0.8rem;font-weight:600">✅ 已付清</span>
+      </div>
+      <div style="padding:14px 16px">
+        <div class="table-wrap" style="margin-bottom:14px">
+          <table>
+            <tbody>
+              <tr><td style="width:120px" class="muted-cell">車型</td><td>Toyota RAV4 2019 or Similar</td></tr>
+              <tr><td class="muted-cell">天數</td><td>12 days</td></tr>
+              <tr><td class="muted-cell">保險</td><td>SUV Premium Insurance <span class="muted-cell">（0 Excess + Roadside Assistance）</span></td></tr>
+              <tr><td class="muted-cell">總價</td><td><strong>NZD 1,593.64</strong> <span class="muted-cell">（含 One-way fee）</span></td></tr>
+              <tr><td class="muted-cell">付款</td><td style="color:var(--chc);font-weight:600">✅ 2026/4/8 子擎 Line Pay 信用卡已付清</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px 14px;font-size:0.87rem">
+            <div style="font-weight:700;margin-bottom:4px">🟢 取車</div>
+            <div>Christchurch Airport</div>
+            <div class="muted-cell">2026/5/4（週一）17:00</div>
+          </div>
+          <div style="background:#fff0f0;border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;font-size:0.87rem">
+            <div style="font-weight:700;margin-bottom:4px">🔴 還車</div>
+            <div>Queenstown Airport</div>
+            <div class="muted-cell">2026/5/16（週六）07:00 <span style="color:#e53e3e;font-weight:600">⚠️ 航班前</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── TIMELINE ── -->
   <section id="timeline">
     <div class="section-title">🗓 行程時間軸 Trip Timeline</div>
@@ -613,91 +656,128 @@
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 基督城 Christchurch</div>
+      <div class="tl-row city-chc tl-flight">
+        <div class="tl-day">D06</div>
+        <div class="tl-date">5/04 一</div>
+        <div class="tl-content">
+          <span class="tl-flag">🛬</span>
+          <div class="tl-text">
+            JQ171 16:25 抵達基督城 I 廳 &nbsp;·&nbsp; <strong>A Rentals 取車 17:00 CHC 機場</strong>
+            <div class="tl-note">入住基督城，晚上探索市區</div>
+          </div>
+        </div>
+      </div>
       <div class="tl-row city-chc">
         <div class="tl-day">D07</div>
         <div class="tl-date">5/05 二</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">基督城取車（A租B還）→ 自駕前往蒂卡波（約 225km）；湖邊散步</div>
+          <div class="tl-text">阿卡羅阿一日遊（Akaroa，約 82km）— 班克斯半島風光，傍晚返回基督城</div>
         </div>
       </div>
-
-      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 蒂卡波 Lake Tekapo ⭐⭐</div>
-      <div class="tl-row city-tkp tl-todo">
+      <div class="tl-row city-chc">
         <div class="tl-day">D08</div>
         <div class="tl-date">5/06 三</div>
         <div class="tl-content">
-          <span class="tl-flag">🏔</span>
-          <div class="tl-text">Mt Cook 一日來回（胡克谷賽道 + 普卡基湖）；晚上回蒂卡波再看星空</div>
+          <span class="tl-flag">🌿</span>
+          <div class="tl-text">基督城市區探索 — 植物園 · 大教堂廣場 · Riverside Market</div>
         </div>
       </div>
-      <div class="tl-row city-tkp">
+
+      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 葛雷茅斯 Greymouth</div>
+      <div class="tl-row city-grm">
         <div class="tl-day">D09</div>
         <div class="tl-date">5/07 四</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">蒂卡波 → 瓦納卡（沿 Lake Pukaki 南下，約 190km）；傍晚拍 Wanaka Tree</div>
+          <div class="tl-text">亞瑟隘口（Arthur's Pass）穿越 → 葛雷茅斯（約 250km）
+            <div class="tl-note">高山峽谷風光，抵達西岸</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 約瑟夫冰河 Franz Josef</div>
+      <div class="tl-row city-frj">
+        <div class="tl-day">D10</div>
+        <div class="tl-date">5/08 五</div>
+        <div class="tl-content">
+          <span class="tl-flag">🧊</span>
+          <div class="tl-text">南島西岸海岸線自駕 → 約瑟夫冰河（Franz Josef，約 175km）
+            <div class="tl-note">太平洋海岸 + 熱帶雨林 + 冰河，南島最奇特地貌</div>
+          </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 瓦納卡 Wanaka ⭐</div>
-      <div class="tl-row city-wana tl-todo">
-        <div class="tl-day">D10</div>
-        <div class="tl-date">5/08 五</div>
-        <div class="tl-content">
-          <span class="tl-flag">🌿</span>
-          <div class="tl-text">Roys Peak 健行（有體力才去）or chill；瓦納卡放鬆日</div>
-        </div>
-      </div>
       <div class="tl-row city-wana">
         <div class="tl-day">D11</div>
         <div class="tl-date">5/09 六</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">瓦納卡 → 皇后鎮（約 70km）；入住</div>
+          <div class="tl-text">Blue Pools 步道 → 自駕至瓦納卡（約 200km）；傍晚拍 Wanaka Tree</div>
+        </div>
+      </div>
+
+      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 蒂卡波 Lake Tekapo ⭐⭐</div>
+      <div class="tl-row city-tkp">
+        <div class="tl-day">D12</div>
+        <div class="tl-date">5/10 日</div>
+        <div class="tl-content">
+          <span class="tl-flag">🚗</span>
+          <div class="tl-text">瓦納卡 → 蒂卡波（約 160km）；湖畔散步，晚上看星空</div>
+        </div>
+      </div>
+      <div class="tl-row city-tkp">
+        <div class="tl-day">D13</div>
+        <div class="tl-date">5/11 一</div>
+        <div class="tl-content">
+          <span class="tl-flag">🏔</span>
+          <div class="tl-text">庫克山（Mt Cook）一日來回 — 胡克谷賽道 + 普卡基湖；夜間回蒂卡波看銀河 ✨</div>
+        </div>
+      </div>
+
+      <div class="tl-group-label">🇳🇿 紐西蘭南島 — 但尼丁 Dunedin</div>
+      <div class="tl-row city-dun">
+        <div class="tl-day">D14</div>
+        <div class="tl-date">5/12 二</div>
+        <div class="tl-content">
+          <span class="tl-flag">🦭</span>
+          <div class="tl-text">自駕至但尼丁（約 220km）— 鐵路車站 · 奧塔哥半島 · 信天翁觀察點</div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 皇后鎮 Queenstown</div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D12</div>
-        <div class="tl-date">5/10 日</div>
-        <div class="tl-content"><span class="tl-flag">🚠</span><div class="tl-text">Skyline 纜車 + 弗格漢堡</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D13</div>
-        <div class="tl-date">5/11 一</div>
-        <div class="tl-content"><span class="tl-flag">🪂</span><div class="tl-text">冒險活動：跳傘 / 噴射船 / 高空彈跳</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D14</div>
-        <div class="tl-date">5/12 二</div>
-        <div class="tl-content"><span class="tl-flag">⛵</span><div class="tl-text">Milford Sound 米佛峽灣一日遊（重要，需提前預訂）</div></div>
-      </div>
-      <div class="tl-row city-qzn tl-todo">
+      <div class="tl-row city-qzn">
         <div class="tl-day">D15</div>
         <div class="tl-date">5/13 三</div>
-        <div class="tl-content"><span class="tl-flag">🔄</span><div class="tl-text">備用日（補 Milford 或休息）</div></div>
+        <div class="tl-content">
+          <span class="tl-flag">⛵</span>
+          <div class="tl-text">米佛峽灣（Milford Sound）一日遊 → 皇后鎮入住
+            <div class="tl-note">需提前預訂，峽灣遊船為重點行程</div>
+          </div>
+        </div>
       </div>
       <div class="tl-row city-qzn tl-todo">
         <div class="tl-day">D16</div>
         <div class="tl-date">5/14 四</div>
-        <div class="tl-content"><span class="tl-flag">🎬</span><div class="tl-text">Glenorchy 一日遊（魔戒景點）</div></div>
+        <div class="tl-content"><span class="tl-flag">🚠</span><div class="tl-text">皇后鎮自由活動 — Skyline 纜車 · 弗格漢堡 · 冒險活動</div></div>
       </div>
       <div class="tl-row city-qzn tl-warn">
         <div class="tl-day">D17</div>
         <div class="tl-date">5/15 五</div>
         <div class="tl-content">
           <span class="tl-flag">♨️</span>
-          <div class="tl-text">溫泉 Onsen ♨️ ＋ 葡萄酒之旅 🍷；整理行李 — 隔天 10:50 出發，建議 09:00 前到機場</div>
+          <div class="tl-text">皇后鎮自由活動 — 溫泉 Onsen ♨️ ＋ 葡萄酒之旅 🍷；整理行李
+            <div class="tl-note">⚠️ 隔天 07:00 還車 ZQN Airport，請提前打包完畢</div>
+          </div>
         </div>
       </div>
       <div class="tl-row city-fly tl-flight">
         <div class="tl-day">D18</div>
         <div class="tl-date">5/16 六</div>
         <div class="tl-content">
-          <span class="tl-flag">🛫</span>
-          <div class="tl-text">JQ292 10:50 ZQN → AKL 12:40 &nbsp;｜&nbsp; 奧克蘭下午逛街 &nbsp;｜&nbsp; CI054 19:30 AKL → TPE（飛機上過夜）</div>
+          <span class="tl-flag">🚗</span>
+          <div class="tl-text"><strong>07:00 還車 ZQN Airport</strong> &nbsp;·&nbsp; JQ292 10:50 ZQN → AKL 12:40 &nbsp;·&nbsp; 奧克蘭下午逛街 &nbsp;·&nbsp; CI054 19:30 AKL → TPE（飛機上過夜）</div>
         </div>
       </div>
       <div class="tl-row city-tw">
@@ -735,10 +815,37 @@
       <div class="accom-card" style="border-top: 3px solid var(--chc)">
         <div class="accom-card-header">
           <span class="accom-city">🇳🇿 基督城</span>
+          <span class="accom-nights">3 晚</span>
+        </div>
+        <div class="accom-dates">5/04 – 5/06</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">第1晚機場附近（取車方便），D07–08 可移市中心</div>
+        <span class="accom-status status-todo">未訂</span>
+      </div>
+      <div class="accom-card" style="border-top: 3px solid var(--grm)">
+        <div class="accom-card-header">
+          <span class="accom-city">🇳🇿 葛雷茅斯</span>
           <span class="accom-nights">1 晚</span>
         </div>
-        <div class="accom-dates">5/04</div>
-        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">過渡用，機場附近即可</div>
+        <div class="accom-dates">5/07</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">亞瑟隘口段落腳點，過渡用</div>
+        <span class="accom-status status-todo">未訂</span>
+      </div>
+      <div class="accom-card" style="border-top: 3px solid var(--frj)">
+        <div class="accom-card-header">
+          <span class="accom-city">🇳🇿 約瑟夫冰河</span>
+          <span class="accom-nights">1 晚</span>
+        </div>
+        <div class="accom-dates">5/08</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">冰河村附近，可選冰河健行</div>
+        <span class="accom-status status-todo">未訂</span>
+      </div>
+      <div class="accom-card" style="border-top: 3px solid var(--wana)">
+        <div class="accom-card-header">
+          <span class="accom-city">🇳🇿 瓦納卡 ⭐</span>
+          <span class="accom-nights">1 晚</span>
+        </div>
+        <div class="accom-dates">5/09</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">湖邊 or 市中心，可步行至餐廳</div>
         <span class="accom-status status-todo">未訂</span>
       </div>
       <div class="accom-card" style="border-top: 3px solid var(--tkp)">
@@ -746,30 +853,30 @@
           <span class="accom-city">🇳🇿 蒂卡波 ⭐⭐</span>
           <span class="accom-nights">2 晚</span>
         </div>
-        <div class="accom-dates">5/05 – 5/06</div>
+        <div class="accom-dates">5/10 – 5/11</div>
         <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">湖景 + 可看星空，有陽台 / 大窗戶</div>
         <span class="accom-status status-todo">未訂 — 優先訂</span>
       </div>
-      <div class="accom-card" style="border-top: 3px solid var(--wana)">
+      <div class="accom-card" style="border-top: 3px solid var(--dun)">
         <div class="accom-card-header">
-          <span class="accom-city">🇳🇿 瓦納卡 ⭐</span>
-          <span class="accom-nights">2 晚</span>
+          <span class="accom-city">🇳🇿 但尼丁</span>
+          <span class="accom-nights">1 晚</span>
         </div>
-        <div class="accom-dates">5/07 – 5/08</div>
-        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">湖邊 or 市中心，可步行至餐廳</div>
+        <div class="accom-dates">5/12</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">奧塔哥半島探索，企鵝 · 信天翁</div>
         <span class="accom-status status-todo">未訂</span>
       </div>
       <div class="accom-card" style="border-top: 3px solid var(--qzn)">
         <div class="accom-card-header">
           <span class="accom-city">🇳🇿 皇后鎮 🔥</span>
-          <span class="accom-nights">7 晚</span>
+          <span class="accom-nights">3 晚</span>
         </div>
-        <div class="accom-dates">5/09 – 5/15</div>
-        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">湖景優先，建議整段同一間</div>
+        <div class="accom-dates">5/13 – 5/15</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin:2px 0 6px">湖景優先，建議整段同一間，旺季盡早訂</div>
         <span class="accom-status status-todo">未訂 — 最優先！</span>
       </div>
     </div>
-    <p style="font-size:0.82rem; color:var(--muted); margin-top:12px">路線：基督城取車（5/05）→ 蒂卡波（2晚）→ 瓦納卡（2晚）→ 皇后鎮（7晚）→ ZQN 出發（5/16）。共 4 地點，14 晚。</p>
+    <p style="font-size:0.82rem; color:var(--muted); margin-top:12px">路線：CHC 取車（5/4）→ 阿卡羅阿 → 基督城（3晚）→ 亞瑟隘口 → 葛雷茅斯（1晚）→ 西岸 → Franz Josef（1晚）→ Blue Pools → 瓦納卡（1晚）→ 蒂卡波（2晚）→ 但尼丁（1晚）→ Milford Sound → 皇后鎮（3晚）→ ZQN 還車（5/16 07:00）</p>
   </section>
 
   <!-- ── BUDGET ── -->
@@ -804,10 +911,11 @@
         <div class="budget-total todo-cell">待估算</div>
         <div class="budget-sub">各城市餐廳 / 超市</div>
       </div>
-      <div class="budget-card">
-        <h3>當地交通</h3>
-        <div class="budget-total todo-cell">待估算</div>
-        <div class="budget-sub">租車 / 大眾運輸</div>
+      <div class="budget-card" style="border-top:3px solid var(--chc)">
+        <h3>租車（NZ 自駕 12 天）</h3>
+        <div class="budget-total" style="color:var(--chc)">NZD 1,593.64</div>
+        <div class="budget-sub">A Rentals RAV4 · CHC→ZQN · SUV Premium 保險</div>
+        <div style="font-size:0.78rem;color:var(--chc);margin-top:6px;font-weight:600">✅ 2026/4/8 子擎已付清</div>
       </div>
       <div class="budget-card">
         <h3>活動 / 票券</h3>
@@ -865,7 +973,7 @@
         <div class="checklist-item"><div class="check-box"></div><span>電源轉接頭（G 型 / I 型）</span></div>
         <div class="checklist-item"><div class="check-box"></div><span>蜜月特殊體驗 / 餐廳預訂</span></div>
         <div class="checklist-item"><div class="check-box"></div><span>國際駕照（2 人均需辦，至監理所）</span></div>
-        <div class="checklist-item"><div class="check-box"></div><span>租車預訂（基督城取車 5/05，皇后鎮還車，A租B還）</span></div>
+        <div class="checklist-item" style="opacity:0.55;text-decoration:line-through"><div class="check-box" style="background:var(--chc);border-color:var(--chc)">✓</div><span>租車預訂 — ✅ A Rentals RAV4，NZD 1,593.64，CHC 取車 5/4 17:00，ZQN 還車 5/16 07:00</span></div>
         <div class="checklist-item"><div class="check-box"></div><span>Milford Sound 米佛峽灣一日遊預訂（D14）</span></div>
         <div class="checklist-item"><div class="check-box"></div><span>跳傘 / 噴射船 / 高空彈跳 擇一預訂（D13）</span></div>
       </div>
