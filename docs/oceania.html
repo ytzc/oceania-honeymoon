@@ -409,6 +409,76 @@
     .lug-warn { color: var(--sin); font-weight: 600; }
     .lug-great { color: var(--qzn); font-weight: 600; }
 
+    /* ── NZ DAY CARDS ── */
+    .nz-day-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .nz-day-hd {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+    .nz-day-hd .nz-d {
+      font-family: monospace;
+      font-size: 0.78rem;
+      background: rgba(0,0,0,0.18);
+      padding: 1px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .nz-day-hd .nz-dt { font-weight: 400; font-size: 0.8rem; opacity: 0.88; white-space: nowrap; }
+    .nz-day-hd .nz-loc { flex: 1; }
+    .nz-day-bd {
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      font-size: 0.85rem;
+    }
+    .nz-col-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .nz-list { list-style: none; }
+    .nz-list li {
+      padding: 4px 0;
+      border-bottom: 1px solid #f0eeea;
+      line-height: 1.5;
+    }
+    .nz-list li:last-child { border-bottom: none; }
+    .nz-price { color: var(--muted); font-size: 0.8rem; }
+    .nz-warn-tag {
+      display: inline-block;
+      font-size: 0.73rem;
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 4px;
+      padding: 0 5px;
+      color: #7c6200;
+      margin-left: 4px;
+    }
+    .nz-day-chc  { background: var(--chc); }
+    .nz-day-grm  { background: var(--grm); }
+    .nz-day-frj  { background: var(--frj); }
+    .nz-day-wana { background: var(--wana); }
+    .nz-day-tkp  { background: var(--tkp); }
+    .nz-day-dun  { background: var(--dun); }
+    .nz-day-qzn  { background: var(--qzn); }
+    @media (max-width: 580px) { .nz-day-bd { grid-template-columns: 1fr; } }
+
     /* ── FOOTER ── */
     footer {
       max-width: 900px;
@@ -439,6 +509,7 @@
     <li><a href="#flights">✈ 航班</a></li>
     <li><a href="#rental">🚗 租車</a></li>
     <li><a href="#timeline">🗓 行程</a></li>
+    <li><a href="#nz-detail">🗺 NZ 詳細</a></li>
     <li><a href="#accommodation">🏨 住宿</a></li>
     <li><a href="#budget">💰 預算</a></li>
     <li><a href="#checklist">🎒 清單</a></li>
@@ -846,6 +917,348 @@
       </div>
 
     </div>
+  </section>
+
+  <!-- ── NZ DETAIL ── -->
+  <section id="nz-detail">
+    <div class="section-title">🗺 紐西蘭自駕詳細行程 NZ D1–D13</div>
+
+    <!-- NZ D1 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-chc">
+        <span class="nz-d">NZ D1</span><span class="nz-dt">5/04（週一）</span>
+        <span class="nz-loc">基督城 Christchurch ｜ 抵達 + 取車</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">行程重點</div>
+          <ul class="nz-list">
+            <li>🛬 16:25 JQ171 抵達 I 廳 → Door 2 撥打 A Rentals shuttle</li>
+            <li>🚗 取車：153 Orchard Road, Harewood</li>
+            <li>🌆 晚上：Riverside Market · Little High 街頭美食</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動</div>
+          <ul class="nz-list">
+            <li>🚡 電車晚餐 Tramway Restaurant <span class="nz-price">NZD 149（需提前預訂）</span></li>
+            <li>🚋 電車一日券 <span class="nz-price">NZD 40</span></li>
+            <li>🎟 Christchurch Pass（電車＋撐篙船＋纜車）<span class="nz-price">NZD 114</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D2 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-chc">
+        <span class="nz-d">NZ D2</span><span class="nz-dt">5/05（週二）</span>
+        <span class="nz-loc">阿卡羅阿一日遊 Akaroa</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">行程重點</div>
+          <ul class="nz-list">
+            <li>🚗 CHC → Akaroa 約 82km，1 小時 20 分</li>
+            <li>🏘 法式殖民小鎮風情，班克斯半島</li>
+            <li>🌅 傍晚返回基督城</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動</div>
+          <ul class="nz-list">
+            <li>🚌 阿卡羅阿來回長日遊 08:45–16:00 <span class="nz-price">NZD 70</span></li>
+            <li>🐬 阿卡羅阿自然之旅（賞海豚）10:45 / 13:30 <span class="nz-price">NZD 125</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D3 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-chc">
+        <span class="nz-d">NZ D3</span><span class="nz-dt">5/06（週三）</span>
+        <span class="nz-loc">基督城市區 Christchurch City</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">景點</div>
+          <ul class="nz-list">
+            <li>🌿 Botanic Gardens 植物園</li>
+            <li>⛵ Avon River 平底船撐篙</li>
+            <li>🚡 Christchurch Gondola 空中纜車</li>
+            <li>🏛 大教堂廣場 · Re:START 貨櫃商店街</li>
+            <li>🛒 Riverside Market · Little High 各國美食</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動</div>
+          <ul class="nz-list">
+            <li>🎈 Canterbury Hot Air Balloon 06:00 出發 <span class="nz-price">NZD 395</span></li>
+            <li>🦔 Willowbank Wildlife Reserve（可看奇異鳥）<span class="nz-price">NZD 36.5</span></li>
+            <li>🍽 Curator's House 露天餐廳（植物園旁）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D4 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-grm">
+        <span class="nz-d">NZ D4</span><span class="nz-dt">5/07（週四）</span>
+        <span class="nz-loc">亞瑟隘口 → 葛雷茅斯 Arthur's Pass → Greymouth</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ ~250km · 2.5–3 小時</div>
+          <ul class="nz-list">
+            <li>🏔 穿越南阿爾卑斯山脈，隧道 + 峽谷 + 高山景觀</li>
+            <li>⛓ <strong>積雪路段最可能需 Snow Chains</strong></li>
+            <li>🌊 抵達西岸 Greymouth</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動（葛雷茅斯 / 西岸）</div>
+          <ul class="nz-list">
+            <li>🏚 Shantytown Heritage Park — 淘金時代遺跡 · 蒸汽火車 · 換裝拍照</li>
+            <li>💚 西岸翡翠（Pounamu）文化</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D5 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-frj">
+        <span class="nz-d">NZ D5</span><span class="nz-dt">5/08（週五）</span>
+        <span class="nz-loc">西岸 → 約瑟夫冰河 Franz Josef</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ ~175km（SH6 海岸線）</div>
+          <ul class="nz-list">
+            <li>🌊 Greymouth → Hokitika → Franz Josef</li>
+            <li>太平洋在左，熱帶雨林在右</li>
+            <li>📸 Lake Matheson 鏡湖（早晨最美，映照庫克山）</li>
+            <li>🧊 Fox Glacier 小鎮（比 Franz Josef 更安靜）</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動</div>
+          <ul class="nz-list">
+            <li>🚁 Franz Josef 冰河直升機 <span class="nz-price">約 NZD 800</span></li>
+            <li>🚁 Fox Glacier 冰河直升機 <span class="nz-price">約 NZD 750</span></li>
+            <li>🧊 冰河徒步（需跟嚮導）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D6 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-wana">
+        <span class="nz-d">NZ D6</span><span class="nz-dt">5/09（週六）</span>
+        <span class="nz-loc">Haast Pass → Blue Pools → 瓦納卡 Wanaka</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ ~200km</div>
+          <ul class="nz-list">
+            <li>🔵 Blue Pools（Makarora 附近）— 停車後步行 ~20 分，碧藍冰河水</li>
+            <li>🌊 Knights Point 海岸觀景台</li>
+            <li>🌳 傍晚抵達瓦納卡 — 拍 Wanaka Tree（湖中孤樹）</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">瓦納卡</div>
+          <ul class="nz-list">
+            <li>🏙 市中心步行，湖濱散策</li>
+            <li>🌅 黃昏時段最美，湖光山色</li>
+            <li>🍽 Wanaka 小餐廳用晚餐</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D7 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-tkp">
+        <span class="nz-d">NZ D7</span><span class="nz-dt">5/10（週日）</span>
+        <span class="nz-loc">蒂卡波 Lake Tekapo ｜ 觀星準備</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ ~160km（途經普卡基湖）</div>
+          <ul class="nz-list">
+            <li>💧 Lake Pukaki 普卡基湖 — 湛藍冰河色彩</li>
+            <li>⛪ 善牧教堂（Church of the Good Shepherd）黃昏最美</li>
+            <li>🛁 蒂卡波湖畔溫泉</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">夜間觀星</div>
+          <ul class="nz-list">
+            <li>🌌 Mt John 觀星（晴天首選，需確認天氣）</li>
+            <li>🔭 黑暗天空保護區，銀河清晰可見 ⭐⭐</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D8 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-tkp">
+        <span class="nz-d">NZ D8</span><span class="nz-dt">5/11（週一）</span>
+        <span class="nz-loc">庫克山一日遊 Aoraki / Mt Cook（蒂卡波來回）</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">主要步道（蒂卡波 → Mt Cook ~1 小時車程）</div>
+          <ul class="nz-list">
+            <li>🥾 Kea Point Track — 來回約 2 小時，視野開闊</li>
+            <li>🥾 Hooker Valley Track — 來回約 3 小時，推薦，可見冰河</li>
+            <li>⛓ Mt Cook 路段建議保留 Snow Chains</li>
+            <li>⭐ 夜間返回蒂卡波繼續觀星</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">可選活動</div>
+          <ul class="nz-list">
+            <li>🧊 Tasman Glacier 冰河船 <span class="nz-price">NZD 209</span></li>
+            <li>🏨 The Hermitage Hotel 活動方案（滑翔傘 · 觀星等）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D9 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-dun">
+        <span class="nz-d">NZ D9</span><span class="nz-dt">5/12（週二）</span>
+        <span class="nz-loc">但尼丁 Dunedin</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ ~220km · 2.5–3 小時</div>
+          <ul class="nz-list">
+            <li>🚉 Dunedin Railway Station（蘇格蘭巴洛克建築）</li>
+            <li>📐 Baldwin Street — 全球最陡住宅街道之一</li>
+            <li>🏙 Octagon 市中心廣場</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">奧塔哥半島 Otago Peninsula</div>
+          <ul class="nz-list">
+            <li>🦭 信天翁（Royal Albatross Centre）</li>
+            <li>🐧 小藍 / 黃眼企鵝（Yellow-eyed Penguin）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D10 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-qzn">
+        <span class="nz-d">NZ D10</span><span class="nz-dt">5/13（週三）</span>
+        <span class="nz-loc">米佛峽灣 → 皇后鎮 Milford Sound → Queenstown</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">路線 ｜ 全天行程，車程 ~5–6 小時</div>
+          <ul class="nz-list">
+            <li>🗺 Dunedin → Te Anau → Milford Sound → Queenstown</li>
+            <li>⛵ <strong>Milford Sound 遊船</strong>（1.5–2 小時）<span class="nz-warn-tag">⚠️ 需提前預訂</span></li>
+            <li>🌊 Stirling / Bowen 瀑布，千仞峭壁</li>
+            <li>🏨 傍晚抵達皇后鎮入住</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">皇后鎮（晚上）</div>
+          <ul class="nz-list">
+            <li>🌆 Queenstown 市區初探</li>
+            <li>🍔 Fergburger 弗格漢堡（若有體力）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D11 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-qzn">
+        <span class="nz-d">NZ D11</span><span class="nz-dt">5/14（週四）</span>
+        <span class="nz-loc">皇后鎮自由活動 Queenstown</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">推薦行程</div>
+          <ul class="nz-list">
+            <li>🚠 Skyline Gondola 纜車 + 景觀餐廳（俯瞰 Lake Wakatipu）</li>
+            <li>🍔 Fergburger 弗格漢堡（排隊名店，建議非尖峰時段）</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">冒險活動（擇一）</div>
+          <ul class="nz-list">
+            <li>🪂 跳傘（Skydive Queenstown）</li>
+            <li>🚤 噴射船（Shotover Jet）</li>
+            <li>🏔 高空彈跳（AJ Hackett Kawarau Bridge）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D12 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-qzn">
+        <span class="nz-d">NZ D12</span><span class="nz-dt">5/15（週五）</span>
+        <span class="nz-loc">皇后鎮自由活動 ｜ 整理行李</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">行程</div>
+          <ul class="nz-list">
+            <li>♨️ Onsen Hot Pools 溫泉（湖景露天浴池）</li>
+            <li>🍷 Central Otago 葡萄酒莊一日遊</li>
+            <li>🧳 整理行李 <span class="nz-warn-tag">⚠️ 明早 07:00 還車</span></li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">⚠️ 離境準備</div>
+          <ul class="nz-list">
+            <li>🔌 充電，確認所有登機證</li>
+            <li>💰 紐幣現金用完 / 換回台幣</li>
+            <li>⏰ 建議 05:30 起床，06:30 出發</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NZ D13 -->
+    <div class="nz-day-card">
+      <div class="nz-day-hd nz-day-qzn">
+        <span class="nz-d">NZ D13</span><span class="nz-dt">5/16（週六）</span>
+        <span class="nz-loc">還車 / 離境 ZQN → AKL → TPE</span>
+      </div>
+      <div class="nz-day-bd">
+        <div>
+          <div class="nz-col-title">ZQN 時間線</div>
+          <ul class="nz-list">
+            <li>⚠️ <strong>07:00</strong> ZQN Airport 還車（after-hours self-drop-off）<br>77 Glenda Dr, Frankton</li>
+            <li>🛂 <strong>09:00 前</strong> 進入機場報到</li>
+            <li>✈ <strong>10:50</strong> JQ292 ZQN → AKL（12:40 D 廳抵達）</li>
+          </ul>
+        </div>
+        <div>
+          <div class="nz-col-title">奧克蘭轉機（~7 小時）</div>
+          <ul class="nz-list">
+            <li>🏙 D 廳 → I 廳，可出市區或機場附近逛街</li>
+            <li>✈ <strong>19:30</strong> CI054 AKL → TPE（途經 BNE，飛機上過夜）</li>
+            <li>🏠 <strong>05:40+1</strong> 抵達桃園</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ── ACCOMMODATION ── -->
