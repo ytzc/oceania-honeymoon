@@ -27,6 +27,16 @@ if [ -z "$TAG" ]; then
   exit 1
 fi
 
+# 確認 tag 尚未存在（本地 + remote）
+if git tag | grep -qx "$TAG"; then
+  echo "❌ 錯誤：local tag '$TAG' 已存在，請選用新版本號或先執行：git tag -d $TAG"
+  exit 1
+fi
+if git ls-remote --tags origin | grep -q "refs/tags/$TAG$"; then
+  echo "❌ 錯誤：remote tag '$TAG' 已存在，請選用新版本號"
+  exit 1
+fi
+
 TARGETS=(docs/okinawa.html docs/oceania.html docs/index.html)
 
 echo "→ 標記版本 $TAG..."
