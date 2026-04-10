@@ -226,7 +226,7 @@
     .tl-group-label:first-child { margin-top: 0; }
     .tl-row {
       display: grid;
-      grid-template-columns: 42px 90px 1fr;
+      grid-template-columns: 52px 90px 1fr;
       gap: 0;
       align-items: stretch;
       border-radius: 8px;
@@ -426,7 +426,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       h1 { font-size: 1.6rem; }
-      .tl-row { grid-template-columns: 34px 76px 1fr; font-size: 0.82rem; }
+      .tl-row { grid-template-columns: 44px 76px 1fr; font-size: 0.82rem; }
       .budget-total { font-size: 1.2rem; }
     }
   </style>
@@ -582,18 +582,66 @@
             </tbody>
           </table>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
           <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px 14px;font-size:0.87rem">
             <div style="font-weight:700;margin-bottom:4px">🟢 取車</div>
             <div>Christchurch Airport</div>
-            <div class="muted-cell">2026/5/4（週一）17:00</div>
+            <div class="muted-cell">2026/5/4（週一）16:25 抵達</div>
+            <div class="muted-cell" style="margin-top:4px">153 Orchard Road, Harewood</div>
           </div>
           <div style="background:#fff0f0;border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;font-size:0.87rem">
             <div style="font-weight:700;margin-bottom:4px">🔴 還車</div>
             <div>Queenstown Airport</div>
             <div class="muted-cell">2026/5/16（週六）07:00 <span style="color:#e53e3e;font-weight:600">⚠️ 航班前</span></div>
+            <div class="muted-cell" style="margin-top:4px">77 Glenda Dr, Frankton</div>
           </div>
         </div>
+
+        <!-- 取車流程 -->
+        <div style="background:#eff6ff;border:1px solid #93c5fd;border-left:3px solid #3b82f6;border-radius:8px;padding:12px 14px;font-size:0.86rem;margin-bottom:10px">
+          <div style="font-weight:700;margin-bottom:6px">🛬 取車流程（Christchurch Airport）</div>
+          <ol style="margin:0 0 8px 18px;line-height:1.8">
+            <li>領完行李 → 前往 <strong>Arrivals 出口 Door 2</strong> 等候接駁</li>
+            <li><strong>自行撥打電話叫 shuttle</strong>（不會主動等你）</li>
+          </ol>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.83rem">
+            <div style="background:#fff;border:1px solid #dbeafe;border-radius:6px;padding:8px 10px">
+              <div style="color:#64748b;font-size:0.78rem;margin-bottom:3px">紐西蘭本地 SIM</div>
+              <div style="font-weight:600;font-family:monospace">0800 660 600</div>
+              <div style="font-weight:600;font-family:monospace">09 600 6660</div>
+            </div>
+            <div style="background:#fff;border:1px solid #dbeafe;border-radius:6px;padding:8px 10px">
+              <div style="color:#64748b;font-size:0.78rem;margin-bottom:3px">台灣門號 / 非紐西蘭 SIM</div>
+              <div style="font-weight:600;font-family:monospace">+64 800 660 600</div>
+              <div style="font-weight:600;font-family:monospace">+64 9 600 6660</div>
+            </div>
+          </div>
+          <div style="margin-top:8px;font-size:0.82rem;color:#475569">
+            語音選單：<code style="background:#e0f2fe;padding:1px 5px;border-radius:3px">選語言 → 按 2 → 再按 2 → 接通 Christchurch branch</code>
+          </div>
+        </div>
+
+        <!-- 還車備註 -->
+        <div style="background:#fff8ed;border:1px solid #f0b429;border-left:3px solid #f0b429;border-radius:8px;padding:10px 14px;font-size:0.86rem;margin-bottom:10px">
+          <div style="font-weight:700;margin-bottom:4px">⚠️ 還車（After-hours Self-drop-off）</div>
+          <div>還車當天 JQ292 10:50 起飛，<strong>07:00 還車 → 09:00 前進入機場</strong>，請提前打包完畢。</div>
+          <div style="margin-top:6px"><a href="assets/Queenstown%20Airport%20Vehicle%20Return%20Instructions%20111.pdf" target="_blank" style="color:#b45309;font-weight:600">📄 還車流程說明文件</a></div>
+        </div>
+
+        <!-- Snow Chains + PDF -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:0.86rem">
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px">
+            <div style="font-weight:700;margin-bottom:4px">⛓ Snow Chains</div>
+            <div>NZD 80 / 整個租期，已加入預訂</div>
+            <div class="muted-cell" style="margin-top:3px">取車當天可決定是否保留；5 月山區（Arthur's Pass · Mt Cook）建議留</div>
+          </div>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px">
+            <div style="font-weight:700;margin-bottom:6px">📄 租車文件</div>
+            <div><a href="assets/紐西蘭租車.pdf" target="_blank" style="color:var(--chc);font-weight:600">📄 租車確認文件</a></div>
+            <div style="margin-top:4px"><a href="assets/Queenstown%20Airport%20Vehicle%20Return%20Instructions%20111.pdf" target="_blank" style="color:var(--chc);font-weight:600">📄 還車流程文件</a></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -657,113 +705,121 @@
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 基督城 Christchurch</div>
       <div class="tl-row city-chc tl-flight">
-        <div class="tl-day">D06</div>
+        <div class="tl-day">NZ D1</div>
         <div class="tl-date">5/04 一</div>
         <div class="tl-content">
           <span class="tl-flag">🛬</span>
           <div class="tl-text">
-            JQ171 16:25 抵達基督城 I 廳 &nbsp;·&nbsp; <strong>A Rentals 取車 17:00 CHC 機場</strong>
-            <div class="tl-note">入住基督城，晚上探索市區</div>
+            JQ171 16:25 抵達基督城 I 廳 &nbsp;·&nbsp; <strong>A Rentals 取車 CHC 機場 Door 2</strong>
+            <div class="tl-note">入住基督城，晚上探索市區 — Riverside Market · Little High</div>
           </div>
         </div>
       </div>
       <div class="tl-row city-chc">
-        <div class="tl-day">D07</div>
+        <div class="tl-day">NZ D2</div>
         <div class="tl-date">5/05 二</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">阿卡羅阿一日遊（Akaroa，約 82km）— 班克斯半島風光，傍晚返回基督城</div>
+          <div class="tl-text">阿卡羅阿一日遊（Akaroa，約 82km）— 班克斯半島風光 · 法式殖民小鎮 · 賞海豚，傍晚返回基督城</div>
         </div>
       </div>
       <div class="tl-row city-chc">
-        <div class="tl-day">D08</div>
+        <div class="tl-day">NZ D3</div>
         <div class="tl-date">5/06 三</div>
         <div class="tl-content">
           <span class="tl-flag">🌿</span>
-          <div class="tl-text">基督城市區探索 — 植物園 · 大教堂廣場 · Riverside Market</div>
+          <div class="tl-text">基督城市區探索 — 植物園 · Avon River 撐篙 · 大教堂廣場 · Riverside Market</div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 葛雷茅斯 Greymouth</div>
       <div class="tl-row city-grm">
-        <div class="tl-day">D09</div>
+        <div class="tl-day">NZ D4</div>
         <div class="tl-date">5/07 四</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
           <div class="tl-text">亞瑟隘口（Arthur's Pass）穿越 → 葛雷茅斯（約 250km）
-            <div class="tl-note">高山峽谷風光，抵達西岸</div>
+            <div class="tl-note">⛓ 積雪路段需 Snow Chains · 高山峽谷風光，抵達西岸</div>
           </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 約瑟夫冰河 Franz Josef</div>
       <div class="tl-row city-frj">
-        <div class="tl-day">D10</div>
+        <div class="tl-day">NZ D5</div>
         <div class="tl-date">5/08 五</div>
         <div class="tl-content">
           <span class="tl-flag">🧊</span>
           <div class="tl-text">南島西岸海岸線自駕 → 約瑟夫冰河（Franz Josef，約 175km）
-            <div class="tl-note">太平洋海岸 + 熱帶雨林 + 冰河，南島最奇特地貌</div>
+            <div class="tl-note">Lake Matheson 鏡湖（早晨最美）· 冰河直升機或徒步（需嚮導）</div>
           </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 瓦納卡 Wanaka ⭐</div>
       <div class="tl-row city-wana">
-        <div class="tl-day">D11</div>
+        <div class="tl-day">NZ D6</div>
         <div class="tl-date">5/09 六</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">Blue Pools 步道 → 自駕至瓦納卡（約 200km）；傍晚拍 Wanaka Tree</div>
+          <div class="tl-text">Haast Pass → Blue Pools 步道（停車後步行 ~20 分）→ 自駕至瓦納卡（約 200km）
+            <div class="tl-note">傍晚拍 Wanaka Tree（湖中孤樹）</div>
+          </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 蒂卡波 Lake Tekapo ⭐⭐</div>
       <div class="tl-row city-tkp">
-        <div class="tl-day">D12</div>
+        <div class="tl-day">NZ D7</div>
         <div class="tl-date">5/10 日</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text">瓦納卡 → 蒂卡波（約 160km）；湖畔散步，晚上看星空</div>
+          <div class="tl-text">瓦納卡 → 普卡基湖 → 蒂卡波（約 160km）；善牧教堂黃昏 · 晚上看星空
+            <div class="tl-note">Mt John 觀星（晴天首選），湖畔溫泉</div>
+          </div>
         </div>
       </div>
       <div class="tl-row city-tkp">
-        <div class="tl-day">D13</div>
+        <div class="tl-day">NZ D8</div>
         <div class="tl-date">5/11 一</div>
         <div class="tl-content">
           <span class="tl-flag">🏔</span>
-          <div class="tl-text">庫克山（Mt Cook）一日來回 — 胡克谷賽道 + 普卡基湖；夜間回蒂卡波看銀河 ✨</div>
+          <div class="tl-text">庫克山（Mt Cook）一日來回 — Kea Point · Hooker Valley Track；夜間回蒂卡波看銀河 ✨
+            <div class="tl-note">⛓ Mt Cook 路段建議保留 Snow Chains</div>
+          </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 但尼丁 Dunedin</div>
       <div class="tl-row city-dun">
-        <div class="tl-day">D14</div>
+        <div class="tl-day">NZ D9</div>
         <div class="tl-date">5/12 二</div>
         <div class="tl-content">
           <span class="tl-flag">🦭</span>
-          <div class="tl-text">自駕至但尼丁（約 220km）— 鐵路車站 · 奧塔哥半島 · 信天翁觀察點</div>
+          <div class="tl-text">自駕至但尼丁（約 220km）— 鐵路車站 · 奧塔哥半島 · 企鵝 / 信天翁觀察點
+            <div class="tl-note">Baldwin Street · Octagon 市中心廣場</div>
+          </div>
         </div>
       </div>
 
       <div class="tl-group-label">🇳🇿 紐西蘭南島 — 皇后鎮 Queenstown</div>
       <div class="tl-row city-qzn">
-        <div class="tl-day">D15</div>
+        <div class="tl-day">NZ D10</div>
         <div class="tl-date">5/13 三</div>
         <div class="tl-content">
           <span class="tl-flag">⛵</span>
           <div class="tl-text">米佛峽灣（Milford Sound）一日遊 → 皇后鎮入住
-            <div class="tl-note">需提前預訂，峽灣遊船為重點行程</div>
+            <div class="tl-note">⚠️ 需提前預訂遊船，峽灣遊船為重點行程（1.5–2 小時）</div>
           </div>
         </div>
       </div>
       <div class="tl-row city-qzn tl-todo">
-        <div class="tl-day">D16</div>
+        <div class="tl-day">NZ D11</div>
         <div class="tl-date">5/14 四</div>
-        <div class="tl-content"><span class="tl-flag">🚠</span><div class="tl-text">皇后鎮自由活動 — Skyline 纜車 · 弗格漢堡 · 冒險活動</div></div>
+        <div class="tl-content"><span class="tl-flag">🚠</span><div class="tl-text">皇后鎮自由活動 — Skyline 纜車 · 弗格漢堡 · 跳傘 / 噴射船 / 高空彈跳</div></div>
       </div>
       <div class="tl-row city-qzn tl-warn">
-        <div class="tl-day">D17</div>
+        <div class="tl-day">NZ D12</div>
         <div class="tl-date">5/15 五</div>
         <div class="tl-content">
           <span class="tl-flag">♨️</span>
@@ -773,11 +829,11 @@
         </div>
       </div>
       <div class="tl-row city-fly tl-flight">
-        <div class="tl-day">D18</div>
+        <div class="tl-day">NZ D13</div>
         <div class="tl-date">5/16 六</div>
         <div class="tl-content">
           <span class="tl-flag">🚗</span>
-          <div class="tl-text"><strong>07:00 還車 ZQN Airport</strong> &nbsp;·&nbsp; JQ292 10:50 ZQN → AKL 12:40 &nbsp;·&nbsp; 奧克蘭下午逛街 &nbsp;·&nbsp; CI054 19:30 AKL → TPE（飛機上過夜）</div>
+          <div class="tl-text"><strong>07:00 還車 ZQN Airport（after-hours self-drop-off）</strong> &nbsp;·&nbsp; JQ292 10:50 ZQN → AKL 12:40 &nbsp;·&nbsp; 奧克蘭下午逛街 &nbsp;·&nbsp; CI054 19:30 AKL → TPE（飛機上過夜）</div>
         </div>
       </div>
       <div class="tl-row city-tw">
