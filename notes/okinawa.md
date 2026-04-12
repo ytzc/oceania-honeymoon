@@ -289,7 +289,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 15:10–16:30 | 🏯 首里城（下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6)）|
 | 17:00–18:00 | 🐟 牧志公設市場（逛市場）|
 | 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
-| 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）✅ 已預約（4/13 子擎刷中信 Line Pay ¥200 訂金，簡訊關鍵字：Oniku no Isshin）壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
+| 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）✅ 已預約 **KZUHAW** · 4/13 子擎刷中信 Line Pay ¥200 訂金 · 簡訊關鍵字：Oniku no Isshin · ⚠️ 24 小時內不可取消，取消費用每位 JP¥3,300 · 👨‍👩‍👧‍👦 子擎家人可能一起（前一天 4/25 晚看狀況確認）· 壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
 | 晚上 | 國際通購物 |
 | 住宿 | 沖繩縣廳前大和 ROYNET 飯店（搭輕軌至縣廳前站）|
 
@@ -387,4 +387,9 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 - [ ] D02 晚餐（A&W Makiminato）路線確認
 - [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
 - [x] D03 晚餐：擎媽請客 ✅ 預計飯店煮火鍋（當天早上確認是否要留車）
+- [x] D04 Oniku no Isshin 訂位 ✅ KZUHAW（4/13 子擎刷卡 ¥200 訂金）
+- [ ] D04 Oniku no Isshin — 家人是否一起（4/25 前一天確認人數，24h不可取消 ¥3,300/人）
+- [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
+- [ ] FunPass 5合一剩餘2項確認：東南植物園夜間燈飾 ／ 古宇利島うみんちゅ Seafood（套餐3選1）
+- [ ] D02 晚餐（A&W Makiminato）路線確認
 - [ ] 日幣兌換
