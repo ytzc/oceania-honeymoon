@@ -273,7 +273,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 12:30 | L LOTA Restaurant |
 | 14:00 | 美麗海水族館 |
 | 17:30 | 備瀨福木林道 |
-| 晚餐 | 🍱 與子擎家人聚餐 — 擎媽請客（地點待確認）|
+| 晚餐 | 🍱 擎媽請客 — 預計飯店煮火鍋（當天早上確認是否要留車/開車幫買食材）|
 | 住宿 | 🏠 Coldio Smart Resort — 古宇利島 |
 
 ---
@@ -289,7 +289,7 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 15:10–16:30 | 🏯 首里城（下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6)）|
 | 17:00–18:00 | 🐟 牧志公設市場（逛市場）|
 | 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
-| 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
+| 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）✅ 已預約（4/13 子擎刷中信 Line Pay ¥200 訂金，簡訊關鍵字：Oniku no Isshin）壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
 | 晚上 | 國際通購物 |
 | 住宿 | 沖繩縣廳前大和 ROYNET 飯店（搭輕軌至縣廳前站）|
 
@@ -386,5 +386,5 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 - [x] 取得 Coldio Smart Resort **Check-in Code** — ✅ **343709**（4/1 系統已發送）
 - [ ] D02 晚餐（A&W Makiminato）路線確認
 - [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
-- [ ] D03 晚餐聚餐地點確認（擎媽請客）
+- [x] D03 晚餐：擎媽請客 ✅ 預計飯店煮火鍋（當天早上確認是否要留車）
 - [ ] 日幣兌換

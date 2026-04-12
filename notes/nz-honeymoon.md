@@ -107,8 +107,8 @@
 | Day | 日期 | 地點 | 重點 |
 |-----|------|------|------|
 | D01 | 4/29 週三 | 台灣 → 新加坡 | TR867 16:15 出發 → 20:45 抵達樟宜 T1 |
-| D02 | 4/30 週四 | 新加坡 🇸🇬 | 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 |
-| D03 | 5/01 週五 | 新加坡 → 飛機上 | 12:00 跟聯政 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯 · 14:00 [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（距機場開車 15 分）· JQ008 21:00 出發 |
+| D02 | 4/30 週四 | 新加坡 🇸🇬 | 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 · 16:00 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯（墊胃）· 晚上 Kovan 站碰聯政夫妻 → [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（時間未定）|
+| D03 | 5/01 週五 | 新加坡 → 飛機上 | 旅程留空，代辦事項 · ✈ JQ008 21:00 出發 SIN → MEL |
 | D04 | 5/02 週六 | 抵達墨爾本 🇦🇺 | 06:15 抵達；入住 |
 | D05 | 5/03 週日 | 墨爾本 | 墨爾本自由活動 |
 | **NZ D1** | **5/04 週一** | **基督城 🇳🇿** | JQ171 16:25 抵達；A Rentals 取車 17:00；晚上探索基督城 |
@@ -299,19 +299,36 @@
 
 ## 🏨 住宿規劃 Accommodation
 
-### 新加坡 Singapore（4/29 ~ 5/01，2 晚）
+### 新加坡 Singapore（4/29 ~ 5/01，2 晚）✅ 已訂
 
-| 日期 | 住宿 | 狀態 |
-|------|------|------|
-| 4/29 | — | ⬜ 未訂 |
-| 4/30 | — | ⬜ 未訂 |
+**諾維維多利亞飯店（Victoria Hotel, NuVe Group Collection）**  
+87 Victoria Street, Singapore 188016
 
-### 墨爾本 Melbourne（5/02 ~ 5/04，2 晚）
+| 項目 | 內容 |
+|------|------|
+| Check-in | 4/29（三）15:00 |
+| Check-out | 5/01（五）11:00 |
+| 房型 | 高級特大床房 |
+| 付款 | Trip.com Apple Pay — 4/11 子擎已付 **TWD $5,156**（不退款）|
+| Hotel 確認碼 | 1616329485771904 |
+| 訂單號 | 1616329485770843 |
+| 入住憑證 | [新加坡入住憑證.pdf](../docs/assets/新加坡入住憑證.pdf) |
+| 注意事項 | 入住時須繳交 **SGD 100** 押金；不退款 |
+| TEL | +65-65506088 |
 
-| 日期 | 住宿 | 狀態 |
-|------|------|------|
-| 5/02 | — | ⬜ 未訂 |
-| 5/03 | — | ⬜ 未訂 |
+### 墨爾本 Melbourne（5/02 ~ 5/04，2 晚）✅ 已訂
+
+**維多利亞酒店（The Victoria Hotel）**  
+215 Little Collins Street, Melbourne VIC 3000
+
+| 項目 | 內容 |
+|------|------|
+| Check-in | 5/02（六）15:00 |
+| Check-out | 5/04（一）11:00 |
+| booking.com 確認碼 | **6679485633** |
+| PIN | 7004 |
+| 付款 | 子擎 中信 Line Pay 末碼 0950，4/29 排程扣款 **AUD $322.03**（≈ TWD $7,239）|
+| 免費取消截止 | **4/30 23:59 AEST** |
 
 ### 基督城 Christchurch（5/04 ~ 5/06，3 晚）
 
@@ -386,6 +403,8 @@
 | ZQN → AKL → TPE（JQ292 + CI054）| 子擎 | 33,864 | 每人 30kg + 2×23kg |
 | **機票合計** | | **80,042** | |
 | 租車 A Rentals RAV4 12天 | 子擎 | NZD 1,593.64 | 含單程費 + SUV Premium 保險 + Snow Chains |
+| 住宿 新加坡 4/29–30 | 子擎 | $5,156 | 諾維維多利亞飯店，trip.com Apple Pay，4/11 已付（不退款）|
+| 住宿 墨爾本 5/02–03 | 子擎 | AUD $322.03（≈ $7,239）| 維多利亞酒店，booking.com，4/29 排程扣款（免費取消至 4/30 AEST）|
 
 ### 待估算
 
@@ -406,6 +425,8 @@
 | 2月頃 | 佩璇 | trip.com | $15,694 | 信用卡 | MEL→CHC 雙人 | ✅ |
 | 2月頃 | 子擎 | trip.com | $33,864 | 信用卡 | ZQN→AKL→TPE 雙人 | ✅ |
 | 2026/4/8 | 子擎 | A Rentals | NZD 1,593.64 | Line Pay 信用卡 | 租車 RAV4 12天（CHC→ZQN）| ✅ |
+| 2026/4/11 | 子擎 | 諾維維多利亞飯店（trip.com）| $5,156 | Apple Pay | 新加坡住宿 2晚（不退款）| ✅ 已付款 |
+| 2026/4/29 | 子擎 | 維多利亞酒店（booking.com）| AUD $322.03（≈ $7,239）| 中信 Line Pay 末碼 0950 | 墨爾本住宿 2晚 | ⏳ 排程扣款 |
 
 ---
 
@@ -479,8 +500,8 @@
 - [ ] 約瑟夫冰河 1 晚（5/08）
 - [ ] 瓦納卡 1 晚（5/09）
 - [ ] 但尼丁 1 晚（5/12）
-- [ ] 墨爾本 2 晚（5/02–5/03）
-- [ ] 新加坡 2 晚（4/29–4/30）
+- [x] ~~墨爾本 2 晚（5/02–5/03）~~ ✅ 維多利亞酒店
+- [x] ~~新加坡 2 晚（4/29–4/30）~~ ✅ 諾維維多利亞飯店
 
 ### 🎡 活動預訂
 - [ ] ⛵ Milford Sound 遊船（NZ D10，需提前預訂）
