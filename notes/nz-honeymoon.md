@@ -107,7 +107,7 @@
 | Day | 日期 | 地點 | 重點 |
 |-----|------|------|------|
 | D01 | 4/29 週三 | 台灣 → 新加坡 | TR867 16:15 出發 → 20:45 抵達樟宜 T1 |
-| D02 | 4/30 週四 | 新加坡 🇸🇬 | 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 · 16:00 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯（墊胃）· 晚上 Kovan 站碰聯政夫妻 → [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（時間未定）|
+| D02 | 4/30 週四 | 新加坡 🇸🇬 | 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 · 16:00 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯 · 18:00 Kovan 站碰聯政 → [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（等聯政下班）|
 | D03 | 5/01 週五 | 新加坡 → 飛機上 | 旅程留空，代辦事項 · ✈ JQ008 21:00 出發 SIN → MEL |
 | D04 | 5/02 週六 | 抵達墨爾本 🇦🇺 | 06:15 抵達；入住 |
 | D05 | 5/03 週日 | 墨爾本 | 墨爾本自由活動 |
