@@ -234,19 +234,27 @@
 
 ---
 
-### NZ D7 ｜ 5/10（週日）｜ 蒂卡波
+### NZ D7 ｜ 5/10（週日）｜ Wanaka 出發 → 庫克山 Mt Cook → 蒂卡波 Tekapo
 
-- 路線：Wanaka → Lake Tekapo（約 160km）
-- 途經普卡基湖（Lake Pukaki）——湛藍冰河色彩
-- 抵達蒂卡波：善牧教堂（Church of the Good Shepherd）
+**上午（Wanaka）→ 庫克山：**
+- ⏰ 08:00 起床 · Check-out Wanaka Bakpaka
+- 📸 08:30 Beacon Point（湖景拍攝，20–30 分）
+- ~~Albert Town（可略過，車上欣賞即可）~~
+- 🚗 09:00–09:30 出發
+- 💧 途中 Lake Pukaki 停車拍照（15–20 分）
+- 🏔 12:30 抵達 Mt Cook Village
+- 🥾 **Hooker Valley Track**（來回 2–3 小時）— 冰河湖・Mt Cook 正面・吊橋景觀
+- ⏰ 16:30–17:00 離開庫克山
 
-**景點：**
-- 🌌 Mt John 觀星（晴天首選，需確認天氣）
-- 蒂卡波湖畔散步・溫泉泡湯
-- 牧羊人教堂（黃昏最美）
-- 🏨 宿：Haka House Hostel Tekapo（5 Motuariki Lane，1晚）
+**傍晚 → 蒂卡波：**
+- 🌅 18:30 抵達 Tekapo，接夕陽黃金時段
+- ⛪ 善牧教堂（Church of the Good Shepherd）黃昏最美
+- 🛁 蒂卡波湖畔溫泉
+- 🌌 Mt John 觀星（晴天首選，黑暗天空保護區）
 
 > 💡 **觀星提醒**：星空受天氣影響很大；若當晚多雲，以湖畔散步、教堂黃昏、溫泉為主即可，不需強求一定要看到星空
+
+🏨 宿：蒂卡波 Tekapo（Haka House Hostel Tekapo，1 晚）
 
 ---
 
@@ -289,22 +297,30 @@
 - 建議早上出發
 - 下午抵達 Te Anau，輕鬆休息，早點就寢
 
-🏨 宿：蒂阿瑙 Te Anau（待訂）
+🏨 宿：蒂阿瑙 Te Anau（Te Anau Lakefront Backpackers，已訂）
 
 ---
 
-### NZ D11 ｜ 5/14（週四）｜ 米佛峽灣 → 皇后鎮
+### NZ D11 ｜ 5/14（週四）｜ 米佛峽灣大巴一日遊 → 皇后鎮
 
-- 路線：Te Anau → Milford Sound → Queenstown（全程約 4–5 小時）
-- 建議 07:00–08:00 出發，Milford Sound 上午光線最佳
-- ⚠️ 需提前預訂遊船
+**GreatSights 米佛峽灣大巴一日遊（✅ 已訂，Klook NT$ 6,730 · 2 位成人）**
 
-**米佛峽灣：**
-- ⛵ Milford Sound 遊船（必做，1.5–2 小時）
-- 峽灣兩側千仞峭壁、Stirling / Bowen 瀑布
-- 傍晚抵達皇后鎮入住
+- 📍 集合：Kiwi Country，Miro 街 2 號
+- ⏰ 09:45 大巴出發
+- 🚌 途中：鏡湖（Mirror Lakes）· 荷馬隧道（Homer Tunnel）
+- ⛵ 12:50 抵達米佛峽灣，登船遊覽（Stirling / Bowen 瀑布，千仞峭壁）
+- 🚌 17:15 回程（抵達 Te Anau 約 19:30）
+- 🚗 傍晚驅車皇后鎮（約 1.5–2 小時）
 
-🏨 宿：皇后鎮（待訂）
+**方案包含：**
+- 峽灣國家公園門票・豪華玻璃頂棚觀光巴士（含講解）
+- 觀光遊船 1.5–2 小時・野餐午餐（雞肉卷 / 素食卷）
+- 車上 / 船上 WiFi・多語導覽手冊
+
+> ⚠️ 出發前 24 小時致電 **0800 866 666** 再次確認接載地點與時間
+> 免費取消至 5/13（三）00:00 NZST
+
+🏨 宿：皇后鎮（The Black Sheep Backpackers，已訂）
 
 ---
 
@@ -641,7 +657,7 @@
 - [x] ~~新加坡 2 晚（4/29–4/30）~~ ✅ 諾維維多利亞飯店
 
 ### 🎡 活動預訂
-- [ ] ⛵ Milford Sound 遊船（NZ D11，需提前預訂）
+- [x] ~~⛵ Milford Sound 遊船（NZ D11）~~ ✅ GreatSights 大巴一日遊（NT$ 6,730，Klook）
 - [ ] 🚁 冰河直升機：Franz Josef 或 Fox Glacier（NZ D5，擇一）
 - [ ] 🌌 Mt John 觀星（NZ D7，蒂卡波）
 - [ ] 🚠 Skyline Gondola 皇后鎮（NZ D12）
