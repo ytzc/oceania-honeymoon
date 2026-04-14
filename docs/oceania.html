@@ -509,6 +509,103 @@
     .budget-amount { font-family: monospace; font-size: 0.85rem; }
     .budget-twd { font-weight: 700; }
 
+    /* ── ACTIVITY CARDS ── */
+    .act-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .act-hd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 9px 14px;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+    .act-hd-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .act-title { font-size: 0.9rem; font-weight: 700; }
+    .act-day {
+      font-family: monospace;
+      font-size: 0.76rem;
+      background: rgba(0,0,0,0.18);
+      padding: 1px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+    .act-bd {
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 580px) { .act-bd { grid-template-columns: 1fr; } }
+    .act-info-row {
+      display: flex;
+      gap: 8px;
+      padding: 4px 0;
+      border-bottom: 1px solid #f0eeea;
+      font-size: 0.83rem;
+      line-height: 1.5;
+    }
+    .act-info-row:last-child { border-bottom: none; }
+    .act-info-label {
+      color: var(--muted);
+      flex-shrink: 0;
+      width: 58px;
+      font-size: 0.78rem;
+    }
+    .act-link-btn {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      background: #f7f6f3;
+      color: var(--text);
+      text-decoration: none;
+      margin: 3px 4px 3px 0;
+      white-space: nowrap;
+      cursor: default;
+    }
+    /* Platform badges */
+    .platform {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 4px;
+      color: #fff;
+      white-space: nowrap;
+    }
+    .platform-klook    { background: #f97316; }
+    .platform-kkday    { background: #ef4444; }
+    .platform-official { background: #0f766e; }
+    .platform-self     { background: #6b7280; }
+    /* Activity group label */
+    .act-group-label {
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      margin: 24px 0 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .act-group-label:first-child { margin-top: 0; }
+
     /* ── FOOTER ── */
     footer {
       max-width: 900px;
@@ -540,6 +637,7 @@
     <li><a href="#rental">🚗 租車</a></li>
     <li><a href="#timeline">🗓 行程</a></li>
     <li><a href="#nz-detail">🗺 NZ 詳細</a></li>
+    <li><a href="#activities">🎯 景點</a></li>
     <li><a href="#accommodation">🏨 住宿</a></li>
     <li><a href="#budget">💰 預算</a></li>
     <li><a href="#checklist">🎒 清單</a></li>
@@ -549,7 +647,7 @@
 
 <header>
   <div class="header-meta">
-    <span class="badge">__VERSION__</span>
+    <span class="badge">v0.20.8</span>
     <span class="date-range">2026 / 04 / 29 → 05 / 17 &nbsp;·&nbsp; 19 天</span>
   </div>
   <h1>Oceania Honeymoon <span>2026</span></h1>
@@ -758,7 +856,9 @@
         <div class="tl-date">4/29 三</div>
         <div class="tl-content">
           <span class="tl-flag">🛫</span>
-          <div class="tl-text">TR867 16:15 桃園出發 → 20:45 抵達樟宜 T1，入住新加坡</div>
+          <div class="tl-text">TR867 16:15 桃園出發 → 20:45 抵達樟宜 T1，入住新加坡
+            <div class="tl-note">🌿 入住後視體力安排晚間散策：<strong>濱海灣花園</strong>（Gardens by the Bay 光影秀）→ <strong>Marina Bay Sands 購物廣場</strong>（The Shoppes）→ <strong>克拉碼頭</strong>（Clarke Quay 夜間酒吧街）&nbsp;·&nbsp; 💡 SkyPark 空中花園觀景台建議改至 D2 早上安排（人較少）</div>
+          </div>
         </div>
       </div>
       <div class="tl-row city-sin tl-todo">
@@ -766,8 +866,8 @@
         <div class="tl-date">4/30 四</div>
         <div class="tl-content">
           <span class="tl-flag">🇸🇬</span>
-          <div class="tl-text">新加坡自由行
-            <div class="tl-note">🍜 13:15 <a href="https://maps.app.goo.gl/YXqFF6phhMA4PSxa9" target="_blank">Un-Yang-Kor-Dai</a> 泰式料理 <span style="color:#3a9e6f;font-weight:600">✅ #4W9SDP3LZSE2</span> <span style="color:var(--muted);font-size:0.76rem">（13:15–14:45 · 僅限無現金支付 · 24h 前取消）</span> &nbsp;·&nbsp; 🍮 15:00 <a href="https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6" target="_blank">99 老樹</a> 榴槤甜品 &nbsp;·&nbsp; 🍚 16:00 <a href="https://maps.app.goo.gl/bNw5qUaFp9UY93aL8" target="_blank">Golden Mile Thien Kee</a> 海南雞飯 &nbsp;·&nbsp; 🍑 18:00 Kovan 站碰聯政 → <a href="https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8" target="_blank">Lexus Durian King</a> 榴槤（等聯政下班）</div>
+          <div class="tl-text">新加坡自由行（上午文化區 → 下午美食）
+            <div class="tl-note">🕌 08:00 <strong>哈芝巷</strong>（Haji Lane 壁畫街區）→ 🏮 09:00 <strong>牛車水 Chinatown</strong>（廟宇 + 伴手禮）→ 💡 若想去聖淘沙：<strong>S.E.A. Aquarium</strong>（海洋館）/ <strong>Skyline Luge</strong>（滑車）/ <strong>環球影城</strong>（可擇一，或移至 D3 上午）&nbsp;·&nbsp; 🍜 13:15 <a href="https://maps.app.goo.gl/YXqFF6phhMA4PSxa9" target="_blank">Un-Yang-Kor-Dai</a> 泰式料理 <span style="color:#3a9e6f;font-weight:600">✅ #4W9SDP3LZSE2</span> <span style="color:var(--muted);font-size:0.76rem">（13:15–14:45 · 僅限無現金支付 · 24h 前取消）</span> &nbsp;·&nbsp; 🍮 15:00 <a href="https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6" target="_blank">99 老樹</a> 榴槤甜品 &nbsp;·&nbsp; 🍚 16:00 <a href="https://maps.app.goo.gl/bNw5qUaFp9UY93aL8" target="_blank">Golden Mile Thien Kee</a> 海南雞飯 &nbsp;·&nbsp; 🍑 18:00 Kovan 站碰聯政 → <a href="https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8" target="_blank">Lexus Durian King</a> 榴槤（等聯政下班）</div>
           </div>
         </div>
       </div>
@@ -776,8 +876,8 @@
         <div class="tl-date">5/01 五</div>
         <div class="tl-content">
           <span class="tl-flag">🌙</span>
-          <div class="tl-text">白天待安排 → ✈ JQ008 21:00 出發 SIN → MEL，飛機上過夜
-            <div class="tl-note" style="color:var(--muted)">行程留空，代辦事項</div>
+          <div class="tl-text">上午自由（聖淘沙備案）→ ✈ JQ008 21:00 出發 SIN → MEL，飛機上過夜
+            <div class="tl-note" style="color:var(--muted)">💡 若 D2 未去聖淘沙，可安排上午：Skyline Luge / 環球影城（10:00 開園）→ 17:00 返回收拾行李 → 機場</div>
           </div>
         </div>
       </div>
@@ -788,7 +888,9 @@
         <div class="tl-date">5/02 六</div>
         <div class="tl-content">
           <span class="tl-flag">✈</span>
-          <div class="tl-text">06:15 抵達墨爾本 T2，入住飯店</div>
+          <div class="tl-text">06:15 抵達墨爾本 T2，入住飯店
+            <div class="tl-note">☕ 下午市區探索：<strong>Degraves St</strong>（咖啡文化窄巷）· 🚉 <strong>Flinders Street Station</strong>（黃色穹頂地標，可在廣場拍照）· <strong>Federation Square</strong>（步行即達）</div>
+          </div>
         </div>
       </div>
       <div class="tl-row city-mel tl-todo">
@@ -796,7 +898,9 @@
         <div class="tl-date">5/03 日</div>
         <div class="tl-content">
           <span class="tl-flag">🇦🇺</span>
-          <div class="tl-text">墨爾本自由行</div>
+          <div class="tl-text">墨爾本自由行
+            <div class="tl-note" style="color:var(--muted)">📍 推薦：Queen Victoria Market（週日有農夫市集）· Hosier Lane 塗鴉巷 · St Kilda 海灘（電車可達）</div>
+          </div>
         </div>
       </div>
       <div class="tl-row city-mel tl-flight">
@@ -828,6 +932,7 @@
             <li>🛬 16:25 JQ171 抵達 I 廳 → Door 2 撥打 A Rentals shuttle</li>
             <li>🚗 取車：153 Orchard Road, Harewood</li>
             <li>🌆 晚上：Riverside Market · Little High 街頭美食</li>
+            <li>🍪 Cookie Time Bakery（基督城發源地，必買伴手禮）</li>
             <li>🏨 宿：Urbanz 烏爾班茲旅舍</li>
           </ul>
         </div>
@@ -853,7 +958,9 @@
           <div class="nz-col-title">行程重點</div>
           <ul class="nz-list">
             <li>🚗 CHC → Akaroa 約 82km，1 小時 20 分</li>
-            <li>🏘 法式殖民小鎮風情，班克斯半島</li>
+            <li>🏘 <strong>Akaroa Heritage Park</strong> 法式殖民歷史街區</li>
+            <li>🌊 Akaroa Harbour 港口景觀 + 咖啡廳</li>
+            <li>🦙 <strong>Shamarra Alpacas</strong> 羊駝農場（市區約 15 分，可愛拍照點）</li>
             <li>🌅 傍晚返回基督城</li>
             <li>🏨 宿：Urbanz 烏爾班茲旅舍</li>
           </ul>
@@ -878,11 +985,15 @@
         <div>
           <div class="nz-col-title">景點</div>
           <ul class="nz-list">
-            <li>🌿 Botanic Gardens 植物園</li>
-            <li>⛵ Avon River 平底船撐篙</li>
-            <li>🚡 Christchurch Gondola 空中纜車</li>
+            <li>🌿 Botanic Gardens 植物園（免費，花卉溫室）</li>
+            <li>⛵ Avon River 平底船撐篙（約 NZD 40）</li>
+            <li>🏛 <strong>Canterbury Museum</strong>（免費入場，毛利文化 + 南極展）</li>
+            <li>🚋 <strong>Christchurch Tram</strong> 電車（市區歷史路線，約 NZD 40）</li>
+            <li>🌉 Bridge of Remembrance（鐘樓拱橋，一戰紀念）</li>
             <li>🏛 大教堂廣場 · Re:START 貨櫃商店街</li>
+            <li>🎨 <strong>Christchurch Arts Centre</strong>（週末市集 · 工藝品）</li>
             <li>🛒 Riverside Market · Little High 各國美食</li>
+            <li>🍪 Cookie Time Bakery（若 D1 未買，D3 補購）</li>
             <li>🏨 宿：Urbanz 烏爾班茲旅舍（Check-out 5/7 10:00 前）</li>
           </ul>
         </div>
@@ -905,8 +1016,9 @@
       </div>
       <div class="nz-day-bd">
         <div>
-          <div class="nz-col-title">路線 ｜ ~250km · 2.5–3 小時</div>
+          <div class="nz-col-title">路線 ｜ ~250km · 2.5–3 小時（沿 SH73）</div>
           <ul class="nz-list">
+            <li>🪨 途中 <strong>Castle Hill（Kura Tāwhiti）</strong> 石灰岩怪石群（停留 30 分，免費）</li>
             <li>🏔 穿越南阿爾卑斯山脈，隧道 + 峽谷 + 高山景觀</li>
             <li>⛓ <strong>積雪路段最可能需 Snow Chains</strong></li>
             <li>🌊 抵達西岸 Greymouth</li>
@@ -917,10 +1029,12 @@
           </div>
         </div>
         <div>
-          <div class="nz-col-title">可選活動（葛雷茅斯 / 西岸）</div>
+          <div class="nz-col-title">抵達 Greymouth 後可選</div>
           <ul class="nz-list">
-            <li>🏚 Shantytown Heritage Park — 淘金時代遺跡 · 蒸汽火車 · 換裝拍照</li>
-            <li>💚 西岸翡翠（Pounamu）文化</li>
+            <li>🏚 <strong>Shantytown Heritage Park</strong> — 淘金時代遺跡 · 蒸汽火車 · 換裝拍照</li>
+            <li>💫 <strong>Glow Worm Dell</strong>（Greymouth 市區步行可達，夜間螢火蟲洞）</li>
+            <li>🌊 <strong>Hokitika Gorge</strong>（翡翠藍峽谷，翌日 D5 順路或 D4 傍晚繞路約 1 小時）<span class="nz-warn-tag">⚠️ 會拉長行程</span></li>
+            <li>💚 西岸翡翠（Pounamu）文化 · Hokitika Beach 彩虹字樣海灘</li>
           </ul>
         </div>
       </div>
@@ -996,9 +1110,11 @@
           <ul class="nz-list">
             <li>⏰ 08:00 起床 · Check-out Wanaka Bakpaka</li>
             <li>📸 08:30 <strong>Beacon Point</strong>（湖景拍攝，20–30 分）</li>
-            <li>🚗 09:00–09:30 出發（Albert Town 車上欣賞，可略過）</li>
+            <li>🌊 09:00 <strong>Glendhu Bay</strong>（寂靜灣景，15 分，Wanaka 西側 SH6 路上）</li>
+            <li>🚗 09:30 出發（Albert Town 車上欣賞即可）</li>
             <li>💧 途中 <strong>Lake Pukaki</strong> 停車拍照（15–20 分）</li>
             <li>🏔 12:30 抵達 Mt Cook Village</li>
+            <li>🅿️ 停車：<a href="https://maps.app.goo.gl/FXRcJCRqedqMaE5D8" target="_blank" style="color:var(--text);text-decoration:underline dotted">White Horse Hill Campground 停車場</a></li>
             <li>🥾 <strong>Hooker Valley Track</strong>（來回 2–3 小時）<br><span style="font-size:0.78rem;color:var(--muted)">冰河湖 · Mt Cook 正面 · 吊橋景觀</span></li>
             <li>⏰ 16:30–17:00 離開庫克山</li>
           </ul>
@@ -1029,9 +1145,11 @@
       </div>
       <div class="nz-day-bd">
         <div>
-          <div class="nz-col-title">路線 ｜ ~180km · 2 小時</div>
+          <div class="nz-col-title">路線 ｜ Tekapo → Oamaru（途中停留）</div>
           <ul class="nz-list">
-            <li>🚗 蒂卡波 → 奧馬魯</li>
+            <li>🚗 09:00 出發，蒂卡波 → 奧馬魯</li>
+            <li>🪨 途中 <strong>Elephant Rocks</strong>（Duntroon 附近，石灰岩群，20 分）<br><span style="font-size:0.78rem;color:var(--muted)">《納尼亞傳奇》取景地 · 免費入場</span></li>
+            <li>🌊 途中 <strong>Moeraki Boulders</strong>（海灘圓形巨石，20–30 分）<br><span style="font-size:0.78rem;color:var(--muted)">入場費 NZD 5 · 落潮時景觀最佳</span></li>
             <li>🏛 維多利亞風格石灰岩建築街區（Harbour Historic Precinct）</li>
             <li>🤖 蒸汽龐克文化博物館（Steampunk HQ）</li>
             <li>🏨 宿：奧馬魯背包客旅館（Oamaru Backpackers）</li>
@@ -1040,7 +1158,8 @@
         <div>
           <div class="nz-col-title">傍晚活動</div>
           <ul class="nz-list">
-            <li>🐧 藍眼企鵝保護區（Blue Penguin Colony）傍晚點名</li>
+            <li>🐦 <strong>Bushy Beach</strong> 黃眼企鵝棲息地（天然觀察，黃昏前抵達）<br><span style="font-size:0.78rem;color:var(--muted)">免費 · 禁止靠近，僅限遠距觀察</span></li>
+            <li>🐧 <strong>Blue Penguin Colony</strong>（藍眼企鵝保護區）傍晚點名</li>
             <li style="color:var(--muted);font-size:0.8rem;font-style:italic">💡 企鵝出現時間依季節，傍晚前先安排市區景點，預留晚間時段</li>
           </ul>
         </div>
@@ -1112,7 +1231,7 @@
             ⚠️ 出發前 24 小時致電 <strong>0800 866 666</strong> 確認接載地點與時間
           </div>
           <ul class="nz-list">
-            <li>📍 集合：Kiwi Country，Miro 街 2 號</li>
+            <li>📍 集合：<a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</li>
             <li>⏰ <strong>09:45</strong> 大巴出發</li>
             <li>🚌 途中：鏡湖（Mirror Lakes）· 荷馬隧道（Homer Tunnel）</li>
             <li>⛵ <strong>12:50</strong> 抵達峽灣 · 登船遊覽（Stirling / Bowen 瀑布）</li>
@@ -1146,6 +1265,8 @@
         <div>
           <div class="nz-col-title">皇后鎮自由活動</div>
           <ul class="nz-list">
+            <li>🛣 <strong>Crown Range Road</strong> 景觀公路（紐西蘭最高公路，可繞行 Wanaka 方向）<span class="nz-warn-tag">⚠️ 冬季留意路況</span></li>
+            <li>🦌 <strong>Deer Park Heights</strong>（皇后鎮東側，360° 全景俯瞰 Wakatipu 湖）</li>
             <li>🚠 Skyline Gondola 纜車 + 景觀餐廳（俯瞰 Lake Wakatipu）</li>
             <li>🍔 Fergburger 弗格漢堡（排隊名店，建議非尖峰時段）</li>
             <li>🪂 跳傘 / 噴射船 / 高空彈跳（擇一）</li>
@@ -1186,6 +1307,319 @@
             <li>✈ <strong>19:30</strong> CI054 AKL → TPE（途經 BNE，飛機上過夜）</li>
             <li>🏠 <strong>05:40+1</strong> 抵達桃園</li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── ACTIVITIES ── -->
+  <section id="activities">
+    <div class="section-title">🎯 景點與活動預訂 NZ Activities</div>
+
+    <!-- Christchurch -->
+    <div class="act-group-label">🏙 基督城 Christchurch · NZ D1–D3（5/4–5/7）</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--chc)">
+        <div class="act-hd-left">
+          <span class="act-title">🐬 阿卡羅阿海豚遊覽 Akaroa Dolphin Cruise</span>
+          <span class="act-day">NZ D2 · 5/5（週二）</span>
+          <span class="platform platform-official">Black Cat Cruises</span>
+        </div>
+        <span class="accom-status status-todo">待決定</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>海上遊船 · Hectors 小海豚（瀕危）</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 75–125 成人（估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>10:45 或 13:30 出發班次</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>⚠️ 強烈建議提前預訂，旺季易滿</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>CHC → Akaroa 約 82km · 1.5 小時自駕；可搭配 Heritage Park、Shamarra Alpacas</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">預訂 / 連結</div>
+          <span class="act-link-btn">🌐 官網：blackcat.co.nz</span>
+          <span class="act-link-btn">🟠 可在 Klook 搜尋</span>
+          <div class="nz-col-title" style="margin-top:10px">同日可搭配</div>
+          <ul class="nz-list">
+            <li>🏘 Akaroa Heritage Park 殖民歷史街區</li>
+            <li>🦙 Shamarra Alpacas 羊駝農場（車程 15 分）</li>
+            <li>🌊 Akaroa Harbour 港口散步拍照</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--chc)">
+        <div class="act-hd-left">
+          <span class="act-title">🚡 基督城纜車 Christchurch Gondola</span>
+          <span class="act-day">NZ D3 · 5/6（週三）</span>
+          <span class="platform platform-self">自行前往</span>
+        </div>
+        <span class="accom-status status-todo">可選</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>空中纜車 · 山頂景觀平台</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 35–40 成人（估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>下午或黃昏（俯瞰城市景觀最佳）</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>無需預約，現場購票即可</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>可遠眺坎特伯里平原與南阿爾卑斯山；山頂有景觀餐廳</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">同日 D3 滿排選項</div>
+          <ul class="nz-list">
+            <li>🌿 Botanic Gardens 植物園（免費）</li>
+            <li>⛵ Avon 平底船撐篙（約 NZD 40）</li>
+            <li>🏛 Canterbury Museum（免費入場）</li>
+            <li>🚋 Christchurch Tram 電車（約 NZD 40）</li>
+            <li>🌉 Bridge of Remembrance 戰爭紀念橋</li>
+            <li>🏛 大教堂廣場 · Re:START 貨櫃街</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Franz Josef -->
+    <div class="act-group-label">🧊 西岸冰河 West Coast · NZ D5（5/8）</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--frj)">
+        <div class="act-hd-left">
+          <span class="act-title">🚁 冰河直升機 Glacier Helicopter（Franz Josef 或 Fox）</span>
+          <span class="act-day">NZ D5 · 5/8（週五）</span>
+          <span class="platform platform-official">官網預訂</span>
+        </div>
+        <span class="accom-status status-todo">待決定</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>直升機冰河降落體驗（約 30–45 分）</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 750–850 / 人（估算，依方案浮動）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>⭐ 上午光線佳・能見度高，優先選早班</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>⚠️ 強烈建議至少提前 1 週預訂</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>Franz Josef 或 Fox Glacier 擇一（相距約 25km）；天氣影響極大</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">取消 / 備注</div>
+          <div style="background:#fff7ed;border:1px solid #f97316;border-left:3px solid #f97316;border-radius:6px;padding:6px 10px;font-size:0.75rem;color:#7c2d12;margin-bottom:8px">
+            ⚠️ 天氣影響極大，當天早上需電話確認是否如期起飛
+          </div>
+          <ul class="nz-list">
+            <li>🧊 包含冰河降落（snow landing）為主要賣點</li>
+            <li>✅ 因天氣取消通常可全額退款或免費改期</li>
+            <li>📞 Franz Josef / Fox Glacier Helicopters 官網預訂</li>
+            <li style="color:var(--muted);font-size:0.8rem">🔍 可在 Klook 或官網搜尋比較方案</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tekapo -->
+    <div class="act-group-label">🌌 蒂卡波 Tekapo · NZ D7（5/10 夜間）</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--tkp)">
+        <div class="act-hd-left">
+          <span class="act-title">🔭 Earth & Sky 觀星導覽 Stargazing Tour</span>
+          <span class="act-day">NZ D7 · 5/10（週日）夜間</span>
+          <span class="platform platform-official">官網 / Klook</span>
+        </div>
+        <span class="accom-status status-todo">待決定</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>導覽觀星（Earth & Sky，約 2 小時）</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 195–199 成人（估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>日落後約 2 小時（5 月約 20:30 起）</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>建議提前預訂，5 月旺季易滿</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>天氣影響大；多雲時改湖畔散步・溫泉・善牧教堂</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">預訂 / 連結</div>
+          <span class="act-link-btn">🌐 官網：earthandsky.co.nz</span>
+          <span class="act-link-btn">🟠 可在 Klook 搜尋</span>
+          <div class="nz-col-title" style="margin-top:10px">免費替代（天氣不佳時）</div>
+          <ul class="nz-list">
+            <li>🌌 Lake Tekapo 湖畔自由觀星（免費）</li>
+            <li>⛪ 善牧教堂星空（黑暗天空保護區）</li>
+            <li>🛁 蒂卡波湖畔溫泉（需預訂）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oamaru -->
+    <div class="act-group-label">🐧 奧馬魯 Oamaru · NZ D8（5/11）</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:#7a6a5a">
+        <div class="act-hd-left">
+          <span class="act-title">🐧 藍眼企鵝保護區 Blue Penguin Colony</span>
+          <span class="act-day">NZ D8 · 5/11（週一）傍晚</span>
+          <span class="platform platform-official">官網預訂</span>
+        </div>
+        <span class="accom-status status-todo">待決定</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>企鵝返巢觀察 · 含解說（保育型體驗）</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 45–65 成人（依座位區，估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>日落後（5 月約 17:30–18:30 企鵝返巢）</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>建議提前網路預訂</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>禁止拍照（保護鳥類）· 全程靜默觀察</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">預訂 / 連結</div>
+          <span class="act-link-btn">🌐 官網：penguins.co.nz</span>
+          <div class="nz-col-title" style="margin-top:10px">同日建議路線（Tekapo → Oamaru）</div>
+          <ul class="nz-list">
+            <li>🪨 Elephant Rocks（林道路側石灰岩群，免費）</li>
+            <li>🌊 Moeraki Boulders 球石海灘（約 NZD 5 入場費）</li>
+            <li>🐦 Bushy Beach（黃眼企鵝棲地，自由觀察）</li>
+            <li>💡 白天排路途景點，傍晚留給藍眼企鵝</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milford Sound - BOOKED -->
+    <div class="act-group-label">⛵ 米佛峽灣 Milford Sound · NZ D11（5/14）✅ 已訂</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--qzn)">
+        <div class="act-hd-left">
+          <span class="act-title">🚌 GreatSights 米佛峽灣大巴一日遊</span>
+          <span class="act-day">NZ D11 · 5/14（週四）</span>
+          <span class="platform platform-klook">Klook</span>
+        </div>
+        <span class="accom-status status-done">✅ 已訂</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">訂單資訊</div>
+          <div class="act-info-row"><span class="act-info-label">平台</span><span>Klook · NT$6,730 · 2 位成人</span></div>
+          <div class="act-info-row"><span class="act-info-label">集合</span><span><a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</span></div>
+          <div class="act-info-row"><span class="act-info-label">出發</span><span><strong>09:45</strong> 大巴出發</span></div>
+          <div class="act-info-row"><span class="act-info-label">峽灣</span><span><strong>12:50</strong> 抵達 · 登船遊覽（Stirling / Bowen 瀑布）</span></div>
+          <div class="act-info-row"><span class="act-info-label">回程</span><span><strong>17:15</strong> 出發（Te Anau 約 19:30）</span></div>
+          <div class="act-info-row"><span class="act-info-label">取消</span><span>免費取消至 5/13（三）00:00 NZST</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">方案包含</div>
+          <ul class="nz-list">
+            <li>🎫 峽灣國家公園門票</li>
+            <li>🚌 豪華玻璃頂棚觀光巴士（含講解）</li>
+            <li>⛵ 觀光遊船（1.5–2 小時）</li>
+            <li>🥪 野餐午餐（雞肉卷 / 素食卷）</li>
+            <li>📶 車上 / 船上 WiFi · 多語導覽手冊</li>
+          </ul>
+          <div style="background:#fff7ed;border:1px solid #f97316;border-left:3px solid #f97316;border-radius:6px;padding:6px 10px;font-size:0.75rem;color:#7c2d12;margin-top:8px">
+            ⚠️ 出發前 24 小時致電 <strong>0800 866 666</strong> 確認接載地點與時間
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Queenstown -->
+    <div class="act-group-label">👑 皇后鎮 Queenstown · NZ D12（5/15）</div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--qzn)">
+        <div class="act-hd-left">
+          <span class="act-title">🚠 Skyline Queenstown 纜車 + Luge</span>
+          <span class="act-day">NZ D12 · 5/15（週五）</span>
+          <span class="platform platform-klook">Klook</span>
+        </div>
+        <span class="accom-status status-todo">待預訂</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>纜車 + 山頂景觀（+ 可加 Luge 滑車）</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>纜車約 NZD 50–55 成人；Luge 另計（估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>下午至傍晚（日落前俯瞰 Lake Wakatipu 最美）</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>建議網路預訂，旺季 walk-in 可能排隊</span></div>
+          <div class="act-info-row"><span class="act-info-label">地址</span><span>Brecon Street, Queenstown</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">預訂 / 連結</div>
+          <span class="act-link-btn">🌐 官網：skyline.co.nz</span>
+          <span class="act-link-btn">🟠 可在 Klook 搜尋</span>
+          <div class="nz-col-title" style="margin-top:10px">同日可搭配</div>
+          <ul class="nz-list">
+            <li>♨️ Onsen Hot Pools（建議提前預訂）</li>
+            <li>🍔 Fergburger（非尖峰時段，避開午餐時段）</li>
+            <li>🏙 市中心步行、Queenstown Gardens</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--qzn)">
+        <div class="act-hd-left">
+          <span class="act-title">♨️ Onsen Hot Pools 溫泉</span>
+          <span class="act-day">NZ D12 · 5/15（週五）</span>
+          <span class="platform platform-official">官網預訂（必訂）</span>
+        </div>
+        <span class="accom-status status-todo">待預訂</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">活動資訊</div>
+          <div class="act-info-row"><span class="act-info-label">類型</span><span>岩石池溫泉 · 俯瞰 Shotover River 峽谷</span></div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 55–75 成人（公共岩石池，估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>⭐ 傍晚日落時分，蜜月最佳時段</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>⚠️ 必須預訂，不接受 walk-in</span></div>
+          <div class="act-info-row"><span class="act-info-label">地址</span><span>160 Arthurs Point Road（距市區 ~10 分）</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">預訂 / 連結</div>
+          <span class="act-link-btn">🌐 官網：onsen.co.nz</span>
+          <div class="nz-col-title" style="margin-top:10px">備注</div>
+          <ul class="nz-list">
+            <li>🌅 夕陽時分景色絕佳，蜜月首選時段</li>
+            <li>🛁 可加訂私人湯屋（費用另計）</li>
+            <li>🚗 需自駕前往，距市區約 10 分鐘</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="act-card">
+      <div class="act-hd" style="background:var(--qzn)">
+        <div class="act-hd-left">
+          <span class="act-title">🪂 跳傘 Skydive / ⛵ 噴射船 Shotover Jet（擇一）</span>
+          <span class="act-day">NZ D12 · 5/15（週五）</span>
+          <span class="platform platform-klook">Klook / 官網</span>
+        </div>
+        <span class="accom-status status-todo">待決定</span>
+      </div>
+      <div class="act-bd">
+        <div>
+          <div class="nz-col-title">🪂 跳傘 Skydive Queenstown</div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 299–459（依高度 12,000–15,000ft，估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>上午（天氣穩定）；全天均有班次</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>⚠️ 強烈建議提前預訂</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>天氣取消可免費改期；俯瞰 The Remarkables 山脈</span></div>
+        </div>
+        <div>
+          <div class="nz-col-title">⛵ 噴射船 Shotover Jet</div>
+          <div class="act-info-row"><span class="act-info-label">費用</span><span>約 NZD 149–159 成人（估算）</span></div>
+          <div class="act-info-row"><span class="act-info-label">時段</span><span>全天；約 25–30 分鐘體驗</span></div>
+          <div class="act-info-row"><span class="act-info-label">預約</span><span>建議提前預訂，可現場購票</span></div>
+          <div class="act-info-row"><span class="act-info-label">備注</span><span>Shotover Canyon 峽谷急流 · 360° 旋轉為賣點</span></div>
+          <div style="margin-top:6px">
+            <span class="act-link-btn">🟠 可在 Klook 搜尋兩項活動</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1640,7 +2074,7 @@
 </div>
 
 <footer>
-  <span>oceania-honeymoon &nbsp;·&nbsp; __VERSION__</span>
+  <span>oceania-honeymoon &nbsp;·&nbsp; v0.20.8</span>
   <span>2026</span>
 </footer>
 
