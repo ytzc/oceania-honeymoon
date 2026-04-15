@@ -6,6 +6,13 @@
 
 ---
 
+## 🗺 行程地圖 Trip Map
+
+> 🔗 [**擎璇沖繩旅遊地圖（Google My Maps）**](https://www.google.com/maps/d/edit?mid=1TxWHlrQj86trb9a77O4JRLCSZdvDBXs&usp=sharing)  
+> 景點 · 住宿 · 路線總覽 · 4/23 ~ 4/27
+
+---
+
 ## 👥 旅行者資訊
 
 | | 姓名 | 備註 |
