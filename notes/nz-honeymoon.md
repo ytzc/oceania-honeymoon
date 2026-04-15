@@ -48,16 +48,23 @@
 
 ### 🛬 取車流程（Christchurch Airport）
 
-1. 抵達後前往 **Domestic Terminal Door 2**
-2. 透過官網 / 電話 / SMS 申請接駁
+1. 清關 + 提領行李後，前往 **Domestic Terminal Door 2**
+2. 填寫線上接駁申請表（通關後再填）：  
+   🌐 **[snaprentals.co.nz/pickup-christchurch](https://www.snaprentals.co.nz/pickup-christchurch)**  
+   填寫：姓名 · 電話號碼 · 接送人數
 3. 等候約 **10–15 分鐘**，接駁車為**黑白色 Snap shuttle**
 4. 車場距機場約 **5 分鐘**車程
 
+| 項目 | 內容 |
+|------|------|
+| 接駁服務時間 | **08:00–17:30** |
+| 門市地址 | **170 Orchard Road, Harewood, Christchurch 8051** |
+| 電話 | **0800 288 699**（紐西蘭本地）|
+| 非營業時間 | 需提前安排，加收 **NZD $50** |
+
 > 📍 [**Snap Rentals CHC 位置**](https://maps.app.goo.gl/nKur63NCnnun3hFS8)
 
-**接駁服務時間：08:00–17:30**｜非營業時間取車需提前安排，加收 **NZD $50**
-
-> ⚠️ **取車時段注意**：班機 16:25 抵達（I 廳），清關 + 提領行李後，抵達取車點預計約 **18:00**，已超出接駁服務截止時間（17:30）。**出發前請主動聯繫 Snap Rentals**，告知預計抵達時間，確認安排方式（可能需支付非營業時間費 NZD $50）。
+> ⚠️ **取車時段注意**：班機 16:25 抵達（I 廳），清關 + 提領行李後，抵達取車點預計約 **18:00**，已超出接駁服務截止時間（17:30）。**出發前請電話聯繫 0800 288 699**，告知預計抵達時間，確認安排方式（可能需支付非營業時間費 NZD $50）。
 
 ---
 
@@ -66,7 +73,8 @@
 | 項目 | 內容 |
 |------|------|
 | 還車時間 | **2026/5/16（週六）09:00** |
-| 地點 | Queenstown Airport（Snap Rentals QTN） |
+| 門市地址 | **5 Glenda Drive, Frankton, Queenstown 9300** |
+| 電話 | **0800 288 699**（紐西蘭本地）|
 
 > ⚠️ 還車當天 JQ292 10:50 起飛，**09:00 還車 → 09:30 前進入機場**，請提前打包完畢。
 
@@ -85,7 +93,7 @@
 | Day | 日期 | 地點 | 重點 |
 |-----|------|------|------|
 | D01 | 4/29 週三 | 台灣 → 新加坡 | TR867 16:15 出發 → 20:45 抵達樟宜 T1 |
-| D02 | 4/30 週四 | 新加坡 🇸🇬 | 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 · 16:00 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯 · 18:00 Kovan 站碰聯政 → [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（等聯政下班）|
+| D02 | 4/30 週四 | 新加坡 🇸🇬 | 08:00 **哈芝巷**（Haji Lane 壁畫街區） · 09:00 牛車水 Chinatown（廟宇 + 伴手禮）· 💡 聖淘沙可選：S.E.A. Aquarium / Skyline Luge / 環球影城（擇一）· 13:15 [Un-Yang-Kor-Dai](https://maps.app.goo.gl/YXqFF6phhMA4PSxa9) 泰式料理 ✅ 已預訂（#4W9SDP3LZSE2 · 無現金 · 24h 取消）· 15:00 [99 老樹](https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6) 榴槤甜品 · 16:00 [Golden Mile Thien Kee](https://maps.app.goo.gl/bNw5qUaFp9UY93aL8) 雞飯 · 18:00 Kovan 站碰聯政 → [Lexus Durian King](https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8) 榴槤（等聯政下班）|
 | D03 | 5/01 週五 | 新加坡 → 飛機上 | 旅程留空，代辦事項 · ✈ JQ008 21:00 出發 SIN → MEL |
 | D04 | 5/02 週六 | 抵達墨爾本 🇦🇺 | 06:15 抵達；入住 |
 | D05 | 5/03 週日 | 墨爾本 | 墨爾本自由活動 |
@@ -111,9 +119,9 @@
 ### NZ D1 ｜ 5/04（週一）｜ 基督城抵達
 
 - 16:25 JQ171 抵達基督城 I 廳
-- 領完行李 → 前往 **Domestic Terminal Door 2**，致電 / SMS 叫 Snap Rentals 接駁（黑白色 shuttle，等候 10–15 分）
-- ⚠️ 預計抵達約 18:00，已超出接駁服務時間（截止 17:30）— **出發前請先聯繫 Snap Rentals 確認安排**
-- [📍 Snap Rentals CHC](https://maps.app.goo.gl/nKur63NCnnun3hFS8) — 車場距機場約 5 分鐘
+- 領完行李 → 前往 **Domestic Terminal Door 2**，填寫線上接駁申請表：[snaprentals.co.nz/pickup-christchurch](https://www.snaprentals.co.nz/pickup-christchurch)（黑白色 shuttle，等候 10–15 分）
+- ⚠️ 預計抵達約 18:00，已超出接駁服務時間（截止 17:30）— **出發前請電話聯繫 0800 288 699 確認安排**
+- [📍 Snap Rentals CHC](https://maps.app.goo.gl/nKur63NCnnun3hFS8) — 170 Orchard Road, Harewood · 約 5 分鐘車程
 - 入住基督城（建議機場附近，方便取車）
 - 傍晚可在市區輕鬆走走：Riverside Market・Little High 街頭美食
 
@@ -316,8 +324,31 @@
 
 ### NZ D12 ｜ 5/15（週五）｜ 皇后鎮自由活動
 
+**🦌 Deer Park Heights ✅ 已確認（Email）**
+
+| 項目 | 內容 |
+|------|------|
+| 日期 | 2026/5/15（週五）|
+| 開放時段 | 07:00 – 21:00（付費入場時間）|
+| 入場截止 | ⚠️ **18:00 前須入場**（閘門 18:00 鎖上）|
+| 遊覽時間 | 約 2–4 小時 |
+| 費用 | **NZD $75 / 車**（非每人）|
+| 入場規則 | 1 次入場 · 1 次出場（不可重複進出）|
+| 交通 | ⚠️ 僅限自駕（不可步行 / Uber / 計程車）|
+| 憑證 | [📄 Invoice / Receipt](../docs/assets/deer_park_invoice.pdf) |
+
+> ⚠️ **安全注意事項**
+> - **Hard Antler Block** 區域須全程留在車內
+> - 請勿接近或餵食任何有角動物
+> - 餵食時只能將食物**丟在地上**，不可手持
+> - 全程遵守園區指示牌
+
+> 💡 **貼士**：帶 $2 硬幣購買飼料 · 建議早上或黃昏前往 · 碎石路，低速慢行
+
+---
+
+**其他可選活動：**
 - 🛣 **Crown Range Road** 景觀公路（紐西蘭最高公路，可繞行 Wanaka 方向）⚠️ 冬季留意路況
-- 🦌 **Deer Park Heights**（皇后鎮東側，360° 全景俯瞰 Wakatipu 湖）
 - ♨️ Onsen Hot Pools 溫泉
 - 🚠 Skyline Gondola 纜車 + 景觀餐廳
 - 🍔 Fergburger 弗格漢堡（21:00 後排隊較短）
@@ -662,7 +693,7 @@
 - [ ] 🐬 阿卡羅阿自然之旅，NZD 125（NZ D2）
 
 ### 🚗 租車 / 出行
-- [ ] ⚡ **出發前聯繫 Snap Rentals**，告知 5/4 預計抵達時間（約 18:00），確認非營業時間取車安排
+- [ ] ⚡ **出發前電話聯繫 Snap Rentals（0800 288 699）**，告知 5/4 預計抵達時間（約 18:00），確認非營業時間取車安排
 - [ ] 國際駕照確認（2 人均有效）
 - [ ] 下載 Google Maps 紐西蘭離線地圖（山區無訊號）
 
