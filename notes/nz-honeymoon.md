@@ -30,75 +30,53 @@
 
 ## 🚗 租車資訊 Rental Car
 
-> 📄 [**紐西蘭租車確認文件**](../docs/assets/紐西蘭租車.pdf) ← 點開參考
+> 📍 [**Snap Rentals CHC 位置**](https://maps.app.goo.gl/nKur63NCnnun3hFS8)
 
 ### 📍 租車摘要
 
 | 項目 | 內容 |
 |------|------|
-| 租車公司 | **A Rentals NZ Ltd** |
-| 車型 | **2019 Toyota RAV4**（已確認配車）|
-| 燃料 / 驅動 | Petrol · 4WD |
-| 天數 | 12 days |
-| 保險 | SUV Premium Insurance（0 Excess + Roadside Assistance）|
-| Snow Chains | ✅ 已加入預訂（NZD 80 / 整個租期）|
-| 總價 | **NZD 1,593.64**（含單程費）|
-| 付款 | ✅ 2026/4/8 子擎 Line Pay 信用卡已付清 |
+| 租車公司 | **Snap Rentals** |
+| 車型 | **Toyota Corolla Wagon** |
+| 天數 | 12 天（5/4–5/16）|
+| 保險 | Simply Better Cover（0 Excess · 0 Bond · 含道路救援・輪胎・擋風玻璃・鑰匙遺失）|
+| 單程費 | **NZD $0**（免收 ✨）|
+| 總價 | **NZD 891.58**（≈ TWD 16,557）|
+| 付款 | ✅ 已付清 |
 
 ---
 
 ### 🛬 取車流程（Christchurch Airport）
 
-1. 領完行李後，前往 **Arrivals 出口 Door 2** 等候接駁
-2. **自行撥打電話叫 shuttle**（不會主動等你）
+1. 抵達後前往 **Domestic Terminal Door 2**
+2. 透過官網 / 電話 / SMS 申請接駁
+3. 等候約 **10–15 分鐘**，接駁車為**黑白色 Snap shuttle**
+4. 車場距機場約 **5 分鐘**車程
 
-#### 接駁電話
+> 📍 [**Snap Rentals CHC 位置**](https://maps.app.goo.gl/nKur63NCnnun3hFS8)
 
-| 情境 | 號碼 |
-|------|------|
-| 紐西蘭本地 SIM | `0800 660 600` 或 `09 600 6660` |
-| 非紐西蘭 SIM（台灣門號等）| `+64 800 660 600` 或 `+64 9 600 6660` |
+**接駁服務時間：08:00–17:30**｜非營業時間取車需提前安排，加收 **NZD $50**
 
-#### 語音選單操作
-
-```
-選語言（繁中/英） → 按 2 → 再按 2 → 接通 Christchurch branch
-```
-
-#### 門市地址
-
-```
-153 Orchard Road, Harewood, Christchurch
-```
+> ⚠️ **取車時段注意**：班機 16:25 抵達（I 廳），清關 + 提領行李後，抵達取車點預計約 **18:00**，已超出接駁服務截止時間（17:30）。**出發前請主動聯繫 Snap Rentals**，告知預計抵達時間，確認安排方式（可能需支付非營業時間費 NZD $50）。
 
 ---
 
 ### 🔴 還車資訊（Queenstown Airport）
 
-> 📄 [**還車流程說明文件**](../docs/assets/Queenstown%20Airport%20Vehicle%20Return%20Instructions%20111.pdf) ← 點開參考
-
 | 項目 | 內容 |
 |------|------|
-| 還車時間 | **2026/5/16（週六）07:00** |
-| 地點 | Queenstown Airport |
-| 備註 | 屬於 **outside business hours** — 採 **after-hours self-drop-off** 流程 |
+| 還車時間 | **2026/5/16（週六）09:00** |
+| 地點 | Queenstown Airport（Snap Rentals QTN） |
 
-#### 門市地址
-
-```
-77 Glenda Dr, Frankton, Queenstown
-```
-
-> ⚠️ 還車當天 JQ292 10:50 起飛，**07:00 還車 → 09:00 前進入機場**，請提前打包完畢。
+> ⚠️ 還車當天 JQ292 10:50 起飛，**09:00 還車 → 09:30 前進入機場**，請提前打包完畢。
 
 ---
 
-### ⛓ Snow Chains
+### 📋 重要規定
 
-- 已加入預訂，費用 **NZD 80 / 整個租期**
-- 取車當天可再決定是否使用；**若不需要可取消**
-- 5 月底為紐西蘭南島早冬，山區偶有積雪，Arthur's Pass / Mt Cook 路段建議保留
-- ⚠️ 尖峰時段臨時加購不保證有貨
+- 還車時須加滿油（Full to Full）
+- 僅限預訂登記之駕駛人駕駛
+- 違反條款將喪失全險保障
 
 ---
 
@@ -111,7 +89,7 @@
 | D03 | 5/01 週五 | 新加坡 → 飛機上 | 旅程留空，代辦事項 · ✈ JQ008 21:00 出發 SIN → MEL |
 | D04 | 5/02 週六 | 抵達墨爾本 🇦🇺 | 06:15 抵達；入住 |
 | D05 | 5/03 週日 | 墨爾本 | 墨爾本自由活動 |
-| **NZ D1** | **5/04 週一** | **基督城 🇳🇿** | JQ171 16:25 抵達；A Rentals 取車 17:00；晚上探索基督城（宿：Urbanz）|
+| **NZ D1** | **5/04 週一** | **基督城 🇳🇿** | JQ171 16:25 抵達；Snap Rentals 取車（預計 18:00）；晚上探索基督城（宿：Urbanz）|
 | **NZ D2** | **5/05 週二** | **阿卡羅阿** | 班克斯半島一日遊（約 82km 來回），晚上返回基督城（宿：Urbanz）|
 | **NZ D3** | **5/06 週三** | **基督城** | 市區探索：植物園・大教堂廣場・Riverside Market（宿：Urbanz）|
 | **NZ D4** | **5/07 週四** | **亞瑟隘口 → 葛雷茅斯** | 穿越亞瑟隘口（Arthur's Pass）→ 葛雷茅斯（約 250km）（宿：地球村旅客酒店）|
@@ -123,7 +101,7 @@
 | **NZ D10** | **5/13 週三** | **蒂阿瑙 Te Anau** | Dunedin → Te Anau（約 4–4.5 小時）；Milford Sound 前一晚（宿：Te Anau）|
 | **NZ D11** | **5/14 週四** | **米佛峽灣 → 皇后鎮** | Te Anau → Milford Sound → 皇后鎮入住（宿：皇后鎮）|
 | **NZ D12** | **5/15 週五** | **皇后鎮** | 自由活動；溫泉 Onsen ♨️・葡萄酒之旅 🍷；整理行李 |
-| **NZ D13** | **5/16 週六** | **還車 / 離境** | ⚠️ 07:00 ZQN 機場還車 → JQ292 10:50 出發 → CI054 19:30 AKL 出發 |
+| **NZ D13** | **5/16 週六** | **還車 / 離境** | ⚠️ 09:00 Snap Rentals ZQN 還車 → JQ292 10:50 出發 → CI054 19:30 AKL 出發 |
 | D19 | 5/17 週日 | 抵達台灣 🇹🇼 | CI054 05:40 抵達桃園 |
 
 ---
@@ -133,8 +111,9 @@
 ### NZ D1 ｜ 5/04（週一）｜ 基督城抵達
 
 - 16:25 JQ171 抵達基督城 I 廳
-- 領完行李 → **Door 2 撥打 A Rentals 接駁電話** → 前往取車
-- A Rentals 門市：153 Orchard Road, Harewood
+- 領完行李 → 前往 **Domestic Terminal Door 2**，致電 / SMS 叫 Snap Rentals 接駁（黑白色 shuttle，等候 10–15 分）
+- ⚠️ 預計抵達約 18:00，已超出接駁服務時間（截止 17:30）— **出發前請先聯繫 Snap Rentals 確認安排**
+- [📍 Snap Rentals CHC](https://maps.app.goo.gl/nKur63NCnnun3hFS8) — 車場距機場約 5 分鐘
 - 入住基督城（建議機場附近，方便取車）
 - 傍晚可在市區輕鬆走走：Riverside Market・Little High 街頭美食
 
@@ -182,7 +161,7 @@
 
 - 路線：CHC → Arthur's Pass → Greymouth（約 250km，2.5–3 小時）
 - 穿越南阿爾卑斯山脈，隧道 + 峽谷 + 高山景觀
-- ⛓ **此路段最可能需要 Snow Chains（若積雪）**
+- ⚠️ **此路段山區偶有積雪（5 月初），出發前查詢路況**
 
 ⚠️ **行車注意事項**
 - 建議 08:00–09:00 早上出發，避免山區天氣變化
@@ -243,6 +222,7 @@
 - 🚗 09:00–09:30 出發
 - 💧 途中 Lake Pukaki 停車拍照（15–20 分）
 - 🏔 12:30 抵達 Mt Cook Village
+- 🅿️ 停車：[White Horse Hill Campground 停車場](https://maps.app.goo.gl/FXRcJCRqedqMaE5D8)
 - 🥾 **Hooker Valley Track**（來回 2–3 小時）— 冰河湖・Mt Cook 正面・吊橋景觀
 - ⏰ 16:30–17:00 離開庫克山
 
@@ -260,15 +240,25 @@
 
 ### NZ D8 ｜ 5/11（週一）｜ 奧馬魯 Oamaru
 
-- 路線：蒂卡波 → 奧馬魯（約 180km，2 小時）
-- 維多利亞時代風情小城
+- 路線：蒂卡波 → 奧馬魯（途中停留景點）
 
-**景點：**
+**路線停留：**
+- 🚗 09:00 出發，蒂卡波 → 奧馬魯
+- 🪨 途中 **Elephant Rocks**（Duntroon 附近，石灰岩群，20 分）—《納尼亞傳奇》取景地，免費入場
+- 🌊 途中 **Moeraki Boulders**（海灘圓形巨石，20–30 分）— 入場費 NZD 5，落潮時景觀最佳
+- 🏛 維多利亞風格石灰岩建築街區（Harbour Historic Precinct，1–1.5 小時）
+- 🤖 蒸汽龐克文化博物館（Steampunk HQ，45 分）
+
+**傍晚活動：**
+- 🐦 **Bushy Beach** 黃眼企鵝棲息地（天然觀察，黃昏前抵達，免費，禁止靠近）
 - 🐧 藍眼企鵝保護區（Blue Penguin Colony，傍晚點名最佳）
   > 💡 企鵝出現時間依季節而異，傍晚前可先安排市區景點，預留晚間時段觀企鵝
-- 🏛 維多利亞風格石灰岩建築街區（Harbour Historic Precinct）
-- 蒸汽龐克文化博物館（Steampunk HQ）
-- 🏨 宿：奧馬魯背包客旅館（Oamaru Backpackers）
+
+**用餐建議：**
+- 🍺 午餐：**Scotts Brewing Co.**（Harbour Street，精釀啤酒 + 餐點）
+- 🍽 晚餐：Harbour Street 周邊餐廳或超市自理
+
+🏨 宿：奧馬魯背包客旅館（Oamaru Backpackers）
 
 ---
 
@@ -305,7 +295,7 @@
 
 **GreatSights 米佛峽灣大巴一日遊（✅ 已訂，Klook NT$ 6,730 · 2 位成人）**
 
-- 📍 集合：Kiwi Country，Miro 街 2 號
+- 📍 集合：[Kiwi Country](https://maps.app.goo.gl/NF3ZGAi5TVs63enRA)，Miro 街 2 號，Te Anau
 - ⏰ 09:45 大巴出發
 - 🚌 途中：鏡湖（Mirror Lakes）· 荷馬隧道（Homer Tunnel）
 - ⛵ 12:50 抵達米佛峽灣，登船遊覽（Stirling / Bowen 瀑布，千仞峭壁）
@@ -326,18 +316,23 @@
 
 ### NZ D12 ｜ 5/15（週五）｜ 皇后鎮自由活動
 
+- 🛣 **Crown Range Road** 景觀公路（紐西蘭最高公路，可繞行 Wanaka 方向）⚠️ 冬季留意路況
+- 🦌 **Deer Park Heights**（皇后鎮東側，360° 全景俯瞰 Wakatipu 湖）
 - ♨️ Onsen Hot Pools 溫泉
-- 🍷 Central Otago 葡萄酒莊一日遊
-- 整理行李（⚠️ 明早 07:00 還車）
+- 🚠 Skyline Gondola 纜車 + 景觀餐廳
+- 🍔 Fergburger 弗格漢堡（21:00 後排隊較短）
+- 🪂 跳傘 / 噴射船 / 高空彈跳（擇一）
+- 整理行李（⚠️ 明早 09:00 Snap Rentals ZQN 還車）
+
+**用餐建議：**
+- 🍔 午 / 晚餐：**Fergburger**（21:00 後避開尖峰）/ **Stratosfare** Skyline 山頂景觀餐廳
 
 ---
 
 ### NZ D13 ｜ 5/16（週六）｜ 還車 / 離境
 
-- **07:00** ⚠️ Queenstown Airport 還車（A Rentals，after-hours self-drop-off）
-  - 門市：77 Glenda Dr, Frankton, Queenstown
-  - 📄 [還車流程文件](../docs/assets/Queenstown%20Airport%20Vehicle%20Return%20Instructions%20111.pdf)
-- **09:00 前** 進入機場
+- **09:00** Snap Rentals ZQN 還車（加滿油）
+- **09:30 前** 進入機場
 - **10:50** JQ292 ZQN → AKL（12:40 抵達 D 廳）
 - 下午奧克蘭 D廳 → I廳（~7 小時轉機）
 - **19:30** CI054 AKL → TPE（經布里斯本，飛機上過夜）
@@ -530,7 +525,7 @@
 | MEL → CHC（捷星 JQ171）| 佩璇 | 15,694 | 雙人 30kg |
 | ZQN → AKL → TPE（JQ292 + CI054）| 子擎 | 33,864 | 每人 30kg + 2×23kg |
 | **機票合計** | | **80,042** | |
-| 租車 A Rentals RAV4 12天 | 子擎 | NZD 1,593.64 | 含單程費 + SUV Premium 保險 + Snow Chains |
+| 租車 Snap Rentals Corolla Wagon 12天 | 子擎 | NZD 891.58（≈ TWD 16,557）| Simply Better Cover · 單程費 $0 |
 | 住宿 新加坡 4/29–30 | 子擎 | $5,156 | 諾維維多利亞飯店，trip.com Apple Pay，4/11 已付（不退款）|
 | 住宿 墨爾本 5/02–03 | 子擎 | AUD $322.03（≈ $7,239）| 維多利亞酒店，booking.com，4/29 排程扣款（免費取消至 4/30 AEST）|
 
@@ -566,7 +561,7 @@
 | 2月頃 | 佩璇 | 易遊網 | $21,156 | 信用卡 | SIN→MEL 雙人 | ✅ |
 | 2月頃 | 佩璇 | trip.com | $15,694 | 信用卡 | MEL→CHC 雙人 | ✅ |
 | 2月頃 | 子擎 | trip.com | $33,864 | 信用卡 | ZQN→AKL→TPE 雙人 | ✅ |
-| 2026/4/8 | 子擎 | A Rentals | NZD 1,593.64 | Line Pay 信用卡 | 租車 RAV4 12天（CHC→ZQN）| ✅ |
+| 2026/4/8 | 子擎 | Snap Rentals | NZD 891.58（≈ TWD 16,557）| Line Pay 信用卡 | 租車 Corolla Wagon 12天（CHC→ZQN）Simply Better Cover | ✅ |
 | 2026/4/11 | 子擎 | 諾維維多利亞飯店（trip.com）| $5,156 | Apple Pay | 新加坡住宿 2晚（不退款）| ✅ 已付款 |
 | 2026/4/29 | 子擎 | 維多利亞酒店（booking.com）| AUD $322.03（≈ $7,239）| 中信 Line Pay 末碼 0950 | 墨爾本住宿 2晚 | ⏳ 排程扣款 |
 | 2026/4/13 | 子擎 | Urbanz 烏爾班茲旅舍（booking.com）| NZD 345.65（≈ TWD 6,418）| Line Pay 中信信用卡 | 基督城住宿 3晚 | ⏳ 4/30 排程扣款 |
@@ -599,8 +594,8 @@
 - [ ] 頸枕 / 眼罩（SIN→MEL 過夜）
 
 ### 租車 / 駕駛
-- [x] ~~租車預訂~~ ✅ A Rentals，NZD 1,593.64，4/8 已付
-- [x] ~~還車地點確認~~ ✅ ZQN Airport，5/16 07:00
+- [x] ~~租車預訂~~ ✅ Snap Rentals Corolla Wagon，NZD 891.58，CHC 取車 5/4，ZQN 還車 5/16 09:00
+- [x] ~~還車地點確認~~ ✅ Snap Rentals ZQN Airport，5/16 09:00
 - [ ] 國際駕照（2 人均需辦，至監理所）
 - [ ] 下載 Google Maps 紐西蘭離線地圖（山區無訊號）
 
@@ -630,9 +625,9 @@
 ### 5/16 離境時間線
 
 ```
-05:30   起床準備
-07:00   ZQN Airport 還車（A Rentals after-hours self-drop-off）
-09:00   機場報到（建議 09:00 前）
+07:00   起床準備
+09:00   Snap Rentals ZQN 還車（加滿油）
+09:30   機場報到（建議 09:30 前）
 10:50   JQ292 ZQN 起飛
 12:40   抵達 AKL D 廳 → 移至 I 廳
 19:30   CI054 AKL 起飛 → 途經 BNE → TPE
@@ -667,9 +662,9 @@
 - [ ] 🐬 阿卡羅阿自然之旅，NZD 125（NZ D2）
 
 ### 🚗 租車 / 出行
-- [ ] ⛓ Snow Chains：取車當天決定是否保留（NZD 80）
-- [ ] 確認 A Rentals 接駁電話是否為台灣號碼可撥（建議先買 NZ SIM）
-- [ ] 確認 after-hours 還車流程（參考還車文件）
+- [ ] ⚡ **出發前聯繫 Snap Rentals**，告知 5/4 預計抵達時間（約 18:00），確認非營業時間取車安排
+- [ ] 國際駕照確認（2 人均有效）
+- [ ] 下載 Google Maps 紐西蘭離線地圖（山區無訊號）
 
 ### 🛂 簽證
 - [ ] 澳洲 ETA
