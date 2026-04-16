@@ -52,15 +52,13 @@ echo "→ git tag $TAG..."
 git tag "$TAG"
 
 echo "→ push main + tag..."
-trap 'restore_placeholder "$TAG"' ERR
 GIT_TERMINAL_PROMPT=0 timeout 60 git push origin main \
-  || { echo "❌ push main 失敗（逾時或認證錯誤）"; exit 1; }
+  || { echo "❌ push main 失敗（逾時或認證錯誤）"; restore_placeholder "$TAG"; exit 1; }
 GIT_TERMINAL_PROMPT=0 timeout 30 git push origin "$TAG" \
-  || { echo "❌ push tag 失敗"; exit 1; }
-trap - ERR
+  || { echo "❌ push tag 失敗"; restore_placeholder "$TAG"; exit 1; }
 
 restore_placeholder "$TAG"
 GIT_TERMINAL_PROMPT=0 timeout 60 git push origin main \
-  || { echo "❌ push restore 失敗"; exit 1; }
+  || { echo "❌ push restore 失敗（本地已還原，可手動 push）"; exit 0; }
 
 echo "✅ 完成：$TAG 已發布，source 已還原 placeholder"
