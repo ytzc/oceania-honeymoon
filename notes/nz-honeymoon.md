@@ -733,7 +733,7 @@
 | 保障地區 | 紐西蘭 + 澳洲 |
 | 保費 | **TWD 1,428** |
 | 緊急聯絡電話 | **0800-053-588** |
-| 保單 PDF | [docs/assets/2915CTAY614046.pdf](../docs/assets/2915CTAY614046.pdf) |
+| 保單 PDF | [docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf](../docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf) |
 
 #### 富邦旅平險（大洋洲 + 新加坡）
 
