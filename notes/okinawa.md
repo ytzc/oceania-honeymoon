@@ -391,15 +391,14 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 ## 🎒 待確認事項
 
 - [x] 取得 Coldio Smart Resort **Check-in Code** — ✅ **343709**（4/1 系統已發送）
-- [ ] D02 晚餐（A&W Makiminato）路線確認
-- [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
+- [x] Original Street Kart 沖繩街頭 Go-Kart 體驗（D02）— ✅ 已預訂 **15:00**（原定 16:00 → 改 15:00）
+- [x] D02 晚餐 — ✅ **Banta Cafe 為主**（4/24 19:30・ID 4702622）
+  - A&W 若沒吃到，補吃順位：🥇 國際通（D04 晚） → 🥈 AEON Rycom（D04 白天） → 🥉 機場（D05）
 - [x] D03 晚餐：擎媽請客 ✅ 預計飯店煮火鍋（當天早上確認是否要留車）
 - [x] D04 Oniku no Isshin 訂位 ✅ KZUHAW（4/13 子擎刷卡 ¥200 訂金）
 - [ ] D04 Oniku no Isshin — 家人是否一起（4/25 前一天確認人數，24h不可取消 ¥3,300/人）
-- [ ] Original Street Kart 沖繩街頭 Go-Kart 體驗預定（D02 16:00）
 - [ ] FunPass 5合一剩餘2項確認：東南植物園夜間燈飾 ／ 古宇利島うみんちゅ Seafood（套餐3選1）
-- [ ] D02 晚餐（A&W Makiminato）路線確認
-- [ ] 日幣兌換
+- [x] 日幣兌換 — ✅ 子擎已兌換 **¥50,000**
 
 ---
 
