@@ -638,7 +638,7 @@
 - [ ] 下載 Google Maps 紐西蘭離線地圖（山區無訊號）
 
 ### 金融 / 通訊
-- [x] ~~新加坡 / 澳洲 / 紐西蘭 SIM 卡 / eSIM~~ ✅ NZ eSIM：Klook **VSR087784**（Spark 5G 15天 20GB）
+- [x] ~~新加坡 / 澳洲 / 紐西蘭 SIM 卡 / eSIM~~ ✅ 全程 eSIM：NZ One NZ #26KK234780701（含通話・主力）+ Spark VSR087784（備用）+ AUS Optus + SIN Singtel（詳見下方通訊資訊）
 - [ ] 準備 AUD / NZD / SGD 現金
 - [ ] 通知銀行出國
 
@@ -712,13 +712,59 @@
 
 ## 📱 通訊 & 保險資訊
 
-### 📡 行動網路 eSIM
+### 📡 網卡總覽
 
-| 地區 | 商品 | 平台 | 訂單號 | 有效天數 | 流量 |
-|------|------|------|--------|----------|------|
-| 🇳🇿 紐西蘭 | 5G eSIM 紐西蘭 Spark | Klook | **VSR087784** | 15 天 | 20 GB |
+| 地區 | 電信商 | 有無通話 | 流量 | 天數 | 角色 | 平台 | 訂單號 | 費用 |
+|------|--------|----------|------|------|------|------|--------|------|
+| 🇳🇿 紐西蘭 | **One NZ（Vodafone）** | ✅ 含通話 | 10 GB | 60 天 | **主力** | KKday | **26KK234780701** | NT$1,100 |
+| 🇳🇿 紐西蘭 | Spark 5G | ❌ 數據 | 20 GB | 15 天 | 備用 | Klook | **VSR087784** | NT$575 |
+| 🇦🇺 澳洲 | Optus 5G | ❌ 數據 | 5 GB | 30 天 | 主力 | Klook | — | NT$132 |
+| 🇸🇬 新加坡 | Singtel | ❌ 數據 | 每日不限 | 3 天 | 主力 | Klook | — | NT$107 |
 
-> 💡 出發前安裝 eSIM，抵達 NZ 後啟用，Spark 5G 網路覆蓋全島主要路線。
+📄 憑證：[One NZ](<../docs/assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf>) · [Spark](<../docs/assets/Klook voucher-NZ-Spark5G-20GB-15days.pdf>) · [Optus](<../docs/assets/Klook voucher-MEL-Optus5G-5GB-30days.pdf>) · [Singtel](<../docs/assets/Klook voucher-SIN-Singtel5G-不限-3days.pdf>)
+
+---
+
+### 📌 使用策略
+
+| 地區 / 期間 | 使用哪張 | 說明 |
+|-------------|----------|------|
+| 🇸🇬 新加坡（4/29–5/1）| Singtel | 3 天每日不限，啟用日 4/29 |
+| 🇦🇺 澳洲（5/1–5/4）| Optus 5G | 5 GB / 30 天，啟用日 5/1 |
+| 🇳🇿 紐西蘭（5/4–5/16）| **One NZ（主）** + Spark（備）| One NZ 有通話；Spark 山區備援 |
+
+- **One NZ 主力原因**：有語音通話，可直接打租車公司 / 住宿電話
+- **Spark 備援**：覆蓋互補，可設為次 SIM 備用數據
+- **iPhone 建議**：One NZ 設主 SIM（接打電話）；Spark 設次 SIM（僅數據）
+- **熱點分享**：⚠️ 是否支援各家未確認，請查 APN 設定
+
+---
+
+### 📶 實用提醒
+
+- ⛰ **山區無訊號**：Haast Pass、Fiordland、Arthur's Pass 等地可能完全無訊號，出發前下載 Google Maps 離線地圖
+- 📲 **出發前安裝**：eSIM 安裝需要 Wi-Fi，建議台灣出發前完成，到各地後再啟用
+- 🔄 **啟用時機**：設定 → 行動服務 → 手動啟用對應 eSIM（同一時間只啟用當地那張）
+- 🗺 **離線地圖**：推薦 Google Maps 預先下載南島各區，或使用 Maps.me
+
+---
+
+### 🆘 無訊號時怎麼做
+
+1. 開啟飛航模式 → 等 10 秒 → 關閉
+2. 設定 → 行動服務 → 確認對的 eSIM 已啟用
+3. 手動選網：設定 → 行動服務 → 選 SIM → 網路選擇 → 手動掃描
+4. 重新開機
+5. One NZ 無訊號 → 切換至 Spark eSIM
+
+---
+
+### ⚠️ eSIM 待確認
+
+- One NZ 60 天有效期：從購買日還是啟用日起算
+- 兩張 NZ eSIM 是否可同時啟用（雙 eSIM 模式）
+- Spark 是否支援熱點分享
+- APN 設定（One NZ / Spark / Optus）
 
 ---
 
@@ -733,7 +779,9 @@
 | 保障地區 | 紐西蘭 + 澳洲 |
 | 保費 | **TWD 1,428** |
 | 緊急聯絡電話 | **0800-053-588** |
-| 保單 PDF | [docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf](../docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf) |
+| 保單 PDF | [兆豐保單-SIN_MEL_NZ-旅平.pdf](../docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf) |
+
+**可申請情境：** 班機延誤 · 行李遺失 · 海外就醫（急診）· 緊急撤離
 
 #### 富邦旅平險（大洋洲 + 新加坡）
 
@@ -744,4 +792,19 @@
 | 保障期間 | 2026/04/29 13:00 ~ 2026/05/17 13:00 |
 | **總保費** | **TWD 2,529** |
 
+**可申請情境：** 班機取消 / 延誤 · 行李延誤 · 醫療費用 · 租車碰撞（附加）
+
+| 保單 | 連結 |
+|------|------|
+| 旅平保單 | [富邦保單-SIN_MEL_NZ-旅平.pdf](../docs/assets/富邦保單-SIN_MEL_NZ-旅平.pdf) |
+| 租車保單 | [富邦保單-SIN_MEL_NZ-租車.pdf](../docs/assets/富邦保單-SIN_MEL_NZ-租車.pdf) |
+
 > 💡 兩張保單合計：TWD 1,428（兆豐）+ TWD 2,529（富邦）= **TWD 3,957**
+
+---
+
+### 🎟 活動憑證 PDF
+
+| 活動 | 憑證 |
+|------|------|
+| ⛵ Milford Sound GreatSights 遊船 | [Klook-NZ-Milford-GreatSight.pdf](<../docs/assets/Klook voucher-NZ-Milford-GreatSight.pdf>) |

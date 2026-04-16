@@ -407,11 +407,21 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 ### 📡 行動網路 eSIM
 
-| 地區 | 商品 | 平台 | 訂單號 | 啟用日 | 費用 |
-|------|------|------|--------|--------|------|
-| 🇯🇵 日本 | 日本無限流量 eSIM（Rakuten/KDDI/Docomo）| KKday | **26KK231480251** | 2026/04/23 | **TWD 287** |
+| 地區 | 電信商 | 流量 | 天數 | 角色 | 平台 | 訂單號 | 費用 |
+|------|--------|------|------|------|------|--------|------|
+| 🇯🇵 日本（沖繩）| Rakuten / KDDI / Docomo | 無限流量 | 5 天 | 主力 | KKday | **26KK231480251** | TWD 287 |
 
-> 💡 台灣出發前安裝 eSIM，抵達 OKA 後啟用，支援 Rakuten/KDDI/Docomo 三大電信。
+📄 憑證：[Kkday-OKI-不限-5days.pdf](../docs/assets/Kkday-OKI-不限-5days.pdf)
+
+> 💡 台灣出發前安裝，抵達 OKA（2026/04/23）後啟用；**5 日有效期從啟用日起算**，不使用時請勿提早啟用。
+
+---
+
+### 📶 實用提醒
+
+- 📲 **出發前安裝**：eSIM 安裝需要 Wi-Fi，建議台灣出發前完成
+- ⏱ **啟用時機**：抵達 OKA 後於「設定 → 行動服務」手動啟用
+- 🔄 **三大電信自動切換**：Rakuten → KDDI → Docomo 依訊號強度自動選擇
 
 ---
 
@@ -425,3 +435,19 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 附加保單號 | **3226CT20D09792**（租車加購保障，TWD 43）|
 | 保障期間 | 2026/04/23 ~ 2026/04/27 |
 | **總保費** | **TWD 567** |
+
+**可申請情境：** 班機延誤 · 行李遺失 · 醫療費用 · 租車碰撞（附加）
+
+| 保單 | 連結 |
+|------|------|
+| 旅平保單 | [富邦保單-OKI-旅平.pdf](../docs/assets/富邦保單-OKI-旅平.pdf) |
+| 租車保單 | [富邦保單-OKI-租車.pdf](../docs/assets/富邦保單-OKI-租車.pdf) |
+
+---
+
+### 🎟 活動憑證 PDF
+
+| 活動 | 憑證 |
+|------|------|
+| 🎡 FunPass 沖繩 5合1 | [Klook-OKI-FunPass.pdf](<../docs/assets/Klook voucher-OKI-FunPass.pdf>) |
+| 🏎 街頭 Go-Kart（Original Street Kart）| [Klook-OKI-GoKart.pdf](<../docs/assets/Klook voucher-OKI-GoKart.pdf>) |
