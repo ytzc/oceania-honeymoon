@@ -152,6 +152,18 @@
     .budget-amount { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; }
     .budget-sub { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
     .status-paid { color: var(--accent); font-size: 0.8rem; margin-top: 6px; }
+    .budget-twd { font-weight: 700; }
+    .payer {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 1px 7px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: #f7f6f3;
+      color: #555;
+      white-space: nowrap;
+    }
+    .platform-kkday { background: #c2410c; color: #fff; padding: 1px 6px; border-radius: 3px; font-size: 0.75rem; font-weight: 700; }
 
     /* ── CALLOUT ── */
     .callout {
@@ -784,53 +796,136 @@
   <section id="budget">
     <div class="section-title">💰 預算</div>
     <div class="budget-grid">
+
+      <!-- 住宿費用（full-width table card） -->
+      <div class="budget-card" style="grid-column: 1 / -1">
+        <h3>住宿費用（已確認）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>地點</th>
+                <th>飯店</th>
+                <th>晚數</th>
+                <th>金額（NTD）</th>
+                <th>付款</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4/23</td>
+                <td>那霸</td>
+                <td>那霸國際通大和 ROYNET 飯店</td>
+                <td>1</td>
+                <td><strong>$2,555</strong></td>
+                <td><span class="payer">擎媽</span> <span class="muted-cell">✅ 已訂</span></td>
+              </tr>
+              <tr>
+                <td>4/26</td>
+                <td>那霸</td>
+                <td>沖繩縣廳前大和 ROYNET 飯店</td>
+                <td>1</td>
+                <td><strong>$2,318</strong></td>
+                <td><span class="payer">擎媽</span> <span class="muted-cell">✅ 已訂</span></td>
+              </tr>
+              <tr>
+                <td>4/24–4/25</td>
+                <td>古宇利島</td>
+                <td>Coldio Smart Resort</td>
+                <td>2</td>
+                <td><strong>JP¥80,340</strong> <span class="muted-cell">≈ $16,000</span></td>
+                <td><span class="payer">子擎姊</span> <span class="muted-cell">請客 🎉 · 4/1 子擎刷卡預付</span></td>
+              </tr>
+              <tr class="total-row">
+                <td colspan="3">住宿合計（4 晚）</td>
+                <td>4</td>
+                <td>TWD ≈ $20,873</td>
+                <td class="muted-cell">全數已確認</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 租車費用（full-width table card, TWD primary） -->
+      <div class="budget-card" style="grid-column: 1 / -1">
+        <h3>租車費用（Dream Rental Car）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>車型</th>
+                <th>期間</th>
+                <th>台幣</th>
+                <th>日幣</th>
+                <th>付款者</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MAZDA MX-5 Roadster（AT）</td>
+                <td>4/23–4/24 · 1 天</td>
+                <td class="budget-twd"><strong>$4,237</strong></td>
+                <td class="muted-cell">JP¥20,800</td>
+                <td><span class="payer">子擎</span> <span class="muted-cell">刷卡 2/23</span></td>
+              </tr>
+              <tr>
+                <td>TOYOTA ROOMY 5人座（AT）</td>
+                <td>4/24–4/26 · 2 天</td>
+                <td class="budget-twd"><strong>$4,808</strong></td>
+                <td class="muted-cell">JP¥23,600</td>
+                <td><span class="payer">子擎</span> <span class="muted-cell">刷卡 2/23</span></td>
+              </tr>
+              <tr class="total-row">
+                <td colspan="2">租車合計</td>
+                <td>$9,045</td>
+                <td class="muted-cell">JP¥44,400</td>
+                <td class="muted-cell">匯率 ×0.2037</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:10px;font-size:0.82rem;color:var(--muted)">
+          💸 費用分攤：子擎 <strong style="color:var(--text)">$7,242</strong>（JP¥35,550）&nbsp;·&nbsp; 佩璇 <strong style="color:var(--text)">$1,803</strong>（JP¥8,850）
+        </div>
+        <div style="font-size:0.78rem;color:var(--accent);margin-top:4px;font-weight:600">✅ 子擎已刷卡（2/23）</div>
+      </div>
+
+      <!-- 機票 -->
       <div class="budget-card" style="border-top: 3px solid var(--accent)">
         <h3>機票（雙人）</h3>
         <div class="budget-amount">$16,463</div>
-        <div class="budget-sub">子擎媽媽訂</div>
+        <div class="budget-sub">子擎媽媽訂 · FD230 去程 ＋ IT231 回程</div>
         <div class="status-paid">✅ 已轉帳（2/22）</div>
       </div>
+
+      <!-- 活動票券 -->
       <div class="budget-card" style="border-top: 3px solid var(--accent)">
-        <h3>那霸住宿（ROYNET × 2晚）</h3>
-        <div class="budget-amount">$4,873</div>
-        <div class="budget-sub">4/23 $2,555 ＋ 4/26 $2,318 · 擎媽訂</div>
-        <div class="status-paid">✅ 已訂</div>
+        <h3>活動票券</h3>
+        <div class="budget-amount">$1,417+</div>
+        <div class="budget-sub">
+          <div>🕳 Valley of Gangala — <strong>$1,417</strong> ✅（子擎信用卡）</div>
+          <div style="margin-top:3px;color:var(--muted)">🏎 Go-Kart · 🎡 FunPass 5合1 — 已購 Klook</div>
+        </div>
       </div>
-      <div class="budget-card" style="border-top: 3px solid var(--accent)">
-        <h3>租車（MX-5 ＋ ROOMY）</h3>
-        <div class="budget-amount">JP¥44,400 <span style="font-size:0.9rem; font-weight:400">≈ $9,045</span></div>
-        <div class="budget-sub">子擎 JP¥35,550 (~$7,242) ／ 佩璇 JP¥8,850 (~$1,803)</div>
-        <div class="status-paid">✅ 子擎已刷卡（2/23）</div>
-      </div>
-      <div class="budget-card" style="border-top: 3px solid var(--accent)">
-        <h3>古宇利島住宿</h3>
-        <div class="budget-amount" style="font-size:1.1rem; color:var(--accent)">子擎姊姊請客 🎉</div>
-        <div class="budget-sub">Coldio Smart Resort 2晚 · JP¥80,340 · 預計請款 ~$16,000</div>
-        <div style="color:#f0b429; font-size:0.8rem; margin-top:6px">⏳ 待確認</div>
-      </div>
-      <div class="budget-card" style="border-top: 3px solid var(--accent)">
-        <h3>Valley of Gangala</h3>
-        <div class="budget-amount">$1,417</div>
-        <div class="budget-sub">JP¥7,000 · 2大人 · 多語音導覽 · 3/4 請款</div>
-        <div class="status-paid">✅ 子擎信用卡已付</div>
-      </div>
-      <div class="budget-card">
-        <h3>餐飲 ＋ 其他活動</h3>
-        <div class="budget-amount todo-cell">待確認</div>
-        <div class="budget-sub">浮潛、景點門票、餐廳</div>
-      </div>
+
+      <!-- 旅遊保險 -->
       <div class="budget-card" style="border-top: 3px solid #8b5cf6">
         <h3>旅遊保險</h3>
         <div class="budget-amount" style="color:#8b5cf6">TWD 567</div>
         <div class="budget-sub">富邦旅平險（計畫二・300萬）＋ 租車加購</div>
         <div class="status-paid">✅ 已購買</div>
       </div>
+
+      <!-- eSIM -->
       <div class="budget-card" style="border-top: 3px solid #22c55e">
         <h3>日本 eSIM</h3>
         <div class="budget-amount" style="color:#22c55e">TWD 287</div>
         <div class="budget-sub">KKday 26KK231480251 · Rakuten/KDDI/Docomo 無限流量</div>
         <div class="status-paid">✅ 已購買</div>
       </div>
+
     </div>
 
     <div class="section-title" style="margin-top:28px">💸 帳目紀錄</div>

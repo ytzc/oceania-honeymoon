@@ -244,7 +244,8 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 13:30 | 起飛 FD230（泰國亞洲航空）TPE → OKA |
 | 15:55 | 抵達那霸機場 |
 | 17:00 | 飯店 Check-in（那霸國際通大和 ROYNET）|
-| 18:00 | 牧志租車（MX-5）|
+| 18:00 | 牧志租車取車（MX-5）|
+| 18:30 | PARCO CITY 逛街（2F The North Face 紫標・niko and... 狩獵帽・sora 逛 Patagonia）|
 | 19:00 | 🍖 晚餐 — 叙叙苑 沖繩浦添 PARCO CITY 店（3F）✅ 已預約 |
 | 22:00 | 國際通夜間採買 |
 | 住宿 | 🏨 那霸國際通大和 ROYNET 飯店 |
@@ -257,13 +258,14 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 | 時間 | 內容 |
 |------|------|
-| 10:00 | Gangala 之谷（Valley of Gangala）多語音導覽 ✅ 已預訂 |
+| 10:00 | Gangala 之谷（Valley of Gangala）多語音導覽 ✅ #D9ZBS0HJ |
 | 12:00 | 知念岬公園 |
 | 12:30 | NIRAIKANAI 大橋 |
 | 13:00 | 沖繩 Costco（買東西車上吃，慢慢整理，開去卡丁車）|
-| 16:00 | 🏎 [Original Street Kart 沖繩街頭 Go-Kart 體驗](https://www.klook.com/zh-TW/activity/2739-street-go-karting-okinawa/)（那霸市東町7-1）[Google Maps](https://maps.app.goo.gl/NkCCV7XcKwXm62Nn6) |
+| 15:00 | 🏎 [Original Street Kart 沖繩街頭 Go-Kart 體驗](https://www.klook.com/zh-TW/activity/2739-street-go-karting-okinawa/) ✅ Klook 已訂購（那霸市久茂地2丁目6-12）[Google Maps](https://maps.app.goo.gl/BB87K1qt7U2bZNKc6) |
 | 18:30 | 換車（MX-5 → ROOMY）— Dream Rental Car 牧志站東口 |
 | 19:00 | 🍔 晚餐 — [A&W Makiminato](https://maps.app.goo.gl/25aQHYnLjQUYobyJA) |
+| 19:30 | ☕ [BANTA CAFE](https://maps.app.goo.gl/Xs6EHBiqb5Srsuyi8) ✅ 已預約 — 預約 ID：**4702622** · 官網 Email 預約 |
 | 20:30 | 移動至古宇利島住宿（Coldio Smart Resort 預計抵達）|
 | 住宿 | 🏠 Coldio Smart Resort — 古宇利島 |
 
@@ -290,10 +292,9 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 | 時間 | 內容 |
 |------|------|
 | 11:00前 | 🧳 Coldio Smart Resort Check-out（退房 11:00 前，延遲 JP¥5,000/60min）|
-| 11:00 | 🏝 瀨長島 Umikaji Terrace + 三溫暖 |
-| 午餐 | 幸福鬆餅 / Taco Rice（瀨長島）|
-| 14:00–14:40 | ⛩ 波上宮 |
-| 15:10–16:30 | 🏯 首里城（下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6)）|
+| 10:30 | 🏬 AEON MALL Okinawa Rycom（2F mont-bell：U.L. Thermawrap Jacket 紫標・Travel Kit Pack M）|
+| 14:00 | 🌆 美國村 逛逛拍照 |
+| 16:00 | 🏯 首里城 → 達摩寺（FunPass 口金包兌換）下午備案咖啡：[DUMBO](https://maps.app.goo.gl/fRrm61SxpeFmNNWh6) |
 | 17:00–18:00 | 🐟 牧志公設市場（逛市場）|
 | 18:30 | 🚗 還車 ROOMY — Dream Rental Car 牧志站東口（歸還前加滿油）|
 | 20:00 | 🥩 晚餐 — [Oniku no Isshin（お肉の一心）](https://maps.app.goo.gl/4F9TmhZZ7yG9TuqG6)（縣廳前，近住宿）✅ 已預約 **KZUHAW** · 4/13 子擎刷中信 Line Pay ¥200 訂金 · 簡訊關鍵字：Oniku no Isshin · ⚠️ 24 小時內不可取消，取消費用每位 JP¥3,300 · 👨‍👩‍👧‍👦 子擎家人可能一起（前一天 4/25 晚看狀況確認）· 壽喜燒／日式火鍋擇一，成人一人一份　精選黑毛和牛 ¥7,800 · 阿古豬 ¥6,980 · 沖繩豬 ¥3,800（備案：[肉屋 ししや](https://maps.app.goo.gl/fwpppMHApEdCNhrW7)）|
@@ -358,18 +359,35 @@ Google Maps：https://goo.gl/maps/uBUGxG9BjfHVTSHK8
 
 ## 💰 預算 Budget
 
-| 類別 | 金額（NTD）| 備註 |
-|------|-----------|------|
-| 機票（雙人）| $16,463 | 子擎媽媽訂，子擎已轉帳 2/22 |
-| 住宿 那霸 4/23 | $2,555 | 那霸國際通大和 ROYNET，擎媽訂 |
-| 住宿 古宇利島 4/24–25 | JP¥80,340（≈ $16,000）| Coldio Smart Resort，子擎姊姊請客，4/1 子擎刷卡預付 |
-| 住宿 那霸 4/26 | $2,318 | 縣廳前大和 ROYNET，擎媽訂 |
-| 租車 MX-5 | JP¥20,800（≈ $4,237）| Dream Rental Car，子擎 2/23 刷卡 |
-| 租車 ROOMY | JP¥23,600（$4,808）| Dream Rental Car，子擎 2/23 刷卡，計 3 月帳單 |
-| 景點 Gangala | JP¥7,000（$1,417）| Valley of Gangala，子擎信用卡，3/4 請款（NUTMEGLABS JAPAN）|
-| 餐飲 | TODO | |
-| 活動（浮潛等）| TODO | |
-| **合計** | TODO | |
+### 住宿費用
+
+| 日期 | 地點 | 飯店 | 晚數 | 金額 | 付款者 |
+|------|------|------|------|------|--------|
+| 4/23 | 那霸 | 那霸國際通大和 ROYNET 飯店 | 1 | $2,555 | 擎媽 ✅ 已訂 |
+| 4/26 | 那霸 | 沖繩縣廳前大和 ROYNET 飯店 | 1 | $2,318 | 擎媽 ✅ 已訂 |
+| 4/24–4/25 | 古宇利島 | Coldio Smart Resort | 2 | JP¥80,340（≈ $16,000）| 子擎姊請客 🎉 · 4/1 子擎刷卡預付 ✅ |
+| **合計** | | | **4 晚** | **TWD ≈ $20,873** | 全數已確認 |
+
+### 租車費用（台幣為主）
+
+| 車型 | 期間 | 台幣 | 日幣 | 付款者 |
+|------|------|------|------|--------|
+| MAZDA MX-5 Roadster（AT）| 4/23–4/24 · 1 天 | **$4,237** | JP¥20,800 | 子擎 刷卡 2/23 ✅ |
+| TOYOTA ROOMY 5人座（AT）| 4/24–4/26 · 2 天 | **$4,808** | JP¥23,600 | 子擎 刷卡 2/23 ✅ |
+| **合計** | | **$9,045** | JP¥44,400 | 匯率 ×0.2037 |
+
+> 💸 費用分攤：子擎 **$7,242**（JP¥35,550）· 佩璇 **$1,803**（JP¥8,850）
+
+### 其他費用
+
+| 類別 | 台幣 | 備註 |
+|------|------|------|
+| 機票（雙人）| $16,463 | 子擎媽媽訂，子擎已轉帳 2/22 ✅ |
+| Valley of Gangala | $1,417（JP¥7,000）| 子擎信用卡，3/4 請款（NUTMEGLABS JAPAN）✅ |
+| 旅遊保險 | TWD 567 | 富邦旅平險計畫二 + 租車加購 ✅ |
+| eSIM（日本）| TWD 287 | KKday 26KK231480251 ✅ |
+| Go-Kart / FunPass 5合1 | — | Klook 已訂購 ✅ |
+| 餐飲 ＋ 其他活動 | 待確認 | 浮潛、門票、餐廳 |
 
 ---
 
