@@ -649,7 +649,7 @@
 
 <header>
   <div class="header-meta">
-    <span class="badge">__VERSION__</span>
+    <span class="badge">v0.21.0</span>
     <span class="date-range">2026 / 04 / 29 → 05 / 17 &nbsp;·&nbsp; 19 天</span>
   </div>
   <h1>Oceania Honeymoon <span>2026</span></h1>
@@ -2390,6 +2390,46 @@
       </table>
     </div>
 
+    <!-- 行李轉換流程圖 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🔀 行李轉換流程圖</h3>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:28px;overflow-x:auto">
+      <pre class="mermaid">
+flowchart LR
+  classDef red fill:#fecaca,stroke:#dc2626,color:#1a1a1a
+  classDef yel fill:#fef3c7,stroke:#d97706,color:#1a1a1a
+  classDef grn fill:#dcfce7,stroke:#16a34a,color:#1a1a1a
+  classDef hub fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+
+  subgraph P1["📦 Phase 1　SIN / AUS（D1–D6）"]
+    A1["🔴 29吋<br/>封存 NZ 衣物<br/>保暖層 / 外套"]:::red
+    B1["🔴 25吋<br/>前段衣物箱<br/>SIN + AUS 衣物"]:::red
+    C1["🟡 16吋<br/>設備箱（固定）"]:::yel
+    D1["🟡 Moshi<br/>外套 / 文件"]:::yel
+    E1["🟢 背包 + 腰包<br/>隨身物品"]:::grn
+  end
+
+  subgraph CHC["⟳ 轉換點　5/4 CHC 住宿後"]
+    T{{"轉換 SOP<br/>① 取出 29吋 NZ 衣物<br/>② NZ 衣物移入 25吋<br/>③ SIN 舊衣放入 29吋"}}:::hub
+  end
+
+  subgraph P2["🏔 Phase 2　NZ（D7–D19）"]
+    B2["🔴 25吋<br/>NZ 主衣物箱<br/>子擎 6 模組 + 佩璇"]:::red
+    A2["🔴 29吋<br/>封存 + 採買箱<br/>舊衣 / 採買 / 低頻"]:::red
+    C2["🟡 16吋<br/>設備箱（不變）"]:::yel
+    D2["🟡 Moshi<br/>外套快取（不變）"]:::yel
+    E2["🟢 背包 + 腰包<br/>健行主包"]:::grn
+  end
+
+  A1 -->|"NZ 衣物取出"| T
+  B1 -->|"SIN 舊衣取出"| T
+  T -->|"NZ 衣物移入"| B2
+  T -->|"舊衣封存入"| A2
+  C1 -->|"不變"| C2
+  D1 -->|"不變"| D2
+  E1 -->|"日用 → 健行"| E2
+      </pre>
+    </div>
+
     <!-- 29" 角色說明 -->
     <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">📦 29 吋行李箱角色說明</h3>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px">
@@ -2841,9 +2881,13 @@
 </div>
 
 <footer>
-  <span>oceania-honeymoon &nbsp;·&nbsp; __VERSION__</span>
+  <span>oceania-honeymoon &nbsp;·&nbsp; v0.21.0</span>
   <span>2026</span>
 </footer>
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
 </body>
 </html>
