@@ -649,7 +649,7 @@
 
 <header>
   <div class="header-meta">
-    <span class="badge">__VERSION__</span>
+    <span class="badge">v0.20.28</span>
     <span class="date-range">2026 / 04 / 29 → 05 / 17 &nbsp;·&nbsp; 19 天</span>
   </div>
   <h1>Oceania Honeymoon <span>2026</span></h1>
@@ -2264,8 +2264,8 @@
     <div class="section-title">🧳 行李配置 Luggage Plan</div>
 
     <div class="callout callout-info" style="margin-bottom:20px">
-      <strong>三段式行李系統 · 模組化分裝 · 可丟策略</strong>
-      16" 登機箱雙重角色（SIN/AUS 衣物 → NZ ⚡ 設備箱）· 25" 全程支援箱 · 29" NZ 主力
+      <strong>兩階段系統 · 25" 前段衣物箱 → NZ 主衣物箱 · 16" 全程設備 / 備品箱</strong>
+      轉換點：5/4 基督城住宿 Check-in 後 · 29" Phase 1 封存 NZ 衣物 · Phase 2 封存低頻 / 採買
     </div>
 
     <!-- 配置總表 -->
@@ -2276,8 +2276,9 @@
             <th>類型</th>
             <th>行李</th>
             <th>尺寸 / 容量</th>
-            <th>放置內容</th>
-            <th>使用階段</th>
+            <th>使用者</th>
+            <th>Phase 1（SIN/AUS D1–D6）</th>
+            <th>Phase 2（NZ D7–D19）</th>
             <th>備註</th>
           </tr>
         </thead>
@@ -2289,9 +2290,10 @@
               <div style="font-size:0.78rem;color:var(--muted)">奶茶色</div>
             </td>
             <td style="font-family:monospace;font-size:0.82rem">70 × 47 × 35 cm</td>
-            <td style="font-size:0.85rem">子擎 NZ 6 模組 + 佩璇衣物袋</td>
-            <td class="muted-cell">NZ 主力<br><span style="font-size:0.78rem">SIN/AUS 封存不開</span></td>
-            <td class="muted-cell" style="font-size:0.8rem">CHC 抵達後全開；放車後廂</td>
+            <td class="muted-cell">共用</td>
+            <td style="font-size:0.85rem">封存 NZ 衣物 / 保暖層 / 外套</td>
+            <td style="font-size:0.85rem">封存不再穿衣物 + 採買 + 低頻物品</td>
+            <td class="muted-cell" style="font-size:0.8rem">CHC 住宿後角色切換</td>
           </tr>
           <tr>
             <td><span class="lug-warn">🔴 託運</span></td>
@@ -2300,9 +2302,10 @@
               <div style="font-size:0.78rem;color:var(--muted)">奶茶色</div>
             </td>
             <td style="font-family:monospace;font-size:0.82rem">58 × 41 × 30 cm</td>
-            <td style="font-size:0.85rem">液體 · 鞋 · 藥品<br>Phase 1：Drone 機身（電池隨身）<br>⬜ 出發預留 30–40% 採購空間</td>
-            <td class="muted-cell">全程支援箱</td>
-            <td class="muted-cell" style="font-size:0.8rem">⚠️ Drone 電池禁託運；NZ 採買緩衝</td>
+            <td class="muted-cell">共用</td>
+            <td style="font-size:0.85rem;color:var(--sin)">前段衣物箱<br><span style="font-size:0.78rem;color:var(--muted)">子擎 SIN + AUS + 佩璇袋</span></td>
+            <td style="font-size:0.85rem;color:var(--chc)">NZ 主衣物箱<br><span style="font-size:0.78rem;color:var(--muted)">從 29" 移入 NZ 衣物</span></td>
+            <td class="muted-cell" style="font-size:0.8rem">CHC 住宿後角色切換</td>
           </tr>
           <tr>
             <td><span class="lug-ok">🟡 登機</span></td>
@@ -2310,10 +2313,11 @@
               <strong>16 吋行李箱</strong>
               <div style="font-size:0.78rem;color:var(--muted)">無印良品 MUJI · 深藍色</div>
             </td>
-            <td style="font-family:monospace;font-size:0.8rem">40.5 × 19.5 × 31 cm</td>
-            <td style="font-size:0.85rem">子擎 + 佩璇前段衣物（~80% 可丟）</td>
-            <td class="muted-cell">SIN/AUS 衣物箱<br><span style="font-size:0.78rem">MEL→CHC 後 → ⚡ 設備箱</span></td>
-            <td class="muted-cell" style="font-size:0.8rem">雙重角色；轉換點 MEL→CHC</td>
+            <td style="font-family:monospace;font-size:0.8rem">40.5 × 31 × 19.5 cm</td>
+            <td class="muted-cell">共用</td>
+            <td style="font-size:0.85rem">設備 / 備品箱</td>
+            <td style="font-size:0.85rem">設備 / 備品箱（不變）</td>
+            <td class="muted-cell" style="font-size:0.8rem">全程固定，不切換</td>
           </tr>
           <tr>
             <td><span class="lug-ok">🟡 手提</span></td>
@@ -2321,10 +2325,11 @@
               <strong>商務手提袋</strong>
               <div style="font-size:0.78rem;color:var(--muted)">Moshi Costa · 花崗岩灰</div>
             </td>
-            <td style="font-family:monospace;font-size:0.8rem">51 × 15 × 30 cm</td>
-            <td style="font-size:0.85rem">Phase 1：筆電 · 護照 · 文件<br>Phase 2（NZ）：車上快取保暖衣</td>
-            <td class="muted-cell">全程<br><span style="font-size:0.78rem">NZ 角色切換</span></td>
-            <td class="muted-cell" style="font-size:0.8rem">NZ 停車即取保暖；⚠️ 廉航登機件數需確認</td>
+            <td style="font-family:monospace;font-size:0.8rem">51 × 30 × 15 cm</td>
+            <td class="muted-cell">共用</td>
+            <td style="font-size:0.85rem">保暖外套 / 文件快取</td>
+            <td style="font-size:0.85rem">保暖外套 / 文件快取（不變）</td>
+            <td class="muted-cell" style="font-size:0.8rem">全程固定</td>
           </tr>
           <tr>
             <td><span class="lug-great">🟢 隨身</span></td>
@@ -2333,9 +2338,10 @@
               <div style="font-size:0.78rem;color:var(--muted)">Mystery Ranch Catalyst 18 · 灰色</div>
             </td>
             <td>18 L</td>
-            <td style="font-size:0.85rem">相機 · 水壺 · 輕量急救 · 外套</td>
-            <td class="muted-cell">全程日用 / NZ 健行</td>
-            <td class="muted-cell" style="font-size:0.8rem">佩璇背</td>
+            <td class="muted-cell">佩璇</td>
+            <td style="font-size:0.85rem">日用隨身包</td>
+            <td style="font-size:0.85rem">健行主包</td>
+            <td class="muted-cell" style="font-size:0.8rem">全程佩璇使用</td>
           </tr>
           <tr>
             <td><span class="lug-great">🟢 隨身</span></td>
@@ -2344,9 +2350,10 @@
               <div style="font-size:0.78rem;color:var(--muted)">Salomon 20L</div>
             </td>
             <td>20 L</td>
-            <td style="font-size:0.85rem">衣物 · 行動電源 · NZ 文件（轉換後）</td>
-            <td class="muted-cell">SIN / AUS / NZ</td>
-            <td class="muted-cell" style="font-size:0.8rem">子擎背</td>
+            <td class="muted-cell">子擎</td>
+            <td style="font-size:0.85rem">日用隨身包<br><span style="font-size:0.78rem;color:#c2410c">⚡ 空拍機電池隨身</span></td>
+            <td style="font-size:0.85rem">健行主包<br><span style="font-size:0.78rem;color:var(--muted)">保暖外套 · 毛帽 · 手套 · 墨鏡</span></td>
+            <td class="muted-cell" style="font-size:0.8rem">全程子擎使用</td>
           </tr>
           <tr>
             <td><span class="lug-great">🟢 隨身</span></td>
@@ -2355,48 +2362,84 @@
               <div style="font-size:0.78rem;color:var(--muted)">Bellroy · 7L</div>
             </td>
             <td>7 L</td>
-            <td style="font-size:0.85rem">護照 · 信用卡 · 零錢 · 手機</td>
-            <td class="muted-cell">全程</td>
-            <td class="muted-cell" style="font-size:0.8rem">子擎 · 機場 / 景點防盜</td>
+            <td class="muted-cell">子擎</td>
+            <td style="font-size:0.85rem">兩人護照 · 駕照 · 錢包</td>
+            <td style="font-size:0.85rem">兩人護照 · 駕照 · 錢包</td>
+            <td class="muted-cell" style="font-size:0.8rem">全程子擎配戴</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- 25" 角色定義 -->
-    <div class="callout" style="margin-bottom:20px">
-      <strong>📦 25" 行李箱角色定義 — 全程支援箱 + 回程採購緩衝</strong>
-      <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;font-size:0.83rem">
-        <div style="flex:1;min-width:140px"><div style="font-weight:700;margin-bottom:3px">🔒 永久常駐</div><div style="color:var(--muted)">液體盥洗（>100ml）<br>鞋類 · 藥品急救</div></div>
-        <div style="flex:1;min-width:140px"><div style="font-weight:700;margin-bottom:3px">📷 Phase 1 臨時</div><div style="color:var(--muted)">Drone 機身<br><span style="color:#c2410c;font-size:0.78rem">⚠️ 電池禁託運，隨身帶</span></div></div>
-        <div style="flex:1;min-width:140px"><div style="font-weight:700;margin-bottom:3px">🛍 預留空間</div><div style="color:var(--muted)">出發刻意留空 30–40%<br>回程 NZ 羊毛 / SIN 伴手禮</div></div>
-        <div style="flex:1;min-width:140px"><div style="font-weight:700;margin-bottom:3px">⟳ 轉換後吸收</div><div style="color:var(--muted)">16" 殘留保留衣物<br>整併至此</div></div>
-      </div>
-    </div>
-
-    <!-- 三段式架構表 -->
-    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🔄 三段式系統架構</h3>
+    <!-- 兩階段架構表 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🔄 兩階段系統架構</h3>
     <div class="table-wrap" style="margin-bottom:28px">
       <table>
         <thead>
-          <tr><th>行李</th><th>Phase 1：SIN/AUS（D1–D5）</th><th>⟳ 轉換點（MEL→CHC）</th><th>Phase 2：NZ（D6–D18）</th></tr>
+          <tr><th>行李</th><th>Phase 1：SIN/AUS（D1–D6）</th><th>⟳ 轉換點（5/4 CHC 住宿後）</th><th>Phase 2：NZ（D7–D19）</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>29"</strong></td><td class="muted-cell">封存不開</td><td class="muted-cell">不動</td><td style="font-size:0.85rem">全開，子擎 6 模組 + 佩璇袋</td></tr>
-          <tr><td><strong>25"</strong></td><td style="font-size:0.85rem;color:#c2410c">液體 · 鞋 · Drone 機身<br><span style="font-size:0.78rem">⚡ 電池隨身</span></td><td class="muted-cell">吸收 16" 殘留</td><td class="muted-cell">支援 + 採買緩衝</td></tr>
-          <tr><td><strong>16"</strong></td><td style="font-size:0.85rem">子擎+佩璇衣物<br><span style="font-size:0.78rem;color:#c2410c">~80% 可丟</span></td><td style="font-weight:700;color:var(--chc)">清空 → 裝設備</td><td style="font-size:0.85rem">⚡ 設備箱（登機）</td></tr>
-          <tr><td><strong>Moshi</strong></td><td class="muted-cell">文件 · 護照 · 筆電</td><td style="font-weight:700;color:var(--chc)">清出文件 → 裝保暖衣</td><td class="muted-cell">車上快取保暖衣</td></tr>
+          <tr><td><strong>29"</strong></td><td style="font-size:0.85rem">封存 NZ 衣物 / 保暖層 / 外套</td><td style="font-weight:700;color:var(--chc)">取出 NZ 衣物 → 移入 25"<br>放入 SIN 不可丟衣物</td><td style="font-size:0.85rem">封存箱 + 採買 + 低頻物品</td></tr>
+          <tr><td><strong>25"</strong></td><td style="font-size:0.85rem;color:var(--sin)">前段衣物箱<br><span style="font-size:0.78rem;color:var(--muted)">子擎 SIN + AUS + 佩璇袋</span></td><td style="font-weight:700;color:var(--chc)">清空可丟件<br>接收 29" NZ 衣物</td><td style="font-size:0.85rem;color:var(--chc)">NZ 主衣物箱</td></tr>
+          <tr><td><strong>16"</strong></td><td class="muted-cell">設備 / 備品箱</td><td class="muted-cell">不動</td><td class="muted-cell">設備 / 備品箱（不變）</td></tr>
+          <tr><td><strong>Moshi</strong></td><td class="muted-cell">保暖外套 / 文件</td><td class="muted-cell">不動</td><td class="muted-cell">保暖外套 / 文件（不變）</td></tr>
           <tr><td><strong>Mystery Ranch</strong></td><td class="muted-cell">佩璇日用</td><td class="muted-cell">—</td><td class="muted-cell">佩璇健行</td></tr>
-          <tr><td><strong>Salomon</strong></td><td class="muted-cell">子擎日用</td><td class="muted-cell">—</td><td class="muted-cell">子擎健行 + 文件</td></tr>
+          <tr><td><strong>Salomon</strong></td><td class="muted-cell">子擎日用<br><span style="font-size:0.78rem;color:#c2410c">⚡ 空拍機電池隨身</span></td><td class="muted-cell">—</td><td class="muted-cell">子擎健行<br><span style="font-size:0.78rem">保暖外套 · 毛帽 · 手套 · 墨鏡</span></td></tr>
+          <tr><td><strong>Bellroy</strong></td><td class="muted-cell">兩人護照 / 駕照 / 錢包</td><td class="muted-cell">—</td><td class="muted-cell">同左</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- 登機箱 16" 模組 -->
-    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 4px;color:var(--text)">🎒 Phase 1：16" 前段衣物（子擎 + 佩璇共用）</h3>
-    <p style="font-size:0.82rem;color:var(--muted);margin:0 0 12px">~80% 一次性可丟 · MEL 前逐段丟棄 · 清空後轉型設備箱</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px">
+    <!-- 29" 角色說明 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">📦 29 吋行李箱角色說明</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px">
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--sin);border-radius:10px;padding:14px">
+        <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--sin);margin-bottom:8px">Phase 1（SIN/AUS）：封存 NZ 衣物系統</div>
+        <ul style="margin:0 0 0 14px;font-size:0.84rem;line-height:2">
+          <li>子擎 NZ 衣物（6 模組分裝）</li>
+          <li>佩璇 NZ 衣物（一袋，待確認）</li>
+          <li>保暖層 / 外套 / 刷毛</li>
+          <li>不急用備品 · 採買物品</li>
+        </ul>
+        <div style="font-size:0.78rem;color:var(--muted);margin-top:6px">原則：盡量封存，不常開</div>
+      </div>
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--chc);border-radius:10px;padding:14px">
+        <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--chc);margin-bottom:8px">Phase 2（CHC 住宿後）：封存 / 回收 / 採買箱</div>
+        <ul style="margin:0 0 0 14px;font-size:0.84rem;line-height:2">
+          <li style="color:#c2410c">子擎 SIN 短袖（黑/綠/粉）×3</li>
+          <li style="color:#c2410c">佩璇 SIN/AUS 不可丟衣物</li>
+          <li>NZ 羊毛製品 · SIN 伴手禮</li>
+          <li>低頻使用物品 · 回程累積</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- 25" 角色說明 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 6px;color:var(--text)">🔁 25 吋行李箱角色說明（核心切換箱）</h3>
+    <p style="font-size:0.82rem;color:var(--muted);margin:0 0 12px">Phase 1 = 前段衣物箱 → Phase 2 = NZ 主衣物箱，轉換點為 5/4 基督城住宿 Check-in 後</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px">
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--sin);border-radius:10px;padding:14px">
+        <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--sin);margin-bottom:8px">Phase 1（SIN/AUS）：前段衣物箱</div>
+        <ul style="margin:0 0 0 14px;font-size:0.84rem;line-height:2">
+          <li>子擎 🇸🇬 SIN（淺藍拉鍊袋）</li>
+          <li>子擎 🇦🇺 AUS（深灰拉鍊袋）</li>
+          <li>佩璇 🇸🇬🇦🇺 SIN + AUS（一袋，待確認）</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--chc);border-radius:10px;padding:14px">
+        <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--chc);margin-bottom:8px">Phase 2（NZ）：NZ 主衣物箱</div>
+        <ul style="margin:0 0 0 14px;font-size:0.84rem;line-height:2">
+          <li>子擎 NZ 6 模組（從 29" 移入）</li>
+          <li>佩璇 NZ 衣物（從 29" 移入）</li>
+          <li>保暖層（從 29" 移入）</li>
+        </ul>
+        <div style="font-size:0.78rem;color:var(--muted);margin-top:6px">5/4 CHC 住宿後執行轉換 SOP</div>
+      </div>
+    </div>
+
+    <!-- 子擎 SIN/AUS 衣物明細 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 4px;color:var(--text)">🎒 Phase 1：25" 前段衣物明細（子擎）</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px">
       <div style="flex:1;min-width:240px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">
         <div style="background:var(--sin);color:#fff;padding:8px 14px;font-size:0.82rem;font-weight:700">子擎 🇸🇬 SIN（淺藍拉鍊袋）</div>
         <div style="padding:12px 14px;font-size:0.84rem">
@@ -2404,17 +2447,12 @@
             <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);font-weight:700;margin-bottom:4px">當天穿著</div>
             <ul style="margin:0 0 0 14px;line-height:1.9"><li>米色長褲</li><li>黑色短袖</li></ul>
           </div>
-          <div style="margin-bottom:10px">
+          <div>
             <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:#c2410c;font-weight:700;margin-bottom:4px">可丟（一次性）</div>
             <ul style="margin:0 0 0 14px;line-height:1.9;color:#c2410c"><li>內褲 ×2</li><li>襪子 ×2</li><li>短褲 ×2</li></ul>
           </div>
-          <div>
-            <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);font-weight:700;margin-bottom:4px">保留帶往 NZ</div>
-            <ul style="margin:0 0 0 14px;line-height:1.9"><li>短袖 ×2</li></ul>
-          </div>
         </div>
       </div>
-
       <div style="flex:1;min-width:240px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">
         <div style="background:var(--mel);color:#fff;padding:8px 14px;font-size:0.82rem;font-weight:700">子擎 🇦🇺 AUS（深灰拉鍊袋）</div>
         <div style="padding:12px 14px;font-size:0.84rem">
@@ -2428,7 +2466,6 @@
           </div>
         </div>
       </div>
-
       <div style="flex:1;min-width:240px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">
         <div style="background:#6b7280;color:#fff;padding:8px 14px;font-size:0.82rem;font-weight:700">佩璇 🇸🇬🇦🇺 SIN + AUS（一袋）</div>
         <div style="padding:12px 14px;font-size:0.84rem">
@@ -2442,27 +2479,60 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- 轉換點 SOP -->
     <div class="callout" style="margin-bottom:24px">
-      <strong>⟳ 轉換點 SOP：MEL → CHC（JQ171 登機前）</strong>
+      <strong>⟳ 轉換點 SOP：5/4 基督城住宿 Check-in 後</strong>
       <div style="margin-top:10px;font-size:0.84rem;display:grid;gap:6px">
-        <div>① <strong>丟棄</strong>：16" 全部可丟衣物（子擎 + 佩璇剩餘可丟件）</div>
-        <div>② <strong>取出</strong>：從 25" 取出 Drone 機身</div>
-        <div>③ <strong>裝設備</strong>：Drone 機身 + GoPro + 充電器 + 線材 → 放入 16"</div>
-        <div>④ <strong>電池</strong>：Drone 電池從 Moshi/背包 → 移入 16"（登機可帶 ✅）</div>
-        <div>⑤ <strong>整併</strong>：16" 殘留保留衣物 → 移入 25"；確認 25" 採購空間</div>
-        <div>⑥ <strong>Moshi</strong>：移除文件/筆電 → 裝入保暖衣；文件分散至 Salomon / Mystery Ranch</div>
+        <div>① <strong>開箱</strong>：打開 29" 行李箱</div>
+        <div>② <strong>移衣物</strong>：將 29" 裡所有 NZ 衣物 / 保暖層 / 外套移至 25"</div>
+        <div>③ <strong>封存舊衣</strong>：子擎 SIN 短袖（黑/綠/粉）×3 + 佩璇 SIN/AUS 不可丟衣物 → 放入 29"</div>
+        <div>④ <strong>確認 25"</strong>：NZ 衣物系統完整，日用衣物可取用</div>
+        <div>⑤ <strong>確認 29"</strong>：封存完成，預留採買空間</div>
       </div>
     </div>
 
-    <!-- 29" 託運箱模組 -->
-    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 4px;color:var(--text)">🧳 Phase 2：29" 主衣物系統（子擎 + 佩璇）</h3>
-    <p style="font-size:0.82rem;color:var(--muted);margin:0 0 10px">SIN/AUS 封存 · 抵達 CHC 後全開 · 子擎 6 模組 + 佩璇 1 袋</p>
+    <!-- 16" 設備箱 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 6px;color:var(--text)">📷 16 吋行李箱（設備 / 備品箱）— 全程固定</h3>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:20px">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;font-size:0.84rem">
+        <div style="flex:1;min-width:130px"><div style="font-weight:700;color:var(--muted);font-size:0.72rem;text-transform:uppercase;margin-bottom:6px">衛浴 / 備品</div><div>盥洗備品<br>鞋子<br>藥品</div></div>
+        <div style="flex:1;min-width:130px"><div style="font-weight:700;color:var(--muted);font-size:0.72rem;text-transform:uppercase;margin-bottom:6px">電器</div><div>充電器 · 線材<br>轉接頭 · 行動電源<br>防水袋</div></div>
+        <div style="flex:1;min-width:130px"><div style="font-weight:700;color:var(--muted);font-size:0.72rem;text-transform:uppercase;margin-bottom:6px">攝影 / 設備</div><div>GoPro 機身 + 配件<br>空拍機機身<br>腳架</div></div>
+      </div>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:0.82rem;color:#c2410c">
+        ⚠️ <strong>空拍機電池（LiPo）禁止託運</strong>：全程必須隨身帶上機艙（放 Salomon 或 Moshi）
+      </div>
+    </div>
+
+    <!-- 背包說明 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🎒 背包 / 手提袋</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px">
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:6px">Moshi Costa <span style="font-weight:400;color:var(--muted);font-size:0.78rem">51 × 30 × 15 cm</span></div>
+        <ul style="margin:0 0 8px 14px;line-height:1.9"><li>保暖外套（移動中快速穿脫）</li><li>護照備份 · 訂房確認 · 保險文件</li></ul>
+        <div style="font-size:0.78rem;color:#c2410c">⚠️ 手提袋易離身，護照正本 + 錢包放 Bellroy</div>
+      </div>
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:6px">Mystery Ranch Catalyst 18 <span style="font-weight:400;color:var(--muted);font-size:0.78rem">18L · 佩璇</span></div>
+        <ul style="margin:0 0 0 14px;line-height:1.9"><li>水壺 · 零食 · 相機 · 藥品</li><li>NZ 健行主包</li></ul>
+      </div>
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:6px">Salomon 20L <span style="font-weight:400;color:var(--muted);font-size:0.78rem">20L · 子擎</span></div>
+        <ul style="margin:0 0 0 14px;line-height:1.9"><li>保暖機能外套 · 毛帽 · 手套 · 墨鏡</li><li style="color:#c2410c">⚡ 空拍機電池（禁止託運）</li><li>水壺 · 日用品</li></ul>
+      </div>
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:6px">Bellroy 7L <span style="font-weight:400;color:var(--muted);font-size:0.78rem">7L · 子擎腰包</span></div>
+        <ul style="margin:0 0 0 14px;line-height:1.9"><li>子擎護照 · 佩璇護照</li><li>子擎駕照 · 佩璇駕照</li><li>子擎錢包 · 佩璇錢包</li></ul>
+      </div>
+    </div>
+
+    <!-- 25" Phase 2：NZ 衣物模組 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 4px;color:var(--text)">🧳 Phase 2：25" NZ 主衣物系統（子擎 + 佩璇）</h3>
+    <p style="font-size:0.82rem;color:var(--muted);margin:0 0 10px">5/4 CHC 住宿後從 29" 移入 · 子擎 6 模組 + 佩璇 1 袋</p>
     <div style="background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--chc);border-radius:10px;padding:9px 14px;margin-bottom:10px;font-size:0.84rem;display:flex;gap:16px;flex-wrap:wrap;align-items:center">
-      <strong style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted)">NZ 抵達穿著</strong>
+      <strong style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted)">NZ 抵達穿著（機上即穿）</strong>
       <span>牛仔長褲</span><span style="color:var(--border)">·</span>
       <span>短袖</span><span style="color:var(--border)">·</span>
       <span>Rab 橄欖綠刷毛中層</span>
@@ -2524,23 +2594,23 @@
 
     <!-- 可丟策略 -->
     <div class="callout" style="margin-bottom:24px">
-      <strong>♻️ 可丟策略 Disposable Logic — 分段減重</strong>
+      <strong>♻️ 可丟策略 Disposable Logic — 25" 前段衣物逐段清空</strong>
       <div style="margin-top:10px;display:flex;gap:12px;flex-wrap:wrap;font-size:0.83rem">
         <div style="flex:1;min-width:150px">
           <div style="font-weight:700;color:var(--sin);margin-bottom:3px">SIN 抵達後</div>
-          <div style="color:var(--muted)">子擎淺藍袋可丟<br>內褲×2 · 襪×2 · 短褲×2<br>→ 16" 局部釋出</div>
+          <div style="color:var(--muted)">子擎淺藍袋可丟<br>內褲×2 · 襪×2 · 短褲×2<br>→ 25" 局部釋出</div>
         </div>
         <div style="flex:1;min-width:150px">
-          <div style="font-weight:700;color:var(--mel);margin-bottom:3px">AUS 離開前</div>
-          <div style="color:var(--muted)">子擎深灰袋 + 佩璇可丟件<br>短袖×3 · 襪×3 · 牛仔褲×1<br>→ 16" 大幅清空</div>
+          <div style="font-weight:700;color:var(--mel);margin-bottom:3px">MEL 離開前</div>
+          <div style="color:var(--muted)">子擎深灰袋 + 佩璇可丟件<br>短袖×3 · 襪×3 · 牛仔褲×1<br>→ 25" 大幅清空</div>
         </div>
         <div style="flex:1;min-width:150px">
-          <div style="font-weight:700;color:var(--chc);margin-bottom:3px">MEL→CHC 前（轉換）</div>
-          <div style="color:var(--muted)">佩璇剩餘全丟<br>16" 清空 → 設備箱啟動<br>25" 吸收殘留 + 採購預留</div>
+          <div style="font-weight:700;color:var(--chc);margin-bottom:3px">5/4 CHC 住宿後（切換）</div>
+          <div style="color:var(--muted)">25" 接收 29" NZ 衣物<br>29" 封存不再穿衣物<br>→ 角色切換完成</div>
         </div>
         <div style="flex:1;min-width:150px">
           <div style="font-weight:700;color:var(--qzn);margin-bottom:3px">NZ 期間</div>
-          <div style="color:var(--muted)">子擎模組① 逐日丟棄<br>Nike 機能長褲丟棄<br>→ 29" 騰空回程用</div>
+          <div style="color:var(--muted)">子擎模組① 逐日丟棄<br>Nike 機能長褲丟棄<br>→ 25" 騰空回程採買</div>
         </div>
       </div>
     </div>
@@ -2593,7 +2663,7 @@
 
     <!-- 階段對照 -->
     <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🗺️ 行程階段 × 行李使用對照</h3>
-    <div class="table-wrap">
+    <div class="table-wrap" style="margin-bottom:28px">
       <table>
         <thead>
           <tr><th>階段</th><th>主要使用行李</th><th>說明</th></tr>
@@ -2601,17 +2671,22 @@
         <tbody>
           <tr>
             <td>🇸🇬 SIN（2晚）</td>
-            <td style="font-size:0.85rem">16"（衣物）+ Moshi（文件）+ Mystery Ranch（佩璇）+ Salomon（子擎）+ Bellroy</td>
-            <td class="muted-cell">29"/25" 託運不開；SIN 後丟子擎淺藍袋可丟品</td>
+            <td style="font-size:0.85rem">25"（SIN 衣物）+ 16"（設備）+ Moshi + Mystery Ranch（佩璇）+ Salomon（子擎）+ Bellroy</td>
+            <td class="muted-cell">29" 封存 NZ 衣物不開；SIN 後丟子擎淺藍袋可丟品</td>
           </tr>
           <tr>
             <td>🇦🇺 AUS 墨爾本（2晚）</td>
-            <td style="font-size:0.85rem">同上；MEL 出發前執行轉換點 SOP</td>
-            <td class="muted-cell">AUS 後 16" 清空 → 設備箱；Moshi 改裝保暖衣</td>
+            <td style="font-size:0.85rem">25"（AUS 衣物）+ 16"（設備）+ Moshi + 背包</td>
+            <td class="muted-cell">MEL 離開前丟子擎深灰袋 + 佩璇可丟件；25" 接近清空</td>
           </tr>
           <tr>
-            <td>🇳🇿 NZ 紐西蘭（13晚・自駕）</td>
-            <td style="font-size:0.85rem">全部 7 件（⚡ 16" = 設備箱 · Moshi = 保暖快取）</td>
+            <td>🇳🇿 NZ 基督城住宿後（切換）</td>
+            <td style="font-size:0.85rem">執行轉換 SOP：25" 接收 NZ 衣物 · 29" 封存舊衣</td>
+            <td class="muted-cell" style="color:var(--chc)">⟳ 核心角色切換點</td>
+          </tr>
+          <tr>
+            <td>🇳🇿 NZ 自駕（13晚）</td>
+            <td style="font-size:0.85rem">25"（NZ 衣物主力）+ 16"（設備）+ Moshi + 背包</td>
             <td class="muted-cell">全裝車後廂；Mystery Ranch=佩璇健行 · Salomon=子擎健行</td>
           </tr>
           <tr>
@@ -2621,6 +2696,19 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <!-- 待確認 -->
+    <div class="callout" style="margin-bottom:4px">
+      <strong>⚠️ 待確認事項</strong>
+      <ul style="margin:8px 0 0 16px;font-size:0.84rem;line-height:2">
+        <li>佩璇 SIN/AUS 衣物袋詳細內容（目前只有「一袋」）</li>
+        <li>佩璇 NZ 衣物清單（目前無清單）</li>
+        <li>16" 設備箱實際重量（空拍機 + GoPro + 鞋 + 電器，需確認是否符合 7kg 登機限制）</li>
+        <li>空拍機電池 Wh（≤100Wh 不限 / 100–160Wh 需申報）</li>
+        <li>25" Phase 2 容量（NZ 衣物子擎 + 佩璇移入後是否超重）</li>
+        <li>29" / 25" 行李箱空重（影響可用載重計算）</li>
+      </ul>
     </div>
   </section>
 
@@ -2753,7 +2841,7 @@
 </div>
 
 <footer>
-  <span>oceania-honeymoon &nbsp;·&nbsp; __VERSION__</span>
+  <span>oceania-honeymoon &nbsp;·&nbsp; v0.20.28</span>
   <span>2026</span>
 </footer>
 
