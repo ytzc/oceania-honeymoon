@@ -180,6 +180,21 @@
     .checklist-item:last-child { margin-bottom: 0; }
     .check-box { flex-shrink: 0; width: 15px; height: 15px; border: 1.5px solid #ccc; border-radius: 3px; margin-top: 2px; }
 
+    /* ── LUGGAGE TAGS ── */
+    .lug-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 1px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .lug-checked  { background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; }
+    .lug-cabin    { background: var(--accent-light); color: #0d9488; border: 1px solid var(--accent-border); }
+    .lug-personal { background: #f0fdf4; color: #16a34a; border: 1px solid #86efac; }
+    .lug-warn-tag { background: #fff7ed; color: #b45309; border: 1px solid #fcd34d; font-size: 0.72rem; padding: 1px 6px; border-radius: 3px; margin-left: 4px; }
+    .lug-sub { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
     /* ── FOOTER ── */
     footer { max-width: 860px; margin: 60px auto 0; padding: 20px 20px 40px; font-size: 0.78rem; color: #bbb; display: flex; justify-content: space-between; border-top: 1px solid var(--border); }
 
@@ -204,6 +219,7 @@
       <li><a href="#budget">💰 預算</a></li>
       <li><a href="#comms">📱 通訊</a></li>
       <li><a href="#shopping">🛍 購物清單</a></li>
+      <li><a href="#luggage">🧳 行李</a></li>
       <li><a href="#todo">📋 待辦</a></li>
     </ul>
   </div>
@@ -211,7 +227,7 @@
 
 <header>
   <div class="header-meta">
-    <span class="badge">__VERSION__</span>
+    <span class="badge">v0.20.24</span>
     <span class="date-range">2026 / 04 / 23 → 04 / 27 &nbsp;·&nbsp; 5 天 4 夜</span>
   </div>
   <h1>沖繩旅遊 <span>2026</span></h1>
@@ -1163,6 +1179,149 @@
     </div>
   </section>
 
+  <!-- ── LUGGAGE ── -->
+  <section id="luggage">
+    <div class="section-title">🧳 沖繩行李配置 Okinawa Packing Plan</div>
+
+    <div class="callout callout-info" style="margin-bottom:20px">
+      <strong>行李策略：設備與衣物完全分離</strong>
+      設備集中在登機行李（16"）· 衣物集中在託運（29"）· 貴重物分散在手提袋與腰包
+    </div>
+
+    <!-- 配置總表 -->
+    <div class="table-wrap" style="margin-bottom:28px">
+      <table>
+        <thead>
+          <tr>
+            <th>類型</th>
+            <th>行李 / 品牌</th>
+            <th>尺寸 / 容量</th>
+            <th>放置內容</th>
+            <th>攜帶者</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="lug-tag lug-checked">🔴 託運</span></td>
+            <td>
+              <strong>29 吋行李箱</strong>
+              <div class="lug-sub">奶茶色</div>
+            </td>
+            <td class="todo-cell" style="font-size:0.82rem">待確認</td>
+            <td style="font-size:0.85rem">換洗衣物 · 內衣褲 · 睡衣 · 基本盥洗用品</td>
+            <td class="muted-cell">子擎（20 kg 額度）</td>
+            <td class="muted-cell" style="font-size:0.8rem">⚠️ 僅子擎有託運額度，佩璇須確認是否共用</td>
+          </tr>
+          <tr>
+            <td><span class="lug-tag lug-cabin">🟡 登機</span></td>
+            <td>
+              <strong>16 吋行李箱</strong>
+              <div class="lug-sub">無印良品 MUJI · 深藍色</div>
+            </td>
+            <td style="font-family:monospace;font-size:0.8rem">40.5 × 19.5 × 31 cm</td>
+            <td style="font-size:0.85rem">
+              空拍機（Drone）<span class="lug-warn-tag">⚡ 鋰電池必須登機帶</span><br>
+              GoPro<br>
+              充電器 · 行動電源 · 線材<br>
+              轉接頭 · 工具類
+            </td>
+            <td class="muted-cell">共用（兩人輪流）</td>
+            <td class="muted-cell" style="font-size:0.8rem">⚠️ 所有鋰電池禁止託運；需確認廉航登機尺寸上限</td>
+          </tr>
+          <tr>
+            <td><span class="lug-tag lug-cabin">🟡 手提</span></td>
+            <td>
+              <strong>商務手提袋</strong>
+              <div class="lug-sub">Moshi Costa · 花崗岩灰</div>
+            </td>
+            <td style="font-family:monospace;font-size:0.8rem">51 × 15 × 30 cm</td>
+            <td style="font-size:0.85rem">駕照 · 護照 · 證件 · 貴重物品 · 隨身小物</td>
+            <td class="muted-cell">子擎或佩璇</td>
+            <td class="muted-cell" style="font-size:0.8rem">⚠️ 廉航「1 件登機 + 1 件手提」規定需確認</td>
+          </tr>
+          <tr>
+            <td><span class="lug-tag lug-personal">🟢 隨身</span></td>
+            <td>
+              <strong>登山背包</strong>
+              <div class="lug-sub">Mystery Ranch Catalyst 18 · 灰色</div>
+            </td>
+            <td>18 L</td>
+            <td style="font-size:0.85rem">當日外出用品 · 輕裝備</td>
+            <td class="muted-cell">佩璇</td>
+            <td class="muted-cell" style="font-size:0.8rem">健行 / 景點外出主包</td>
+          </tr>
+          <tr>
+            <td><span class="lug-tag lug-personal">🟢 隨身</span></td>
+            <td>
+              <strong>運動背包</strong>
+              <div class="lug-sub">Salomon 20L</div>
+            </td>
+            <td>20 L</td>
+            <td style="font-size:0.85rem">當日外出用品 · 備用衣物</td>
+            <td class="muted-cell">子擎</td>
+            <td class="muted-cell" style="font-size:0.8rem">日常外出主包</td>
+          </tr>
+          <tr>
+            <td><span class="lug-tag lug-personal">🟢 隨身</span></td>
+            <td>
+              <strong>腰包</strong>
+              <div class="lug-sub">Bellroy · 7L</div>
+            </td>
+            <td>7 L</td>
+            <td style="font-size:0.85rem">護照 · 錢包 · 手機 · 最重要隨身物品</td>
+            <td class="muted-cell">子擎</td>
+            <td class="muted-cell" style="font-size:0.8rem">機場 / 景點防盜；貴重品前置分散</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 航班限重 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">✈️ 沖繩航班行李限重</h3>
+    <div class="table-wrap" style="margin-bottom:24px">
+      <table>
+        <thead>
+          <tr>
+            <th>航段</th>
+            <th>航空公司</th>
+            <th>子擎 託運</th>
+            <th>佩璇 託運</th>
+            <th>登機規定</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TPE → OKA <span class="muted-cell">FD230 4/23</span></td>
+            <td>泰國亞洲航空 AirAsia</td>
+            <td style="color:#c2410c;font-weight:600">20 kg（加購）</td>
+            <td style="color:#bbb;font-style:italic">無加購</td>
+            <td class="muted-cell">1 件 7 kg ＋ 個人物品（需確認）</td>
+          </tr>
+          <tr>
+            <td>OKA → TPE <span class="muted-cell">IT231 4/27</span></td>
+            <td>台灣虎航 Tiger Air</td>
+            <td style="color:#c2410c;font-weight:600">25 kg（加購・1件）</td>
+            <td style="color:#bbb;font-style:italic">無加購</td>
+            <td class="muted-cell">1 件 7 kg（需確認）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 鋰電池警告 -->
+    <div class="callout" style="margin-bottom:0">
+      <strong>⚡ 鋰電池 / 空拍機 航空規定提醒</strong>
+      <ul style="margin:8px 0 0 16px;line-height:2;font-size:0.86rem">
+        <li><strong>空拍機電池（LiPo）</strong>：<span style="color:#c2410c;font-weight:600">禁止託運</span>，必須放登機行李，且需各別裝入防靜電袋或原廠包裝</li>
+        <li><strong>行動電源</strong>：<span style="color:#c2410c;font-weight:600">禁止託運</span>，只能隨身帶，容量需符合航空限制（通常 ≤ 100Wh 不限，100–160Wh 需申報）</li>
+        <li><strong>空拍機本體</strong>：建議登機帶（避免行李遺失風險）；若過大放託運需申報</li>
+        <li><strong>GoPro 電池</strong>：建議隨身攜帶，不建議放託運</li>
+        <li>出發前建議確認 <strong>FD230（AirAsia）</strong> 與 <strong>IT231（Tiger Air）</strong> 的最新鋰電池政策</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ── TODO ── -->
   <section id="todo">
     <div class="section-title">📋 待確認事項</div>
@@ -1182,7 +1341,7 @@
 </div>
 
 <footer>
-  <span>沖繩旅遊 2026 &nbsp;·&nbsp; __VERSION__</span>
+  <span>沖繩旅遊 2026 &nbsp;·&nbsp; v0.20.24</span>
   <a href="index.html" style="color:#ccc; text-decoration:none">← 首頁</a>
 </footer>
 
