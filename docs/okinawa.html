@@ -227,7 +227,7 @@
 
 <header>
   <div class="header-meta">
-    <span class="badge">__VERSION__</span>
+    <span class="badge">v0.21.4</span>
     <span class="date-range">2026 / 04 / 23 → 04 / 27 &nbsp;·&nbsp; 5 天 4 夜</span>
   </div>
   <h1>沖繩旅遊 <span>2026</span></h1>
@@ -1183,9 +1183,40 @@
   <section id="luggage">
     <div class="section-title">🧳 沖繩行李配置 Okinawa Packing Plan</div>
 
-    <div class="callout callout-info" style="margin-bottom:20px">
-      <strong>行李策略：衣物集中託運（29" 兩人共用）· 子擎 16" 登機箱 · 佩璇 Moshi 登機箱</strong>
-      設備與衣物分離 · 電池取出隨身 · Bellroy 腰包集中兩人證件財物
+    <!-- 快速判讀區 -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:20px">
+      <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:12px">⚡ 快速判讀</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin-bottom:14px">
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-checked" style="flex-shrink:0;margin-top:1px">🔴 託運</span>
+          <span>29 吋（子擎額度，兩人共用）— 所有衣物 · 盥洗</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-cabin" style="flex-shrink:0;margin-top:1px">🟡 子擎登機</span>
+          <span>16 吋 MUJI — 空拍機機身 · GoPro · 充電器（電池取出）</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-cabin" style="flex-shrink:0;margin-top:1px">🟡 佩璇登機</span>
+          <span>Moshi Costa（51×30×15）— 外套 · 行動電源 · 駕照</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-personal" style="flex-shrink:0;margin-top:1px">🟢 子擎隨身</span>
+          <span>Salomon 20L — 當日物品 + ⚡ 空拍機電池（必須隨身）</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-personal" style="flex-shrink:0;margin-top:1px">🟢 佩璇隨身</span>
+          <span>Mystery Ranch Catalyst 18 — 佩璇當日物品</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px;font-size:0.86rem">
+          <span class="lug-tag lug-personal" style="flex-shrink:0;margin-top:1px">🟢 證件財物</span>
+          <span>Bellroy 腰包 7L（子擎貼身）— 兩人護照 · 兩人錢包</span>
+        </div>
+      </div>
+      <div style="border-top:1px solid var(--border);padding-top:10px;font-size:0.83rem;display:flex;flex-direction:column;gap:4px">
+        <div>⚡ <strong>電池（LiPo）</strong>：全部隨身，不可託運，不放 16 吋箱，集中於 Salomon</div>
+        <div>📋 <strong>佩璇無託運額度</strong>（去 / 回程均未加購），衣物全靠子擎額度</div>
+        <div>🎒 <strong>件數控制</strong>：必要時 Bellroy 塞入 Salomon，合併為一件隨身包即可</div>
+      </div>
     </div>
 
     <!-- 配置總表 -->
@@ -1270,7 +1301,7 @@
             </td>
             <td>7 L</td>
             <td class="muted-cell">子擎</td>
-            <td style="font-size:0.85rem">子擎護照 · 佩璇護照<br>子擎駕照 · 佩璇錢包</td>
+            <td style="font-size:0.85rem">子擎護照 · 佩璇護照<br>子擎駕照 · 兩人錢包</td>
             <td class="muted-cell" style="font-size:0.8rem">最貼身；兩人證件財物均在此</td>
           </tr>
         </tbody>
@@ -1279,7 +1310,7 @@
 
     <!-- 29" 說明 -->
     <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🔔 29 吋行李箱（兩人共用衣物箱）</h3>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px">
       <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
         <div style="font-weight:700;margin-bottom:8px">放置內容</div>
         <ul style="margin:0 0 0 14px;line-height:2">
@@ -1298,6 +1329,14 @@
         </ul>
       </div>
     </div>
+    <div style="background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid #f97316;border-radius:8px;padding:12px 14px;font-size:0.84rem;margin-bottom:20px">
+      <div style="font-weight:700;margin-bottom:6px">💡 重量策略 / 回程預留空間</div>
+      <ul style="margin:0 0 0 14px;line-height:2">
+        <li>出發時建議 29 吋<strong>預留 3–5 kg 空間</strong>，留給回程伴手禮與戰利品</li>
+        <li>重物優先由子擎託運額度承擔（額度較寬裕）</li>
+        <li>若回程仍超重，可將部分輕型物品轉移至 Salomon 或 Catalyst 隨身帶</li>
+      </ul>
+    </div>
 
     <!-- 16" 設備箱說明 -->
     <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">📷 16 吋行李箱（子擎設備箱）</h3>
@@ -1309,7 +1348,7 @@
         </div>
         <div style="flex:1;min-width:130px">
           <div style="font-weight:700;color:#c2410c;font-size:0.72rem;text-transform:uppercase;margin-bottom:6px">⚡ 電池不在此</div>
-          <div style="color:#c2410c">空拍機電池（LiPo）必須取出，單獨放 Salomon 隨身攜帶。不可放在登機箱內。</div>
+          <div style="color:#c2410c">空拍機電池（LiPo）必須取出，集中放 Salomon 隨身攜帶。<strong>不可放在登機箱內。</strong></div>
         </div>
       </div>
     </div>
@@ -1362,8 +1401,28 @@
       </table>
     </div>
 
+    <!-- 機場模式 / 件數控制 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">✈️ 機場模式 / 登機件數控制</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:8px">標準登機配置（每人 2 件）</div>
+        <ul style="margin:0 0 0 14px;line-height:2">
+          <li>子擎：16 吋 MUJI 登機箱 + Salomon 20L 背包</li>
+          <li>佩璇：Moshi Costa 手提袋 + Catalyst 18 背包</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:8px">Bellroy 腰包策略</div>
+        <ul style="margin:0 0 0 14px;line-height:2">
+          <li>外出 / 一般：貼身配戴（最安全，不佔件數）</li>
+          <li>登機若地勤要求件數：塞入 Salomon，合併為一件</li>
+          <li>無特別要求時：繼續貼身配戴即可</li>
+        </ul>
+      </div>
+    </div>
+
     <!-- 鋰電池警告 -->
-    <div class="callout" style="margin-bottom:16px">
+    <div class="callout" style="margin-bottom:20px">
       <strong>⚡ 鋰電池 / 行動電源 航空規定提醒</strong>
       <div class="table-wrap" style="margin-top:10px;margin-bottom:0">
         <table>
@@ -1371,7 +1430,11 @@
             <tr><th>物品</th><th>放置方式</th><th>規定說明</th></tr>
           </thead>
           <tbody>
-            <tr><td>空拍機電池（LiPo）</td><td style="color:#c2410c;font-weight:600">隨身帶（Salomon）</td><td class="muted-cell">禁止託運；須裝防靜電袋或原廠包裝</td></tr>
+            <tr>
+              <td>空拍機電池（LiPo）</td>
+              <td style="color:#c2410c;font-weight:600">隨身帶（Salomon）</td>
+              <td class="muted-cell">禁止託運；<strong>不可放 16 吋登機箱</strong>；須裝防靜電袋或原廠包裝；建議加保護盒或端子絕緣，避免短路</td>
+            </tr>
             <tr><td>行動電源</td><td style="color:#c2410c;font-weight:600">隨身帶（Moshi Costa）</td><td class="muted-cell">禁止託運；≤ 100Wh 不限，100–160Wh 需申報</td></tr>
             <tr><td>空拍機機身</td><td>登機箱（16"）</td><td class="muted-cell">建議登機帶，避免行李遺失</td></tr>
             <tr><td>GoPro 電池</td><td>建議隨身帶</td><td class="muted-cell">不建議放託運</td></tr>
@@ -1385,12 +1448,47 @@
       </div>
     </div>
 
+    <!-- 出行模式 / 風險備案 -->
+    <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🗂 出行模式 / 風險備案</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:8px">外出模式</div>
+        <ul style="margin:0 0 0 14px;line-height:2">
+          <li>子擎：Salomon 20L（電池 + 當日隨身）</li>
+          <li>佩璇：Catalyst 18（當日隨身）</li>
+          <li>兩人：Bellroy 腰包（護照 + 財物，子擎貼身）</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.84rem">
+        <div style="font-weight:700;margin-bottom:8px">機場模式（安檢前確認）</div>
+        <ul style="margin:0 0 0 14px;line-height:1.9;font-size:0.82rem">
+          <li>29 吋 → 子擎託運（衣物、盥洗，電池已取出）</li>
+          <li>16 吋 MUJI → 子擎登機（設備，電池已取出）</li>
+          <li>Moshi Costa → 佩璇登機（外套、行動電源）</li>
+          <li>Salomon 20L → 子擎隨身（電池集中此處）</li>
+          <li>Catalyst 18 → 佩璇隨身</li>
+          <li>Bellroy → 子擎貼身 or 塞入 Salomon（視現場）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="table-wrap" style="margin-bottom:20px">
+      <table>
+        <thead><tr><th>風險情境</th><th>應對方式</th></tr></thead>
+        <tbody>
+          <tr><td>行李延誤</td><td class="muted-cell">隨身包（Salomon / Catalyst）各放至少一套換洗衣物</td></tr>
+          <tr><td>行李超重</td><td class="muted-cell">重物轉移至 Salomon 或 Catalyst 隨身帶</td></tr>
+          <tr><td>登機件數被要求</td><td class="muted-cell">Bellroy 塞入 Salomon，合併為一件隨身包</td></tr>
+          <tr><td>下雨 / 溫差大</td><td class="muted-cell">外套放 Moshi Costa（容易拿取）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <!-- 待確認 -->
     <div class="callout" style="margin-bottom:0">
       <strong>⚠️ 待確認事項</strong>
       <ul style="margin:8px 0 0 16px;font-size:0.84rem;line-height:2">
         <li>佩璇衣物清單（29" 佩璇衣物尚未確認品項）</li>
-        <li>空拍機電池最終放置位置（Salomon 或另外分裝）</li>
+        <li>空拍機電池最終放置位置（建議集中 Salomon）</li>
         <li>29" 行李箱空重（影響可用載重計算）</li>
         <li>佩璇是否出發前加購託運（若衣物超重可考慮）</li>
       </ul>
@@ -1416,7 +1514,7 @@
 </div>
 
 <footer>
-  <span>沖繩旅遊 2026 &nbsp;·&nbsp; __VERSION__</span>
+  <span>沖繩旅遊 2026 &nbsp;·&nbsp; v0.21.4</span>
   <a href="index.html" style="color:#ccc; text-decoration:none">← 首頁</a>
 </footer>
 
