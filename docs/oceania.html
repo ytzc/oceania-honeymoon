@@ -509,6 +509,98 @@
     .budget-amount { font-family: monospace; font-size: 0.85rem; }
     .budget-twd { font-weight: 700; }
 
+    /* ── RISK CALLOUT ── */
+    .risk-callout {
+      background: #fff5f5;
+      border: 1px solid #fca5a5;
+      border-left: 4px solid #ef4444;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.84rem;
+      margin-bottom: 8px;
+      line-height: 1.65;
+    }
+    .risk-callout .risk-title {
+      font-weight: 700;
+      color: #c0392b;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .risk-callout ul { margin: 4px 0 0 16px; }
+    .risk-callout li { margin-bottom: 2px; }
+
+    /* ── STATUS BADGES ── */
+    .status-confirmed { background:#dcfce7; color:#166534; border:1px solid #86efac; border-radius:4px; font-size:0.76rem; padding:1px 7px; font-weight:600; white-space:nowrap; }
+    .status-pending   { background:#fef9c3; color:#854d0e; border:1px solid #fde047; border-radius:4px; font-size:0.76rem; padding:1px 7px; font-weight:600; white-space:nowrap; }
+    .status-optional  { background:#dbeafe; color:#1e40af; border:1px solid #93c5fd; border-radius:4px; font-size:0.76rem; padding:1px 7px; font-weight:600; white-space:nowrap; }
+    .status-warning   { background:#fff7ed; color:#9a3412; border:1px solid #fdba74; border-radius:4px; font-size:0.76rem; padding:1px 7px; font-weight:600; white-space:nowrap; }
+
+    /* ── TRIP SUMMARY STRIP ── */
+    .trip-summary-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+      padding: 12px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .summary-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      white-space: nowrap;
+    }
+    .summary-chip.chip-sin { border-color: var(--sin); background: #fff5ed; color: var(--sin); }
+    .summary-chip.chip-mel { border-color: var(--mel); background: #eff8ff; color: var(--mel); }
+    .summary-chip.chip-nz  { border-color: var(--chc); background: #f0fdf4; color: #166534; }
+    .summary-chip.chip-ok  { border-color: #86efac; background: #f0fdf4; color: #166534; }
+
+    /* ── BACK TO TOP ── */
+    #back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 20px;
+      width: 42px;
+      height: 42px;
+      background: var(--text);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 200;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+    /* ── PRINT ── */
+    @media print {
+      nav, #back-to-top { display: none !important; }
+      body { background: #fff; font-size: 11pt; }
+      .page { padding: 0; }
+      section { margin-top: 24pt; }
+      .nz-day-card, .act-card, .accom-card { page-break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+      .nz-day-bd { grid-template-columns: 1fr 1fr; }
+      a[href^="http"]:after { content: " (" attr(href) ")"; font-size: 8pt; color: #666; }
+    }
+
     /* ── ACTIVITY CARDS ── */
     .act-card {
       background: var(--surface);
@@ -694,7 +786,19 @@
       <div style="font-weight:700;font-size:0.9rem;margin-bottom:2px">擎璇大洋洲蜜月地圖 · 4/29 ~ 5/16</div>
       <div style="font-size:0.78rem;color:var(--muted)">Google My Maps — 景點 · 住宿 · 路線總覽</div>
     </div>
-    <a href="https://www.google.com/maps/d/edit?mid=1YuxkR2DEYK-yQUwBHr1O0iwNjI1O80w&usp=sharing" target="_blank" style="background:var(--chc);color:#fff;text-decoration:none;font-size:0.82rem;font-weight:600;padding:6px 14px;border-radius:6px;white-space:nowrap">🔗 開啟地圖</a>
+    <a href="https://www.google.com/maps/d/edit?mid=1YuxkR2DEYK-yQUwBHr1O0iwNjI1O80w&usp=sharing" target="_blank" rel="noopener" style="background:var(--chc);color:#fff;text-decoration:none;font-size:0.82rem;font-weight:600;padding:6px 14px;border-radius:6px;white-space:nowrap">🔗 開啟地圖</a>
+  </div>
+
+  <!-- ── SUMMARY STRIP ── -->
+  <div class="trip-summary-strip">
+    <span class="summary-chip">📅 4/29–5/17 · 19 天</span>
+    <span class="summary-chip chip-sin">🇸🇬 新加坡 3 天</span>
+    <span class="summary-chip chip-mel">🇦🇺 墨爾本 2 天</span>
+    <span class="summary-chip chip-nz">🇳🇿 紐西蘭 13 天</span>
+    <span class="summary-chip chip-ok">✈ 4 個航班</span>
+    <span class="summary-chip chip-ok">🏨 全程住宿已訂</span>
+    <span class="summary-chip chip-ok">🚗 租車已訂 12 天</span>
+    <span class="summary-chip chip-ok">🚁 冰川直升機已訂</span>
   </div>
 
   <!-- ── FLIGHTS ── -->
@@ -803,7 +907,7 @@
             <div>Christchurch Airport</div>
             <div class="muted-cell">2026/5/4（週一）17:30</div>
             <div style="font-size:0.78rem;color:#475569;margin-top:2px">170 Orchard Road, Harewood, CHC 8051</div>
-            <div style="margin-top:6px"><a href="https://maps.app.goo.gl/nKur63NCnnun3hFS8" target="_blank" style="font-size:0.8rem;color:#16a34a;font-weight:600;text-decoration:none">📍 Snap Rentals CHC 位置</a></div>
+            <div style="margin-top:6px"><a href="https://maps.app.goo.gl/nKur63NCnnun3hFS8" target="_blank" rel="noopener" style="font-size:0.8rem;color:#16a34a;font-weight:600;text-decoration:none">📍 Snap Rentals CHC 位置</a></div>
           </div>
           <div style="background:#fff0f0;border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;font-size:0.87rem">
             <div style="font-weight:700;margin-bottom:4px">🔴 還車</div>
@@ -819,7 +923,7 @@
           <ol style="margin:0 0 10px 18px;line-height:1.9">
             <li>清關 + 提領行李後，前往 <strong>Domestic Terminal Door 2</strong></li>
             <li>填寫官網線上申請表（通關後再填）：<br>
-              <a href="https://www.snaprentals.co.nz/pickup-christchurch" target="_blank" style="color:#2563eb;font-weight:600;font-size:0.84rem">🌐 snaprentals.co.nz/pickup-christchurch</a><br>
+              <a href="https://www.snaprentals.co.nz/pickup-christchurch" target="_blank" rel="noopener" style="color:#2563eb;font-weight:600;font-size:0.84rem">🌐 snaprentals.co.nz/pickup-christchurch</a><br>
               <span style="font-size:0.78rem;color:#64748b">填寫：姓名 · 電話號碼 · 接送人數</span>
             </li>
             <li>等候約 <strong>10–15 分鐘</strong>，接駁車為<strong>黑白色 Snap shuttle</strong></li>
@@ -877,7 +981,7 @@
           <div class="nz-col-title">🚆 前往機場方案</div>
           <ul class="nz-list">
             <li>✅ <strong>首選（最快）</strong>：板橋高鐵 → 桃園高鐵 → A18 機捷 → T1<br><span style="font-size:0.78rem;color:var(--muted)">約 12:30 出發・高鐵 12 分 + 機捷 20 分・13:10 前抵達 · 總計 30–40 分</span></li>
-            <li>🔁 <strong>保險備案</strong>：<a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-search.php" target="_blank" style="color:var(--sin)">台北車站 A1 機捷直達車</a> 12:30 出發 → T1 13:06 抵達<br><span style="font-size:0.78rem;color:var(--muted)">直達不轉乘・36 分鐘</span></li>
+            <li>🔁 <strong>保險備案</strong>：<a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-search.php" target="_blank" rel="noopener" style="color:var(--sin)">台北車站 A1 機捷直達車</a> 12:30 出發 → T1 13:06 抵達<br><span style="font-size:0.78rem;color:var(--muted)">直達不轉乘・36 分鐘</span></li>
             <li style="color:#b45309;font-size:0.82rem">⚠️ 理想 <strong>13:15 前</strong> 抵達桃園 T1；16:15 起飛，至少 3 小時前入場</li>
           </ul>
           <div class="nz-col-title" style="margin-top:8px">行程重點</div>
@@ -885,7 +989,7 @@
             <li>✈ <strong>16:15</strong> 桃園 Terminal 1 出發（TR867 酷航 B787-9）</li>
             <li>🛬 <strong>20:45</strong> 抵達<strong>樟宜機場 Terminal 1</strong>（入境 · 提行李 · 預計 21:30 完成通關）</li>
             <li>🚇 <strong>~21:30</strong> 搭 MRT 往市區（約 40 分鐘）<br><span style="font-size:0.78rem;color:var(--muted)">CG 線 2 站 11 分 → <strong>Tanah Merah 丹那美拉</strong> 換月台 → EW 線往 Tuas Link 8 站 17 分 → <strong>Bugis 武吉士</strong> → 步行到飯店</span></li>
-            <li>🏨 <strong>22:00</strong> <strong><a href="https://maps.app.goo.gl/kCf9w7fVedviGs5N9" target="_blank" style="color:var(--sin)">諾維維多利亞飯店 Check-in</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">87 Victoria Street · ⚠️ 入住時繳 SGD 100 押金</span></li>
+            <li>🏨 <strong>22:00</strong> <strong><a href="https://maps.app.goo.gl/kCf9w7fVedviGs5N9" target="_blank" rel="noopener" style="color:var(--sin)">諾維維多利亞飯店 Check-in</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">87 Victoria Street · ⚠️ 入住時繳 SGD 100 押金</span></li>
             <li>🌉 <strong>22:30–23:30</strong> <strong>Clarke Quay 克拉碼頭</strong>（夜間河濱酒吧街，1 小時）</li>
           </ul>
         </div>
@@ -893,6 +997,10 @@
     </div>
 
     <!-- SIN D2 -->
+    <div class="risk-callout">
+      <div class="risk-title">⚠️ SIN D2 夜間交通注意</div>
+      Lexus Durian King（Kovan）結束後，Supertree 光影秀 <strong>20:45</strong> 開場。MRT 需 50 分，<strong>趕不上</strong>。請於 <strong>~20:00 叫 Grab 計程車</strong>（車程約 20 分）前往 Gardens by the Bay。
+    </div>
     <div class="nz-day-card">
       <div class="nz-day-hd" style="background:var(--sin)">
         <span class="nz-d">SIN D2</span><span class="nz-dt">4/30（週四）</span>
@@ -904,14 +1012,14 @@
           <ul class="nz-list">
             <li style="color:var(--muted);font-size:0.82rem">🚌 <strong style="color:var(--text)">08:45</strong> 飯店 → Chinatown：步行至 Opp Natl Lib 公車站 → 公車 <strong style="color:var(--text)">197</strong>（Jurong East）5 站 8 分 → 下 Opp Sri Mariamman Tp，共約 15 分</li>
             <li>🏮 <strong>09:00–10:30</strong> <strong>Chinatown 牛車水</strong>（1.5h）<br><span style="font-size:0.78rem;color:var(--muted)">佛牙寺 · 寶塔街 · 伴手禮</span></li>
-            <li>🥭 <strong>10:30–11:00</strong> <strong><a href="https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6" target="_blank" style="color:var(--sin)">99 老樹 榴槤甜品</a></strong>（30 分）<br><span style="font-size:0.78rem;color:var(--muted)">從 Chinatown 步行 10 分</span></li>
+            <li>🥭 <strong>10:30–11:00</strong> <strong><a href="https://maps.app.goo.gl/Xwvg4FGhcoK55vaw6" target="_blank" rel="noopener" style="color:var(--sin)">99 老樹 榴槤甜品</a></strong>（30 分）<br><span style="font-size:0.78rem;color:var(--muted)">從 Chinatown 步行 10 分</span></li>
             <li style="color:var(--muted);font-size:0.82rem">🚶 <strong style="color:var(--text)">11:00–13:00</strong> 邊逛邊步行前往午餐：99 老樹 → Un-Yang-Kor-Dai 步行 <strong style="color:var(--text)">20 分</strong>（逛周邊順路走）</li>
-            <li>🍜 <strong>13:15–14:45</strong> <strong><a href="https://maps.app.goo.gl/YXqFF6phhMA4PSxa9" target="_blank" style="color:var(--sin)">Un-Yang-Kor-Dai 泰式料理</a></strong> <span style="color:#3a9e6f;font-weight:600">✅ #4W9SDP3LZSE2</span><br><span style="font-size:0.78rem;color:var(--muted)">僅限無現金支付 · 24h 前可取消</span></li>
+            <li>🍜 <strong>13:15–14:45</strong> <strong><a href="https://maps.app.goo.gl/YXqFF6phhMA4PSxa9" target="_blank" rel="noopener" style="color:var(--sin)">Un-Yang-Kor-Dai 泰式料理</a></strong> <span style="color:#3a9e6f;font-weight:600">✅ #4W9SDP3LZSE2</span><br><span style="font-size:0.78rem;color:var(--muted)">僅限無現金支付 · 24h 前可取消</span></li>
             <li>🎨 <strong>15:00–16:30</strong> <strong>Haji Lane 哈芝巷</strong>（1.5h）<br><span style="font-size:0.78rem;color:var(--muted)">從 Un-Yang-Kor-Dai 步行 30 分（邊走邊逛）· 壁畫街區 · 獨立選品店</span></li>
-            <li>🍚 <strong>16:30–17:30</strong> <strong><a href="https://maps.app.goo.gl/bNw5qUaFp9UY93aL8" target="_blank" style="color:var(--sin)">Golden Mile Thien Kee 雞飯</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">從 Haji Lane 步行 10 分</span></li>
+            <li>🍚 <strong>16:30–17:30</strong> <strong><a href="https://maps.app.goo.gl/bNw5qUaFp9UY93aL8" target="_blank" rel="noopener" style="color:var(--sin)">Golden Mile Thien Kee 雞飯</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">從 Haji Lane 步行 10 分</span></li>
             <li style="color:var(--muted);font-size:0.82rem">🚇 <strong style="color:var(--text)">17:30–18:15</strong> Golden Mile → Kovan 高文：尼誥大道 CC MRT → <strong style="color:var(--text)">Serangoon 實龍崗</strong>（8 站 17 分）→ 換月台 NE 線 → <strong style="color:var(--text)">Kovan 高文</strong>（1 站 2 分）→ 步行 350m 5 分；共約 <strong style="color:var(--text)">45 分</strong></li>
-            <li>🍦 <strong>~19:00</strong> <strong><a href="https://maps.app.goo.gl/qnEtwgEAPfwU9ELC6" target="_blank" style="color:var(--sin)">FATCAT Ice Cream &amp; Coffee Boutique</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">Kovan；等聯政到來集合點</span></li>
-            <li>🍑 <strong>19:30–20:00</strong> <strong><a href="https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8" target="_blank" style="color:var(--sin)">Lexus Durian King</a></strong>（Kovan 站）<br><span style="font-size:0.78rem;color:var(--muted)">與聯政一起品嘗</span></li>
+            <li>🍦 <strong>~19:00</strong> <strong><a href="https://maps.app.goo.gl/qnEtwgEAPfwU9ELC6" target="_blank" rel="noopener" style="color:var(--sin)">FATCAT Ice Cream &amp; Coffee Boutique</a></strong><br><span style="font-size:0.78rem;color:var(--muted)">Kovan；等聯政到來集合點</span></li>
+            <li>🍑 <strong>19:30–20:00</strong> <strong><a href="https://maps.app.goo.gl/ACMRxWWr4UVLqCQU8" target="_blank" rel="noopener" style="color:var(--sin)">Lexus Durian King</a></strong>（Kovan 站）<br><span style="font-size:0.78rem;color:var(--muted)">與聯政一起品嘗</span></li>
             <li style="color:#b45309;font-size:0.82rem">🚕 <strong>~20:00 務必叫 Grab 計程車</strong>前往 Gardens by the Bay（約 20 分）<br><span style="font-size:0.78rem">MRT 需 50 分，<strong>趕不上</strong> 20:45 光影秀</span></li>
             <li>🌳 <strong>20:30–21:15</strong> <strong>Gardens by the Bay 濱海灣花園</strong><br><span style="font-size:0.78rem;color:var(--muted)">Supertree 光影秀 <strong>20:45</strong></span></li>
             <li>🛍 <strong>21:15–22:00</strong> <strong>Marina Bay Sands（The Shoppes）</strong><br><span style="font-size:0.78rem;color:var(--muted)">夜間購物</span></li>
@@ -966,7 +1074,7 @@
           <ul class="nz-list">
             <li>✈ <strong>06:15</strong> 墨爾本 Terminal 2 抵達（入境通關，預計 07:00 完成）</li>
             <li style="color:var(--muted);font-size:0.82rem">🚌 <strong style="color:var(--text)">~07:00</strong> 機場 → 維多利亞酒店（約 1 小時）：步行 3 分（120m）→ <strong style="color:var(--text)">Melbourne Airport T3 Skybus</strong> → <strong style="color:var(--text)">Skybus Melbourne City Express</strong> 2 站 32 分 → Spencer St → 步行 3 分 → <strong style="color:var(--text)">電車 96</strong>（East Brunswick）4 站 6 分 → Swanston St/Bourke St → 步行 2 分（140m）</li>
-            <li>🏨 <strong>~08:00</strong> <strong><a href="https://maps.app.goo.gl/MbMNZwUnDZYS3MqUA" target="_blank" style="color:var(--mel)">維多利亞酒店</a> 抵達 / 行李寄放</strong><br><span style="font-size:0.78rem;color:var(--muted)">215 Little Collins St · check-in 15:00（可能早辦）· 過夜飛行後建議補眠</span></li>
+            <li>🏨 <strong>~08:00</strong> <strong><a href="https://maps.app.goo.gl/MbMNZwUnDZYS3MqUA" target="_blank" rel="noopener" style="color:var(--mel)">維多利亞酒店</a> 抵達 / 行李寄放</strong><br><span style="font-size:0.78rem;color:var(--muted)">215 Little Collins St · check-in 15:00（可能早辦）· 過夜飛行後建議補眠</span></li>
             <li>☕ <strong>15:30–17:00</strong> <strong>Degraves Street</strong>（墨爾本咖啡文化窄巷，1.5h）</li>
             <li>🚉 <strong>17:00–18:30</strong> <strong>弗林德斯街 Flinders Street Station</strong>（黃色穹頂地標，1.5h）<br><span style="font-size:0.78rem;color:var(--muted)">步行即達 Federation Square</span></li>
           </ul>
@@ -1028,7 +1136,7 @@
           <div class="nz-col-title">行程重點</div>
           <ul class="nz-list">
             <li>🛬 <strong>16:25</strong> JQ171 抵達 I 廳 → 清關提領行李</li>
-            <li>🚗 <strong>17:30–18:30</strong> <strong>Snap Rentals 取車</strong>（租車）<br><span style="font-size:0.78rem;color:var(--muted)">170 Orchard Road, Harewood · 接駁：<a href="https://www.snaprentals.co.nz/pickup-christchurch" target="_blank" style="color:var(--chc);font-weight:600">snaprentals.co.nz/pickup-christchurch</a></span></li>
+            <li>🚗 <strong>17:30–18:30</strong> <strong>Snap Rentals 取車</strong>（租車）<br><span style="font-size:0.78rem;color:var(--muted)">170 Orchard Road, Harewood · 接駁：<a href="https://www.snaprentals.co.nz/pickup-christchurch" target="_blank" rel="noopener" style="color:var(--chc);font-weight:600">snaprentals.co.nz/pickup-christchurch</a></span></li>
             <li style="color:#b45309;font-size:0.82rem">⚠️ 預計 18:00 抵達，超出接駁服務時間（截止 17:30）— <strong>出發前電話聯繫 0800 288 699 確認安排</strong></li>
             <li>🛒 <strong>19:00–20:00</strong> <strong>Riverside Market</strong>（晚餐，各國料理，1h）</li>
             <li>🍽 <strong>20:00–21:00</strong> <strong>Little High Eatery</strong>（晚餐備案，美食廣場）</li>
@@ -1184,6 +1292,13 @@
     </div>
 
     <!-- NZ D6 -->
+    <div class="risk-callout">
+      <div class="risk-title">⚠️ NZ D6 雙重高風險日</div>
+      <ul>
+        <li>🚁 <strong>天氣取消風險</strong>：直升機健行受天氣影響大。出發當天 <strong>07:15 前電話確認</strong>：<strong>0800 484 337</strong> 或 +64 3 752 0763。</li>
+        <li>🚗 <strong>長途駕駛</strong>：Franz Josef → Fox → Haast Pass → Wanaka 超過 <strong>280km</strong>，冰川健行後仍需開車。Haast Pass 沿途停留請控制時間，建議 <strong>20:00 前抵達 Wanaka</strong>。</li>
+      </ul>
+    </div>
     <div class="nz-day-card">
       <div class="nz-day-hd nz-day-wana">
         <span class="nz-d">NZ D6</span><span class="nz-dt">5/09（週六）</span>
@@ -1220,6 +1335,10 @@
     </div>
 
     <!-- NZ D7 -->
+    <div class="risk-callout">
+      <div class="risk-title">⚠️ NZ D7 行程密度高</div>
+      Wanaka → Mt Cook → Tekapo 全程約 <strong>350km</strong>，含多個停留點。Mt Cook 停留建議 <strong>不超過 2.5 小時</strong>，確保日落前（約 17:30）抵達 Tekapo 欣賞星空最佳時段。
+    </div>
     <div class="nz-day-card">
       <div class="nz-day-hd nz-day-tkp">
         <span class="nz-d">NZ D7</span><span class="nz-dt">5/10（週日）</span>
@@ -1233,7 +1352,7 @@
             <li>🚗 <strong>08:30</strong> 出發 Wanaka → Lake Pukaki（Albert Town 車上欣賞即可）</li>
             <li>💧 <strong>09:30–09:50</strong> <strong>Lake Pukaki 普卡基湖</strong>（20 分，必去）<br><span style="font-size:0.78rem;color:var(--muted)">土耳其藍湖水；停車拍照即可</span></li>
             <li>🍴 <strong>11:30–12:30</strong> 午餐：<strong>Old Mountaineers Café</strong>（Mt Cook Village）<br><span style="font-size:0.78rem;color:var(--muted)">冰河景觀座位；必打卡</span></li>
-            <li>🥾 <strong>12:30–15:30</strong> <strong>Hooker Valley Track</strong>（White Horse Hill，2–3 小時，必去）<br><span style="font-size:0.78rem;color:var(--muted)">停車：<a href="https://maps.app.goo.gl/FXRcJCRqedqMaE5D8" target="_blank" style="color:var(--text);text-decoration:underline dotted">White Horse Hill Campground</a>；冰河湖 + Mt Cook 正面 + 吊橋</span></li>
+            <li>🥾 <strong>12:30–15:30</strong> <strong>Hooker Valley Track</strong>（White Horse Hill，2–3 小時，必去）<br><span style="font-size:0.78rem;color:var(--muted)">停車：<a href="https://maps.app.goo.gl/FXRcJCRqedqMaE5D8" target="_blank" rel="noopener" style="color:var(--text);text-decoration:underline dotted">White Horse Hill Campground</a>；冰河湖 + Mt Cook 正面 + 吊橋</span></li>
             <li>🚗 <strong>16:00</strong> 離開 Mt Cook</li>
           </ul>
         </div>
@@ -1354,6 +1473,10 @@
     </div>
 
     <!-- NZ D11 -->
+    <div class="risk-callout">
+      <div class="risk-title">⚠️ NZ D11 全日大巴行程，體力需求高</div>
+      GreatSights 米佛峽灣大巴一日遊：Te Anau 出發 → Milford Sound 遊船 → 返回 Queenstown，全程約 <strong>10–12 小時</strong>。前一晚請務必早睡，備好零食、暖層衣物與防暈車藥。
+    </div>
     <div class="nz-day-card">
       <div class="nz-day-hd nz-day-qzn">
         <span class="nz-d">NZ D11</span><span class="nz-dt">5/14（週四）</span>
@@ -1366,7 +1489,7 @@
             ⚠️ 出發前 24 小時致電 <strong>0800 866 666</strong> 確認接載地點與時間
           </div>
           <ul class="nz-list">
-            <li>📍 集合：<a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</li>
+            <li>📍 集合：<a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" rel="noopener" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</li>
             <li>⏰ <strong>09:45</strong> 大巴出發</li>
             <li>🚌 途中：鏡湖（Mirror Lakes）· 荷馬隧道（Homer Tunnel）</li>
             <li>⛵ <strong>12:50</strong> 抵達峽灣 · 登船遊覽（Stirling / Bowen 瀑布）</li>
@@ -1554,7 +1677,7 @@
           <div class="act-info-row"><span class="act-info-label">憑證號</span><span><strong>KLK0703585975</strong></span></div>
           <div class="act-info-row"><span class="act-info-label">地點</span><span>63 Cron Street, Franz Josef（Wild Kea Lodge 旁步行 2 分鐘）</span></div>
           <div class="act-info-row"><span class="act-info-label">時長</span><span>約 3 小時</span></div>
-          <div class="act-info-row"><span class="act-info-label">憑證</span><span><a href="assets/Klook voucher-NZ-Josef.pdf" target="_blank" style="color:var(--frj);font-weight:600">📄 Klook 憑證 ↗</a></span></div>
+          <div class="act-info-row"><span class="act-info-label">憑證</span><span><a href="assets/Klook voucher-NZ-Josef.pdf" target="_blank" rel="noopener" style="color:var(--frj);font-weight:600">📄 Klook 憑證 ↗</a></span></div>
         </div>
         <div>
           <div class="nz-col-title">費用包含 / 注意事項</div>
@@ -1660,7 +1783,7 @@
         <div>
           <div class="nz-col-title">訂單資訊</div>
           <div class="act-info-row"><span class="act-info-label">平台</span><span>Klook · NT$6,730 · 2 位成人</span></div>
-          <div class="act-info-row"><span class="act-info-label">集合</span><span><a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</span></div>
+          <div class="act-info-row"><span class="act-info-label">集合</span><span><a href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank" rel="noopener" style="color:var(--text);text-decoration:underline dotted">Kiwi Country</a>，Miro 街 2 號，Te Anau</span></div>
           <div class="act-info-row"><span class="act-info-label">出發</span><span><strong>09:45</strong> 大巴出發</span></div>
           <div class="act-info-row"><span class="act-info-label">峽灣</span><span><strong>12:50</strong> 抵達 · 登船遊覽（Stirling / Bowen 瀑布）</span></div>
           <div class="act-info-row"><span class="act-info-label">回程</span><span><strong>17:15</strong> 出發（Te Anau 約 19:30）</span></div>
@@ -1841,7 +1964,7 @@
         <div style="font-size:0.75rem;color:var(--muted);margin-bottom:3px">確認碼 <strong style="color:var(--text)">1616329485771904</strong> · 訂單 1616329485770843</div>
         <div style="font-size:0.75rem;color:var(--muted);margin-bottom:3px">TEL +65-65506088</div>
         <div style="font-size:0.75rem;background:#fff8ed;border:1px solid #f0b429;border-radius:4px;padding:3px 8px;margin-bottom:6px;color:#7c6200">⚠️ 入住時須繳交 SGD 100 押金</div>
-        <a href="assets/新加坡入住憑證.pdf" target="_blank" style="font-size:0.75rem;color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:6px">📄 入住憑證 ↗</a>
+        <a href="assets/新加坡入住憑證.pdf" target="_blank" rel="noopener" style="font-size:0.75rem;color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:6px">📄 入住憑證 ↗</a>
         <span class="accom-status status-done">✅ 已訂</span>
       </div>
       <div class="accom-card" style="border-top: 3px solid var(--mel)">
@@ -2217,10 +2340,10 @@
     </div>
     <div style="font-size:0.82rem;color:var(--muted);margin-bottom:20px">
       📄 憑證：
-      <a href="assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf" target="_blank" style="color:var(--text);text-decoration:none">One NZ ↗</a> ·
-      <a href="assets/Klook%20voucher-NZ-Spark5G-20GB-15days.pdf" target="_blank" style="color:var(--text);text-decoration:none">Spark ↗</a> ·
-      <a href="assets/Klook%20voucher-MEL-Optus5G-5GB-30days.pdf" target="_blank" style="color:var(--text);text-decoration:none">Optus ↗</a> ·
-      <a href="assets/Klook%20voucher-SIN-Singtel5G-不限-3days.pdf" target="_blank" style="color:var(--text);text-decoration:none">Singtel ↗</a>
+      <a href="assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">One NZ ↗</a> ·
+      <a href="assets/Klook%20voucher-NZ-Spark5G-20GB-15days.pdf" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">Spark ↗</a> ·
+      <a href="assets/Klook%20voucher-MEL-Optus5G-5GB-30days.pdf" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">Optus ↗</a> ·
+      <a href="assets/Klook%20voucher-SIN-Singtel5G-不限-3days.pdf" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">Singtel ↗</a>
     </div>
 
     <h3 style="font-size:1rem;font-weight:700;margin:0 0 10px;color:var(--text)">📌 使用策略</h3>
@@ -2316,7 +2439,7 @@
           <tr><td style="color:var(--muted);padding:3px 8px 3px 0">緊急電話</td><td><a href="tel:0800053588" style="color:var(--text)"><strong>0800-053-588</strong></a></td></tr>
           <tr><td style="color:var(--muted);padding:3px 8px 3px 0">可用情境</td><td style="font-size:0.8rem">班機延誤 · 行李遺失 · 海外就醫 · 緊急撤離</td></tr>
         </table>
-        <a href="assets/兆豐保單-SIN_MEL_NZ-旅平.pdf" target="_blank" style="display:inline-block;margin-top:10px;font-size:0.82rem;color:#0ea5e9;text-decoration:none">📄 保單 PDF</a>
+        <a href="assets/兆豐保單-SIN_MEL_NZ-旅平.pdf" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-size:0.82rem;color:#0ea5e9;text-decoration:none">📄 保單 PDF</a>
       </div>
 
       <div style="background:var(--surface);border:1.5px solid var(--border);border-top:3px solid #8b5cf6;border-radius:10px;padding:16px">
@@ -2329,8 +2452,8 @@
           <tr><td style="color:var(--muted);padding:3px 8px 3px 0">可用情境</td><td style="font-size:0.8rem">班機取消 / 延誤 · 行李延誤 · 醫療費用 · 租車碰撞</td></tr>
         </table>
         <div style="margin-top:10px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="assets/富邦保單-SIN_MEL_NZ-旅平.pdf" target="_blank" style="font-size:0.82rem;color:#8b5cf6;text-decoration:none">📄 旅平保單</a>
-          <a href="assets/富邦保單-SIN_MEL_NZ-租車.pdf" target="_blank" style="font-size:0.82rem;color:#8b5cf6;text-decoration:none">📄 租車保單</a>
+          <a href="assets/富邦保單-SIN_MEL_NZ-旅平.pdf" target="_blank" rel="noopener" style="font-size:0.82rem;color:#8b5cf6;text-decoration:none">📄 旅平保單</a>
+          <a href="assets/富邦保單-SIN_MEL_NZ-租車.pdf" target="_blank" rel="noopener" style="font-size:0.82rem;color:#8b5cf6;text-decoration:none">📄 租車保單</a>
         </div>
       </div>
 
@@ -2340,8 +2463,8 @@
 
     <h3 style="font-size:1rem;font-weight:700;margin:0 0 10px;color:var(--text)">🎟 活動憑證 PDF</h3>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a href="assets/Klook%20voucher-NZ-Milford-GreatSight.pdf" target="_blank" style="background:var(--surface);border:1.5px solid var(--border);border-top:3px solid var(--chc);border-radius:8px;padding:10px 16px;font-size:0.85rem;color:var(--text);text-decoration:none;font-weight:600">⛵ Milford Sound GreatSights ↗</a>
-      <a href="assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf" target="_blank" style="background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:10px 16px;font-size:0.85rem;color:var(--text);text-decoration:none">📱 One NZ eSIM 憑證 ↗</a>
+      <a href="assets/Klook%20voucher-NZ-Milford-GreatSight.pdf" target="_blank" rel="noopener" style="background:var(--surface);border:1.5px solid var(--border);border-top:3px solid var(--chc);border-radius:8px;padding:10px 16px;font-size:0.85rem;color:var(--text);text-decoration:none;font-weight:600">⛵ Milford Sound GreatSights ↗</a>
+      <a href="assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf" target="_blank" rel="noopener" style="background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:10px 16px;font-size:0.85rem;color:var(--text);text-decoration:none">📱 One NZ eSIM 憑證 ↗</a>
     </div>
   </section>
 
@@ -3053,9 +3176,14 @@ flowchart LR
   <span>2026</span>
 </footer>
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+<button id="back-to-top" aria-label="回到頂部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+  (function(){
+    var btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function(){
+      btn.classList.toggle('visible', window.scrollY > 400);
+    }, {passive: true});
+  })();
 </script>
 </body>
 </html>
