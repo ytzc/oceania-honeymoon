@@ -273,7 +273,7 @@
 | Day | 日期 | 地點 | 重點 |
 |-----|------|------|------|
 | D01 | 4/29 週三 | 台灣 → 新加坡 | TR867 16:15 T1 出發 → 20:45 抵達樟宜 T1；晚：**Clarke Quay** 克拉碼頭 |
-| D02 | 4/30 週四 | 新加坡 🇸🇬 | 09:00 **Chinatown 牛車水** → **99 老樹** 榴槤甜品 → 13:15 **Un-Yang-Kor-Dai** 泰式（✅ 已訂）→ 15:00 **Haji Lane** → **Golden Mile** 雞飯 → 18:00 **Lexus Durian King**（Kovan）→ 20:00 **Gardens by the Bay** 光影秀 → **Marina Bay Sands** |
+| D02 | 4/30 週四 | 新加坡 🇸🇬 | 09:00 **Chinatown 牛車水** → **99 老樹** 榴槤甜品 → 13:15 **Un-Yang-Kor-Dai** 泰式（✅ 已訂）→ 15:00 **Haji Lane** → **Golden Mile** 雞飯 → ~19:00 **FATCAT**（等聯政）→ 19:30 **Lexus Durian King**（Kovan）→ **Gardens by the Bay** 光影秀 → **Marina Bay Sands** |
 | D03 | 5/01 週五 | 新加坡 → 飛機上 | 上午自由 / 聖淘沙可選（USS · S.E.A. Aquarium · Skyline Luge 擇一）→ ✈ JQ008 21:00 T2 出發 |
 | D04 | 5/02 週六 | 抵達墨爾本 🇦🇺 | 06:15 抵達 MEL T2；午後 **Degraves Street** → **弗林德斯街** Flinders Street Station |
 | D05 | 5/03 週日 | 墨爾本 | **Queen Victoria Market**（週日市集）→ **Hosier Lane** 塗鴉巷 → **St Kilda Beach** → **弗林德斯街** |
@@ -298,14 +298,22 @@
 
 ### SIN D1 ｜ 4/29（週三）｜ 台北 出發 → 新加坡 抵達
 
+**🚆 前往機場方案**
+
+| 方案 | 路線 | 時間 | 說明 |
+|------|------|------|------|
+| ✅ 最快（首選） | 板橋高鐵 → 桃園高鐵站 → A18 機捷 → T1 | **~12:30 出發，13:10 抵達** | 高鐵約 12 分 + 機捷 A18→T1 約 20 分；總計 30–40 分 |
+| 🔁 保險備案 | 台北車站 A1 機捷直達車 12:30 → T1 13:06 | **12:30 搭** | 直達不轉乘，36 分鐘；[機捷班次查詢](https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-search.php) |
+
+> ⚠️ 理想 **13:15 前** 抵達桃園第一航廈；16:15 起飛，至少 3 小時前入場
+
 | 時間 | 地點 | 停留 | 備註 |
 |------|------|------|------|
 | 16:15 | ✈️ 桃園 **Terminal 1** 出發 | — | TR867 酷航 B787-9 |
-| 20:45 | 🛬 **樟宜機場 Terminal 1** 抵達 | — | 入境、提行李 |
-| 21:30–22:30 | 🌉 **Clarke Quay 克拉碼頭** | 約 1 小時 | 夜間河濱酒吧街；可沿河散步或小酌 |
-| 23:00 | 🏨 **諾維維多利亞飯店 Check-in** | — | 住宿｜87 Victoria Street；⚠️ 入住繳 SGD 100 押金 |
-
-> 📍 **原始行程有寫，但地圖未列出（移至 D2）**：Gardens by the Bay 夜間光影秀、Marina Bay Sands — 地圖順序將其列於 Lexus Durian King 之後，已調整至 D2 晚間。
+| 20:45 | 🛬 **樟宜機場 Terminal 1** 抵達 | — | 入境 · 提行李 · 預計 21:30 完成通關 |
+| ~21:30 | 🚇 前往市區（MRT 約 40 分） | — | **Changi** CG 線 → Tanah Merah 丹那美拉（2 站 11 分）換月台 → EW 線往 Tuas Link → **Bugis 武吉士**（8 站 17 分）→ 步行到飯店 |
+| 22:00 | 🏨 **[諾維維多利亞飯店](https://maps.app.goo.gl/kCf9w7fVedviGs5N9) Check-in** | — | 87 Victoria Street；⚠️ 入住繳 SGD 100 押金 |
+| 22:30–23:30 | 🌉 **Clarke Quay 克拉碼頭** | 約 1 小時 | 夜間河濱酒吧街；可沿河散步或小酌 |
 
 ---
 
@@ -313,17 +321,19 @@
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
+| 08:45 | 🚌 飯店 → Chinatown 交通 | — | — | 步行至 **Opp Natl Lib** 公車站 → 公車 **197**（Jurong East）5 站 8 分 → 下 **Opp Sri Mariamman Tp**；共約 15 分 |
 | 09:00–10:30 | 🏮 **Chinatown 牛車水** | 1.5 小時 | 必去 | 佛牙寺、牛車水廟宇、伴手禮 |
-| 10:30–11:00 | 🥭 **99 老樹 榴槤甜品** | 30 分鐘 | 必去 | 榴槤甜品 / 冰淇淋 |
-| 11:00–13:00 | 🚶 步行至用餐區 / 鄰近閒逛 | — | — | Chinatown → Un-Yang-Kor-Dai 步行約 15 分 |
+| 10:30–11:00 | 🥭 **99 老樹 榴槤甜品** | 30 分鐘 | 必去 | 從 Chinatown 步行 **10 分**；榴槤甜品 / 冰淇淋 |
+| 11:00–13:00 | 🚶 步行前往午餐（邊逛邊走） | — | — | 99 老樹 → Un-Yang-Kor-Dai 步行 **20 分**（逛周邊順路走） |
 | **13:15–14:45** | 🍜 **Un-Yang-Kor-Dai 泰式料理** | **1.5 小時** | **必去（已訂）** | ✅ 預訂碼 **#4W9SDP3LZSE2**；僅限無現金支付；24h 前可取消 |
-| 15:00–16:30 | 🎨 **Haji Lane 哈芝巷** | 1.5 小時 | 必去 | 壁畫街區；牆面打卡 + 獨立選品店 |
-| 16:30–17:30 | 🍚 **Golden Mile Thien Kee 雞飯** | 1 小時 | 必去 | 海南雞飯；Beach Road 老店 |
-| 18:00–19:30 | 🍑 **Lexus Durian King** | 1.5 小時 | 必去 | Kovan 站；等聯政下班一起品嘗 |
-| 20:00–21:00 | 🌳 **Gardens by the Bay 濱海灣花園** | 1 小時 | 必去 | Supertree 光影秀 **20:45**（自 Kovan 搭 MRT 約 30 分可達）|
-| 21:00–22:00 | 🛍 **Marina Bay Sands（The Shoppes）** | 1 小時 | 必去 | 夜間購物；緊鄰 Gardens |
-
-> 💡 **順序調整說明**：原行程將 Haji Lane 排在 08:00 最前，地圖順序改為 Chinatown 先行，再接 Un-Yang-Kor-Dai 午餐，下午才到 Haji Lane，與 13:15 訂位時間配合更順暢。Gardens by the Bay / Marina Bay Sands 從原 D1 晚間移至 D2 夜間，配合 Supertree 光影秀（20:45），自 Kovan 搭 MRT 約 30 分可達。
+| 15:00–16:30 | 🎨 **Haji Lane 哈芝巷** | 1.5 小時 | 必去 | 從 Un-Yang-Kor-Dai 步行 **30 分**（邊走邊逛）；壁畫街區 · 獨立選品店 |
+| 16:30–17:30 | 🍚 **Golden Mile Thien Kee 雞飯** | 1 小時 | 必去 | 從 Haji Lane 步行 **10 分**；Beach Road 老店海南雞飯 |
+| 17:30–18:15 | 🚇 Golden Mile → Kovan 高文 交通 | — | — | 尼誥大道 CC MRT → **Serangoon 實龍崗**（8 站 17 分）→ 換月台 NE 線 → **Kovan 高文**（1 站 2 分）→ 步行 350m 約 5 分；共約 **45 分** |
+| ~19:00 | 🍦 **[FATCAT Ice Cream & Coffee Boutique](https://maps.app.goo.gl/qnEtwgEAPfwU9ELC6)** | — | — | Kovan；等聯政到來集合點 |
+| 19:30–20:00 | 🍑 **Lexus Durian King** | 30 分鐘 | 必去 | Kovan 站；與聯政一起品嘗 |
+| **~20:00** | 🚕 **叫 Grab 計程車前往 Gardens by the Bay** | — | ⚠️ 務必 | 計程車約 **20 分**可達；MRT 需 50 分**趕不上**光影秀 |
+| 20:30–21:15 | 🌳 **Gardens by the Bay 濱海灣花園** | 45 分鐘 | 必去 | Supertree 光影秀 **20:45** |
+| 21:15–22:00 | 🛍 **Marina Bay Sands（The Shoppes）** | 1 小時 | 必去 | 夜間購物；緊鄰 Gardens |
 
 > 📍 **原始行程有寫，但地圖未列出**：SkyPark 空中花園觀景台（可視行程安排彈性加入 D3 上午）
 
@@ -333,11 +343,13 @@
 
 | 時間 | 地點 | 停留 | 備註 |
 |------|------|------|------|
-| 10:00–14:00 | 🎢 **Universal Studios Singapore**（可選）| 3–4 小時 | 聖淘沙；10:00 開園 |
-| 10:00–14:00 | 🐠 **S.E.A. Aquarium**（可選）| 2–3 小時 | 聖淘沙；與 USS 擇一 |
-| 10:00–14:00 | 🛷 **Skyline Luge Sentosa**（可選）| 1–2 小時 | 聖淘沙；可與海洋館搭配 |
-| 17:00 | 返回旅館收拾行李 | — | |
-| 19:00 | 前往 **Terminal 2 - International** | ✈️ 機場 | 建議出發前 2 小時到機場 |
+| **09:30** | 🚌 飯店出發（**行李寄放飯店**） | — | 步行 2 分（130m）→ **Opp Natl Lib** → 公車 **145**（Nth Buona Vista Rd）14 站 20 分 → **HarbourFront/VivoCity** → 步行 3 分 → **Sentosa Express** 1 站 3 分 → **Resorts World 站** → 步行 2 分（190m）→ USS；共約 **45 分** |
+| ~10:15–16:00 | 🎢 **Universal Studios Singapore**（可選）| ~5.5 小時 | 聖淘沙；開園 10:00；預計 16:00 前離開以趕上機場 |
+| 10:15–16:00 | 🐠 **S.E.A. Aquarium**（可選）| 2–3 小時 | 聖淘沙；與 USS 擇一 |
+| 10:15–16:00 | 🛷 **Skyline Luge Sentosa**（可選）| 1–2 小時 | 聖淘沙；可與海洋館搭配 |
+| ~17:00 | 🏨 返回飯店取行李 | — | 原路返回約 45 分；**行李原寄放飯店** |
+| ~17:05 | 🚌 飯店 → 機場 | — | 飯店出發約 **50 分**抵達 T2 |
+| **18:00** | ✈️ **抵達 Terminal 2 - International** | — | 21:00 起飛，提前 3 小時入場 |
 | **21:00** | ✈️ **JQ008 SIN T2 出發 → MEL** | — | 捷星 B787-8；飛機上過夜 |
 
 ---
@@ -346,8 +358,9 @@
 
 | 時間 | 地點 | 停留 | 備註 |
 |------|------|------|------|
-| 06:15 | 🛬 **墨爾本 Terminal 2** 抵達 | — | |
-| 06:15–15:00 | 🏨 **維多利亞酒店 Check-in / 休息** | — | 住宿｜215 Little Collins St；check-in 15:00（可能早辦）；過夜飛行後建議補眠 |
+| 06:15 | 🛬 **墨爾本 Terminal 2** 抵達 | — | 入境通關；預計 **07:00** 完成 |
+| ~07:00 | 🚌 機場 → 維多利亞酒店 交通 | — | 步行 3 分（120m）→ **Melbourne Airport T3 Skybus** → **Skybus Melbourne City Express** 2 站 32 分 → Skybus Coach Terminal/Spencer St → 步行 3 分 → **電車 96**（East Brunswick）4 站 6 分 → Swanston St/Bourke St → 步行 2 分（140m）→ 酒店；共約 **1 小時** |
+| **~08:00** | 🏨 **[維多利亞酒店](https://maps.app.goo.gl/MbMNZwUnDZYS3MqUA) 抵達 / 行李寄放** | — | 215 Little Collins St；check-in 15:00（可能早辦）；寄放行李後補眠 |
 | 15:30–17:00 | ☕ **Degraves Street** | 1.5 小時 | 墨爾本咖啡文化窄巷；必喝精品咖啡 |
 | 17:00–18:30 | 🚉 **弗林德斯街 Flinders Street Station** | 1–1.5 小時 | 黃色穹頂地標；Federation Square 步行即達 |
 

@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🇳🇿 紐西蘭自駕蜜月 NZ D1–D13</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --chc:    #3a9e6f;
+      --grm:    #5b7fa6;
+      --frj:    #2d7a6a;
+      --wana:   #8a6e3c;
+      --tkp:    #7b6fa3;
+      --oam:    #7a6a5a;
+      --dun:    #4a6fa5;
+      --teanau: #3a6b5a;
+      --qzn:    #c0392b;
+      --bg:     #f4f3f0;
+      --surface:#fff;
+      --border: #e4e2dc;
+      --text:   #1a1a1a;
+      --muted:  #888;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(244,243,240,0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-inner {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+    }
+    .topbar-back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+    .topbar-back:hover { background: rgba(0,0,0,0.06); color: var(--text); }
+    .topbar-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── QUICK-JUMP CHIPS ── */
+    .jump-row {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .jump-row-inner {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 8px 12px;
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .jump-row-inner::-webkit-scrollbar { display: none; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 4px 11px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      opacity: 0.88;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    .chip:active { opacity: 1; transform: scale(0.96); }
+    .chip-chc    { background: var(--chc); }
+    .chip-grm    { background: var(--grm); }
+    .chip-frj    { background: var(--frj); }
+    .chip-wana   { background: var(--wana); }
+    .chip-tkp    { background: var(--tkp); }
+    .chip-oam    { background: var(--oam); }
+    .chip-dun    { background: var(--dun); }
+    .chip-teanau { background: var(--teanau); }
+    .chip-qzn    { background: var(--qzn); }
+
+    /* ── PAGE WRAPPER ── */
+    .page {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 16px 12px 80px;
+    }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 20px 4px 8px;
+    }
+
+    /* ── DAY DETAILS ── */
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    details summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      min-height: 54px;
+      padding: 10px 14px;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "►";
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.7);
+      margin-left: auto;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    details[open] > summary::after {
+      transform: rotate(90deg);
+    }
+
+    .day-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      height: 26px;
+      border-radius: 13px;
+      background: rgba(255,255,255,0.22);
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.03em;
+      flex-shrink: 0;
+      padding: 0 8px;
+    }
+    .day-info {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      overflow: hidden;
+    }
+    .day-date {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .day-loc {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Day colour bands on summary */
+    .sum-chc    { background: var(--chc); }
+    .sum-grm    { background: var(--grm); }
+    .sum-frj    { background: var(--frj); }
+    .sum-wana   { background: var(--wana); }
+    .sum-tkp    { background: var(--tkp); }
+    .sum-oam    { background: var(--oam); }
+    .sum-dun    { background: var(--dun); }
+    .sum-teanau { background: var(--teanau); }
+    .sum-qzn    { background: var(--qzn); }
+
+    /* ── SCHEDULE TABLE ── */
+    .sched {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+    }
+    .sched th {
+      background: #f7f6f3;
+      padding: 6px 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .sched td {
+      padding: 8px 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #f0eeea;
+    }
+    .sched tr:last-child td { border-bottom: none; }
+    .sched .t-time {
+      width: 80px;
+      font-weight: 600;
+      white-space: nowrap;
+      color: var(--text);
+      font-size: 0.82rem;
+    }
+    .sched .t-act { color: var(--text); }
+    .sched .t-note {
+      color: var(--muted);
+      font-size: 0.78rem;
+      min-width: 90px;
+    }
+    /* Transport hint row */
+    .sched tr.transport td {
+      background: #f8f7f5;
+      color: #999;
+      font-size: 0.78rem;
+      font-style: italic;
+      padding: 5px 10px;
+      border-bottom: 1px solid #f0eeea;
+    }
+    /* Optional activity row */
+    .sched tr.optional td {
+      background: #fafaf8;
+      color: var(--muted);
+    }
+    .sched tr.optional .t-time { color: var(--muted); }
+
+    /* Bold within cells */
+    .sched td strong { color: var(--text); font-weight: 700; }
+
+    /* ── INLINE BADGES ── */
+    .badge-confirmed {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #86efac;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .badge-ref {
+      display: inline-block;
+      background: #1e293b;
+      color: #e2e8f0;
+      font-family: monospace;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+    .badge-klook {
+      display: inline-block;
+      background: #ff5722;
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+    .badge-price {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+    .badge-warn {
+      display: inline-block;
+      background: #fff7ed;
+      color: #9a3412;
+      border: 1px solid #f97316;
+      font-size: 0.7rem;
+      padding: 1px 6px;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+
+    /* ── WARN BOX ── */
+    .warn-box {
+      background: #fff7ed;
+      border: 1px solid #f97316;
+      border-left: 3px solid #f97316;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: #7c2d12;
+      margin: 8px 12px 4px;
+    }
+    .info-box {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-left: 3px solid #22c55e;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: #166534;
+      margin: 8px 12px 4px;
+    }
+    .tip-box {
+      background: #fefce8;
+      border: 1px solid #fde047;
+      border-left: 3px solid #eab308;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: #713f12;
+      margin: 8px 12px 4px;
+    }
+    .note-box {
+      background: #f8f7f5;
+      border: 1px solid #ddd;
+      border-left: 3px solid #aaa;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: #666;
+      margin: 8px 12px 4px;
+    }
+
+    /* ── SECTION HEAD INSIDE DETAILS ── */
+    .sub-head {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 10px 12px 4px;
+      border-top: 1px solid #f0eeea;
+      margin-top: 2px;
+    }
+    .sub-head:first-of-type { border-top: none; }
+
+    /* ── ACTIVITY CARDS ── */
+    .act-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 24px 4px 8px;
+    }
+    .act-group-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--muted);
+      padding: 12px 4px 6px;
+      letter-spacing: 0.03em;
+    }
+
+    .act-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .act-hd {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 14px;
+    }
+    .act-hd-left {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .act-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+    }
+    .act-day {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .act-platform {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 3px;
+      color: #fff;
+      background: rgba(255,255,255,0.22);
+      align-self: flex-start;
+    }
+    .act-status {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 2px;
+    }
+    .act-status.confirmed { background:#dcfce7; color:#166534; border:1px solid #86efac; }
+    .act-status.pending   { background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; }
+
+    .act-body {
+      padding: 10px 14px 12px;
+    }
+    .act-row {
+      display: flex;
+      gap: 8px;
+      font-size: 0.82rem;
+      padding: 4px 0;
+      border-bottom: 1px solid #f0eeea;
+      line-height: 1.5;
+    }
+    .act-row:last-child { border-bottom: none; }
+    .act-label {
+      color: var(--muted);
+      font-weight: 600;
+      white-space: nowrap;
+      min-width: 52px;
+      flex-shrink: 0;
+      font-size: 0.76rem;
+    }
+    .act-val { color: var(--text); }
+    .act-val a { color: var(--text); text-decoration: underline dotted; }
+
+    .act-includes {
+      margin: 8px 0 0 0;
+      padding: 0 0 0 16px;
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── LINKS ── */
+    a { color: inherit; }
+    .map-link {
+      color: #2563eb;
+      text-decoration: underline dotted;
+      font-size: 0.8rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<!-- ── STICKY TOP BAR ── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="topbar-back" aria-label="返回">‹</a>
+    <span class="topbar-title">🇳🇿 紐西蘭自駕蜜月</span>
+  </div>
+</div>
+
+<!-- ── QUICK-JUMP CHIPS ── -->
+<div class="jump-row">
+  <div class="jump-row-inner">
+    <a class="chip chip-chc"    href="#d1">D1</a>
+    <a class="chip chip-chc"    href="#d2">D2</a>
+    <a class="chip chip-chc"    href="#d3">D3</a>
+    <a class="chip chip-grm"    href="#d4">D4</a>
+    <a class="chip chip-frj"    href="#d5">D5</a>
+    <a class="chip chip-wana"   href="#d6">D6</a>
+    <a class="chip chip-tkp"    href="#d7">D7</a>
+    <a class="chip chip-oam"    href="#d8">D8</a>
+    <a class="chip chip-dun"    href="#d9">D9</a>
+    <a class="chip chip-teanau" href="#d10">D10</a>
+    <a class="chip chip-qzn"    href="#d11">D11</a>
+    <a class="chip chip-qzn"    href="#d12">D12</a>
+    <a class="chip chip-qzn"    href="#d13">D13</a>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<div class="page">
+
+  <div class="section-title">🗺 NZ D1–D13 詳細行程</div>
+
+  <!-- ══════════════ NZ D1 ══════════════ -->
+  <details open id="d1">
+    <summary class="sum-chc">
+      <span class="day-badge">NZ D1</span>
+      <span class="day-info">
+        <span class="day-date">5/04（週一）</span>
+        <span class="day-loc">基督城 Christchurch ｜ 抵達 + 取車</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">行程重點</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">16:25</td>
+          <td class="t-act">🛬 JQ171 抵達 I 廳 → 清關提領行李</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">17:30–18:30</td>
+          <td class="t-act">🚗 <strong>Snap Rentals 取車</strong><br>
+            <span style="font-size:0.76rem;color:var(--muted)">170 Orchard Road, Harewood · 接駁：<a class="map-link" href="https://www.snaprentals.co.nz/pickup-christchurch" target="_blank">snaprentals.co.nz</a></span></td>
+          <td class="t-note">0800 288 699</td>
+        </tr>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act" colspan="2"><span class="badge-warn">⚠️ 預計 18:00 抵達，超出接駁截止時間（17:30）— 出發前致電確認安排</span></td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 取車後自駕前往市區 Urbanz 旅舍</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:00–20:00</td>
+          <td class="t-act">🛒 <strong>Riverside Market</strong>（晚餐，各國料理）</td>
+          <td class="t-note">1 小時</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">20:00–21:00</td>
+          <td class="t-act">🍽 <strong>Little High Eatery</strong>（晚餐備案，美食廣場）</td>
+          <td class="t-note">可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Urbanz 烏爾班茲旅舍</strong></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">可選活動</div>
+    <table class="sched">
+      <tbody>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">🚡 電車晚餐 Tramway Restaurant</td>
+          <td class="t-note"><span class="badge-price">NZD 149 需預訂</span></td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">🍪 Cookie Time Bakery（若抵達尚早）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D2 ══════════════ -->
+  <details open id="d2">
+    <summary class="sum-chc">
+      <span class="day-badge">NZ D2</span>
+      <span class="day-info">
+        <span class="day-date">5/05（週二）</span>
+        <span class="day-loc">阿卡羅阿一日遊 Akaroa</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">時間軸｜路線 ~82 km · 1 h 20 m</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">08:30</td>
+          <td class="t-act">🚗 出發 CHC → Akaroa</td>
+          <td class="t-note">82 km · 1h20m</td>
+        </tr>
+        <tr>
+          <td class="t-time">10:00–11:30</td>
+          <td class="t-act">🏘 <strong>Akaroa Heritage Park</strong> 法式殖民歷史街區</td>
+          <td class="t-note">1–1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:30–12:30</td>
+          <td class="t-act">🌊 <strong>阿卡羅阿港 Akaroa Harbour</strong> 港口景觀 + 咖啡廳</td>
+          <td class="t-note">1 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">12:30–13:30</td>
+          <td class="t-act">🥐 午餐：<strong>Ma France</strong> 法式麵包 / 港口魚薯條</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">14:00–15:00</td>
+          <td class="t-act">🦙 <strong>Shamarra Alpacas 羊駝農場</strong></td>
+          <td class="t-note">距 Akaroa 15 分 · 1 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 返程 Akaroa → CHC（1h20m）</td>
+        </tr>
+        <tr>
+          <td class="t-time">15:30–17:00</td>
+          <td class="t-act">🚗 返程抵達 CHC</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">17:00–18:00</td>
+          <td class="t-act">🦔 <strong>Willowbank Wildlife Reserve</strong>（可看奇異鳥）</td>
+          <td class="t-note"><span class="badge-price">NZD 36.5</span> CHC 北邊</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Urbanz 烏爾班茲旅舍</strong></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">可選活動</div>
+    <table class="sched">
+      <tbody>
+        <tr class="optional">
+          <td class="t-time">10:45 / 13:30</td>
+          <td class="t-act">🐬 阿卡羅阿自然之旅（賞海豚）</td>
+          <td class="t-note"><span class="badge-price">NZD 125</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D3 ══════════════ -->
+  <details open id="d3">
+    <summary class="sum-chc">
+      <span class="day-badge">NZ D3</span>
+      <span class="day-info">
+        <span class="day-date">5/06（週三）</span>
+        <span class="day-loc">基督城市區 Christchurch City</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">時間軸</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">08:30–10:00</td>
+          <td class="t-act">🌿 <strong>Botanic Gardens 植物園</strong>（花卉溫室）</td>
+          <td class="t-note">免費 · 1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">10:00–11:30</td>
+          <td class="t-act">🏛 <strong>Canterbury Museum</strong>（毛利文化 + 南極展）</td>
+          <td class="t-note">免費 · 1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:30–12:15</td>
+          <td class="t-act">🎨 <strong>Christchurch Arts Centre</strong>（週末市集 / 工藝品）</td>
+          <td class="t-note">45 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">12:15–13:15</td>
+          <td class="t-act">🌏 午餐：<strong>Riverside Market</strong>（各國料理）</td>
+          <td class="t-note">1 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">13:15–13:45</td>
+          <td class="t-act">🏛 <strong>Cathedral Square / Re:START</strong>（貨櫃商店街）</td>
+          <td class="t-note">30 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">13:45–14:10</td>
+          <td class="t-act">🌉 <strong>Bridge of Remembrance</strong>（鐘樓拱橋）</td>
+          <td class="t-note">20 分</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">14:30–16:00</td>
+          <td class="t-act">🚡 <strong>Christchurch Gondola</strong>（可選，需開車）</td>
+          <td class="t-note"><span class="badge-price">NZD 35–40</span></td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">16:00–16:45</td>
+          <td class="t-act">🛍 <strong>Recycle Boutique</strong>（Colombo St，二手連鎖）</td>
+          <td class="t-note">可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">17:00–17:30</td>
+          <td class="t-act">🍪 <strong>Cookie Time Bakery Shop</strong>（基督城發源地，必買）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Urbanz 烏爾班茲旅舍</strong>（Check-out 5/7 10:00 前）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">可選活動</div>
+    <table class="sched">
+      <tbody>
+        <tr class="optional">
+          <td class="t-time">06:00</td>
+          <td class="t-act">🎈 Canterbury Hot Air Balloon</td>
+          <td class="t-note"><span class="badge-price">NZD 395</span></td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">🍽 Curator's House 露天餐廳（植物園旁）</td>
+          <td class="t-note">精緻午茶</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">⛵ Avon River 平底船撐篙</td>
+          <td class="t-note"><span class="badge-price">約 NZD 40</span></td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">🚋 Christchurch Tram 電車一日券</td>
+          <td class="t-note"><span class="badge-price">NZD 40</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D4 ══════════════ -->
+  <details open id="d4">
+    <summary class="sum-grm">
+      <span class="day-badge">NZ D4</span>
+      <span class="day-info">
+        <span class="day-date">5/07（週四）</span>
+        <span class="day-loc">Arthur's Pass → Greymouth</span>
+      </span>
+    </summary>
+
+    <div class="info-box">
+      💡 <strong>行車注意</strong>：建議 08:00–09:00 出發 · 出發前查 Arthur's Pass weather（MetService）· 積雪時改走 SH7
+    </div>
+
+    <div class="sub-head">時間軸｜路線 ~250 km · SH73</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">08:00</td>
+          <td class="t-act">🏁 Check-out + 出發（建議早出發）</td>
+          <td class="t-note">Urbanz → SH73</td>
+        </tr>
+        <tr>
+          <td class="t-time">09:30–10:00</td>
+          <td class="t-act">🪨 <strong>Castle Hill / Kura Tāwhiti</strong>（石灰岩怪石群）</td>
+          <td class="t-note">免費 · 30 分</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 繼續沿 SH73 西行 → Arthur's Pass 山口</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:00–12:00</td>
+          <td class="t-act">🏔 <strong>Arthur's Pass 山口村</strong><br>
+            <span style="font-size:0.76rem;color:var(--muted)">午餐：Wobbly Kea Café（山景座位）</span></td>
+          <td class="t-note">1 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 西側下山 → Greymouth 南下 15 km → Shantytown</td>
+        </tr>
+        <tr>
+          <td class="t-time">14:00–16:30</td>
+          <td class="t-act">🏚 <strong>Shantytown Heritage Park</strong>（淘金遺跡，蒸汽火車）</td>
+          <td class="t-note">Greymouth 南 15 km · 2–3 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 前往 Greymouth 市區入住</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:00–19:30</td>
+          <td class="t-act">💫 <strong>Glow Worm Dell</strong>（夜間螢火蟲洞，市區步行可達）</td>
+          <td class="t-note">免費 · 30 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Global Village Backpackers</strong></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      ⚠️ <strong>地圖調整說明</strong>：Hokitika Gorge / Beach（原列 D4）→ 已移至 D5；Knights Point（原誤列 D4，距 Greymouth 超 200km）→ 已移至 D6。
+    </div>
+  </details>
+
+  <!-- ══════════════ NZ D5 ══════════════ -->
+  <details open id="d5">
+    <summary class="sum-frj">
+      <span class="day-badge">NZ D5</span>
+      <span class="day-info">
+        <span class="day-date">5/08（週五）</span>
+        <span class="day-loc">Greymouth → 西岸 → Franz Josef</span>
+      </span>
+    </summary>
+
+    <div class="info-box">
+      💡 <strong>D5–D7 節奏建議</strong>：每日選 1–2 個重點即可；此段以風景自駕為主，保留彈性時間，避免疲勞駕駛
+    </div>
+
+    <div class="sub-head">時間軸｜路線 ~175 km · SH6 海岸線</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">08:00</td>
+          <td class="t-act">🏁 Check-out + 出發 Greymouth</td>
+          <td class="t-note">Hokitika 方向</td>
+        </tr>
+        <tr>
+          <td class="t-time">09:00–10:30</td>
+          <td class="t-act">💚 <strong>Hokitika Gorge 翡翠峽谷</strong>（必去）</td>
+          <td class="t-note">碧藍峽谷 · 1–1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">10:30–11:00</td>
+          <td class="t-act">🏖 <strong>Hokitika Beach</strong>（翡翠文化 + 彩虹字樣海灘，必去）</td>
+          <td class="t-note">30 分</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 沿 SH6 南下 ~175 km（太平洋在左，熱帶雨林在右）</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:00–14:00</td>
+          <td class="t-act">🚗 沿 SH6 南下（自駕風景段）</td>
+          <td class="t-note">午餐：超市自備或路途補充</td>
+        </tr>
+        <tr>
+          <td class="t-time">14:00–16:00</td>
+          <td class="t-act">🧊 <strong>Franz Josef 冰河村</strong>（散步村落，冰河步道入口，必去）</td>
+          <td class="t-note">2 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Wild Kea Lodge Franz Josef</strong></td>
+          <td class="t-note">9 Cron Street</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">已訂活動 — 明日（D6）</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">D6 07:30</td>
+          <td class="t-act">🚁 <strong>法蘭士約瑟夫冰川直升機健行</strong>
+            <span class="badge-confirmed">✅ 已訂</span>
+            <span class="badge-klook">Klook</span><br>
+            <span style="font-size:0.76rem;color:var(--muted)">63 Cron St · 3 小時冰川半日遊 · 07:15 前報到</span>
+          </td>
+          <td class="t-note"><span class="badge-ref">HAU427597</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">🥡 超市自備（Hokitika Four Square 或路途中補充）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍽 <strong>Alice May</strong> 或 Blue Ice（村內選擇有限，建議早入座）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D6 ══════════════ -->
+  <details open id="d6">
+    <summary class="sum-wana">
+      <span class="day-badge">NZ D6</span>
+      <span class="day-info">
+        <span class="day-date">5/09（週六）</span>
+        <span class="day-loc">🚁 冰川直升機 → Fox Glacier → Haast Pass → Wanaka</span>
+      </span>
+    </summary>
+
+    <div class="warn-box">
+      ⚠️ 出發當天早上電話確認：<strong>0800 484 337</strong> 或 <strong>+64 3 752 0763</strong>；天氣影響極大，取消可全額退款
+    </div>
+
+    <div class="sub-head">時間軸｜路線 ~200 km · SH6</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">07:00</td>
+          <td class="t-act">🏃 步行至 Franz Josef Glacier Guides（63 Cron St，Wild Kea Lodge 步行 2 分鐘）；<strong>07:15 前報到</strong></td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">07:30–~10:30</td>
+          <td class="t-act">🚁 <strong>法蘭士約瑟夫冰川直升機健行</strong>
+            <span class="badge-confirmed">✅ 已訂</span>
+            <span class="badge-klook">Klook</span><br>
+            <span style="font-size:0.76rem;color:var(--muted)">冰川半日遊 · 2 大人 · 3 小時導覽<br>
+            含：靴子 · 冰爪 · 防水外套褲 · 直升機來回 · 英語導遊 · 登山杖 · 保暖帽手套 · 登山靴</span>
+          </td>
+          <td class="t-note"><span class="badge-ref">HAU427597</span><br><span class="badge-ref">KLK0703585975</span></td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 ~11:00 驅車前往 Fox Glacier（約 25 km · 30 分鐘）</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:30–13:00</td>
+          <td class="t-act">🌊 <strong>Lake Matheson 鏡湖</strong>（映照 Mt Cook + Mt Tasman，環湖步道，必去）</td>
+          <td class="t-note">Fox Glacier 4 km · 1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">13:00–13:30</td>
+          <td class="t-act">🧊 <strong>Fox Glacier 小鎮</strong>（散策，比 Franz Josef 更安靜，必去）</td>
+          <td class="t-note">30 分</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 14:00 出發 SH6 南下 → Haast Pass</td>
+        </tr>
+        <tr>
+          <td class="t-time">15:30–15:50</td>
+          <td class="t-act">🌊 <strong>Knights Point 海岸觀景台</strong>（海岸礁岩全景，必去）</td>
+          <td class="t-note">Fox Glacier 南 ~80 km · 20 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">17:00–18:30</td>
+          <td class="t-act">🔵 <strong>Blue Pools 藍池</strong>（Makarora，碧藍冰河水，必去）<br>
+            <span style="font-size:0.76rem;color:var(--muted)">停車後步行 ~20 分（來回 45–60 分）</span></td>
+          <td class="t-note">1–1.5 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 繼續 SH6 → Wanaka（約 1 小時）</td>
+        </tr>
+        <tr>
+          <td class="t-time">~20:00</td>
+          <td class="t-act">🌳 抵達 Wanaka — <strong>Wanaka Tree / Beacon Point / Glendhu Bay</strong>（視體力安排）</td>
+          <td class="t-note">傍晚抵達</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Wānaka Bakpaka Hostel</strong></td>
+          <td class="t-note">117 Lakeside Road</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">🥡 自備或 Haast 路邊補給</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍕 <strong>Francesca's Italian Kitchen</strong> / <strong>Gusto at the Lake</strong>（湖景）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D7 ══════════════ -->
+  <details open id="d7">
+    <summary class="sum-tkp">
+      <span class="day-badge">NZ D7</span>
+      <span class="day-info">
+        <span class="day-date">5/10（週日）</span>
+        <span class="day-loc">Wanaka → Mt Cook → Tekapo</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">時間軸｜路線 ~230 km · SH8</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">08:00</td>
+          <td class="t-act">⏰ Check-out Wanaka Bakpaka</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 08:30 出發 Wanaka → Lake Pukaki · SH8</td>
+        </tr>
+        <tr>
+          <td class="t-time">09:30–09:50</td>
+          <td class="t-act">💧 <strong>Lake Pukaki 普卡基湖</strong>（土耳其藍湖水，必去）</td>
+          <td class="t-note">停車拍照 · 20 分</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 沿 SH80 前往 Mt Cook Village（~50 km）</td>
+        </tr>
+        <tr>
+          <td class="t-time">11:30–12:30</td>
+          <td class="t-act">🍴 午餐：<strong>Old Mountaineers Café</strong>（Mt Cook Village，冰河景觀座位，必打卡）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">12:30–15:30</td>
+          <td class="t-act">🥾 <strong>Hooker Valley Track</strong>（冰河湖 + Mt Cook 正面 + 吊橋，必去）<br>
+            <span style="font-size:0.76rem;color:var(--muted)">停車：<a class="map-link" href="https://maps.app.goo.gl/FXRcJCRqedqMaE5D8" target="_blank">White Horse Hill Campground ↗</a></span></td>
+          <td class="t-note">White Horse Hill · 2–3 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 16:00 離開 Mt Cook → SH8 → Tekapo（~100 km）</td>
+        </tr>
+        <tr>
+          <td class="t-time">18:30–19:15</td>
+          <td class="t-act">⛪ <strong>Church of the Good Shepherd 善牧教堂</strong>（Tekapo 湖畔，黃昏最美，必去）</td>
+          <td class="t-note">45 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:30–21:00</td>
+          <td class="t-act">🛁 <strong>Tekapo Springs 湖畔溫泉</strong>（星空泡湯，必去）</td>
+          <td class="t-note">1.5 h · 建議預訂</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">21:00+</td>
+          <td class="t-act">🌌 <strong>Mt John Observatory 天文台</strong>（黑暗天空保護區，晴天首選）</td>
+          <td class="t-note">1–2 h · 可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Haka House Lake Tekapo</strong></td>
+          <td class="t-note">5 Motuariki Lane</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      💡 <strong>觀星提醒</strong>：星空受天氣影響很大；若當晚多雲，以教堂黃昏 + 溫泉為主即可，不需強求
+    </div>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">☕ <strong>Old Mountaineers Café</strong>（Mt Cook Village，已含在時間軸）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🌙 <strong>Kohan 日式餐廳</strong> / Mackenzie's Bar &amp; Grill（建議早入座）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D8 ══════════════ -->
+  <details open id="d8">
+    <summary class="sum-oam">
+      <span class="day-badge">NZ D8</span>
+      <span class="day-info">
+        <span class="day-date">5/11（週一）</span>
+        <span class="day-loc">奧馬魯 Oamaru ｜ 維多利亞風情小城</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">路線｜Tekapo → Oamaru（途中停留）</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">09:00</td>
+          <td class="t-act">🚗 出發 蒂卡波 → 奧馬魯</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">途中</td>
+          <td class="t-act">🪨 <strong>Elephant Rocks</strong>（Duntroon 附近，石灰岩群，《納尼亞傳奇》取景地）</td>
+          <td class="t-note">免費 · 20 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">途中</td>
+          <td class="t-act">🌊 <strong>Moeraki Boulders</strong>（海灘圓形巨石）</td>
+          <td class="t-note"><span class="badge-price">NZD 5</span> 落潮最佳 · 20–30 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">抵達後</td>
+          <td class="t-act">🏛 <strong>維多利亞風格石灰岩建築街區</strong>（Harbour Historic Precinct）</td>
+          <td class="t-note">1–1.5 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act">🤖 <strong>蒸汽龐克文化博物館 Steampunk HQ</strong></td>
+          <td class="t-note">45 分</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">傍晚活動</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">黃昏前</td>
+          <td class="t-act">🐦 <strong>Bushy Beach</strong> 黃眼企鵝棲息地（天然觀察）</td>
+          <td class="t-note">免費 · 禁止靠近</td>
+        </tr>
+        <tr>
+          <td class="t-time">傍晚</td>
+          <td class="t-act">🐧 <strong>Blue Penguin Colony</strong>（藍眼企鵝保護區）傍晚點名</td>
+          <td class="t-note">建議預訂</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Oamaru Backpackers</strong></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">🍺 <strong>Scotts Brewing Co.</strong>（Harbour Street，精釀啤酒 + 餐點）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍽 Harbour Street 周邊餐廳或超市自理</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D9 ══════════════ -->
+  <details open id="d9">
+    <summary class="sum-dun">
+      <span class="day-badge">NZ D9</span>
+      <span class="day-info">
+        <span class="day-date">5/12（週二）</span>
+        <span class="day-loc">但尼丁 Dunedin ｜ 完整停留</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">路線｜Oamaru → Dunedin（~120 km · 1.5 小時）</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act">🚉 <strong>Dunedin Railway Station</strong>（蘇格蘭巴洛克建築）</td>
+          <td class="t-note">30 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act">📐 <strong>Baldwin Street</strong>（全球最陡住宅街道之一）</td>
+          <td class="t-note">20 分</td>
+        </tr>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act">🏙 <strong>Octagon 市中心廣場</strong></td>
+          <td class="t-note">30–45 分</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">—</td>
+          <td class="t-act">🦭 <strong>奧塔哥半島 Otago Peninsula</strong>（視時間與體力）</td>
+          <td class="t-note">2–3 h · 可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Sahara Guest House</strong></td>
+          <td class="t-note">Dunedin</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">☕ <strong>Nova Café</strong>（Stuart Street，人氣老牌咖啡館）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍽 Octagon 廣場周邊 / <strong>Etrusco at the Savoy</strong>（義大利菜，地下室氛圍佳）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D10 ══════════════ -->
+  <details open id="d10">
+    <summary class="sum-teanau">
+      <span class="day-badge">NZ D10</span>
+      <span class="day-info">
+        <span class="day-date">5/13（週三）</span>
+        <span class="day-loc">Dunedin → 蒂阿瑙 Te Anau</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">路線｜Dunedin → Te Anau（~4–4.5 小時）</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">早上</td>
+          <td class="t-act">🚗 建議早上出發</td>
+          <td class="t-note">Dunedin → Te Anau</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 車程約 4–4.5 小時；午餐路邊自備（Dunedin 超市購買）</td>
+        </tr>
+        <tr>
+          <td class="t-time">下午</td>
+          <td class="t-act">🌿 抵達 Te Anau，輕鬆休息<br>
+            <span style="font-size:0.76rem;color:var(--muted)">Milford Sound 前一晚基地；建議早入住、早休息以備隔天早出發</span></td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 宿：<strong>Te Anau Lakefront Backpackers</strong> <span class="badge-confirmed">✅ 已訂</span></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">🌿 沿途自備（Dunedin 超市購買）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍽 <strong>Redcliff Café &amp; Restaurant</strong>（Te Anau 特色餐廳，建議訂位）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D11 ══════════════ -->
+  <details open id="d11">
+    <summary class="sum-qzn">
+      <span class="day-badge">NZ D11</span>
+      <span class="day-info">
+        <span class="day-date">5/14（週四）</span>
+        <span class="day-loc">Milford Sound 大巴一日遊 → Queenstown</span>
+      </span>
+    </summary>
+
+    <div class="warn-box">
+      ⚠️ 出發前 24 小時致電 <strong>0800 866 666</strong> 確認接載地點與時間
+    </div>
+
+    <div class="sub-head">GreatSights 大巴一日遊 <span class="badge-confirmed">✅ 已訂</span> <span class="badge-klook">Klook</span></div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act">📍 集合：<a class="map-link" href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank">Kiwi Country</a>，Miro 街 2 號，Te Anau</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">09:45</td>
+          <td class="t-act">🚌 大巴出發</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">途中</td>
+          <td class="t-act">🪞 鏡湖（Mirror Lakes）· 荷馬隧道（Homer Tunnel）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">12:50</td>
+          <td class="t-act">⛵ 抵達峽灣 · 登船遊覽（Stirling / Bowen 瀑布）</td>
+          <td class="t-note">1.5–2 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">17:15</td>
+          <td class="t-act">🚌 回程出發（抵達 Te Anau 約 19:30）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 傍晚驅車皇后鎮（約 1.5–2 小時）</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🏨 入住 <strong>The Black Sheep Backpackers</strong> <span class="badge-confirmed">✅ 已訂</span></td>
+          <td class="t-note">Queenstown</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">方案包含</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act" colspan="2">🎫 峽灣國家公園門票 · 🚌 豪華玻璃頂棚觀光巴士（含講解）· ⛵ 觀光遊船（1.5–2 小時）· 🥪 野餐午餐（雞肉卷 / 素食卷）· 📶 車上 / 船上 WiFi · 多語導覽手冊</td>
+        </tr>
+        <tr>
+          <td class="t-time">費用</td>
+          <td class="t-act"><span class="badge-price">Klook · NT$6,730 · 2 位成人</span></td>
+          <td class="t-note">免費取消至 5/13（三）00:00 NZST</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">🍽 用餐建議</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">午餐</td>
+          <td class="t-act">🥪 已含（大巴野餐午餐）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚餐</td>
+          <td class="t-act">🍔 <strong>Fergburger</strong>（21:00 後排隊較短）/ <strong>Stratosfare</strong>（Skyline 山頂景觀）</td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D12 ══════════════ -->
+  <details open id="d12">
+    <summary class="sum-qzn">
+      <span class="day-badge">NZ D12</span>
+      <span class="day-info">
+        <span class="day-date">5/15（週五）</span>
+        <span class="day-loc">皇后鎮自由活動 ｜ 整理行李</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">時間軸｜皇后鎮市區 + 周邊</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr class="optional">
+          <td class="t-time">09:00–11:30</td>
+          <td class="t-act">🛣 <strong>Crown Range Road 瞭望點</strong>（紐西蘭最高公路；往 Wanaka 方向）<span class="badge-warn">⚠️ 冬季留意路況</span></td>
+          <td class="t-note">2–2.5 h · 可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">12:00</td>
+          <td class="t-act">🚗 返回皇后鎮市區（午餐自理）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">13:00–17:00</td>
+          <td class="t-act">🦌 <strong>Deer Park Heights</strong>（《魔戒》取景地，自駕農場，必去）<span class="badge-confirmed">✅ 已訂</span><br>
+            <span style="font-size:0.76rem;color:var(--muted)">Hard Antler Block 全程留車內 · 帶 $2 硬幣購買飼料</span>
+            <span class="badge-warn">⚠️ 18:00 前必須離場</span></td>
+          <td class="t-note"><span class="badge-price">NZD $75/車</span></td>
+        </tr>
+        <tr>
+          <td class="t-time">17:30–19:00</td>
+          <td class="t-act">♨️ <strong>Onsen Hot Pools 溫泉</strong>（岩石池，俯瞰 Shotover River 峽谷，必去）</td>
+          <td class="t-note">1.5 h · 建議預訂</td>
+        </tr>
+        <tr class="optional">
+          <td class="t-time">19:00–20:30</td>
+          <td class="t-act">🚠 <strong>Skyline Gondola 天際線纜車</strong>（俯瞰 Lake Wakatipu）</td>
+          <td class="t-note">1.5 h · 可選</td>
+        </tr>
+        <tr>
+          <td class="t-time">21:00–22:00</td>
+          <td class="t-act">🍔 <strong>Fergburger</strong>（必去）</td>
+          <td class="t-note">21:00 後排隊較短</td>
+        </tr>
+        <tr>
+          <td class="t-time">晚</td>
+          <td class="t-act">🧳 整理行李 <span class="badge-warn">⚠️ 明早 09:00 Snap Rentals ZQN 還車；加滿油</span></td>
+          <td class="t-note">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">⚠️ 離境準備</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">—</td>
+          <td class="t-act" colspan="2">🔌 充電，確認所有登機證 · 💰 紐幣現金用完 / 換回台幣 · ⏰ 建議 07:00 起床，08:00 出發（還車日）</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ NZ D13 ══════════════ -->
+  <details open id="d13">
+    <summary class="sum-qzn">
+      <span class="day-badge">NZ D13</span>
+      <span class="day-info">
+        <span class="day-date">5/16（週六）</span>
+        <span class="day-loc">還車 / 離境 ZQN → AKL → TPE</span>
+      </span>
+    </summary>
+
+    <div class="sub-head">ZQN 時間線</div>
+    <table class="sched">
+      <thead>
+        <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t-time">09:00</td>
+          <td class="t-act">🚗 <strong>Snap Rentals QTN 還車</strong>（加滿油）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">09:30 前</td>
+          <td class="t-act">🛂 進入機場報到</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">10:50</td>
+          <td class="t-act">✈ <strong>JQ292</strong> ZQN → AKL</td>
+          <td class="t-note">12:40 D 廳抵達</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sub-head">奧克蘭轉機（~7 小時）</div>
+    <table class="sched">
+      <tbody>
+        <tr>
+          <td class="t-time">12:40–19:00</td>
+          <td class="t-act">🏙 D 廳 → I 廳，可出市區或機場附近逛街</td>
+          <td class="t-note">~7 h 轉機</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:30</td>
+          <td class="t-act">✈ <strong>CI054</strong> AKL → TPE（途經 BNE，飛機上過夜）</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">05:40+1</td>
+          <td class="t-act">🏠 抵達桃園</td>
+          <td class="t-note">5/17（週日）</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- ══════════════ ACTIVITIES ══════════════ -->
+  <div class="act-section-title">🎯 NZ 活動預訂 Activities</div>
+
+  <!-- Franz Josef Heli Hike — BOOKED -->
+  <div class="act-group-label">🧊 西岸冰河 West Coast · NZ D6（5/9）</div>
+
+  <div class="act-card">
+    <div class="act-hd" style="background:var(--frj)">
+      <div class="act-hd-left">
+        <span class="act-title">🚁 法蘭士約瑟夫冰川直升機健行 Heli Hike</span>
+        <span class="act-day">NZ D6 · 5/9（週六）07:30</span>
+        <span class="act-platform">Klook</span>
+      </div>
+      <span class="act-status confirmed">✅ 已訂</span>
+    </div>
+    <div class="act-body">
+      <div class="act-row"><span class="act-label">方案</span><span class="act-val">冰川半日遊（Half Day Glacier Tour）</span></div>
+      <div class="act-row"><span class="act-label">日期</span><span class="act-val"><strong>2026/05/09（週六）07:30</strong>（07:15 前報到）</span></div>
+      <div class="act-row"><span class="act-label">人數</span><span class="act-val">大人 × 2</span></div>
+      <div class="act-row"><span class="act-label">訂單號</span><span class="act-val"><span class="badge-ref">HAU427597</span></span></div>
+      <div class="act-row"><span class="act-label">憑證號</span><span class="act-val"><span class="badge-ref">KLK0703585975</span></span></div>
+      <div class="act-row"><span class="act-label">地點</span><span class="act-val">63 Cron Street, Franz Josef（Wild Kea Lodge 旁步行 2 分鐘）</span></div>
+      <div class="act-row"><span class="act-label">時長</span><span class="act-val">約 3 小時</span></div>
+      <div class="act-row"><span class="act-label">憑證</span><span class="act-val"><a href="assets/Klook voucher-NZ-Josef.pdf" target="_blank" style="color:var(--frj);font-weight:600">📄 Klook 憑證 ↗</a></span></div>
+      <div class="warn-box" style="margin:8px 0 4px">
+        ⚠️ 出發當天早上電話確認：<strong>0800 484 337</strong> 或 <strong>+64 3 752 0763</strong>；天氣影響極大，取消可全額退款
+      </div>
+      <ul class="act-includes">
+        <li>✅ 包含：靴子 · 冰爪 · 防水外套褲 · 直升機來回 · 英語導遊 · 登山杖 · 保暖帽手套 · 襪子 · 登山靴</li>
+        <li>❌ 不含：接送 · 餐食 · 保險</li>
+        <li>🚫 活動前 24 小時可免費取消 / 更改</li>
+        <li>⚖️ 體重限制：35–115 kg；身高 ≥ 137 cm；最少 3 人成團</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Milford Sound — BOOKED -->
+  <div class="act-group-label">⛵ 米佛峽灣 Milford Sound · NZ D11（5/14）</div>
+
+  <div class="act-card">
+    <div class="act-hd" style="background:var(--qzn)">
+      <div class="act-hd-left">
+        <span class="act-title">🚌 GreatSights 米佛峽灣大巴一日遊</span>
+        <span class="act-day">NZ D11 · 5/14（週四）</span>
+        <span class="act-platform">Klook</span>
+      </div>
+      <span class="act-status confirmed">✅ 已訂</span>
+    </div>
+    <div class="act-body">
+      <div class="act-row"><span class="act-label">平台</span><span class="act-val">Klook · <span class="badge-price">NT$6,730 · 2 位成人</span></span></div>
+      <div class="act-row"><span class="act-label">集合</span><span class="act-val"><a class="map-link" href="https://maps.app.goo.gl/NF3ZGAi5TVs63enRA" target="_blank">Kiwi Country</a>，Miro 街 2 號，Te Anau</span></div>
+      <div class="act-row"><span class="act-label">出發</span><span class="act-val"><strong>09:45</strong> 大巴出發</span></div>
+      <div class="act-row"><span class="act-label">峽灣</span><span class="act-val"><strong>12:50</strong> 抵達 · 登船遊覽（Stirling / Bowen 瀑布）</span></div>
+      <div class="act-row"><span class="act-label">回程</span><span class="act-val"><strong>17:15</strong> 出發（Te Anau 約 19:30）</span></div>
+      <div class="act-row"><span class="act-label">取消</span><span class="act-val">免費取消至 5/13（三）00:00 NZST</span></div>
+      <div class="warn-box" style="margin:8px 0 4px">
+        ⚠️ 出發前 24 小時致電 <strong>0800 866 666</strong> 確認接載地點與時間
+      </div>
+      <ul class="act-includes">
+        <li>🎫 峽灣國家公園門票</li>
+        <li>🚌 豪華玻璃頂棚觀光巴士（含講解）</li>
+        <li>⛵ 觀光遊船（1.5–2 小時）</li>
+        <li>🥪 野餐午餐（雞肉卷 / 素食卷）</li>
+        <li>📶 車上 / 船上 WiFi · 多語導覽手冊</li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- /.page -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <a href="index.html">← 返回總覽</a>
+  &nbsp;·&nbsp;
+  <a href="oceania.html">完整行程 Oceania.html</a>
+</footer>
+
+</body>
+</html>
