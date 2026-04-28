@@ -461,26 +461,30 @@
 | 14:00–16:00 | 🧊 **Franz Josef 冰河村** | 2 小時 | 必去 | 輕鬆散步村落；可走冰河步道入口 |
 | 🏨 | **Wild Kea Lodge**｜住宿 | — | 9 Cron Street, Franz Josef |
 
-**可選活動：**
-- 🚁 Franz Josef 冰河直升機 — 約 NZD 800（含 snow landing，天氣影響大）
-- 🚁 Fox Glacier 冰河直升機 — 約 NZD 750（Fox Glacier 小鎮，D6 早上經過）
+**已確認活動（NZ D6 早上）：**
+> ✅ **法蘭士約瑟夫冰川直升機健行（Heli Hike）已訂 — D6 07:30 出發**
+> Klook · 訂單 HAU427597 · 憑證 KLK0703585975 · 冰川半日遊 · 2 大人
+> 地址：63 Cron Street（距 Wild Kea Lodge 步行 2 分鐘）
+> ⚠️ 出發當天早上請電話確認：0800 484 337 或 +64 3 752 0763；15 分鐘前（07:15）報到
+> 費用包含：靴子 · 冰爪 · 防水外套褲 · 直升機來回 · 導遊 · 登山杖 · 保暖帽手套 · 襪子 · 登山靴
 
 ---
 
-### NZ D6 ｜ 5/09（週六）｜ Fox Glacier → Haast Pass → 瓦納卡 Wanaka
+### NZ D6 ｜ 5/09（週六）｜ 冰川直升機健行 → Fox Glacier → Haast Pass → 瓦納卡 Wanaka
 
 路線：Franz Josef → Fox Glacier → Knights Point → Haast → Blue Pools → Wanaka（約 200km）
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 06:30–08:00 | 🌊 **Lake Matheson 鏡湖** | 1.5 小時 | 必去 | ⭐ **清晨最美**！映照 Mt Cook + Mt Tasman；環湖步道；Fox Glacier 小鎮附近 4km |
-| 08:30–09:00 | 🧊 **Fox Glacier 小鎮** | 30 分鐘 | 必去 | 散策；比 Franz Josef 更安靜 |
-| 09:30 | 🚗 出發 SH6 南下 | — | — | |
-| 11:00–11:20 | 🌊 **Knights Point 海岸觀景台** | 20 分鐘 | 必去 | ⚠️ 地圖原誤列在 D4，地理上在此段（Fox Glacier 以南約 80km SH6）；海岸礁岩全景 |
-| 12:30–14:00 | 🔵 **Blue Pools 藍池**（Makarora）| 1–1.5 小時 | 必去 | 停車後步行 ~20 分（來回 45–60 分）；碧藍冰河水 |
-| 16:00–16:30 | 🌳 **Wanaka Tree** | 30 分鐘 | 必去 | 湖中孤樹；日落時段最美 |
-| 16:30–17:00 | 📸 **Beacon Point** | 30 分鐘 | 必去 | Wanaka 湖景拍攝點 |
-| 17:00–17:30 | 🌅 **Glendhu Bay** | 30 分鐘 | 必去 | Wanaka 西側 SH6；寂靜灣景 |
+| 07:00 | 🏃 前往報到 | — | **✅ 已訂** | 步行至 Franz Josef Glacier Guides（63 Cron St，距 Wild Kea Lodge 步行 2 分鐘）；**請 07:15 前抵達** |
+| **07:30–~10:30** | 🚁 **法蘭士約瑟夫冰川直升機健行** | **3 小時** | **✅ 已訂** | Klook HAU427597 · 冰川半日遊 · 含靴子 / 冰爪 / 防水外套 / 直升機 / 導遊 · ⚠️ 出發前電話確認：0800 484 337 |
+| ~11:00 | 🚗 驅車前往 Fox Glacier | — | — | 約 25km，30 分鐘 |
+| 11:30–13:00 | 🌊 **Lake Matheson 鏡湖** | 1.5 小時 | 必去 | 映照 Mt Cook + Mt Tasman；環湖步道；Fox Glacier 小鎮附近 4km（⚠️ 清晨能見度最佳，此時為上午，仍壯觀） |
+| 13:00–13:30 | 🧊 **Fox Glacier 小鎮** | 30 分鐘 | 必去 | 散策；比 Franz Josef 更安靜 |
+| 14:00 | 🚗 出發 SH6 南下 | — | — | |
+| 15:30–15:50 | 🌊 **Knights Point 海岸觀景台** | 20 分鐘 | 必去 | ⚠️ 地圖原誤列在 D4，地理上在此段（Fox Glacier 以南約 80km SH6）；海岸礁岩全景 |
+| 17:00–18:30 | 🔵 **Blue Pools 藍池**（Makarora）| 1–1.5 小時 | 必去 | 停車後步行 ~20 分（來回 45–60 分）；碧藍冰河水 |
+| ~20:00 | 🌳 **Wanaka Tree / Beacon Point / Glendhu Bay** | 視狀況 | 視體力 | 傍晚抵達；直接回住宿或順路快拍 |
 | 🏨 | **Wānaka Bakpaka Hostel**｜住宿 | — | 117 Lakeside Road, Wanaka |
 
 > 📍 **原始行程有寫，但地圖未列出**：Haast Pass 瀑布群（沿 SH6 沿途停車即可，無需額外安排）
@@ -792,9 +796,9 @@
 
 | 項目 | 訂購者 | 金額（NTD）| 備註 |
 |------|--------|-----------|------|
-| TPE → SIN（酷航 TR867）| 佩璇 | 9,328 | 雙人 20kg |
-| SIN → MEL（捷星 JQ008）| 佩璇 | 21,156 | 雙人 20kg |
-| MEL → CHC（捷星 JQ171）| 佩璇 | 15,694 | 雙人 30kg |
+| TPE → SIN（酷航 TR867）| 佩璇 | 9,328 | 每人 20kg |
+| SIN → MEL（捷星 JQ008）| 佩璇 | 21,156 | 每人 20kg |
+| MEL → CHC（捷星 JQ171）| 佩璇 | 15,694 | 每人 30kg |
 | ZQN → AKL → TPE（JQ292 + CI054）| 子擎 | 33,864 | 每人 30kg + 2×23kg |
 | **機票合計** | | **80,042** | |
 | 租車 Snap Rentals Corolla Wagon 12天 | 子擎 | NZD 891.58（≈ TWD 16,557）| Simply Better Cover · 單程費 $0 |
@@ -925,7 +929,7 @@
 
 ### 🎡 活動預訂
 - [x] ~~⛵ Milford Sound 遊船（NZ D11）~~ ✅ GreatSights 大巴一日遊（NT$ 6,730，Klook）
-- [ ] 🚁 冰河直升機：Franz Josef 或 Fox Glacier（NZ D5，擇一）
+- [x] ~~🚁 冰河直升機：Franz Josef 或 Fox Glacier（NZ D5，擇一）~~ ✅ **法蘭士約瑟夫冰川直升機健行（NZ D6 07:30）** Klook · HAU427597 · 憑證 KLK0703585975
 - [ ] 🌌 Mt John 觀星（NZ D7，蒂卡波）
 - [ ] 🚠 Skyline Gondola 皇后鎮（NZ D12）
 - [ ] 🪂 跳傘 / 噴射船（NZ D12，擇一）
