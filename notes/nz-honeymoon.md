@@ -518,7 +518,7 @@
 | 16:00 | 🚗 離開 Mt Cook | — | — | |
 | 18:30–19:15 | ⛪ **Church of the Good Shepherd** | 45 分鐘 | 必去 | 善牧教堂；Tekapo 湖畔；黃昏時段最美 |
 | 19:30–21:00 | 🛁 **Tekapo Springs 湖畔溫泉** | 1.5 小時 | 必去 | 星空泡湯；建議先預訂 |
-| 21:00+ | 🌌 **Mt John Observatory 天文台** | 1–2 小時 | 可選 | 晴天首選；黑暗天空保護區；銀河清晰可見 ⭐⭐ |
+| 20:30–21:45 | 🌌 **Alpine Stargazing Experience（Silver River）** | ~75 分鐘 | **✅ 已訂** | 訂單 XYSA26X5711441；12 Rapuwai Lane；NZD 190；20:15 前抵達；天氣取消全額退款 |
 | 🏨 | **Haka House Lake Tekapo**｜住宿 | — | 5 Motuariki Lane, Tekapo |
 
 > 💡 **觀星提醒**：星空受天氣影響很大；若當晚多雲，以教堂黃昏 + 溫泉為主即可，不需強求
@@ -862,6 +862,7 @@
 | 2026/4/13 | 子擎 | Sahara Guest House（booking.com）| ≈ TWD 2,724 | Line Pay 中信信用卡 | 但尼丁住宿 1晚 | ⏳ 待扣款 |
 | 2026/4/14 | 子擎 | Te Anau Lakefront Backpackers（booking.com）| NZD 130（≈ TWD 2,414）| 中信 末碼 0950 | 蒂阿瑙住宿 1晚 | ⏳ 5/6 排程扣款 |
 | 2026/4/14 | 子擎 | The Black Sheep Backpackers（booking.com）| NZD 313.58（≈ TWD 5,823）| 中信 末碼 0950 | 皇后鎮住宿 2晚 | ⏳ 5/7 排程扣款 |
+| 2026/4/29 | 佩璇 | Silver River Alpine Stargazing（Bookme）| NZD 190（≈ TWD 3,528）| 信用卡 | 蒂卡波觀星 2 位成人（天氣取消全額退款）| ✅ 已付 |
 
 ---
 
@@ -943,7 +944,7 @@
 ### 🎡 活動預訂
 - [x] ~~⛵ Milford Sound 遊船（NZ D11）~~ ✅ GreatSights 大巴一日遊（NT$ 6,730，Klook）
 - [x] ~~🚁 冰河直升機：Franz Josef 或 Fox Glacier（NZ D5，擇一）~~ ✅ **法蘭士約瑟夫冰川直升機健行（NZ D6 07:30）** Klook · HAU427597 · 憑證 KLK0703585975
-- [ ] 🌌 Mt John 觀星（NZ D7，蒂卡波）
+- [x] ~~🌌 Mt John 觀星（NZ D7，蒂卡波）~~ ✅ Alpine Stargazing Experience · Silver River · XYSA26X5711441（Bookme）
 - [ ] 🚠 Skyline Gondola 皇后鎮（NZ D12）
 - [ ] 🪂 跳傘 / 噴射船（NZ D12，擇一）
 - [ ] 🍽 Tramway Restaurant 電車晚餐，NZD 149（NZ D1 或 D3）
@@ -1072,3 +1073,4 @@
 | 活動 | 憑證 |
 |------|------|
 | ⛵ Milford Sound GreatSights 遊船 | [Klook-NZ-Milford-GreatSight.pdf](<../docs/assets/Klook voucher-NZ-Milford-GreatSight.pdf>) |
+| 🌌 蒂卡波觀星 Alpine Stargazing（Silver River）| [佩璇訂蒂卡波觀星bookme.pdf](<../docs/assets/佩璇訂蒂卡波觀星bookme.pdf>) |
