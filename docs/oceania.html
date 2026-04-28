@@ -2602,41 +2602,66 @@
     <!-- 行李轉換流程圖 -->
     <h3 style="font-size:0.85rem;font-weight:700;margin:0 0 10px;color:var(--text)">🔀 行李轉換流程圖</h3>
     <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:28px;overflow-x:auto">
-      <pre class="mermaid">
-flowchart LR
-  classDef red fill:#fecaca,stroke:#dc2626,color:#1a1a1a
-  classDef yel fill:#fef3c7,stroke:#d97706,color:#1a1a1a
-  classDef grn fill:#dcfce7,stroke:#16a34a,color:#1a1a1a
-  classDef hub fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+      <div style="display:flex;align-items:stretch;gap:0;min-width:580px">
 
-  subgraph P1["📦 Phase 1　SIN / AUS（D1–D6）"]
-    A1["🔴 29吋<br/>封存 NZ 衣物<br/>保暖層 / 外套"]:::red
-    B1["🔴 25吋<br/>前段衣物箱<br/>SIN + AUS 衣物"]:::red
-    C1["🟡 16吋<br/>設備箱（固定）"]:::yel
-    D1["🟡 Moshi<br/>外套 / 文件"]:::yel
-    E1["🟢 背包 + 腰包<br/>隨身物品"]:::grn
-  end
+        <!-- Phase 1 -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:0.72rem;font-weight:700;text-align:center;background:#fee2e2;border:1px solid #fca5a5;border-radius:6px;padding:6px 4px;color:#991b1b">📦 Phase 1<br><span style="font-weight:400">SIN / AUS（D1–D6）</span></div>
+          <div style="background:#fecaca;border:1px solid #dc2626;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🔴 <strong>29吋</strong><br>封存 NZ 衣物<br>保暖層 / 外套</div>
+          <div style="background:#fecaca;border:1px solid #dc2626;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🔴 <strong>25吋</strong><br>前段衣物箱<br>SIN + AUS 衣物</div>
+          <div style="background:#fef3c7;border:1px solid #d97706;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟡 <strong>16吋</strong><br>設備箱（固定）</div>
+          <div style="background:#fef3c7;border:1px solid #d97706;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟡 <strong>Moshi</strong><br>外套 / 文件</div>
+          <div style="background:#dcfce7;border:1px solid #16a34a;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟢 <strong>背包 + 腰包</strong><br>隨身物品</div>
+        </div>
 
-  subgraph CHC["⟳ 轉換點　5/4 CHC 住宿後"]
-    T{{"轉換 SOP<br/>① 取出 29吋 NZ 衣物<br/>② NZ 衣物移入 25吋<br/>③ SIN 舊衣放入 29吋"}}:::hub
-  end
+        <!-- Arrow col -->
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0 8px;padding-top:36px">
+          <div style="font-size:0.65rem;color:#7c3aed;writing-mode:horizontal-tb;white-space:nowrap;margin-bottom:2px">NZ 衣物取出</div>
+          <div style="color:#7c3aed;font-size:1.1rem">→</div>
+          <div style="font-size:0.65rem;color:#7c3aed;white-space:nowrap;margin-bottom:2px">SIN 舊衣取出</div>
+          <div style="color:#7c3aed;font-size:1.1rem">→</div>
+          <div style="color:#9ca3af;font-size:1.1rem;margin-top:4px">→</div>
+          <div style="color:#9ca3af;font-size:1.1rem">→</div>
+          <div style="color:#9ca3af;font-size:1.1rem">→</div>
+        </div>
 
-  subgraph P2["🏔 Phase 2　NZ（D7–D19）"]
-    B2["🔴 25吋<br/>NZ 主衣物箱<br/>子擎 6 模組 + 佩璇"]:::red
-    A2["🔴 29吋<br/>封存 + 採買箱<br/>舊衣 / 採買 / 低頻"]:::red
-    C2["🟡 16吋<br/>設備箱（不變）"]:::yel
-    D2["🟡 Moshi<br/>外套快取（不變）"]:::yel
-    E2["🟢 背包 + 腰包<br/>健行主包"]:::grn
-  end
+        <!-- CHC Hub -->
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;flex:0 0 auto;width:130px">
+          <div style="font-size:0.72rem;font-weight:700;text-align:center;background:#ede9fe;border:1px solid #7c3aed;border-radius:6px;padding:4px 6px;color:#4c1d95;white-space:nowrap">⟳ 轉換點</div>
+          <div style="background:#ede9fe;border:2px solid #7c3aed;border-radius:8px;padding:10px;font-size:0.75rem;line-height:1.8;color:#4c1d95;text-align:left;width:100%;box-sizing:border-box">
+            <div style="font-weight:700;margin-bottom:4px;text-align:center">轉換 SOP</div>
+            <div>① 取出 29吋 NZ 衣物</div>
+            <div>② NZ 衣物移入 25吋</div>
+            <div>③ SIN 舊衣放入 29吋</div>
+            <div style="font-size:0.68rem;color:#7c3aed;margin-top:6px;text-align:center">5/4 CHC 住宿後</div>
+          </div>
+        </div>
 
-  A1 -->|"NZ 衣物取出"| T
-  B1 -->|"SIN 舊衣取出"| T
-  T -->|"NZ 衣物移入"| B2
-  T -->|"舊衣封存入"| A2
-  C1 -->|"不變"| C2
-  D1 -->|"不變"| D2
-  E1 -->|"日用 → 健行"| E2
-      </pre>
+        <!-- Arrow col 2 -->
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0 8px;padding-top:36px">
+          <div style="font-size:0.65rem;color:#7c3aed;white-space:nowrap;margin-bottom:2px">NZ 衣物移入</div>
+          <div style="color:#7c3aed;font-size:1.1rem">→</div>
+          <div style="font-size:0.65rem;color:#7c3aed;white-space:nowrap;margin-bottom:2px">舊衣封存入</div>
+          <div style="color:#7c3aed;font-size:1.1rem">→</div>
+          <div style="font-size:0.65rem;color:#9ca3af;white-space:nowrap;margin-bottom:2px">不變</div>
+          <div style="color:#9ca3af;font-size:1.1rem">→</div>
+          <div style="font-size:0.65rem;color:#9ca3af;white-space:nowrap;margin-bottom:2px">不變</div>
+          <div style="color:#9ca3af;font-size:1.1rem">→</div>
+          <div style="font-size:0.65rem;color:#16a34a;white-space:nowrap;margin-bottom:2px">日用→健行</div>
+          <div style="color:#16a34a;font-size:1.1rem">→</div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:0.72rem;font-weight:700;text-align:center;background:#dbeafe;border:1px solid #93c5fd;border-radius:6px;padding:6px 4px;color:#1e3a8a">🏔 Phase 2<br><span style="font-weight:400">NZ（D7–D19）</span></div>
+          <div style="background:#fecaca;border:1px solid #dc2626;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🔴 <strong>25吋</strong><br>NZ 主衣物箱<br>子擎 6 模組 + 佩璇</div>
+          <div style="background:#fecaca;border:1px solid #dc2626;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🔴 <strong>29吋</strong><br>封存 + 採買箱<br>舊衣 / 採買 / 低頻</div>
+          <div style="background:#fef3c7;border:1px solid #d97706;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟡 <strong>16吋</strong><br>設備箱（不變）</div>
+          <div style="background:#fef3c7;border:1px solid #d97706;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟡 <strong>Moshi</strong><br>外套快取（不變）</div>
+          <div style="background:#dcfce7;border:1px solid #16a34a;border-radius:6px;padding:8px;font-size:0.78rem;line-height:1.5;color:#1a1a1a;text-align:center">🟢 <strong>背包 + 腰包</strong><br>健行主包</div>
+        </div>
+
+      </div>
     </div>
 
     <!-- 29" 角色說明 -->
