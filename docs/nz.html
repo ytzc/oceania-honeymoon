@@ -506,6 +506,60 @@
       text-decoration: underline;
     }
     footer a:hover { color: var(--text); }
+
+    /* ── PDF / PRINT BUTTON ── */
+    .btn-pdf {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 13px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .btn-pdf:hover { background: rgba(0,0,0,0.04); border-color: #bbb; }
+    .btn-pdf:active { transform: scale(0.96); }
+
+    /* ── PRINT VIEW (hidden on screen) ── */
+    #print-view { display: none; }
+
+    @media print {
+      .topbar, .jump-row, .page, footer, .btn-pdf { display: none !important; }
+      #print-view { display: block !important; }
+      body { background: #fff; font-family: -apple-system, "Noto Sans TC", "Helvetica Neue", sans-serif; }
+      @page { size: A4 landscape; margin: 10mm 12mm; }
+
+      .pv-hd { text-align: center; padding-bottom: 7pt; margin-bottom: 10pt; border-bottom: 1.5pt solid #222; }
+      .pv-title { font-size: 14pt; font-weight: 800; display: block; letter-spacing: -0.01em; }
+      .pv-sub   { font-size: 9pt; color: #555; display: block; margin-top: 3pt; }
+
+      .pv-tbl { width: 100%; border-collapse: collapse; font-size: 8.5pt; line-height: 1.5; }
+      .pv-tbl thead tr { background: #1e1e1e; color: #fff; }
+      .pv-tbl th { padding: 5pt 6pt; text-align: left; font-weight: 700; font-size: 8pt; white-space: nowrap; }
+      .pv-tbl td { padding: 4pt 6pt; border: 0.4pt solid #d4d4d4; vertical-align: top; }
+      .pv-tbl tbody tr:nth-child(even) td { background: #f9f9f9; }
+
+      .pv-chc    td:first-child { border-left: 3pt solid #3a9e6f; }
+      .pv-grm    td:first-child { border-left: 3pt solid #5b7fa6; }
+      .pv-frj    td:first-child { border-left: 3pt solid #2d7a6a; }
+      .pv-wana   td:first-child { border-left: 3pt solid #8a6e3c; }
+      .pv-tkp    td:first-child { border-left: 3pt solid #7b6fa3; }
+      .pv-oam    td:first-child { border-left: 3pt solid #7a6a5a; }
+      .pv-dun    td:first-child { border-left: 3pt solid #4a6fa5; }
+      .pv-teanau td:first-child { border-left: 3pt solid #3a6b5a; }
+      .pv-qzn    td:first-child { border-left: 3pt solid #c0392b; }
+
+      .pv-ok { color: #15803d; font-weight: 700; }
+      .pv-footer { margin-top: 8pt; font-size: 7.5pt; color: #666; border-top: 0.5pt solid #ccc; padding-top: 5pt; }
+    }
   </style>
 </head>
 <body>
@@ -515,6 +569,7 @@
   <div class="topbar-inner">
     <a href="index.html" class="topbar-back" aria-label="返回">‹</a>
     <span class="topbar-title">🇳🇿 紐西蘭自駕蜜月</span>
+    <button onclick="window.print()" class="btn-pdf" aria-label="列印 / 下載 PDF">📄 PDF</button>
   </div>
 </div>
 
@@ -855,7 +910,7 @@
       <span class="day-badge">NZ D5</span>
       <span class="day-info">
         <span class="day-date">5/08（週五）</span>
-        <span class="day-loc">Greymouth → 西岸 → Franz Josef</span>
+        <span class="day-loc">Greymouth → Hokitika → Lake Matheson → Franz Josef</span>
       </span>
     </summary>
 
@@ -863,7 +918,7 @@
       💡 <strong>D5–D7 節奏建議</strong>：每日選 1–2 個重點即可；此段以風景自駕為主，保留彈性時間，避免疲勞駕駛
     </div>
 
-    <div class="sub-head">時間軸｜路線 ~175 km · SH6 海岸線</div>
+    <div class="sub-head">時間軸｜路線 ~220 km · SH6 海岸線</div>
     <table class="sched">
       <thead>
         <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
@@ -879,23 +934,35 @@
           <td class="t-act">💚 <strong>Hokitika Gorge 翡翠峽谷</strong>（必去）</td>
           <td class="t-note">碧藍峽谷 · 1–1.5 h</td>
         </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 Hokitika Gorge → Hokitika Beach（約 35–45 分鐘）</td>
+        </tr>
         <tr>
-          <td class="t-time">10:30–11:00</td>
+          <td class="t-time">11:15–11:45</td>
           <td class="t-act">🏖 <strong>Hokitika Beach</strong>（翡翠文化 + 彩虹字樣海灘，必去）</td>
           <td class="t-note">30 分</td>
         </tr>
+        <tr>
+          <td class="t-time">11:45–12:45</td>
+          <td class="t-act">🍱 Hokitika 午餐 / 補給</td>
+          <td class="t-note">補水 · 零食 · 長途備品</td>
+        </tr>
         <tr class="transport">
-          <td colspan="3">🚗 沿 SH6 南下 ~175 km（太平洋在左，熱帶雨林在右）</td>
+          <td colspan="3">🚗 Hokitika → Lake Matheson（沿 SH6 南下，約 2.5 小時）</td>
         </tr>
         <tr>
-          <td class="t-time">11:00–14:00</td>
-          <td class="t-act">🚗 沿 SH6 南下（自駕風景段）</td>
-          <td class="t-note">午餐：超市自備或路途補充</td>
+          <td class="t-time">15:15–16:45</td>
+          <td class="t-act">🌊 <strong>Lake Matheson 鏡湖</strong>（必去）<br>
+            <span style="font-size:0.76rem;color:var(--muted)">映照 Mt Cook + Mt Tasman；建議走 Jetty Viewpoint；天氣好可走環湖；雲層厚可縮短</span></td>
+          <td class="t-note">Fox Glacier 附近 · 1–1.5 h</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 Lake Matheson → Franz Josef（約 30–45 分鐘）</td>
         </tr>
         <tr>
-          <td class="t-time">14:00–16:00</td>
-          <td class="t-act">🧊 <strong>Franz Josef 冰河村</strong>（散步村落，冰河步道入口，必去）</td>
-          <td class="t-note">2 h</td>
+          <td class="t-time">17:30</td>
+          <td class="t-act">🏨 抵達 Franz Josef · Check-in / 休息</td>
+          <td class="t-note">今日重點已完成</td>
         </tr>
         <tr>
           <td class="t-time">晚</td>
@@ -943,7 +1010,7 @@
       <span class="day-badge">NZ D6</span>
       <span class="day-info">
         <span class="day-date">5/09（週六）</span>
-        <span class="day-loc">🚁 冰川直升機 → Fox Glacier → Haast Pass → Wanaka</span>
+        <span class="day-loc">🚁 冰川直升機 → Knights Point → Haast Pass → Wanaka</span>
       </span>
     </summary>
 
@@ -973,39 +1040,30 @@
           <td class="t-note"><span class="badge-ref">HAU427597</span><br><span class="badge-ref">KLK0703585975</span></td>
         </tr>
         <tr class="transport">
-          <td colspan="3">🚗 ~11:00 驅車前往 Fox Glacier（約 25 km · 30 分鐘）</td>
+          <td colspan="3">🚗 11:45 出發 Franz Josef → Knights Point（約 2–2.25 小時，SH6 南下）</td>
         </tr>
         <tr>
-          <td class="t-time">11:30–13:00</td>
-          <td class="t-act">🌊 <strong>Lake Matheson 鏡湖</strong>（映照 Mt Cook + Mt Tasman，環湖步道，必去）</td>
-          <td class="t-note">Fox Glacier 4 km · 1.5 h</td>
-        </tr>
-        <tr>
-          <td class="t-time">13:00–13:30</td>
-          <td class="t-act">🧊 <strong>Fox Glacier 小鎮</strong>（散策，比 Franz Josef 更安靜，必去）</td>
-          <td class="t-note">30 分</td>
-        </tr>
-        <tr class="transport">
-          <td colspan="3">🚗 14:00 出發 SH6 南下 → Haast Pass</td>
-        </tr>
-        <tr>
-          <td class="t-time">15:30–15:50</td>
+          <td class="t-time">14:00–14:20</td>
           <td class="t-act">🌊 <strong>Knights Point 海岸觀景台</strong>（海岸礁岩全景，必去）</td>
-          <td class="t-note">Fox Glacier 南 ~80 km · 20 分</td>
-        </tr>
-        <tr>
-          <td class="t-time">17:00–18:30</td>
-          <td class="t-act">🔵 <strong>Blue Pools 藍池</strong>（Makarora，碧藍冰河水，必去）<br>
-            <span style="font-size:0.76rem;color:var(--muted)">停車後步行 ~20 分（來回 45–60 分）</span></td>
-          <td class="t-note">1–1.5 h</td>
+          <td class="t-note">短暫下車拍照 · 20 分</td>
         </tr>
         <tr class="transport">
-          <td colspan="3">🚗 繼續 SH6 → Wanaka（約 1 小時）</td>
+          <td colspan="3">🚗 Knights Point → Blue Pools / Makarora（約 2 小時）</td>
         </tr>
         <tr>
-          <td class="t-time">~20:00</td>
-          <td class="t-act">🌳 抵達 Wanaka — <strong>Wanaka Tree / Beacon Point / Glendhu Bay</strong>（視體力安排）</td>
-          <td class="t-note">傍晚抵達</td>
+          <td class="t-time">16:30–17:30</td>
+          <td class="t-act">🔵 <strong>Blue Pools 藍池</strong>（Makarora，碧藍冰河水，可選偏必去）<br>
+            <span style="font-size:0.76rem;color:var(--muted)">停車後步行 ~20 分（來回 45–60 分）；天色 / 體力不佳可跳過</span></td>
+          <td class="t-note">45–60 分</td>
+        </tr>
+        <tr class="transport">
+          <td colspan="3">🚗 Blue Pools → Wanaka（約 1.25–1.5 小時）</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:00–19:30</td>
+          <td class="t-act">🏨 抵達 Wanaka · Check-in<br>
+            <span style="font-size:0.76rem;color:var(--muted)">今日不排 Wanaka Tree，明早 D7 再安排</span></td>
+          <td class="t-note">提早抵達</td>
         </tr>
         <tr>
           <td class="t-time">晚</td>
@@ -1049,15 +1107,20 @@
       </thead>
       <tbody>
         <tr>
-          <td class="t-time">08:00</td>
+          <td class="t-time">07:30</td>
           <td class="t-act">⏰ Check-out Wanaka Bakpaka</td>
           <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">07:45–08:30</td>
+          <td class="t-act">🌅 <strong>Wanaka Tree / Beacon Point</strong>（可選，晨間湖景）</td>
+          <td class="t-note">擇一 · 45 分</td>
         </tr>
         <tr class="transport">
           <td colspan="3">🚗 08:30 出發 Wanaka → Lake Pukaki · SH8</td>
         </tr>
         <tr>
-          <td class="t-time">09:30–09:50</td>
+          <td class="t-time">10:00–10:20</td>
           <td class="t-act">💧 <strong>Lake Pukaki 普卡基湖</strong>（土耳其藍湖水，必去）</td>
           <td class="t-note">停車拍照 · 20 分</td>
         </tr>
@@ -1065,7 +1128,7 @@
           <td colspan="3">🚗 沿 SH80 前往 Mt Cook Village（~50 km）</td>
         </tr>
         <tr>
-          <td class="t-time">11:30–12:30</td>
+          <td class="t-time">11:30–12:20</td>
           <td class="t-act">🍴 午餐：<strong>Old Mountaineers Café</strong>（Mt Cook Village，冰河景觀座位，必打卡）</td>
           <td class="t-note">—</td>
         </tr>
@@ -1076,17 +1139,23 @@
           <td class="t-note">White Horse Hill · 2–3 h</td>
         </tr>
         <tr class="transport">
-          <td colspan="3">🚗 16:00 離開 Mt Cook → SH8 → Tekapo（~100 km）</td>
+          <td colspan="3">🚗 15:45 離開 Mt Cook → SH8 → Tekapo（~100 km）</td>
         </tr>
         <tr>
-          <td class="t-time">18:30–19:15</td>
+          <td class="t-time">17:15–18:00</td>
+          <td class="t-act">🏨 <strong>Haka House Lake Tekapo</strong> Check-in / 放行李</td>
+          <td class="t-note">5 Motuariki Lane</td>
+        </tr>
+        <tr>
+          <td class="t-time">18:00–18:45</td>
           <td class="t-act">⛪ <strong>Church of the Good Shepherd 善牧教堂</strong>（Tekapo 湖畔，黃昏最美，必去）</td>
           <td class="t-note">45 分</td>
         </tr>
         <tr>
-          <td class="t-time">19:30–21:00</td>
-          <td class="t-act">🛁 <strong>Tekapo Springs 湖畔溫泉</strong>（星空泡湯，必去）</td>
-          <td class="t-note">1.5 h · 建議預訂</td>
+          <td class="t-time">18:45–19:45</td>
+          <td class="t-act">🍽 晚餐 / 休息 / 換保暖衣物<br>
+            <span style="font-size:0.76rem;color:var(--muted)">⚠️ Tekapo Springs 溫泉（原 19:30）與觀星衝突；若觀星取消才排泡湯</span></td>
+          <td class="t-note">—</td>
         </tr>
         <tr>
           <td class="t-time">20:30–21:45</td>
@@ -1425,37 +1494,39 @@
         <tr><th class="t-time">時間</th><th class="t-act">活動</th><th class="t-note">備注</th></tr>
       </thead>
       <tbody>
-        <tr class="optional">
-          <td class="t-time">09:00–11:30</td>
-          <td class="t-act">🛣 <strong>Crown Range Road 瞭望點</strong>（紐西蘭最高公路；往 Wanaka 方向）<span class="badge-warn">⚠️ 冬季留意路況</span></td>
-          <td class="t-note">2–2.5 h · 可選</td>
-        </tr>
         <tr>
-          <td class="t-time">12:00</td>
-          <td class="t-act">🚗 返回皇后鎮市區（午餐自理）</td>
-          <td class="t-note">—</td>
-        </tr>
-        <tr>
-          <td class="t-time">13:00–17:00</td>
-          <td class="t-act">🦌 <strong>Deer Park Heights</strong>（《魔戒》取景地，自駕農場，必去）<span class="badge-confirmed">✅ 已訂</span><br>
-            <span style="font-size:0.76rem;color:var(--muted)">Hard Antler Block 全程留車內 · 帶 $2 硬幣購買飼料</span>
-            <span class="badge-warn">⚠️ 18:00 前必須離場</span></td>
+          <td class="t-time">08:30–11:30</td>
+          <td class="t-act">🦌 <strong>Deer Park Heights</strong>（自駕農場，必去）<span class="badge-confirmed">✅ 已訂</span><br>
+            <span style="font-size:0.76rem;color:var(--muted)">早上光線好、遊客少 · Hard Antler Block 全程留車內 · 帶 $2 硬幣購買飼料</span></td>
           <td class="t-note"><span class="badge-price">NZD $75/車</span></td>
         </tr>
         <tr>
-          <td class="t-time">17:30–19:00</td>
-          <td class="t-act">♨️ <strong>Onsen Hot Pools 溫泉</strong>（岩石池，俯瞰 Shotover River 峽谷，必去）</td>
-          <td class="t-note">1.5 h · 建議預訂</td>
+          <td class="t-time">11:30–12:00</td>
+          <td class="t-act">🚗 Deer Park Heights → Queenstown（午餐 / 補給）</td>
+          <td class="t-note">—</td>
         </tr>
         <tr class="optional">
-          <td class="t-time">19:00–20:30</td>
-          <td class="t-act">🚠 <strong>Skyline Gondola 天際線纜車</strong>（俯瞰 Lake Wakatipu）</td>
-          <td class="t-note">1.5 h · 可選</td>
+          <td class="t-time">12:00–13:30</td>
+          <td class="t-act">🛣 <strong>Crown Range Road 瞭望點</strong>（紐西蘭最高公路；往 Wanaka 方向）<span class="badge-warn">⚠️ 查 NZTA 路況</span></td>
+          <td class="t-note">1.5 h · 可選偏推薦</td>
         </tr>
         <tr>
-          <td class="t-time">21:00–22:00</td>
-          <td class="t-act">🍔 <strong>Fergburger</strong>（必去）</td>
-          <td class="t-note">21:00 後排隊較短</td>
+          <td class="t-time">14:30–17:30</td>
+          <td class="t-act">🚠 <strong>Skyline Gondola + 3 Luge Rides</strong><span class="badge-confirmed">✅ 已訂</span><br>
+            <span style="font-size:0.76rem;color:var(--muted)">確認號 AZDHTXR · Brecon Street · 往返纜車 + 3 圈 Luge · 建議預留 2.5–3 小時</span><br>
+            <a href="assets/Kkday-NZ-Queenstown-Gondola-Luge.pdf" target="_blank" rel="noopener" style="color:var(--qzn);font-weight:600">📄 Kkday 憑證 ↗</a></td>
+          <td class="t-note">~3 h</td>
+        </tr>
+        <tr>
+          <td class="t-time">17:30–19:00</td>
+          <td class="t-act">🌊 回住宿 / Queenstown Bay 湖邊散步 / 休息</td>
+          <td class="t-note">—</td>
+        </tr>
+        <tr>
+          <td class="t-time">19:00–20:30</td>
+          <td class="t-act">🍔 <strong>Fergburger</strong>（必去）<br>
+            <span style="font-size:0.76rem;color:var(--muted)">可線上點餐再取；亦可外帶至湖邊</span></td>
+          <td class="t-note">—</td>
         </tr>
         <tr>
           <td class="t-time">晚</td>
@@ -1629,6 +1700,119 @@
   </div>
 
 </div><!-- /.page -->
+
+<!-- ══════════════ PRINT VIEW ══════════════ -->
+<div id="print-view">
+  <div class="pv-hd">
+    <span class="pv-title">🇳🇿 紐西蘭自駕蜜月 行程總覽</span>
+    <span class="pv-sub">2026 / 05 / 04（週一）— 05 / 16（週六）· NZ D1–D13 · 13 天</span>
+  </div>
+  <table class="pv-tbl">
+    <thead>
+      <tr>
+        <th style="width:5%">天</th>
+        <th style="width:8%">日期</th>
+        <th style="width:13%">地點</th>
+        <th>重點活動</th>
+        <th style="width:16%">住宿</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="pv-chc">
+        <td><strong>NZ D1</strong></td>
+        <td>5/04（一）</td>
+        <td>基督城 CHC</td>
+        <td>16:25 JQ171 抵達 · Snap Rentals 取車（~18:00）· Riverside Market · Little High Eatery</td>
+        <td>Urbanz 烏爾班茲旅舍</td>
+      </tr>
+      <tr class="pv-chc">
+        <td><strong>NZ D2</strong></td>
+        <td>5/05（二）</td>
+        <td>阿卡羅阿 Akaroa</td>
+        <td>Heritage Park · 港口散步 · <span class="pv-ok">🦙 Shamarra Alpacas ✅ R82JSRK</span> · 回程 Willowbank（可選）</td>
+        <td>Urbanz 烏爾班茲旅舍</td>
+      </tr>
+      <tr class="pv-chc">
+        <td><strong>NZ D3</strong></td>
+        <td>5/06（三）</td>
+        <td>基督城市區</td>
+        <td>Canterbury Museum · Arts Centre · Botanic Gardens · Curator's House 午餐 · Cathedral Square · Bridge of Remembrance · Gondola · Cookie Time</td>
+        <td>Urbanz 烏爾班茲旅舍</td>
+      </tr>
+      <tr class="pv-grm">
+        <td><strong>NZ D4</strong></td>
+        <td>5/07（四）</td>
+        <td>Arthur's Pass → 葛雷茅斯</td>
+        <td>Castle Hill · Arthur's Pass 山口村（午餐）· Shantytown Heritage Park（17:00 關）· Glow Worm Dell</td>
+        <td>Global Village Backpackers</td>
+      </tr>
+      <tr class="pv-frj">
+        <td><strong>NZ D5</strong></td>
+        <td>5/08（五）</td>
+        <td>西岸 → Franz Josef</td>
+        <td>Hokitika Gorge 翡翠峽谷 · Hokitika Beach · 午餐補給 · Lake Matheson 鏡湖 15:15–16:45 · 17:30 抵達 Franz Josef</td>
+        <td>Wild Kea Lodge</td>
+      </tr>
+      <tr class="pv-wana">
+        <td><strong>NZ D6</strong></td>
+        <td>5/09（六）</td>
+        <td>冰川 → 瓦納卡</td>
+        <td><span class="pv-ok">🚁 Heli Hike 07:15 ✅ HAU427597 · KLK0703585975</span> · Knights Point 14:00 · Blue Pools 16:30 · ~19:00 抵達 Wanaka</td>
+        <td>Wānaka Bakpaka</td>
+      </tr>
+      <tr class="pv-tkp">
+        <td><strong>NZ D7</strong></td>
+        <td>5/10（日）</td>
+        <td>Mt Cook → 蒂卡波</td>
+        <td>Wanaka Tree（可選）· Lake Pukaki · Old Mountaineers 午餐 · Hooker Valley Track · Church of Good Shepherd · <span class="pv-ok">🌌 Alpine Stargazing 20:30 ✅ XYSA26X5711441</span></td>
+        <td>Haka House Tekapo</td>
+      </tr>
+      <tr class="pv-oam">
+        <td><strong>NZ D8</strong></td>
+        <td>5/11（一）</td>
+        <td>→ 奧馬魯 Oamaru</td>
+        <td>Elephant Rocks · Moeraki Boulders · 維多利亞石灰岩街區 · Steampunk HQ · 🐧 Blue Penguin Colony（傍晚）</td>
+        <td>Oamaru Backpackers</td>
+      </tr>
+      <tr class="pv-dun">
+        <td><strong>NZ D9</strong></td>
+        <td>5/12（二）</td>
+        <td>但尼丁 Dunedin</td>
+        <td>Railway Station · Baldwin Street · Octagon 廣場 · 🦭 Otago Peninsula（可選）</td>
+        <td>Sahara Guest House</td>
+      </tr>
+      <tr class="pv-teanau">
+        <td><strong>NZ D10</strong></td>
+        <td>5/13（三）</td>
+        <td>→ 蒂阿瑙 Te Anau</td>
+        <td>長途自駕 ~4.5h · Te Anau 湖畔休息 · Redcliff Café 晚餐</td>
+        <td><span class="pv-ok">Te Anau Lakefront Backpackers ✅</span></td>
+      </tr>
+      <tr class="pv-teanau">
+        <td><strong>NZ D11</strong></td>
+        <td>5/14（四）</td>
+        <td>米佛峽灣 → 皇后鎮</td>
+        <td><span class="pv-ok">⛵ GreatSights 09:45 出發 ✅ Klook</span> · 鏡湖 · Homer Tunnel · 12:50 遊船 · 19:30 回 Te Anau · 傍晚驅車皇后鎮</td>
+        <td><span class="pv-ok">The Black Sheep ✅</span></td>
+      </tr>
+      <tr class="pv-qzn">
+        <td><strong>NZ D12</strong></td>
+        <td>5/15（五）</td>
+        <td>皇后鎮 Queenstown</td>
+        <td><span class="pv-ok">🦌 Deer Park Heights 08:30 ✅</span> · Crown Range 12:00（可選）· <span class="pv-ok">🚠 Skyline Gondola 14:30 ✅ AZDHTXR</span> · Fergburger 19:00 · 整理行李</td>
+        <td>The Black Sheep</td>
+      </tr>
+      <tr class="pv-qzn">
+        <td><strong>NZ D13</strong></td>
+        <td>5/16（六）</td>
+        <td>離境 ZQN→AKL→TPE</td>
+        <td>09:00 Snap Rentals ZQN 還車（加滿油）· JQ292 10:50 ZQN→AKL · 奧克蘭轉機 ~7h · CI054 19:30 AKL→TPE → 5/17 05:40 抵達桃園</td>
+        <td>✈ 飛機上</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pv-footer">✅ 已訂活動：冰川直升機 HAU427597 · Milford Sound GreatSights（Klook）· Alpine Stargazing XYSA26X5711441 · Skyline Gondola AZDHTXR · Deer Park Heights · Shamarra Alpacas R82JSRK &nbsp;|&nbsp; 🚗 Snap Rentals ZQN 09:00 還車（5/16）</div>
+</div>
 
 <!-- ── FOOTER ── -->
 <footer>

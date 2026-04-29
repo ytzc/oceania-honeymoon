@@ -281,14 +281,14 @@
 | **NZ D2** | **5/05 週二** | **阿卡羅阿** | **Akaroa Heritage Park** → **阿卡羅阿港** → **Shamarra Alpacas** 羊駝農場 → 回程：**Willowbank Wildlife Reserve**（可選）；宿：Urbanz |
 | **NZ D3** | **5/06 週三** | **基督城市區** | **Botanic Gardens** → **Canterbury Museum** → **Christchurch Arts Centre** → **Cathedral Square / Re:START** → **Bridge of Remembrance** → Gondola（可選）→ Recycle Boutique（可選）→ **Cookie Time Bakery**；宿：Urbanz |
 | **NZ D4** | **5/07 週四** | **亞瑟隘口 → 葛雷茅斯** | **Castle Hill / Kura Tāwhiti** → **Arthur's Pass** 山口村（午餐）→ **Shantytown Heritage Park** → **Glow Worm Dell**；宿：Global Village |
-| **NZ D5** | **5/08 週五** | **西岸 → 約瑟夫冰河** | **Hokitika Gorge** → **Hokitika Beach** → **Franz Josef** 冰河村；宿：Wild Kea Lodge |
-| **NZ D6** | **5/09 週六** | **Fox Glacier → Haast → 瓦納卡** | **Lake Matheson**（清晨）→ **Fox Glacier** 小鎮 → **Knights Point** 海岸觀景台 → **Blue Pools** 藍池 → **Wanaka Tree** → **Beacon Point** → **Glendhu Bay**；宿：Wanaka Bakpaka |
+| **NZ D5** | **5/08 週五** | **西岸 → Lake Matheson → 約瑟夫冰河** | **Hokitika Gorge** → **Hokitika Beach** → **Lake Matheson 鏡湖** → **Franz Josef**；宿：Wild Kea Lodge |
+| **NZ D6** | **5/09 週六** | **冰川健行 → Haast Pass → 瓦納卡** | Fox Glacier（可選）→ **Knights Point** 海岸觀景台 → **Blue Pools** 藍池 → Wanaka（因 Lake Matheson 已移至 D5）；宿：Wanaka Bakpaka |
 | **NZ D7** | **5/10 週日** | **Mt Cook → 蒂卡波** | **Lake Pukaki** → **Hooker Valley Track**（White Horse Hill）→ **Church of the Good Shepherd** → **Tekapo Springs** → **Mt John Observatory**；宿：Haka House |
 | **NZ D8** | **5/11 週一** | **奧馬魯 Oamaru** | **Elephant Rocks** → **Moeraki Boulders** → **Oamaru Harbour Precinct** → **Steampunk HQ** → **Scotts Brewing Co.** → **Bushy Beach** → **Blue Penguin Colony**；宿：Oamaru Backpackers |
 | **NZ D9** | **5/12 週二** | **但尼丁 Dunedin** | **Dunedin Railway Station** → **Baldwin Street** → **Octagon 廣場** → **Otago Peninsula**（Taiaroa Head）；宿：Sahara Guesthouse |
 | **NZ D10** | **5/13 週三** | **蒂阿瑙 Te Anau** | Dunedin 出發 → **Te Anau 蒂阿瑙** → **Redcliff Café** 晚餐；宿：Te Anau Lakefront Backpackers |
 | **NZ D11** | **5/14 週四** | **米佛峽灣 → 皇后鎮** | **Kiwi Country** 集合 → **Mirror Lakes** → **Homer Tunnel** → **Milford Sound** 米佛峽灣（遊船）→ 傍晚驅車皇后鎮；宿：Black Sheep Backpackers |
-| **NZ D12** | **5/15 週五** | **皇后鎮** | **Crown Range Road** 景觀公路 → **Deer Park Heights**（⚠️ 18:00 前入場）→ **Onsen Hot Pools** → **Skyline Gondola** → **Fergburger** |
+| **NZ D12** | **5/15 週五** | **皇后鎮** | **Deer Park Heights**（早上）✅ → **Crown Range Road**（中午，可選）→ **Skyline Gondola + 3 Luge**（下午）✅ AZDHTXR → **Fergburger**（晚上）|
 | **NZ D13** | **5/16 週六** | **還車 / 離境** | 09:00 Snap Rentals ZQN 還車 → JQ292 10:50 出發 → CI054 19:30 AKL 出發 |
 | D19 | 5/17 週日 | 抵達台灣 🇹🇼 | CI054 05:40 抵達桃園 |
 
@@ -361,8 +361,9 @@
 | 06:15 | 🛬 **墨爾本 Terminal 2** 抵達 | — | 入境通關；預計 **07:00** 完成 |
 | ~07:00 | 🚌 機場 → 維多利亞酒店 交通 | — | 步行 3 分（120m）→ **Melbourne Airport T3 Skybus** → **Skybus Melbourne City Express** 2 站 32 分 → Skybus Coach Terminal/Spencer St → 步行 3 分 → **電車 96**（East Brunswick）4 站 6 分 → Swanston St/Bourke St → 步行 2 分（140m）→ 酒店；共約 **1 小時** |
 | **~08:00** | 🏨 **[維多利亞酒店](https://maps.app.goo.gl/MbMNZwUnDZYS3MqUA) 抵達 / 行李寄放** | — | 215 Little Collins St；check-in 15:00（可能早辦）；寄放行李後補眠 |
-| 15:30–17:00 | ☕ **Degraves Street** | 1.5 小時 | 墨爾本咖啡文化窄巷；必喝精品咖啡 |
-| 17:00–18:30 | 🚉 **弗林德斯街 Flinders Street Station** | 1–1.5 小時 | 黃色穹頂地標；Federation Square 步行即達 |
+| 14:30–15:30 | ☕ **Degraves Street** | 1 小時 | 墨爾本咖啡文化窄巷；下午第一站，喝咖啡・吃甜點 |
+| 15:30–16:00 | 🚉 **弗林德斯街 Flinders Street Station** | 30 分鐘 | 黃色穹頂地標；可順拍 Federation Square |
+| 16:00–17:00 | 🎨 **Hosier Lane 塗鴉巷** | 1 小時 | 墨爾本代表性街頭藝術巷弄；距 Flinders Street 很近 |
 
 ---
 
@@ -370,12 +371,12 @@
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 09:00–11:30 | 🛒 **Queen Victoria Market** | 2.5 小時 | 必去 | 週日農夫市集；熟食攤位豐富 |
-| 12:00–13:00 | 🎨 **Hosier Lane 塗鴉巷** | 1 小時 | 必去 | 緊鄰 Flinders Street；街頭藝術巷弄 |
-| 13:30–15:30 | 🏖 **St Kilda Beach** | 2 小時 | 必去 | 搭 96/16 號電車約 30 分；海灘散步 + 咖啡廳 |
-| 16:30–17:30 | 🚉 **弗林德斯街**（傍晚收尾）| 1 小時 | 可選 | 傍晚最美燈光；Federation Square 晚餐選擇多 |
+| 09:00–11:30 | 🛒 **Queen Victoria Market** | 2.5 小時 | 必去 | 週日農夫市集；熟食攤位豐富；適合早午餐 + 採買 |
+| 11:30–12:30 | 🍱 午餐 / 回飯店整理 | — | — | 可在市集直接吃，或回市區飯店附近休息 |
+| 13:30–16:30 | 🏖 **St Kilda Beach** | 3 小時 | 必去 | 搭 96/16 號電車約 30 分；海灘散步・咖啡廳・碼頭・放空 |
+| 16:30–18:00 | 🍽 St Kilda 周邊晚餐 / 返回市區 | — | — | 可在 St Kilda 簡單晚餐或搭電車回 CBD |
 
-> ⚠️ **明日行程提醒**：5/04 JQ171 11:05 出發，建議 09:00 前抵達機場（check-out 需在 11:00 前）
+> ⚠️ **明日行程提醒**：5/04 JQ171 11:05 出發，建議 **07:00 前**抵達 Melbourne Airport T2（需預留退房、通關、托運時間）；今晚整理行李
 
 ---
 
@@ -385,6 +386,7 @@
 
 | 時間 | 地點 | 停留 | 備註 |
 |------|------|------|------|
+| 07:00 前 | 🚌 **抵達 Melbourne Airport T2** | — | 需預留退房、交通、報到、托運、安檢與出境時間 |
 | 11:05 | ✈️ MEL T2 出發（JQ171）| — | 捷星 A320 |
 | 16:25 | 🛬 **基督城 I 廳** 抵達 | — | 清關、提行李 |
 | 17:30–18:30 | 🚗 **Snap Rentals 取車**｜租車點 | — | 170 Orchard Road, Harewood；⚠️ 預計 18:00 抵達，已超出服務時間（截止 17:30）— **出發前電話聯繫 0800 288 699 確認安排**；接駁：[snaprentals.co.nz/pickup-christchurch](https://www.snaprentals.co.nz/pickup-christchurch) |
@@ -402,13 +404,14 @@
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 08:30 | 🚗 出發 CHC → Akaroa | — | 82km，約 1 小時 20 分 |
-| 10:00–11:30 | 🏘 **Akaroa Heritage Park** | 1–1.5 小時 | 必去 | 法式殖民歷史街區 |
-| 11:30–12:30 | 🌊 **阿卡羅阿港 Akaroa Harbour** | 1 小時 | 必去 | 港口景觀 + 咖啡廳 |
-| 12:30–13:30 | 🥐 午餐：Ma France 法式麵包 / 港口魚薯 | 1 小時 | — | |
-| 14:00–15:00 | 🦙 **Shamarra Alpacas 羊駝農場** | 1 小時 | 必去 | 農場體驗；距 Akaroa 約 15 分車程 |
-| 15:30–17:00 | 🚗 返程 Akaroa → CHC | — | 1 小時 20 分 |
-| 17:00–18:00 | 🦔 **Willowbank Wildlife Reserve**（可選）| 1 小時 | 可選 | CHC 北邊（近機場），途中停留；NZD 36.5；可看奇異鳥 |
+| 08:30–10:00 | 🚗 出發 CHC → Akaroa | — | — | 約 82km，1 小時 20 分 |
+| 10:00–11:00 | 🏘 **Akaroa Heritage Park** | 1 小時 | 必去 | 法式殖民歷史街區 |
+| 11:00–11:15 | 🚗 車程前往 Akaroa Harbour | — | — | 約 15 分鐘 |
+| 11:15–12:00 | 🌊 **阿卡羅阿港 Akaroa Harbour** | 45 分鐘 | 必去 | 港口景觀 + 咖啡廳 |
+| 12:00–12:30 | 🥐 午餐：Ma France 法式麵包（⚠️ 位置待確認）/ 港口魚薯 | 30 分鐘 | — | |
+| 13:00–14:00 | 🦙 **Shamarra Alpacas 羊駝農場** | 1 小時 | **✅ 已訂** | ✅ Klook · 憑證 R82JSRK；距 Akaroa 約 15 分車程 |
+| 14:00–15:30 | 🚗 返程 Akaroa → CHC | — | — | 約 1.5 小時 |
+| 15:30–16:30 | 🦔 **Willowbank Wildlife Reserve**（可選）| 1 小時 | 可選 | CHC 北邊（近機場）；NZD 36.5；可看奇異鳥 |
 | 🏨 | **Urbanz 住宿**｜住宿 | — | |
 
 **可選活動：**
@@ -422,15 +425,15 @@
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 08:30–10:00 | 🌿 **Botanic Gardens 植物園** | 1.5 小時 | 必去 | 免費；花卉溫室 + 玫瑰園 |
-| 10:00–11:30 | 🏛 **Canterbury Museum** | 1.5 小時 | 必去 | 免費；毛利文化 + 南極展；植物園隔壁 |
-| 11:30–12:15 | 🎨 **Christchurch Arts Centre** | 45 分鐘 | 必去 | 週末市集 / 工藝品；Botanic Gardens 旁 |
-| 12:15–13:15 | 🍽 午餐：**Riverside Market** / **Curator's House**（可選）| 1 小時 | — | Curator's House 在植物園旁，精緻午茶 NZD 35–50 |
-| 13:15–13:45 | 🏛 **Cathedral Square / Re:START** | 30 分鐘 | 必去 | 大教堂廣場 + 貨櫃商店街 |
-| 13:45–14:10 | 🌉 **Bridge of Remembrance** | 20 分鐘 | 必去 | 鐘樓拱橋，一戰紀念 |
-| 14:30–16:00 | 🚡 **Christchurch Gondola**（可選）| 1.5 小時 | 可選 | CHC 東南，需開車；NZD 35–40；俯瞰城市 + 坎特伯里平原 |
-| 16:00–16:45 | 🛍 **Recycle Boutique**（可選）| 45 分鐘 | 可選 | Colombo St；NZ 最大二手連鎖 |
-| 17:00–17:30 | 🍪 **Cookie Time Bakery Shop** | 30 分鐘 | 必買 | 基督城發源地；回台必買伴手禮 |
+| 09:00–10:00 | 🏛 **Canterbury Museum** | 1 小時 | 必去 | 09:00 開門；免費；毛利文化 + 南極展 |
+| 10:00–11:00 | 🎨 **Christchurch Arts Centre** | 1 小時 | 必去 | 10:00 開門；歷史建築 + 工藝品 |
+| 11:00–12:15 | 🌿 **Botanic Gardens 植物園** | 1–1.25 小時 | 必去 | 免費；花卉溫室 + 玫瑰園 |
+| 12:15–13:30 | 🍽 午餐：**Curator's House**（植物園旁）| 1–1.25 小時 | 推薦 | 精緻午茶 NZD 35–50；建議事先訂位 |
+| 13:30–14:00 | 🏛 **Cathedral Square / Re:START** | 30 分鐘 | 必去 | 大教堂廣場 + 貨櫃商店街 |
+| 14:00–14:20 | 🌉 **Bridge of Remembrance** | 20 分鐘 | 必去 | 鐘樓拱橋，一戰紀念 |
+| 14:30–15:15 | 🛍 **Recycle Boutique**（可選）| 45 分鐘 | 可選 | Colombo St；NZ 最大二手連鎖 |
+| 15:30–17:00 | 🚡 **Christchurch Gondola**（可選）| 1.5 小時 | 可選 | CHC 東南，需開車；約 TWD 834 / 人；俯瞰城市 + 坎特伯里平原 |
+| 17:15–17:45 | 🍪 **Cookie Time Bakery Shop** | 30 分鐘 | 必買 | 基督城發源地；回台必買伴手禮 |
 | 🏨 | **Urbanz 住宿**｜住宿 | — | Check-out 5/7 10:00 前 |
 
 > 📍 **原始行程有寫，但地圖未列出**：Avon River 平底船撐篙（約 NZD 40，1 小時）；Christchurch Tram 電車一日券（NZD 40）；Canterbury Hot Air Balloon（NZD 395，06:00 出發）
@@ -446,8 +449,9 @@
 | 08:00 | 🚗 Check-out + 出發 | — | — | 建議 08:00–09:00 早出發；Urbanz Check-out 10:00 前 |
 | 09:30–10:00 | 🪨 **Castle Hill / Kura Tāwhiti** | 30 分鐘 | 必去 | SH73 路側；石灰岩怪石群，免費 |
 | 11:00–12:00 | 🏔 **Arthur's Pass 山口村** | 1 小時 | 必去 | 午餐：Wobbly Kea Café（山景座位）；穿越南阿爾卑斯山脈 |
-| 14:00–16:30 | 🏚 **Shantytown Heritage Park** | 2–3 小時 | 必去 | 淘金時代遺跡；蒸汽火車；換裝拍照；Greymouth 南 15km |
-| 19:00–19:30 | 💫 **Glow Worm Dell** | 30 分鐘 | 必去 | Greymouth 市區步行可達；夜間螢火蟲洞 |
+| 14:00–16:30 | 🏚 **Shantytown Heritage Park** | 2–2.5 小時 | 必去 | 淘金遺跡；蒸汽火車；換裝拍照；Greymouth 南 10–15km；每日開放至 17:00 |
+| 17:00–18:30 | 🏨 Check-in / 休息 / 晚餐 | — | — | Global Village Backpackers，42 Cowper Street, Greymouth |
+| 19:00–19:30 | 💫 **Glow Worm Dell** | 30 分鐘 | 必去 | Greymouth 市區附近；夜間螢火蟲洞 |
 | 🏨 | **Global Village Backpackers**｜住宿 | — | 42 Cowper Street, Greymouth |
 
 > ⚠️ **行車注意**：出發前查詢「Arthur's Pass weather」（MetService）；積雪時改走 SH7（Canterbury Plains 替代路線）
@@ -461,17 +465,21 @@
 
 ### NZ D5 ｜ 5/08（週五）｜ 葛雷茅斯 → 西岸 → 約瑟夫冰河
 
-路線：Greymouth → Hokitika → Franz Josef（約 175km，SH6 海岸線）
+路線：Greymouth → Hokitika → Lake Matheson → Franz Josef（約 220km，SH6 海岸線）
 
 💡 **D5–D7 節奏建議**：每日選 1–2 個重點即可；此段以風景自駕為主，保留彈性時間於 Wanaka 放鬆，避免疲勞駕駛
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
 | 08:00 | 🚗 出發 Greymouth | — | — | Check-out |
-| 09:00–10:30 | 💚 **Hokitika Gorge 翡翠峽谷** | 1–1.5 小時 | 必去 | ⚠️ 地圖原列在 D4，地理上在此段（Hokitika 以南 35km 內陸）；碧藍翡翠色峽谷 |
-| 10:30–11:00 | 🏖 **Hokitika Beach** | 30 分鐘 | 必去 | ⚠️ 地圖原列在 D4，同上調整；翡翠（Pounamu）文化 + 彩虹字樣海灘 |
-| 11:00–14:00 | 🚗 沿 SH6 南下 | — | — | 太平洋在左，熱帶雨林在右 |
-| 14:00–16:00 | 🧊 **Franz Josef 冰河村** | 2 小時 | 必去 | 輕鬆散步村落；可走冰河步道入口 |
+| 09:00–10:30 | 💚 **Hokitika Gorge 翡翠峽谷** | 1–1.5 小時 | 必去 | ⚠️ 地圖原列 D4，地理上在此段（Hokitika 南 35km 內陸）；碧藍翡翠色峽谷 |
+| 10:30–11:15 | 🚗 Hokitika Gorge → Hokitika Beach | — | — | 約 35–45 分鐘車程 |
+| 11:15–11:45 | 🏖 **Hokitika Beach** | 30 分鐘 | 必去 | Pounamu 翡翠文化 + 彩虹字樣海灘 |
+| 11:45–12:45 | 🍱 Hokitika 午餐 / 補給 | 1 小時 | — | 建議補充水、零食、長途自駕用品 |
+| 12:45–15:15 | 🚗 Hokitika → Lake Matheson | — | — | 沿 SH6 南下，約 2.5 小時；太平洋在左，雨林在右 |
+| 15:15–16:45 | 🌊 **Lake Matheson 鏡湖** | 1–1.5 小時 | 必去 | 映照 Mt Cook + Mt Tasman；位於 Fox Glacier 小鎮附近；建議走 Jetty Viewpoint；天氣好可走環湖；雲層厚可縮短 |
+| 16:45–17:30 | 🚗 Lake Matheson → Franz Josef | — | — | 約 30–45 分鐘 |
+| 17:30 | 🏨 抵達 Franz Josef · Check-in / 休息 | — | — | 今日重點已完成 |
 | 🏨 | **Wild Kea Lodge**｜住宿 | — | 9 Cron Street, Franz Josef |
 
 **已確認活動（NZ D6 早上）：**
@@ -483,45 +491,49 @@
 
 ---
 
-### NZ D6 ｜ 5/09（週六）｜ 冰川直升機健行 → Fox Glacier → Haast Pass → 瓦納卡 Wanaka
+### NZ D6 ｜ 5/09（週六）｜ 冰川直升機健行 → Knights Point → Haast Pass → 瓦納卡 Wanaka
 
-路線：Franz Josef → Fox Glacier → Knights Point → Haast → Blue Pools → Wanaka（約 200km）
+路線：Franz Josef → Knights Point → Haast Pass → Blue Pools → Wanaka（約 200km；Lake Matheson 已移至 D5）
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
 | 07:00 | 🏃 前往報到 | — | **✅ 已訂** | 步行至 Franz Josef Glacier Guides（63 Cron St，距 Wild Kea Lodge 步行 2 分鐘）；**請 07:15 前抵達** |
-| **07:30–~10:30** | 🚁 **法蘭士約瑟夫冰川直升機健行** | **3 小時** | **✅ 已訂** | Klook HAU427597 · 冰川半日遊 · 含靴子 / 冰爪 / 防水外套 / 直升機 / 導遊 · ⚠️ 出發前電話確認：0800 484 337 |
-| ~11:00 | 🚗 驅車前往 Fox Glacier | — | — | 約 25km，30 分鐘 |
-| 11:30–13:00 | 🌊 **Lake Matheson 鏡湖** | 1.5 小時 | 必去 | 映照 Mt Cook + Mt Tasman；環湖步道；Fox Glacier 小鎮附近 4km（⚠️ 清晨能見度最佳，此時為上午，仍壯觀） |
-| 13:00–13:30 | 🧊 **Fox Glacier 小鎮** | 30 分鐘 | 必去 | 散策；比 Franz Josef 更安靜 |
-| 14:00 | 🚗 出發 SH6 南下 | — | — | |
-| 15:30–15:50 | 🌊 **Knights Point 海岸觀景台** | 20 分鐘 | 必去 | ⚠️ 地圖原誤列在 D4，地理上在此段（Fox Glacier 以南約 80km SH6）；海岸礁岩全景 |
-| 17:00–18:30 | 🔵 **Blue Pools 藍池**（Makarora）| 1–1.5 小時 | 必去 | 停車後步行 ~20 分（來回 45–60 分）；碧藍冰河水 |
-| ~20:00 | 🌳 **Wanaka Tree / Beacon Point / Glendhu Bay** | 視狀況 | 視體力 | 傍晚抵達；直接回住宿或順路快拍 |
-| 🏨 | **Wānaka Bakpaka Hostel**｜住宿 | — | 117 Lakeside Road, Wanaka |
+| **07:15–約 11:15** | 🚁 **法蘭士約瑟夫冰川直升機健行** | **約 4 小時** | **✅ 已訂** | Klook HAU427597 · 冰川半日遊 · 含靴子 / 冰爪 / 防水外套 / 直升機 / 導遊 · ⚠️ 出發前電話確認：0800 484 337 |
+| 11:15–11:45 | 🍱 整理裝備 / 補給 | 30 分鐘 | — | 建議買水、零食或簡單午餐；下午路線較長 |
+| 11:45–14:00 | 🚗 Franz Josef → Knights Point | — | — | 約 2–2.25 小時，SH6 南下 |
+| 14:00–14:20 | 🌊 **Knights Point 海岸觀景台** | 20 分鐘 | 必去 | 海岸礁岩全景；短暫下車拍照伸展 |
+| 14:20–16:30 | 🚗 Knights Point → Blue Pools / Makarora | — | — | 約 2 小時；中途視狀況可短暫停 Haast Pass 瀑布群 |
+| 16:30–17:30 | 🔵 **Blue Pools 藍池**（Makarora）| 45–60 分鐘 | 可選偏必去 | 停車後步行；若天色 / 體力不佳請跳過 |
+| 17:30–19:00 | 🚗 Blue Pools → Wanaka | — | — | 約 1.25–1.5 小時 |
+| 約 19:00–19:30 | 🏨 抵達 Wanaka / Check-in | — | — | Wānaka Bakpaka Hostel，117 Lakeside Road；今日不再排 Wanaka Tree |
 
-> 📍 **原始行程有寫，但地圖未列出**：Haast Pass 瀑布群（沿 SH6 沿途停車即可，無需額外安排）
+> 💡 **備選**：Fox Glacier 小鎮（Heli Hike 結束後若體力充足可短暫停 15–30 分補給）；Haast Pass 瀑布群（沿 SH6 視天色短暫停車即可）
+> ⚠️ 若 Heli Hike 延誤：優先 Knights Point → 直接前往 Wanaka，Blue Pools 可跳過
 
 ---
 
 ### NZ D7 ｜ 5/10（週日）｜ Wanaka 出發 → 庫克山 Mt Cook → 蒂卡波 Tekapo
 
-路線：Wanaka → Lake Pukaki → Mt Cook → Tekapo（約 230km）
+路線：Wanaka → Lake Pukaki → Mt Cook → Tekapo（約 350km）
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 08:00 | Check-out Wanaka Bakpaka | — | — | |
+| 07:30 | Check-out Wanaka Bakpaka | — | — | |
+| 07:45–08:30 | 🌅 **Wanaka Tree / Beacon Point / Glendhu Bay** | 45 分鐘 | 可選偏推薦 | 離開前晨間湖景散步；擇一即可；優先 Wanaka Tree |
 | 08:30 | 🚗 出發 Wanaka → Lake Pukaki | — | — | Albert Town 車上欣賞即可 |
-| 09:30–09:50 | 💧 **Lake Pukaki 普卡基湖** | 20 分鐘 | 必去 | 土耳其藍湖水；停車拍照即可 |
-| 11:30–12:30 | 🍴 午餐：**Old Mountaineers Café**（Mt Cook Village）| 1 小時 | — | 冰河景觀座位；必打卡 |
-| 12:30–15:30 | 🥾 **Hooker Valley Track**（White Horse Hill）| 2–3 小時 | 必去 | 停車：[White Horse Hill Campground](https://maps.app.goo.gl/FXRcJCRqedqMaE5D8)；冰河湖 + Mt Cook 正面 + 吊橋 |
-| 16:00 | 🚗 離開 Mt Cook | — | — | |
-| 18:30–19:15 | ⛪ **Church of the Good Shepherd** | 45 分鐘 | 必去 | 善牧教堂；Tekapo 湖畔；黃昏時段最美 |
-| 19:30–21:00 | 🛁 **Tekapo Springs 湖畔溫泉** | 1.5 小時 | 必去 | 星空泡湯；建議先預訂 |
-| 20:30–21:45 | 🌌 **Alpine Stargazing Experience（Silver River）** | ~75 分鐘 | **✅ 已訂** | 訂單 XYSA26X5711441；12 Rapuwai Lane；NZD 190；20:15 前抵達；天氣取消全額退款 |
+| 10:00–10:20 | 💧 **Lake Pukaki 普卡基湖** | 20 分鐘 | 必去 | 土耳其藍湖水；停車拍照即可 |
+| 11:30–12:20 | 🍴 午餐：**Old Mountaineers Café**（Mt Cook Village）| 50 分鐘 | — | 冰河景觀座位；若人多可外帶保留健行時間 |
+| 12:30–15:30 | 🥾 **Hooker Valley Track**（White Horse Hill）| 3 小時 | 必去 | 停車：[White Horse Hill Campground](https://maps.app.goo.gl/FXRcJCRqedqMaE5D8)；冰河湖 + Mt Cook 正面 + 吊橋 |
+| 15:45 | 🚗 離開 Mt Cook | — | — | 不要晚於 16:00；晚上 20:15 前需抵達觀星報到地點 |
+| 17:15–18:00 | 🏨 **Haka House Lake Tekapo** Check-in / 放行李 | — | — | 5 Motuariki Lane, Tekapo；建議先入住，避免觀星前太趕 |
+| 18:00–18:45 | ⛪ **Church of the Good Shepherd** | 45 分鐘 | 必去 | 善牧教堂；Tekapo 湖畔；黃昏最美；若延誤可縮短 20–30 分 |
+| 18:45–19:45 | 🍽 晚餐 / 休息 / 換保暖衣物 | 1 小時 | — | Kohan 日式 / Mackenzie's Bar & Grill；觀星前先上廁所；換手套、外套、毛帽 |
+| 20:15 前 | 🚗 抵達 12 Rapuwai Lane 報到 | — | — | 距 Haka House 開車數分鐘；未準時報到可能視為 no-show，無法退款 |
+| 20:30–21:45 | 🌌 **Alpine Stargazing Experience（Silver River）** | ~75 分鐘 | **✅ 已訂** | 訂單 XYSA26X5711441；12 Rapuwai Lane；NZD 190；天氣取消全額退款；24h 內自行取消不退 |
 | 🏨 | **Haka House Lake Tekapo**｜住宿 | — | 5 Motuariki Lane, Tekapo |
 
-> 💡 **觀星提醒**：星空受天氣影響很大；若當晚多雲，以教堂黃昏 + 溫泉為主即可，不需強求
+> ⚠️ **Tekapo Springs 溫泉**（原 19:30–21:00）與觀星衝突，已從主線移除；若觀星被業者取消，可改為備選
+> ⚠️ **時間控管**：已訂觀星活動，建議不超過 16:00 離開 Mt Cook，確保 17:15 前抵達 Tekapo
 
 ---
 
@@ -600,17 +612,17 @@
 
 | 時間 | 地點 | 停留 | 必去 / 可選 | 備註 |
 |------|------|------|------------|------|
-| 09:00–11:30 | 🛣 **Crown Range Road 瞭望點** | 2–2.5 小時 | 可選 | 紐西蘭最高公路；往 Wanaka 方向；景觀壯闊；⚠️ 冬季留意路況 |
-| 12:00 | 返回皇后鎮市區 | — | — | 午餐自理 |
-| **13:00–17:00** | 🦌 **Deer Park Heights** | 2–4 小時 | **必去（已訂）** | ⚠️ **18:00 前須入場（閘門關閉）**；NZD $75/車；僅限自駕；Hard Antler Block 全程留車內 |
-| 17:30–19:00 | ♨️ **Onsen Hot Pools 溫泉** | 1.5 小時 | 必去 | 放鬆泡湯；建議訂位 |
-| 19:00–20:30 | 🚠 **Skyline Gondola 天際線纜車** | 1.5 小時 | 可選 | 俯瞰 Lake Wakatipu；景觀餐廳 Stratosfare |
-| **21:00–22:00** | 🍔 **Fergburger** | 1 小時 | 必去 | 21:00 後排隊較短 |
-| — | 🧳 整理行李 | — | — | ⚠️ 明早 09:00 Snap Rentals ZQN 還車；加滿油 |
+| 08:30–11:30 | 🦌 **Deer Park Heights** | 3 小時 | **✅ 已訂** | 早上光線好、遊客少；NZD $75/車；僅限自駕；Hard Antler Block 全程留車內；動物靠近請勿手餵 |
+| 11:30–12:00 | 🚗 Deer Park Heights → Queenstown / Frankton | — | — | 約 20–30 分鐘；可簡單午餐、補給 |
+| 12:00–13:30 | 🛣 **Crown Range Road 瞭望點** | 1.5 小時 | 可選偏推薦 | 紐西蘭最高公路；往 Wanaka 方向；景觀壯闊；天氣不佳可取消；出發前查 NZTA 路況 |
+| 13:30–14:15 | 🚗 返回皇后鎮市區 / 找停車位 | — | — | Skyline 附近車位有限，若住宿方便建議步行 |
+| **14:30–17:30** | 🚠 **Skyline Gondola + 3 Luge Rides** | ~3 小時 | **✅ 已訂** | 確認號 AZDHTXR · +64 03 441 0101 · Skyline Gondola Base, Brecon Street · 2 大人 · 往返纜車 + 3 圈 Luge · Voucher 已預付 · [📄 Kkday 憑證](<../docs/assets/Kkday-NZ-Queenstown-Gondola-Luge.pdf>) |
+| 17:30–19:00 | 🌊 回住宿 / Queenstown Bay 湖邊散步 / 休息 | — | — | Skyline 結束後放鬆 |
+| 19:00–20:30 | 🍔 **Fergburger** | 1.5 小時 | 必去 | 可線上點餐再取；亦可外帶至湖邊 |
+| 20:30+ | 🧳 整理行李 / 確認加油站路線 | — | — | ⚠️ 明早 09:00 Snap Rentals ZQN 還車；加滿油（Full to Full） |
 
-> 💡 **順序調整說明**：地圖順序將 Crown Range Road 列在 Deer Park Heights 之前。Crown Range Road 晨間景觀最佳，Deer Park Heights 午後安排（確保 18:00 前入場），調整後符合地圖順序且時間合理。
-
-> 📍 **原始行程有寫，但地圖未列出**：跳傘 / 噴射船 / 高空彈跳（可選加入 Deer Park 前）
+> 💡 **備選**：Onsen Hot Pools — 改為備選，若 Skyline 提早結束或不去 Crown Range 才考慮加入；不建議硬塞，明早要還車
+> 📍 **原始行程有寫，但地圖未列出**：跳傘 / 噴射船 / 高空彈跳 — 今日已有 Deer Park + Skyline 兩個已訂活動，不建議再加入
 
 ---
 
@@ -945,7 +957,7 @@
 - [x] ~~⛵ Milford Sound 遊船（NZ D11）~~ ✅ GreatSights 大巴一日遊（NT$ 6,730，Klook）
 - [x] ~~🚁 冰河直升機：Franz Josef 或 Fox Glacier（NZ D5，擇一）~~ ✅ **法蘭士約瑟夫冰川直升機健行（NZ D6 07:30）** Klook · HAU427597 · 憑證 KLK0703585975
 - [x] ~~🌌 Mt John 觀星（NZ D7，蒂卡波）~~ ✅ Alpine Stargazing Experience · Silver River · XYSA26X5711441（Bookme）
-- [ ] 🚠 Skyline Gondola 皇后鎮（NZ D12）
+- [x] ~~🚠 Skyline Gondola 皇后鎮（NZ D12）~~ ✅ Skyline Gondola + 3 Luge Rides · AZDHTXR
 - [ ] 🪂 跳傘 / 噴射船（NZ D12，擇一）
 - [ ] 🍽 Tramway Restaurant 電車晚餐，NZD 149（NZ D1 或 D3）
 - [ ] 🎟 Christchurch Pass，NZD 114（NZ D3）
@@ -1070,7 +1082,42 @@
 
 ### 🎟 活動憑證 PDF
 
-| 活動 | 憑證 |
+#### 活動 / Tickets
+
+| 活動 | 日期 | 憑證 |
+|------|------|------|
+| 🚁 法蘭士約瑟夫冰川直升機健行 | NZ D6（5/09）| [Klook-NZ-Josef.pdf](<../docs/assets/Klook voucher-NZ-Josef.pdf>) |
+| ⛵ Milford Sound GreatSights 遊船 | NZ D11（5/14）| [Klook-NZ-Milford-GreatSight.pdf](<../docs/assets/Klook voucher-NZ-Milford-GreatSight.pdf>) |
+| 🌌 蒂卡波觀星 Alpine Stargazing（Silver River）| NZ D7（5/10）| [佩璇訂蒂卡波觀星bookme.pdf](<../docs/assets/佩璇訂蒂卡波觀星bookme.pdf>) |
+| 🚠 皇后鎮 Skyline Gondola + 3 Luge | NZ D12（5/15）| [Kkday-NZ-Queenstown-Gondola-Luge.pdf](<../docs/assets/Kkday-NZ-Queenstown-Gondola-Luge.pdf>) |
+| 🦌 Deer Park Heights 發票 | NZ D12（5/15）| [deer_park_invoice.pdf](<../docs/assets/deer_park_invoice.pdf>) |
+
+#### 住宿
+
+| 住宿 | 憑證 |
 |------|------|
-| ⛵ Milford Sound GreatSights 遊船 | [Klook-NZ-Milford-GreatSight.pdf](<../docs/assets/Klook voucher-NZ-Milford-GreatSight.pdf>) |
-| 🌌 蒂卡波觀星 Alpine Stargazing（Silver River）| [佩璇訂蒂卡波觀星bookme.pdf](<../docs/assets/佩璇訂蒂卡波觀星bookme.pdf>) |
+| 🏨 新加坡入住憑證 | [新加坡入住憑證.pdf](<../docs/assets/新加坡入住憑證.pdf>) |
+
+#### 租車 / 交通
+
+| 項目 | 憑證 |
+|------|------|
+| 🚗 紐西蘭租車（Snap Rentals）| [紐西蘭租車.pdf](<../docs/assets/紐西蘭租車.pdf>) |
+| 🅿️ 皇后鎮機場還車說明 | [Queenstown-Vehicle-Return.pdf](<../docs/assets/Queenstown Airport Vehicle Return Instructions 111.pdf>) |
+
+#### 流量 SIM 卡
+
+| 地區 | 憑證 |
+|------|------|
+| 🇳🇿 NZ OneNZ（通話 + 10GB / 60天）| [OneNZ.pdf](<../docs/assets/Kkday-NZ-OneNZ通話-10GB-60days.pdf>) |
+| 🇳🇿 NZ Spark 5G（數據 20GB / 15天）| [Spark5G.pdf](<../docs/assets/Klook voucher-NZ-Spark5G-20GB-15days.pdf>) |
+| 🇦🇺 MEL Optus 5G（數據 5GB / 30天）| [Optus5G.pdf](<../docs/assets/Klook voucher-MEL-Optus5G-5GB-30days.pdf>) |
+| 🇸🇬 SIN Singtel（每日不限 / 3天）| [Singtel.pdf](<../docs/assets/Klook voucher-SIN-Singtel5G-不限-3days.pdf>) |
+
+#### 保險
+
+| 保單 | 憑證 |
+|------|------|
+| 🛡 兆豐旅平（SIN / MEL / NZ）| [兆豐保單-SIN_MEL_NZ-旅平.pdf](<../docs/assets/兆豐保單-SIN_MEL_NZ-旅平.pdf>) |
+| 🛡 富邦旅平（SIN / MEL / NZ）| [富邦保單-SIN_MEL_NZ-旅平.pdf](<../docs/assets/富邦保單-SIN_MEL_NZ-旅平.pdf>) |
+| 🚗 富邦租車保險（SIN / MEL / NZ）| [富邦保單-SIN_MEL_NZ-租車.pdf](<../docs/assets/富邦保單-SIN_MEL_NZ-租車.pdf>) |
